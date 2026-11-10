@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "coordinateFrame": "makit-world-z-up",
+  "placements": {},
+  "fits": [],
+  "steps": [
+    {
+      "title": "放稳前壳",
+      "parts": [
+        "pet-shell:front_shell"
+      ]
+    },
+    {
+      "title": "从正面插入三个按键帽",
+      "parts": [
+        "pet-shell:button_left",
+        "pet-shell:button_mid",
+        "pet-shell:button_right"
+      ],
+      "from": "+z"
+    },
+    {
+      "title": "从壳内压入三个对应推板",
+      "note": "长端指向对应开关，压到帽销止口肩；默认0.15 mm直径干涉，先试装一组，不要锤击。",
+      "parts": [
+        "pet-shell:pusher_left",
+        "pet-shell:pusher_mid",
+        "pet-shell:pusher_right"
+      ],
+      "from": "-z"
+    },
+    {
+      "title": "装入边框、屏幕和三键板",
+      "note": "两个板端排针不装，短线直接焊孔；确认推板远端落在开关按杆顶面。",
+      "parts": [
+        "pet-shell:bezel",
+        "pet-shell:display_ref",
+        "pet-shell:keys_pcb"
+      ],
+      "from": "-z"
+    },
+    {
+      "title": "连接主控、电池和屏幕线",
+      "note": "XIAO弯排针朝内，线束平铺；胶不垫高USB板位。",
+      "parts": [
+        "pet-shell:xiao_ref",
+        "pet-shell:dupont_ref",
+        "pet-shell:battery_ref",
+        "pet-shell:grove_cable_route"
+      ],
+      "from": "-z"
+    },
+    {
+      "title": "对齐定位销，合上后盖",
+      "parts": [
+        "pet-shell:back_shell"
+      ],
+      "from": "-z"
+    },
+    {
+      "title": "轻拧四颗 M2×6 螺丝",
+      "note": "确认三个按键自由回弹，线束未被挤住，再均匀拧紧。",
+      "parts": [
+        "pet-shell:screw_0",
+        "pet-shell:screw_1",
+        "pet-shell:screw_2",
+        "pet-shell:screw_3"
+      ],
+      "from": "-z"
+    }
+  ],
+  "updatedAt": "2026-11-09T20:58:16.652Z"
+}

@@ -1,0 +1,95 @@
+{
+  "version": 2,
+  "artifact_level": "assembly",
+  "deliverable_intent": "manufacturing_package",
+  "summary": "Handheld cloud-shaped virtual pet: FDM two-piece shell holding a XIAO ESP32-S3, a Grove 1.2in 240x240 IPS display, a LiPo cell and three tactile buttons.",
+  "required_interfaces": [
+    {
+      "id": "display_fit",
+      "kind": "internal_fit",
+      "description": "40x40 mm display board seated behind a window exposing the 24.76x26.8 mm screen",
+      "source": "contract_interface",
+      "required": true
+    },
+    {
+      "id": "usb_c_access",
+      "kind": "port_access",
+      "description": "XIAO ESP32-S3 USB-C reachable through the shell for charging and flashing",
+      "source": "contract_interface",
+      "required": true
+    },
+    {
+      "id": "button_caps",
+      "kind": "user_control",
+      "description": "Three domed caps pressing 6x6 mm tactile switches",
+      "source": "user_requested",
+      "required": true
+    },
+    {
+      "id": "key_pcb_fit",
+      "kind": "internal_fit",
+      "description": "U-shaped 60x26x1.6 mm key PCB, top at shell Z13.5; replace switch clips and shorten underlying posts before assembly.",
+      "source": "contract_interface",
+      "required": true
+    }
+  ],
+  "external_references": [
+    {
+      "id": "ref_handheld_photo",
+      "source": "user_requested",
+      "description": "Reference photo of a lobed handheld pet with square screen and three buttons",
+      "path": "product/references/uploads/20261109T131205554Z-1-product-references-uploads-20261108t045029838z-1-cleanshot-2026-11-08-at-12-50-09-2x.png"
+    },
+    {
+      "id": "ref_cloud_outline",
+      "source": "user_requested",
+      "description": "Cloud icon whose bumpy outline the shell edge follows",
+      "path": "product/references/uploads/20261109T131205554Z-2-product-references-uploads-20261109t125840053z-1-cleanshot-2026-11-09-at-20-58-30-2x.png"
+    },
+    {
+      "id": "xiao_esp32s3_wiki",
+      "source": "catalog_required",
+      "description": "Seeed XIAO ESP32-S3 wiki (dimensions, pin map)"
+    },
+    {
+      "id": "grove_ips_1_2_wiki",
+      "source": "catalog_required",
+      "description": "Seeed Grove 1.2-inch IPS Display wiki (screen and board size)"
+    }
+  ],
+  "assembly_story": {
+    "installation": "Display and buttons sit in the front shell, XIAO and battery in the back shell; the halves close with screws from the back.",
+    "maintenance": "Remove the back screws to replace the battery.",
+    "user_access": [
+      "three front buttons",
+      "USB-C on the side",
+      "lanyard nub on top"
+    ]
+  },
+  "cad": {
+    "requirement": "required",
+    "designs": [
+      {
+        "role": "enclosure",
+        "design_id": "pet-shell",
+        "description": "Cloud-lobed two-piece shell with screen window, bezel and button caps",
+        "delivery_target": "printable_part",
+        "required_formats": [
+          "step"
+        ],
+        "interface_ids": [
+          "display_fit",
+          "usb_c_access",
+          "button_caps"
+        ],
+        "reference_ids": [
+          "ref_handheld_photo",
+          "ref_cloud_outline",
+          "xiao_esp32s3_wiki",
+          "grove_ips_1_2_wiki"
+        ]
+      }
+    ]
+  },
+  "open_questions": []
+}

@@ -1,0 +1,271 @@
+{
+  "schema_version": 1,
+  "parts": [
+    {
+      "ref": "mcu",
+      "platform": "seeed/xiao-esp32s3",
+      "quantity": 1
+    },
+    {
+      "ref": "display",
+      "platform": "seeed/grove-1-2inch-ips-display",
+      "quantity": 1,
+      "note": "Display-supplied Grove-to-Grove cable to J_GROVE on pet-keys; J_LCD_MCU harness to XIAO GND/3V3/D10/D9."
+    },
+    {
+      "ref": "battery",
+      "name": "3.7V LiPo 503035 500mAh",
+      "quantity": 1
+    },
+    {
+      "ref": "btn_left",
+      "name": "6x6 mm tactile switch, 5 mm height, through-hole",
+      "quantity": 1
+    },
+    {
+      "ref": "btn_mid",
+      "name": "6x6 mm tactile switch, 5 mm height, through-hole",
+      "quantity": 1
+    },
+    {
+      "ref": "btn_right",
+      "name": "6x6 mm tactile switch, 5 mm height, through-hole",
+      "quantity": 1
+    }
+  ],
+  "connections": [
+    {
+      "from": {
+        "part": "display",
+        "pin": "SCL"
+      },
+      "to": {
+        "part": "mcu",
+        "pin": "D9"
+      },
+      "bus": "spi",
+      "via": "grove-4pin",
+      "note": "Display Grove cable → pet-keys J_GROVE.4 → PCB → J_LCD_MCU.4 → XIAO D9/GPIO8 clock yellow. Supplier J_GROVE numbering is reversed relative to the display connector: cable colour/function is preserved. PCB-side headers are DNP: solder short wires into the named holes; screen harness uses the inward-facing XIAO right-angle header.",
+      "evidence": [
+        "https://raw.githubusercontent.com/Seeed-Studio/wiki-documents/docusaurus-version/sites/en/docs/Sensor/LCD_Displays/Grove_Series/Grove-1.2_inch_IPS_Display.md",
+        "https://raw.githubusercontent.com/Seeed-Studio/wiki-documents/docusaurus-version/sites/en/docs/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO_ESP32S3_Getting_Started.md",
+        "https://raw.githubusercontent.com/Longan-Labs/Grove-1.2-Inch-IPS-Display/main/datasheet_WLK1201SPI-4PIN%20.pdf",
+        "https://core-electronics.com.au/grove-4-pin-female-jumper-to-grove-4-pin-conversion-cable-5-pcs-per-pack-seeed-studio.html",
+        "https://item.szlcsc.com/8427506.html"
+      ]
+    },
+    {
+      "from": {
+        "part": "display",
+        "pin": "SDA"
+      },
+      "to": {
+        "part": "mcu",
+        "pin": "D10"
+      },
+      "bus": "spi",
+      "via": "grove-4pin",
+      "note": "Display Grove cable → pet-keys J_GROVE.3 → PCB → J_LCD_MCU.3 → XIAO D10/GPIO9 data white. Supplier J_GROVE numbering is reversed relative to the display connector: cable colour/function is preserved. PCB-side headers are DNP: solder short wires into the named holes; screen harness uses the inward-facing XIAO right-angle header.",
+      "evidence": [
+        "https://raw.githubusercontent.com/Seeed-Studio/wiki-documents/docusaurus-version/sites/en/docs/Sensor/LCD_Displays/Grove_Series/Grove-1.2_inch_IPS_Display.md",
+        "https://raw.githubusercontent.com/Seeed-Studio/wiki-documents/docusaurus-version/sites/en/docs/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO_ESP32S3_Getting_Started.md",
+        "https://raw.githubusercontent.com/Longan-Labs/Grove-1.2-Inch-IPS-Display/main/datasheet_WLK1201SPI-4PIN%20.pdf",
+        "https://core-electronics.com.au/grove-4-pin-female-jumper-to-grove-4-pin-conversion-cable-5-pcs-per-pack-seeed-studio.html",
+        "https://item.szlcsc.com/8427506.html"
+      ]
+    },
+    {
+      "from": {
+        "part": "display",
+        "pin": "VCC"
+      },
+      "to": {
+        "part": "mcu",
+        "pin": "3V3"
+      },
+      "bus": "power",
+      "via": "grove-4pin",
+      "note": "Display Grove cable → pet-keys J_GROVE.2 → PCB → J_LCD_MCU.2 → XIAO 3.3 V red. Supplier J_GROVE numbering is reversed relative to the display connector: cable colour/function is preserved. PCB-side headers are DNP: solder short wires into the named holes; screen harness uses the inward-facing XIAO right-angle header.",
+      "evidence": [
+        "https://raw.githubusercontent.com/Seeed-Studio/wiki-documents/docusaurus-version/sites/en/docs/Sensor/LCD_Displays/Grove_Series/Grove-1.2_inch_IPS_Display.md",
+        "https://raw.githubusercontent.com/Seeed-Studio/wiki-documents/docusaurus-version/sites/en/docs/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO_ESP32S3_Getting_Started.md",
+        "https://core-electronics.com.au/grove-4-pin-female-jumper-to-grove-4-pin-conversion-cable-5-pcs-per-pack-seeed-studio.html",
+        "https://item.szlcsc.com/8427506.html"
+      ]
+    },
+    {
+      "from": {
+        "part": "display",
+        "pin": "GND"
+      },
+      "to": {
+        "part": "mcu",
+        "pin": "GND"
+      },
+      "bus": "power",
+      "via": "grove-4pin",
+      "note": "Display Grove cable → pet-keys J_GROVE.1 → PCB → J_LCD_MCU.1 → XIAO ground black. Supplier J_GROVE numbering is reversed relative to the display connector: cable colour/function is preserved. PCB-side headers are DNP: solder short wires into the named holes; screen harness uses the inward-facing XIAO right-angle header.",
+      "evidence": [
+        "https://raw.githubusercontent.com/Seeed-Studio/wiki-documents/docusaurus-version/sites/en/docs/Sensor/LCD_Displays/Grove_Series/Grove-1.2_inch_IPS_Display.md",
+        "https://raw.githubusercontent.com/Seeed-Studio/wiki-documents/docusaurus-version/sites/en/docs/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO_ESP32S3_Getting_Started.md",
+        "https://core-electronics.com.au/grove-4-pin-female-jumper-to-grove-4-pin-conversion-cable-5-pcs-per-pack-seeed-studio.html",
+        "https://item.szlcsc.com/8427506.html"
+      ]
+    },
+    {
+      "from": {
+        "part": "btn_left",
+        "pin": "1"
+      },
+      "to": {
+        "part": "mcu",
+        "pin": "D0"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "note": "D0 = GPIO1, internal pull-up; switch leg 2 to GND; via key PCB J_KEYS.2 and four-wire harness. Switch pads 1/2=KEY, 3/4=GND. PCB-side headers are DNP: solder short wires into the named holes; screen harness uses the inward-facing XIAO right-angle header.",
+      "evidence": [
+        "https://raw.githubusercontent.com/Seeed-Studio/wiki-documents/docusaurus-version/sites/en/docs/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO_ESP32S3_Getting_Started.md",
+        "https://item.szlcsc.com/111374.html"
+      ]
+    },
+    {
+      "from": {
+        "part": "btn_mid",
+        "pin": "1"
+      },
+      "to": {
+        "part": "mcu",
+        "pin": "D1"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "note": "D1 = GPIO2, internal pull-up; switch leg 2 to GND; via key PCB J_KEYS.3 and four-wire harness. Switch pads 1/2=KEY, 3/4=GND. PCB-side headers are DNP: solder short wires into the named holes; screen harness uses the inward-facing XIAO right-angle header.",
+      "evidence": [
+        "https://raw.githubusercontent.com/Seeed-Studio/wiki-documents/docusaurus-version/sites/en/docs/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO_ESP32S3_Getting_Started.md",
+        "https://item.szlcsc.com/111374.html"
+      ]
+    },
+    {
+      "from": {
+        "part": "btn_right",
+        "pin": "1"
+      },
+      "to": {
+        "part": "mcu",
+        "pin": "D3"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "note": "D3 = GPIO4, internal pull-up; D2/GPIO3 skipped (JTAG strapping pin); via key PCB J_KEYS.4 and four-wire harness. Switch pads 1/2=KEY, 3/4=GND. PCB-side headers are DNP: solder short wires into the named holes; screen harness uses the inward-facing XIAO right-angle header.",
+      "evidence": [
+        "https://raw.githubusercontent.com/Seeed-Studio/wiki-documents/docusaurus-version/sites/en/docs/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO_ESP32S3_Getting_Started.md",
+        "https://item.szlcsc.com/111374.html"
+      ]
+    },
+    {
+      "from": {
+        "part": "btn_left",
+        "pin": "2"
+      },
+      "to": {
+        "part": "mcu",
+        "pin": "GND"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://raw.githubusercontent.com/Seeed-Studio/wiki-documents/docusaurus-version/sites/en/docs/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO_ESP32S3_Getting_Started.md",
+        "https://item.szlcsc.com/111374.html"
+      ],
+      "note": "; via key PCB J_KEYS.1 and four-wire harness. Switch pads 1/2=KEY, 3/4=GND. PCB-side headers are DNP: solder short wires into the named holes; screen harness uses the inward-facing XIAO right-angle header."
+    },
+    {
+      "from": {
+        "part": "btn_mid",
+        "pin": "2"
+      },
+      "to": {
+        "part": "mcu",
+        "pin": "GND"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://raw.githubusercontent.com/Seeed-Studio/wiki-documents/docusaurus-version/sites/en/docs/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO_ESP32S3_Getting_Started.md",
+        "https://item.szlcsc.com/111374.html"
+      ],
+      "note": "; via key PCB J_KEYS.1 and four-wire harness. Switch pads 1/2=KEY, 3/4=GND. PCB-side headers are DNP: solder short wires into the named holes; screen harness uses the inward-facing XIAO right-angle header."
+    },
+    {
+      "from": {
+        "part": "btn_right",
+        "pin": "2"
+      },
+      "to": {
+        "part": "mcu",
+        "pin": "GND"
+      },
+      "bus": "gpio",
+      "via": "solder",
+      "evidence": [
+        "https://raw.githubusercontent.com/Seeed-Studio/wiki-documents/docusaurus-version/sites/en/docs/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO_ESP32S3_Getting_Started.md",
+        "https://item.szlcsc.com/111374.html"
+      ],
+      "note": "; via key PCB J_KEYS.1 and four-wire harness. Switch pads 1/2=KEY, 3/4=GND. PCB-side headers are DNP: solder short wires into the named holes; screen harness uses the inward-facing XIAO right-angle header."
+    },
+    {
+      "from": {
+        "part": "battery",
+        "pin": "+"
+      },
+      "to": {
+        "part": "mcu",
+        "pin": "BAT+"
+      },
+      "bus": "power",
+      "via": "solder",
+      "note": "battery pads on the back of the XIAO; XIAO charges the cell over USB-C",
+      "evidence": [
+        "https://raw.githubusercontent.com/Seeed-Studio/wiki-documents/docusaurus-version/sites/en/docs/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO_ESP32S3_Getting_Started.md"
+      ]
+    },
+    {
+      "from": {
+        "part": "battery",
+        "pin": "-"
+      },
+      "to": {
+        "part": "mcu",
+        "pin": "BAT-"
+      },
+      "bus": "power",
+      "via": "solder",
+      "evidence": [
+        "https://raw.githubusercontent.com/Seeed-Studio/wiki-documents/docusaurus-version/sites/en/docs/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO_ESP32S3_Getting_Started.md"
+      ]
+    }
+  ],
+  "power": [
+    {
+      "source": {
+        "part": "battery",
+        "pin": "+"
+      },
+      "consumers": [
+        "mcu"
+      ],
+      "note": "single LiPo cell, charged by the XIAO"
+    },
+    {
+      "source": {
+        "part": "mcu",
+        "pin": "3V3"
+      },
+      "consumers": [
+        "display"
+      ],
+      "note": "XIAO 3V3 regulator, up to 700 mA"
+    }
+  ]
+}

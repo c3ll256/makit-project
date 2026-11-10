@@ -1,0 +1,95 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-09T16:42:20.006Z",
+  "lcsc_code": "C7429589",
+  "manufacturer": "Megastar(兆星)",
+  "manufacturer_part_number": "ZX-HY2.0-4PWZ",
+  "description": "Connector Header 4 position 2mm Pitch 2A Right Angle -25°C~+85°C",
+  "category": "线对板针座",
+  "package": "Through Hole,Right Angle,P=2mm",
+  "jlcpcb_part_class": "extended",
+  "parameters": {
+    "Connector Type": "Right Angle",
+    "Reference Series": "HY",
+    "Voltage Rating (Max)": "250V",
+    "Contact Material": "Brass",
+    "Number of PINs Per Row": "4",
+    "Number of Rows": "1",
+    "Pitch": "2mm",
+    "Flame Retardant Rating": "UL94V-0",
+    "Current Rating": "2A",
+    "Number of PINs": "4P",
+    "Operating Temperature": "-25°C~+85°C",
+    "Contact Plating": "Tin",
+    "Plastic Material": "PA66",
+    "Color": "White",
+    "X-Length of Bottom Edge on Board (Spacing Line)": "10mm",
+    "Pin Structure": "1x4P"
+  },
+  "lcsc_stock": 526,
+  "price_breaks": [
+    {
+      "quantity": 20,
+      "unitPrice": 0.1783,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 200,
+      "unitPrice": 0.1475,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 600,
+      "unitPrice": 0.1304,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 2000,
+      "unitPrice": 0.1201,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 10000,
+      "unitPrice": 0.1112,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 20000,
+      "unitPrice": 0.1064,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 20,
+      "unitPrice": 0.0295,
+      "currency": "USD"
+    },
+    {
+      "quantity": 200,
+      "unitPrice": 0.0244,
+      "currency": "USD"
+    },
+    {
+      "quantity": 600,
+      "unitPrice": 0.0216,
+      "currency": "USD"
+    },
+    {
+      "quantity": 2000,
+      "unitPrice": 0.0199,
+      "currency": "USD"
+    },
+    {
+      "quantity": 10000,
+      "unitPrice": 0.0184,
+      "currency": "USD"
+    },
+    {
+      "quantity": 20000,
+      "unitPrice": 0.0176,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/8427506.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/750cd1231fb455332ddba790b34a0c60.pdf?productCode=C7429589",
+  "datasheet_file": "references/suppliers/c7429589/c7429589-datasheet.pdf"
+}

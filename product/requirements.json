@@ -1,0 +1,73 @@
+{
+  "requirements": {
+    "product_class": {
+      "value": "handheld electronic virtual pet (tamagotchi-like)",
+      "source": "user"
+    },
+    "outline_shape": {
+      "value": "six soft cloud lobes like reference image 2: shallow round bumps around a near-circular body",
+      "source": "user"
+    },
+    "layout": {
+      "value": "square colour screen centred above three round buttons, lanyard nub on top, as reference image 1",
+      "source": "user"
+    },
+    "base_board": {
+      "value": "seeed/xiao-esp32s3",
+      "source": "default"
+    },
+    "display": {
+      "value": "seeed/grove-1-2inch-ips-display (1.2 in 240x240 IPS, ST7789, 40x40 mm board)",
+      "source": "default"
+    },
+    "buttons": {
+      "value": "3 tactile switches 6x6 mm with printed domed caps; centre one larger",
+      "source": "default"
+    },
+    "battery": {
+      "value": "single-cell LiPo ~500 mAh, 503035 (~35x30x5 mm)",
+      "source": "default"
+    },
+    "charging": {
+      "value": "USB-C on the XIAO, reachable through the shell side",
+      "source": "default"
+    },
+    "envelope_mm": {
+      "value": {
+        "width": 74,
+        "height_with_nub": 86,
+        "thickness": 22
+      },
+      "source": "default"
+    },
+    "manufacturing_method": {
+      "value": "fdm",
+      "source": "default"
+    },
+    "design_direction": {
+      "value": "soft six-lobed cloud pebble in translucent lavender-blue, dark round bezel around the square screen, three domed paw-pad buttons on the three lower lobes, small lanyard ball on top",
+      "source": "user"
+    },
+    "custom_pcb": {
+      "value": "Custom PCB requested for pet device",
+      "source": "user"
+    },
+    "key_pcb_implementation": {
+      "value": "Shaped three-key carrier PCB, 59x26.5 mm envelope, right-angle Grove display socket, XIAO D0/D1/D3 keys and D9/D10 display; two-layer FR4, manual through-hole assembly; solder wire pigtails to DNP header footprints.",
+      "source": "default"
+    },
+    "display_grove_on_pcb": {
+      "value": "Integrate the display Grove connector onto pet-keys PCB",
+      "source": "user"
+    },
+    "charging_opening_appearance": {
+      "value": "Approved recessed rounded USB-C opening with same-colour inner surround; preserve opening and XIAO location during PCB adaptation.",
+      "source": "user"
+    },
+    "button_group_spacing": {
+      "value": "Bring the three front buttons closer together.",
+      "source": "user"
+    }
+  },
+  "open_questions": []
+}

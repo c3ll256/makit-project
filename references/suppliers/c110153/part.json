@@ -1,0 +1,90 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-09T15:54:12.262Z",
+  "lcsc_code": "C110153",
+  "manufacturer": "韩国韩荣",
+  "manufacturer_part_number": "K2-1102DP-C4SW-04",
+  "description": "Tactile Switch SPST 250gf 5mm 6mm x 6mm Through Hole",
+  "category": "轻触开关",
+  "package": "Through Hole-4P,6x6mm",
+  "jlcpcb_part_class": "extended",
+  "parameters": {
+    "Voltage Rating": "12V",
+    "Switching Life": "100,000 cycles",
+    "Operating Temperature": "-25°C~+85°C",
+    "Width": "6mm",
+    "Actuator Style": "Round Button",
+    "Mounting Type": "Through Hole",
+    "Length": "6mm",
+    "Circuit": "SPST",
+    "Operating Force": "2.5N",
+    "Height": "5mm",
+    "Contact Current": "50mA"
+  },
+  "lcsc_stock": 6935,
+  "price_breaks": [
+    {
+      "quantity": 10,
+      "unitPrice": 0.3612,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 100,
+      "unitPrice": 0.295,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 300,
+      "unitPrice": 0.2619,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1000,
+      "unitPrice": 0.2176,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 5000,
+      "unitPrice": 0.1977,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 10000,
+      "unitPrice": 0.1877,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 10,
+      "unitPrice": 0.0594,
+      "currency": "USD"
+    },
+    {
+      "quantity": 100,
+      "unitPrice": 0.0485,
+      "currency": "USD"
+    },
+    {
+      "quantity": 300,
+      "unitPrice": 0.0431,
+      "currency": "USD"
+    },
+    {
+      "quantity": 1000,
+      "unitPrice": 0.0358,
+      "currency": "USD"
+    },
+    {
+      "quantity": 5000,
+      "unitPrice": 0.0325,
+      "currency": "USD"
+    },
+    {
+      "quantity": 10000,
+      "unitPrice": 0.0309,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/111374.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/cba7e973dea59ba592ee1d81fd516f49.pdf?productCode=C110153",
+  "datasheet_file": "references/suppliers/c110153/c110153-datasheet.pdf"
+}

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "entries": [
+    {
+      "file": "WLK1201SPI-4PIN-datasheet.pdf",
+      "sha256": "11fe3fea849a931fb7755ef4b187f5100d267b1cb8928404e3fe3abccc487b33",
+      "bytes": 101231,
+      "addedAt": "2026-11-09T14:03:21.072Z",
+      "share": false
+    },
+    {
+      "file": "grove-1.2-ips-front.jpg",
+      "sha256": "709b5e611f40c53f94093e4966c72805158693c20c1b1ccf787df682928c86d4",
+      "bytes": 199222,
+      "addedAt": "2026-11-09T14:04:01.384Z",
+      "share": false
+    },
+    {
+      "file": "grove-1.2-ips-hw.png",
+      "sha256": "f6f342cf88f04b9bad748ac04dd6291396d305c4a311c7d9dd311d951e0f1145",
+      "bytes": 2787676,
+      "addedAt": "2026-11-09T14:04:01.389Z",
+      "share": false
+    },
+    {
+      "file": "grove-shield-xiao-overview.png",
+      "sha256": "4a792ac0cfe68d36005fb3f6a3e81df3a7792ebc36059e6616af3e586f4489d5",
+      "bytes": 98925,
+      "addedAt": "2026-11-09T14:48:05.832Z",
+      "share": false
+    },
+    {
+      "file": "grove-shield-xiao-pinout.png",
+      "sha256": "32932e35556f8d69a71012fae9d4d51605479340408988814bfd522009ed659e",
+      "bytes": 105637,
+      "addedAt": "2026-11-09T14:48:05.832Z",
+      "share": false
+    },
+    {
+      "file": "seeeduino-xiao-in-action-minitype-wearable-projects-step-by-step.pdf",
+      "sha256": "a79856d3c3b907edfc3cbe30a77fce32b0225c84580398b7fdfe98e83141ffba",
+      "bytes": 11080106,
+      "addedAt": "2026-11-09T14:12:30.368Z",
+      "share": false
+    },
+    {
+      "file": "uploads/20261109T131205554Z-1-product-references-uploads-20261108t045029838z-1-cleanshot-2026-11-08-at-12-50-09-2x.png",
+      "sha256": "b0c81ec6a4cd11f3938cee014227f81affe497c0142bf64975b725ff41267c6d",
+      "bytes": 553329,
+      "addedAt": "2026-11-09T13:12:05.989Z",
+      "share": false
+    },
+    {
+      "file": "uploads/20261109T131205554Z-2-product-references-uploads-20261109t125840053z-1-cleanshot-2026-11-09-at-20-58-30-2x.png",
+      "sha256": "4b17807959c83864071a324d28a976dc6573f97a29de151d8ad8af175827fc64",
+      "bytes": 18593,
+      "addedAt": "2026-11-09T13:12:05.989Z",
+      "share": false
+    }
+  ]
+}

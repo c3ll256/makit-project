@@ -1,0 +1,732 @@
+{
+  "schemaVersion": 1,
+  "units": "mm",
+  "coordinateFrame": "makit-world-z-up",
+  "targets": [
+    {
+      "id": "form",
+      "label": "form",
+      "cells": [
+        {
+          "id": "form",
+          "target": "form",
+          "order": 0,
+          "path": "design/pet-shell/source/parts/form/000-form.py",
+          "sha256": "8b9ee3e0cc00740a1e6d87f5c32271e6e708d6013051576e274e88f3fe7d82be"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "bezel",
+      "label": "bezel",
+      "cells": [
+        {
+          "id": "bezel",
+          "target": "bezel",
+          "order": 0,
+          "path": "design/pet-shell/source/parts/bezel/000-bezel.py",
+          "sha256": "a9cdb16f88dc641890087179338420e52b6208a180ff7d8a0ee3cd0fba09d300"
+        }
+      ],
+      "dependencies": [
+        "form"
+      ]
+    },
+    {
+      "id": "buttons",
+      "label": "buttons",
+      "cells": [
+        {
+          "id": "buttons",
+          "target": "buttons",
+          "order": 0,
+          "path": "design/pet-shell/source/parts/buttons/000-buttons.py",
+          "sha256": "33569c904d5e4923812bfd3cc09234c5e8196988a6675aab1a58edf6c81b0e5b"
+        }
+      ],
+      "dependencies": [
+        "form"
+      ]
+    },
+    {
+      "id": "internals",
+      "label": "internals",
+      "cells": [
+        {
+          "id": "internals",
+          "target": "internals",
+          "order": 0,
+          "path": "design/pet-shell/source/parts/internals/000-internals.py",
+          "sha256": "b38a010b5dd22838fa2367682d6e00d6ab2ad292b5ac93005d40f23d899470ba"
+        }
+      ],
+      "dependencies": [
+        "form"
+      ]
+    },
+    {
+      "id": "imports",
+      "label": "imports",
+      "cells": [
+        {
+          "id": "keys_pcb",
+          "target": "imports",
+          "order": 0,
+          "path": "design/pet-shell/source/parts/imports/000-keys_pcb.py",
+          "sha256": "688865d5cb6b9b6d61ae4ebc3f03952a8fd0b992b962d89c79b5dd89e16c2f0f"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "harness",
+      "label": "harness",
+      "cells": [
+        {
+          "id": "harness",
+          "target": "harness",
+          "order": 0,
+          "path": "design/pet-shell/source/parts/harness/000-harness.py",
+          "sha256": "d464f3718abd34defe8e5ae345efada7b8953e7033ee56397c5393d7af63affa"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "pushers",
+      "label": "pushers",
+      "cells": [
+        {
+          "id": "pushers",
+          "target": "pushers",
+          "order": 0,
+          "path": "design/pet-shell/source/parts/pushers/000-pushers.py",
+          "sha256": "eb64753c72b0eb024cc430d71b087b2617bb0ad42b4a6bbea68435f6580852b2"
+        }
+      ],
+      "dependencies": [
+        "form",
+        "buttons"
+      ]
+    }
+  ],
+  "objects": [
+    {
+      "id": "back_shell",
+      "target": "form",
+      "label": "Back shell",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "ba0808e7a722285916686ebb0c84c901cb8763e20184a17f5003d954613ba889",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "front_shell",
+      "target": "form",
+      "label": "Front shell",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "d1278f1626611415b3f338d7c6626e00395eddc342f6562eb823c1ddf228bbeb",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "screw_0",
+      "target": "form",
+      "label": "M2 screw 1",
+      "material": "steel",
+      "role": "fastener",
+      "kind": "generated",
+      "shapeHash": "aa49f03ec774475155adafea1901f78fa8d25c5ec067a6d7ac21c9b74fc6a058",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "screw_1",
+      "target": "form",
+      "label": "M2 screw 2",
+      "material": "steel",
+      "role": "fastener",
+      "kind": "generated",
+      "shapeHash": "0a15c05f99073bf21eb902b53865344052cf9c1dfea91847048e8f9ab027dcfd",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "screw_2",
+      "target": "form",
+      "label": "M2 screw 3",
+      "material": "steel",
+      "role": "fastener",
+      "kind": "generated",
+      "shapeHash": "9f3171649b12bc9d79895c61a2a870a7d4efdc12acf8108318373f8f2933c78b",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "screw_3",
+      "target": "form",
+      "label": "M2 screw 4",
+      "material": "steel",
+      "role": "fastener",
+      "kind": "generated",
+      "shapeHash": "90fec4a95cd4db7794d4eb4e6c1e08ff9d01f8ae64f93a5041577270f9ee6042",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "bezel",
+      "target": "bezel",
+      "label": "Screen bezel",
+      "material": "pla",
+      "kind": "generated",
+      "shapeHash": "038620453d7f2142c896ff97438ab89da29577d6718fae69ca0bb921eef4e4ab",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "button_left",
+      "target": "buttons",
+      "label": "Left button",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "4257ef10bdfbf0b39f3218c025a2e9cb66681f26736c3e15da5fa7b85b79a288",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "button_mid",
+      "target": "buttons",
+      "label": "Middle button",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "d8f9b353607f12e92323844d1d11b7797b480fe964a5ebb9f0087a3b275d6ad5",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "button_right",
+      "target": "buttons",
+      "label": "Right button",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "42adee48815e764185df2a38dff8abd9426b73d8deaaa39de2e857ea042d978c",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "battery_ref",
+      "target": "internals",
+      "label": "503035 LiPo",
+      "role": "reference",
+      "kind": "generated",
+      "shapeHash": "e4b5d05b4d344eb20af8106d3d1f952cac48ecd553d7e950866bc9a712602e16",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "display_ref",
+      "target": "internals",
+      "label": "Grove 1.2in IPS display",
+      "role": "reference",
+      "kind": "generated",
+      "shapeHash": "fba6618310c2877a6c39a64dbf9fed8560c69cf52b9f42c95b424ff78b1dcbd5",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "dupont_ref",
+      "target": "internals",
+      "label": "XIAO detachable display harness",
+      "role": "reference",
+      "kind": "generated",
+      "shapeHash": "beaedf6d606c7c6bc71e08613521470b0105cb4b013448a48ec7a4f8a846fade",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "xiao_ref",
+      "target": "internals",
+      "label": "XIAO ESP32-S3",
+      "role": "reference",
+      "kind": "generated",
+      "shapeHash": "370e715f26eaad52ed804ed77ae71e0f1c86eb66f92a39a8b7d5b024c34d1244",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "keys_pcb",
+      "target": "imports",
+      "label": "Integrated Grove key PCB",
+      "kind": "imported",
+      "shapeHash": "7314882e5e6d016365b13eab2952ed3d7f1023b9e876f2d4ab6f47fd35cb74fb",
+      "transform": {
+        "positionMm": [
+          -100,
+          78.5,
+          12.505
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "grove_cable_route",
+      "target": "harness",
+      "label": "Grove wire routing envelope (46 mm free route)",
+      "role": "reference",
+      "kind": "generated",
+      "shapeHash": "1119135cdb300281059f915e4cd12bf52a6a66ee7ba73876b22a4fe798306728",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "pusher_left",
+      "target": "pushers",
+      "label": "Pusher Left",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "ec17cc5de7405cfa3991ac0917ccccff353b841c959c1a47522c18c0cc7ec94f",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "pusher_mid",
+      "target": "pushers",
+      "label": "Pusher Mid",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "9263918318b698a6c57b9067a8eb304a5aa8f722b50acdd2853e33d1c21f1ecb",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "pusher_right",
+      "target": "pushers",
+      "label": "Pusher Right",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "f2bed7f4e7f1dd530bf298e1618f90bab815321e3a11b94a1e52b2be0f715c7c",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    }
+  ],
+  "assets": [
+    {
+      "id": "keys_pcb",
+      "kind": "step",
+      "path": "design/pet-shell/source/assets/13e16d91701a895ff2f5010f015f7d36a8f9e122c4a740a58be84dace34fff6d.step",
+      "sha256": "13e16d91701a895ff2f5010f015f7d36a8f9e122c4a740a58be84dace34fff6d",
+      "label": "Integrated Grove key PCB",
+      "provenance": {
+        "sourcePath": "manufacturing/pet-keys/releases/10610ae9f34a5d549de4894a0ba9dd48e061727f979d359917232642db5cb4de/package/assembly.step"
+      }
+    }
+  ],
+  "fits": [
+    {
+      "kind": "press_fit",
+      "budget_mm": 0.15,
+      "reason": "Removable eccentric pusher pressed onto cap peg, 0.15 mm diametral interference; shoulder carries the key force.",
+      "a": "pusher_left",
+      "b": "button_left"
+    },
+    {
+      "kind": "press_fit",
+      "budget_mm": 0.15,
+      "reason": "Removable eccentric pusher pressed onto cap peg, 0.15 mm diametral interference; shoulder carries the key force.",
+      "a": "pusher_mid",
+      "b": "button_mid"
+    },
+    {
+      "kind": "press_fit",
+      "budget_mm": 0.15,
+      "reason": "Removable eccentric pusher pressed onto cap peg, 0.15 mm diametral interference; shoulder carries the key force.",
+      "a": "pusher_right",
+      "b": "button_right"
+    }
+  ],
+  "updatedAt": "2026-11-09T20:57:22.593Z",
+  "parameters": {
+    "form": {
+      "lobe_count": 6,
+      "lobe_radius": 18,
+      "lobe_ring_radius": 22,
+      "notch_radius": 6,
+      "body_thickness": 22,
+      "front_edge_radius": 7,
+      "back_edge_radius": 5,
+      "wall_thickness": 2,
+      "seam_height": 8,
+      "seam_reveal": 0.5,
+      "screen_center_y": 3,
+      "bezel_radius": 21,
+      "side_button_radius": 4.5,
+      "mid_button_radius": 5.5,
+      "nub_radius": 4.5,
+      "nub_cord_hole_radius": 1.3,
+      "button_ring_radius": 27.5,
+      "usb_wall_thickness": 1,
+      "usb_opening_clearance": 0.3,
+      "usb_pocket_width": 13,
+      "usb_pocket_height": 7,
+      "usb_pocket_corner_radius": 1.5,
+      "usb_surround_width": 1.2,
+      "usb_face_to_socket": 0.35,
+      "switch_top_z": 19.1,
+      "key_pcb_bottom_z": 12.505,
+      "key_locator_radius": 0.9,
+      "key_support_radius": 1.5,
+      "key_upper_retention_gap": 0.2,
+      "button_inward_shift": 3,
+      "button_side_drop": 2,
+      "button_middle_raise": 1,
+      "button_pusher_radius": 2.9,
+      "button_pusher_thickness": 1.2,
+      "button_pusher_clearance": 0.3,
+      "button_working_travel": 0.25
+    },
+    "bezel": {
+      "bezel_thickness": 2.4,
+      "bezel_inset": 0.6,
+      "bezel_flange": 2,
+      "screen_window_width": 24,
+      "screen_window_height": 24,
+      "screen_window_corner": 2
+    },
+    "buttons": {
+      "button_dome_height": 1.8,
+      "button_coupling_peg_radius": 1.6
+    },
+    "internals": {
+      "show_reference_parts": 1
+    },
+    "imports": {},
+    "harness": {
+      "wire_envelope_radius": 0.4,
+      "wire_bundle_pitch": 0.9
+    },
+    "pushers": {
+      "pusher_socket_diametral_interference": 0.15,
+      "pusher_socket_leadin": 0.2
+    }
+  }
+}

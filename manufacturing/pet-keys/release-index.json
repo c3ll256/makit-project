@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "releases": [
+    {
+      "releaseId": "10610ae9f34a5d549de4894a0ba9dd48e061727f979d359917232642db5cb4de",
+      "designId": "pet-keys",
+      "buildId": "73b7dd5553d71376f161185614fb4610792119284362ac60ac7cc616e514a234",
+      "candidateId": "ca28f8b3f5d5985cad0ac9136a7d424d713b59da6d37a43683cc2d0e0e275431",
+      "approvedAt": "2026-11-09T20:31:37.798Z"
+    }
+  ]
+}
