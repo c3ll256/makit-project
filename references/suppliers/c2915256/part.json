@@ -1,0 +1,91 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-10T14:21:10.220Z",
+  "lcsc_code": "C2915256",
+  "manufacturer": "XFCN(兴飞)",
+  "manufacturer_part_number": "MF254V-11-08-0540",
+  "description": "Female Header 8 Position 2.54mm Pitch Single Row Through Hole -40°C~+105°C",
+  "category": "排母",
+  "package": "Through Hole,P=2.54mm",
+  "jlcpcb_part_class": "extended",
+  "parameters": {
+    "Voltage Rating": "60V",
+    "Operating Temperature": "-40°C~+105°C",
+    "Mounting Type": "Through Hole",
+    "Number of Pins": "8P",
+    "Current Rating": "3A",
+    "Insulation Height": "3mm",
+    "Holes Structure": "1x8P",
+    "Pitch": "2.54mm",
+    "Holes Direction": "Top",
+    "Number of Rows": "1",
+    "Contact Material": "Brass",
+    "Circular Hole / Square Hole": "Round Hole"
+  },
+  "lcsc_stock": 1544,
+  "price_breaks": [
+    {
+      "quantity": 1,
+      "unitPrice": 2.72,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 10,
+      "unitPrice": 2.16,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 30,
+      "unitPrice": 1.92,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 100,
+      "unitPrice": 1.62,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 1.33,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1000,
+      "unitPrice": 1.25,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1,
+      "unitPrice": 0.4489,
+      "currency": "USD"
+    },
+    {
+      "quantity": 10,
+      "unitPrice": 0.3565,
+      "currency": "USD"
+    },
+    {
+      "quantity": 30,
+      "unitPrice": 0.3169,
+      "currency": "USD"
+    },
+    {
+      "quantity": 100,
+      "unitPrice": 0.2674,
+      "currency": "USD"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 0.2195,
+      "currency": "USD"
+    },
+    {
+      "quantity": 1000,
+      "unitPrice": 0.2063,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/3208216.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/0aba9e4b7c05cfc7ea1c1270bc86973f.pdf?productCode=C2915256",
+  "datasheet_file": "references/suppliers/c2915256/c2915256-datasheet.pdf"
+}

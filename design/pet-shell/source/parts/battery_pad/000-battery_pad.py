@@ -1,0 +1,7 @@
+f=part("form")
+pad_t=param("adhesive_thickness",1.0)
+pad_w=param("adhesive_width",20.0)
+pad_h=param("adhesive_height",25.0)
+pad=Pos(f.bat_c[0],f.bat_c[1],f.bat_floor_z-pad_t)*Box(pad_w,pad_h,pad_t,align=(Align.CENTER,Align.CENTER,Align.MIN))
+pad.color=srgb("#45474a")
+publish("battery_pad_ref",pad,"1mm battery foam tape",role="reference")

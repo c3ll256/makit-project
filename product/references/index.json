@@ -2,10 +2,24 @@
   "schemaVersion": 1,
   "entries": [
     {
+      "file": "202003751-xiao-esp32s3-v1-4-sch-260226-pdf.pdf",
+      "sha256": "15993097cd695d177af352f4664ca91290a99c833f51d122d1165ef222f9923c",
+      "bytes": 666348,
+      "addedAt": "2026-11-10T14:10:42.528Z",
+      "share": false
+    },
+    {
       "file": "WLK1201SPI-4PIN-datasheet.pdf",
       "sha256": "11fe3fea849a931fb7755ef4b187f5100d267b1cb8928404e3fe3abccc487b33",
       "bytes": 101231,
       "addedAt": "2026-11-09T14:03:21.072Z",
+      "share": false
+    },
+    {
+      "file": "XIAO-ESP32-S3-DIP.kicad_mod",
+      "sha256": "01af6349808227bbae8067c8434eb960cbeae5a3c089024da8946fff3341ad34",
+      "bytes": 11551,
+      "addedAt": "2026-11-10T14:11:37.080Z",
       "share": false
     },
     {
@@ -44,6 +58,13 @@
       "share": false
     },
     {
+      "file": "selected-display-assessment.md",
+      "sha256": "2b78da752fdb2cb9e6f5ee630ccb6567d285c39126aef6e4d9368fbd56ff0fbf",
+      "bytes": 1580,
+      "addedAt": "2026-11-10T15:34:31.163Z",
+      "share": false
+    },
+    {
       "file": "uploads/20261109T131205554Z-1-product-references-uploads-20261108t045029838z-1-cleanshot-2026-11-08-at-12-50-09-2x.png",
       "sha256": "b0c81ec6a4cd11f3938cee014227f81affe497c0142bf64975b725ff41267c6d",
       "bytes": 553329,
@@ -55,6 +76,69 @@
       "sha256": "4b17807959c83864071a324d28a976dc6573f97a29de151d8ad8af175827fc64",
       "bytes": 18593,
       "addedAt": "2026-11-09T13:12:05.989Z",
+      "share": false
+    },
+    {
+      "file": "uploads/20261110T125839732Z-1-mark-1.png",
+      "sha256": "7d8fec2740647ef19ddc3447ae42fc1f5a7946bc7dcda68e3c1279d3e33afa93",
+      "bytes": 580156,
+      "addedAt": "2026-11-10T12:58:55.122Z",
+      "share": false
+    },
+    {
+      "file": "uploads/20261110T150257294Z-1-cleanshot-2026-11-10-at-23-02-05-2x.png",
+      "sha256": "ddf22fa148b423c2c8189dc085d0f9d653f59fc6137ec317b7e9ed62952b9066",
+      "bytes": 2415738,
+      "addedAt": "2026-11-10T15:03:03.677Z",
+      "share": false
+    },
+    {
+      "file": "uploads/20261110T152829794Z-1-img-1025.jpg",
+      "sha256": "0735faf0b77d6a93277e33c3de0e64b12ca963447e496a40ef707fcbf07fde44",
+      "bytes": 133565,
+      "addedAt": "2026-11-10T15:28:57.837Z",
+      "share": false
+    },
+    {
+      "file": "uploads/20261110T152829794Z-2-img-1021.jpg",
+      "sha256": "e9be5a853fe107b4121e8ea1b1a91abcc5cf421284d61c5a88d242ab1ff899b2",
+      "bytes": 299440,
+      "addedAt": "2026-11-10T15:28:57.837Z",
+      "share": false
+    },
+    {
+      "file": "uploads/20261110T152829794Z-3-img-1023.jpg",
+      "sha256": "ef9c3becc0093647011eb6b965c22682afee8a9a738d38cff3eb034a3fc1d737",
+      "bytes": 290768,
+      "addedAt": "2026-11-10T15:28:57.838Z",
+      "share": false
+    },
+    {
+      "file": "uploads/20261110T152829794Z-4-img-1021.jpg",
+      "sha256": "e9be5a853fe107b4121e8ea1b1a91abcc5cf421284d61c5a88d242ab1ff899b2",
+      "bytes": 299440,
+      "addedAt": "2026-11-10T15:28:57.838Z",
+      "share": false
+    },
+    {
+      "file": "uploads/20261110T152829794Z-5-img-1022.jpg",
+      "sha256": "03f20f1fe75c64c6aef01837c9f575a65c86a823ed5cf79f7559a8e00c8671dd",
+      "bytes": 280335,
+      "addedAt": "2026-11-10T15:28:57.839Z",
+      "share": false
+    },
+    {
+      "file": "xiao-esp32s3-model.zip",
+      "sha256": "0d552ed2cc7359ea132601f4f7fe2c9d816e2dfe4f58f6463e83f84a901d3650",
+      "bytes": 4382912,
+      "addedAt": "2026-11-10T14:10:42.556Z",
+      "share": false
+    },
+    {
+      "file": "xiao-footprints.zip",
+      "sha256": "671cb119639e489091b87a64e070d4aba1f22860ddfdbecc85ff143c0c295e28",
+      "bytes": 1084956,
+      "addedAt": "2026-11-10T14:11:05.504Z",
       "share": false
     }
   ]

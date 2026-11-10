@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "title": "\u5ba0\u7269\u673a\u4e09\u952e\u677f",
+  "title": "宠物机 XIAO 直插承载板",
   "manufacturing": {
     "name": "ordinary-2layer-fr4-1oz",
     "layers": 2,
@@ -83,7 +83,7 @@
     },
     "LCD_SCK": {
       "class": "cpu_io",
-      "rationale": "Existing display software SPI clock from XIAO D9/GPIO8."
+      "rationale": "Dedicated hardware SPI clock from XIAO D8/GPIO7 to 7P ST7789, no CS on selected screen."
     },
     "LCD_DATA": {
       "class": "cpu_io",
@@ -94,6 +94,18 @@
       "nominalWidthMm": 0.5,
       "minimumWidthMm": 0.5,
       "rationale": "Pass-through XIAO regulated 3.3 V to display, no supply conversion. Reserve 0.5 mm trace; no increase to vendor current capability claimed."
+    },
+    "LCD_RES": {
+      "class": "cpu_io",
+      "rationale": "3.3V screen control from XIAO D4/GPIO5; BLK open-drain low-off/high-Z-on, never GPIO LED supply."
+    },
+    "LCD_DC": {
+      "class": "cpu_io",
+      "rationale": "3.3V screen control from XIAO D5/GPIO6; BLK open-drain low-off/high-Z-on, never GPIO LED supply."
+    },
+    "LCD_BLK": {
+      "class": "cpu_io",
+      "rationale": "3.3V screen control from XIAO D6/GPIO43; BLK open-drain low-off/high-Z-on, never GPIO LED supply."
     }
   },
   "footprintExceptions": [],
@@ -139,18 +151,88 @@
         "bottom"
       ],
       "rationale": "2.2 mm NPTH locator: reserve hole plus 1 mm against copper; headless printed locating pin."
+    },
+    {
+      "name": "UPPER_BOSS_EDGE",
+      "purpose": "mounting_hole",
+      "shape": "circle",
+      "xMm": 27,
+      "yMm": 34.5,
+      "radiusMm": 4.5,
+      "layers": [
+        "top",
+        "bottom"
+      ],
+      "rationale": "3.5 mm radius shell-boss notch plus 1 mm copper-to-edge keepout; route D0 below header pads."
     }
   ],
-  "allowedOverlaps": [],
+  "allowedOverlaps": [
+    {
+      "componentRefs": [
+        "P_XIAO_A3",
+        "J_XIAO_A"
+      ],
+      "rationale": "Intentional male/female mating: male plastic above female socket; the pins enter female contacts."
+    },
+    {
+      "componentRefs": [
+        "P_XIAO_A4",
+        "J_XIAO_A"
+      ],
+      "rationale": "Intentional male/female mating: male plastic above female socket; the pins enter female contacts."
+    },
+    {
+      "componentRefs": [
+        "P_XIAO_B3",
+        "J_XIAO_B"
+      ],
+      "rationale": "Intentional male/female mating: male plastic above female socket; the pins enter female contacts."
+    },
+    {
+      "componentRefs": [
+        "P_XIAO_B4",
+        "J_XIAO_B"
+      ],
+      "rationale": "Intentional male/female mating: male plastic above female socket; the pins enter female contacts."
+    }
+  ],
   "allowedViaInPadComponents": [],
   "pcbRuleExceptions": [],
   "componentOrientations": [
     {
-      "componentRef": "J_GROVE",
-      "nativeOpening": "down",
-      "targetOpening": "up",
-      "expectedLayer": "bottom",
-      "rationale": "Horizontal internal cable heads toward the upper interior on the right side of battery."
+      "componentRef": "J_LCD",
+      "vertical": true,
+      "rationale": "7P female cable plugs along +Z outside XIAO board, ahead of key group."
+    },
+    {
+      "componentRef": "P_XIAO_A3",
+      "vertical": true,
+      "rationale": "Male pins solder to XIAO and mate vertically with carrier sockets."
+    },
+    {
+      "componentRef": "P_XIAO_A4",
+      "vertical": true,
+      "rationale": "Male pins solder to XIAO and mate vertically with carrier sockets."
+    },
+    {
+      "componentRef": "P_XIAO_B3",
+      "vertical": true,
+      "rationale": "Male pins solder to XIAO and mate vertically with carrier sockets."
+    },
+    {
+      "componentRef": "P_XIAO_B4",
+      "vertical": true,
+      "rationale": "Male pins solder to XIAO and mate vertically with carrier sockets."
+    },
+    {
+      "componentRef": "J_XIAO_A",
+      "vertical": true,
+      "rationale": "XIAO plugs from above using seven inner positions; outer eighth socket is unused."
+    },
+    {
+      "componentRef": "J_XIAO_B",
+      "vertical": true,
+      "rationale": "XIAO plugs from above using seven inner positions; outer eighth socket is unused."
     }
   ],
   "bomBindings": [
@@ -164,17 +246,40 @@
       "populate": true
     },
     {
-      "bomItemId": "key_header",
+      "bomItemId": "lcd_header",
       "designators": [
-        "J_KEYS",
-        "J_LCD_MCU"
+        "J_LCD"
       ],
-      "populate": false
+      "populate": true
     },
     {
-      "bomItemId": "grove_socket",
+      "bomItemId": "mcu",
       "designators": [
-        "J_GROVE"
+        "U_XIAO"
+      ],
+      "populate": true
+    },
+    {
+      "bomItemId": "xiao_pin_3",
+      "designators": [
+        "P_XIAO_A3",
+        "P_XIAO_B3"
+      ],
+      "populate": true
+    },
+    {
+      "bomItemId": "xiao_pin_4",
+      "designators": [
+        "P_XIAO_A4",
+        "P_XIAO_B4"
+      ],
+      "populate": true
+    },
+    {
+      "bomItemId": "xiao_sockets",
+      "designators": [
+        "J_XIAO_A",
+        "J_XIAO_B"
       ],
       "populate": true
     }

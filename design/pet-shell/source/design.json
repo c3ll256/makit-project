@@ -12,7 +12,7 @@
           "target": "form",
           "order": 0,
           "path": "design/pet-shell/source/parts/form/000-form.py",
-          "sha256": "8b9ee3e0cc00740a1e6d87f5c32271e6e708d6013051576e274e88f3fe7d82be"
+          "sha256": "342326a432776f56a5cb6f14956928123d8050af372784764ad9f054c8c2c88b"
         }
       ],
       "dependencies": []
@@ -42,7 +42,7 @@
           "target": "buttons",
           "order": 0,
           "path": "design/pet-shell/source/parts/buttons/000-buttons.py",
-          "sha256": "33569c904d5e4923812bfd3cc09234c5e8196988a6675aab1a58edf6c81b0e5b"
+          "sha256": "7b816777ce86f4ac7b3f0c90178e49d33699d272b3e59f64a8b105d88a614041"
         }
       ],
       "dependencies": [
@@ -58,7 +58,7 @@
           "target": "internals",
           "order": 0,
           "path": "design/pet-shell/source/parts/internals/000-internals.py",
-          "sha256": "b38a010b5dd22838fa2367682d6e00d6ab2ad292b5ac93005d40f23d899470ba"
+          "sha256": "5a31a1ef853247f107a7c801c44694c8f7edc057457a39ebd4adccd6460f8413"
         }
       ],
       "dependencies": [
@@ -70,11 +70,11 @@
       "label": "imports",
       "cells": [
         {
-          "id": "keys_pcb",
+          "id": "carrier_final_release",
           "target": "imports",
           "order": 0,
-          "path": "design/pet-shell/source/parts/imports/000-keys_pcb.py",
-          "sha256": "688865d5cb6b9b6d61ae4ebc3f03952a8fd0b992b962d89c79b5dd89e16c2f0f"
+          "path": "design/pet-shell/source/parts/imports/000-carrier_final_release.py",
+          "sha256": "a7e98adc1e95288523fa02561480b199a09124900e6127cf60035d38da184091"
         }
       ],
       "dependencies": []
@@ -88,10 +88,12 @@
           "target": "harness",
           "order": 0,
           "path": "design/pet-shell/source/parts/harness/000-harness.py",
-          "sha256": "d464f3718abd34defe8e5ae345efada7b8953e7033ee56397c5393d7af63affa"
+          "sha256": "3008892d3311f21c3d2114d3eafef06eabde6ceab40ea18245c2e8d58b892c19"
         }
       ],
-      "dependencies": []
+      "dependencies": [
+        "form"
+      ]
     },
     {
       "id": "pushers",
@@ -102,12 +104,44 @@
           "target": "pushers",
           "order": 0,
           "path": "design/pet-shell/source/parts/pushers/000-pushers.py",
-          "sha256": "eb64753c72b0eb024cc430d71b087b2617bb0ad42b4a6bbea68435f6580852b2"
+          "sha256": "c563231f850b646ddd90202be677741bbd602273a8c87d2c5033bc3c2b21d4c1"
         }
       ],
       "dependencies": [
         "form",
         "buttons"
+      ]
+    },
+    {
+      "id": "electronics",
+      "label": "electronics",
+      "cells": [
+        {
+          "id": "electronics",
+          "target": "electronics",
+          "order": 0,
+          "path": "design/pet-shell/source/parts/electronics/000-electronics.py",
+          "sha256": "75c2ec21f2da3b23536119d699b03a2e04bada60d57ebe20df439db2b26ce0ea"
+        }
+      ],
+      "dependencies": [
+        "form"
+      ]
+    },
+    {
+      "id": "battery_pad",
+      "label": "battery_pad",
+      "cells": [
+        {
+          "id": "battery_pad",
+          "target": "battery_pad",
+          "order": 0,
+          "path": "design/pet-shell/source/parts/battery_pad/000-battery_pad.py",
+          "sha256": "d0a39886900d7d45ff765b45a131be65b74a6e039c4c079c5df512bee4bc3a71"
+        }
+      ],
+      "dependencies": [
+        "form"
       ]
     }
   ],
@@ -118,7 +152,7 @@
       "label": "Back shell",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "ba0808e7a722285916686ebb0c84c901cb8763e20184a17f5003d954613ba889",
+      "shapeHash": "c33916594b9480e178fe63f628ae87c908e35ce9f0d58b40346a96a715e11e75",
       "transform": {
         "positionMm": [
           0,
@@ -145,7 +179,7 @@
       "label": "Front shell",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "d1278f1626611415b3f338d7c6626e00395eddc342f6562eb823c1ddf228bbeb",
+      "shapeHash": "ba692d2224c97d231fd2c2449972ae7b720d1b0a13e1a4e6e8f03ab137ed2e49",
       "transform": {
         "positionMm": [
           0,
@@ -229,7 +263,7 @@
       "material": "steel",
       "role": "fastener",
       "kind": "generated",
-      "shapeHash": "9f3171649b12bc9d79895c61a2a870a7d4efdc12acf8108318373f8f2933c78b",
+      "shapeHash": "a9ac0a0e8dac0990eff30de73d16a4028c6c22bc7063dd166b08467d117f96ff",
       "transform": {
         "positionMm": [
           0,
@@ -257,7 +291,7 @@
       "material": "steel",
       "role": "fastener",
       "kind": "generated",
-      "shapeHash": "90fec4a95cd4db7794d4eb4e6c1e08ff9d01f8ae64f93a5041577270f9ee6042",
+      "shapeHash": "72646538b8551f04d86e2034c7349d590a2d7b25b1510d335fdffabd63dabef4",
       "transform": {
         "positionMm": [
           0,
@@ -284,7 +318,7 @@
       "label": "Screen bezel",
       "material": "pla",
       "kind": "generated",
-      "shapeHash": "038620453d7f2142c896ff97438ab89da29577d6718fae69ca0bb921eef4e4ab",
+      "shapeHash": "31caf4f9875499320fccd192f6e96395b50a9ddf64085439b7730be991cfe863",
       "transform": {
         "positionMm": [
           0,
@@ -311,7 +345,7 @@
       "label": "Left button",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "4257ef10bdfbf0b39f3218c025a2e9cb66681f26736c3e15da5fa7b85b79a288",
+      "shapeHash": "5582ddfca9055d6126cbeedde0dfa10fb3c46c02cf77814c046fda8a96835d06",
       "transform": {
         "positionMm": [
           0,
@@ -338,7 +372,7 @@
       "label": "Middle button",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "d8f9b353607f12e92323844d1d11b7797b480fe964a5ebb9f0087a3b275d6ad5",
+      "shapeHash": "2da18d12dc4c1a1bbcf62605f1bc46c3ecc65f95b82fc4b3a826fac90ac01bf8",
       "transform": {
         "positionMm": [
           0,
@@ -365,7 +399,7 @@
       "label": "Right button",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "42adee48815e764185df2a38dff8abd9426b73d8deaaa39de2e857ea042d978c",
+      "shapeHash": "b0f4c9b81d314c4401d14a36f892a3de43255a0b0a5e2cba915f5b03ba77892a",
       "transform": {
         "positionMm": [
           0,
@@ -392,7 +426,7 @@
       "label": "503035 LiPo",
       "role": "reference",
       "kind": "generated",
-      "shapeHash": "e4b5d05b4d344eb20af8106d3d1f952cac48ecd553d7e950866bc9a712602e16",
+      "shapeHash": "6461e6073fefa71a3b0e303a52c58e4debe58bc03cb13bc7c50f0ae6b61a184e",
       "transform": {
         "positionMm": [
           0,
@@ -416,10 +450,10 @@
     {
       "id": "display_ref",
       "target": "internals",
-      "label": "Grove 1.2in IPS display",
+      "label": "YouXin 1.3in 7P ST7789",
       "role": "reference",
       "kind": "generated",
-      "shapeHash": "fba6618310c2877a6c39a64dbf9fed8560c69cf52b9f42c95b424ff78b1dcbd5",
+      "shapeHash": "4de7dfee2c089bf21d7cc74579fa289e8833a80183569e6aaeaee768f9be9fa4",
       "transform": {
         "positionMm": [
           0,
@@ -441,70 +475,16 @@
       "datums": []
     },
     {
-      "id": "dupont_ref",
-      "target": "internals",
-      "label": "XIAO detachable display harness",
-      "role": "reference",
-      "kind": "generated",
-      "shapeHash": "beaedf6d606c7c6bc71e08613521470b0105cb4b013448a48ec7a4f8a846fade",
-      "transform": {
-        "positionMm": [
-          0,
-          0,
-          0
-        ],
-        "rotationDeg": [
-          0,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
-      "id": "xiao_ref",
-      "target": "internals",
-      "label": "XIAO ESP32-S3",
-      "role": "reference",
-      "kind": "generated",
-      "shapeHash": "370e715f26eaad52ed804ed77ae71e0f1c86eb66f92a39a8b7d5b024c34d1244",
-      "transform": {
-        "positionMm": [
-          0,
-          0,
-          0
-        ],
-        "rotationDeg": [
-          0,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
-      "id": "keys_pcb",
+      "id": "carrier_final_release",
       "target": "imports",
-      "label": "Integrated Grove key PCB",
+      "label": "7P TFT carrier release",
       "kind": "imported",
-      "shapeHash": "7314882e5e6d016365b13eab2952ed3d7f1023b9e876f2d4ab6f47fd35cb74fb",
+      "shapeHash": "d2bfe99ad4a840a7fece5fa618c4604489985a90f92783adf6802f97942f6fc3",
       "transform": {
         "positionMm": [
-          -100,
+          -20,
           78.5,
-          12.505
+          3.14
         ],
         "rotationDeg": [
           0,
@@ -521,12 +501,66 @@
       "datums": []
     },
     {
-      "id": "grove_cable_route",
+      "id": "lcd_cable_route",
       "target": "harness",
-      "label": "Grove wire routing envelope (46 mm free route)",
+      "label": "Seven-wire cable routing",
       "role": "reference",
       "kind": "generated",
-      "shapeHash": "1119135cdb300281059f915e4cd12bf52a6a66ee7ba73876b22a4fe798306728",
+      "shapeHash": "9da57f3016c4097fedcbab9d7916297fdcf0e289c0f0f2038935940f8d28d422",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "lcd_carrier_plug",
+      "target": "harness",
+      "label": "Carrier 7P cable plug",
+      "role": "reference",
+      "kind": "generated",
+      "shapeHash": "c2c5060488d1f56176559bb4ba9e272221ee6f6552dece9ce8667db8686a6b39",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "lcd_display_plug",
+      "target": "harness",
+      "label": "Screen 7P cable plug",
+      "role": "reference",
+      "kind": "generated",
+      "shapeHash": "60fb3e3ebf87da173ff0ea0c04e97ca6d07fc4387531c65c36552fb14d3f51a3",
       "transform": {
         "positionMm": [
           0,
@@ -550,10 +584,10 @@
     {
       "id": "pusher_left",
       "target": "pushers",
-      "label": "Pusher Left",
+      "label": "Retainer left",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "ec17cc5de7405cfa3991ac0917ccccff353b841c959c1a47522c18c0cc7ec94f",
+      "shapeHash": "0a9ed50469814a40016d5201a72a4009be05a72c6a1d7c3488165f2c5a228e5d",
       "transform": {
         "positionMm": [
           0,
@@ -577,10 +611,10 @@
     {
       "id": "pusher_mid",
       "target": "pushers",
-      "label": "Pusher Mid",
+      "label": "Retainer mid",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "9263918318b698a6c57b9067a8eb304a5aa8f722b50acdd2853e33d1c21f1ecb",
+      "shapeHash": "fd6e6af7211c352c1da1a4f32deeede023cfbf2830f10590f4f3275592488b8c",
       "transform": {
         "positionMm": [
           0,
@@ -604,10 +638,64 @@
     {
       "id": "pusher_right",
       "target": "pushers",
-      "label": "Pusher Right",
+      "label": "Retainer right",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "f2bed7f4e7f1dd530bf298e1618f90bab815321e3a11b94a1e52b2be0f715c7c",
+      "shapeHash": "f79b4afd5ae1da3934f3d281aa0d3ba7be53bd4dbb61bcf989070879b83d5d1a",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "carrier_assembly",
+      "target": "electronics",
+      "label": "XIAO socket carrier, trimmed leads",
+      "role": "reference",
+      "kind": "generated",
+      "shapeHash": "afa0feb2d844b89fdff230f6bb59a4e3120772096905396b73efecd1d3d9f216",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "battery_pad_ref",
+      "target": "battery_pad",
+      "label": "1mm battery foam tape",
+      "role": "reference",
+      "kind": "generated",
+      "shapeHash": "97bb828ca0788258801f20f1fee1acd39ed7ddfb5f8efcb1c6d40b704ced1f64",
       "transform": {
         "positionMm": [
           0,
@@ -631,13 +719,13 @@
   ],
   "assets": [
     {
-      "id": "keys_pcb",
+      "id": "carrier_final_release",
       "kind": "step",
-      "path": "design/pet-shell/source/assets/13e16d91701a895ff2f5010f015f7d36a8f9e122c4a740a58be84dace34fff6d.step",
-      "sha256": "13e16d91701a895ff2f5010f015f7d36a8f9e122c4a740a58be84dace34fff6d",
-      "label": "Integrated Grove key PCB",
+      "path": "design/pet-shell/source/assets/29fc2a7f6f6e4b51e461504595b95e87c341bb95897acae1e9132e302d527883.step",
+      "sha256": "29fc2a7f6f6e4b51e461504595b95e87c341bb95897acae1e9132e302d527883",
+      "label": "7P TFT carrier release",
       "provenance": {
-        "sourcePath": "manufacturing/pet-keys/releases/10610ae9f34a5d549de4894a0ba9dd48e061727f979d359917232642db5cb4de/package/assembly.step"
+        "sourcePath": "manufacturing/pet-keys/releases/9d8ce43d260fdabeef3a9211db0f142047ae84c5dc72cf83e389f6a19debcfc8/package/assembly.step"
       }
     }
   ],
@@ -645,88 +733,128 @@
     {
       "kind": "press_fit",
       "budget_mm": 0.15,
-      "reason": "Removable eccentric pusher pressed onto cap peg, 0.15 mm diametral interference; shoulder carries the key force.",
+      "reason": "Retaining disc pressed onto cap peg, 0.15 mm diametral interference; the cap peg presses the switch directly.",
       "a": "pusher_left",
       "b": "button_left"
     },
     {
       "kind": "press_fit",
       "budget_mm": 0.15,
-      "reason": "Removable eccentric pusher pressed onto cap peg, 0.15 mm diametral interference; shoulder carries the key force.",
+      "reason": "Retaining disc pressed onto cap peg, 0.15 mm diametral interference; the cap peg presses the switch directly.",
       "a": "pusher_mid",
       "b": "button_mid"
     },
     {
       "kind": "press_fit",
       "budget_mm": 0.15,
-      "reason": "Removable eccentric pusher pressed onto cap peg, 0.15 mm diametral interference; shoulder carries the key force.",
+      "reason": "Retaining disc pressed onto cap peg, 0.15 mm diametral interference; the cap peg presses the switch directly.",
       "a": "pusher_right",
       "b": "button_right"
     }
   ],
-  "updatedAt": "2026-11-09T20:57:22.593Z",
+  "updatedAt": "2026-11-10T16:04:21.345Z",
   "parameters": {
     "form": {
       "lobe_count": 6,
       "lobe_radius": 18,
       "lobe_ring_radius": 22,
       "notch_radius": 6,
-      "body_thickness": 22,
+      "body_thickness": 30,
       "front_edge_radius": 7,
       "back_edge_radius": 5,
       "wall_thickness": 2,
       "seam_height": 8,
       "seam_reveal": 0.5,
-      "screen_center_y": 3,
+      "screen_center_y": 4.3,
       "bezel_radius": 21,
       "side_button_radius": 4.5,
       "mid_button_radius": 5.5,
       "nub_radius": 4.5,
       "nub_cord_hole_radius": 1.3,
-      "button_ring_radius": 27.5,
-      "usb_wall_thickness": 1,
-      "usb_opening_clearance": 0.3,
+      "usb_opening_clearance": 0.6,
       "usb_pocket_width": 13,
       "usb_pocket_height": 7,
       "usb_pocket_corner_radius": 1.5,
       "usb_surround_width": 1.2,
-      "usb_face_to_socket": 0.35,
-      "switch_top_z": 19.1,
-      "key_pcb_bottom_z": 12.505,
+      "usb_face_to_socket": 1.35,
+      "switch_top_z": 27.1,
+      "key_pcb_bottom_z": 3.14,
       "key_locator_radius": 0.9,
       "key_support_radius": 1.5,
       "key_upper_retention_gap": 0.2,
-      "button_inward_shift": 3,
-      "button_side_drop": 2,
-      "button_middle_raise": 1,
-      "button_pusher_radius": 2.9,
+      "button_pusher_radius": 3.7,
       "button_pusher_thickness": 1.2,
       "button_pusher_clearance": 0.3,
-      "button_working_travel": 0.25
+      "button_working_travel": 0.25,
+      "button_half_span": 14.5,
+      "button_side_y": -23.5,
+      "button_middle_y": -26.5,
+      "battery_center_x": -8.6,
+      "battery_center_y": 1.5,
+      "actuator_contact_z": 9.735,
+      "button_guide_outer_radius": 5.2,
+      "button_guide_inner_radius": 2.9,
+      "button_guide_bottom_z": 10.6,
+      "battery_tray_rim_top": 8.3,
+      "pcb_edge_pocket_clearance": 0.15,
+      "usb_internal_entry_clearance": 0.15,
+      "display_pcb_width": 27.78,
+      "display_pcb_height": 39.22,
+      "display_pcb_thickness": 1.6,
+      "display_frame_width": 26.16,
+      "display_frame_height": 29.22,
+      "display_front_thickness": 2,
+      "display_active_offset_y": 1.58,
+      "display_header_from_top": 1.5,
+      "display_mount_hole_radius": 1,
+      "display_mount_hole_inset": 2.5,
+      "battery_floor_height": 3.1,
+      "battery_tray_rim_top_7p": 11.6
     },
     "bezel": {
       "bezel_thickness": 2.4,
       "bezel_inset": 0.6,
       "bezel_flange": 2,
-      "screen_window_width": 24,
-      "screen_window_height": 24,
-      "screen_window_corner": 2
+      "screen_window_width": 23.8,
+      "screen_window_height": 23.8,
+      "screen_window_corner": 0.4
     },
     "buttons": {
       "button_dome_height": 1.8,
       "button_coupling_peg_radius": 1.6
     },
     "internals": {
-      "show_reference_parts": 1
+      "show_reference_parts": 1,
+      "display_pcb_corner_chamfer": 0.8,
+      "display_pin_square": 0.64,
+      "display_header_body": 2.5,
+      "display_pin_length": 6,
+      "display_active_width": 23.4
     },
     "imports": {},
     "harness": {
       "wire_envelope_radius": 0.4,
-      "wire_bundle_pitch": 0.9
+      "wire_bundle_pitch": 0.9,
+      "grove_plug_envelope_width": 10,
+      "grove_plug_envelope_length": 9,
+      "grove_plug_envelope_height": 5,
+      "lcd_plug_width": 17.78,
+      "lcd_plug_depth": 2.6,
+      "lcd_plug_length": 14,
+      "lcd_plug_contact_clearance": 0.53
     },
     "pushers": {
       "pusher_socket_diametral_interference": 0.15,
       "pusher_socket_leadin": 0.2
+    },
+    "electronics": {
+      "maximum_solder_tail_below_pcb": 0.6,
+      "native_socket_tail_limit": 0.85
+    },
+    "battery_pad": {
+      "adhesive_thickness": 1,
+      "adhesive_width": 20,
+      "adhesive_height": 25
     }
   }
 }

@@ -17,8 +17,8 @@
       "source": "default"
     },
     "display": {
-      "value": "seeed/grove-1-2inch-ips-display (1.2 in 240x240 IPS, ST7789, 40x40 mm board)",
-      "source": "default"
+      "value": "优信电子 1.3寸TFT彩屏模块(带铁框)_7P焊接；ST7789，240x240 IPS，3.3V，无按键",
+      "source": "user"
     },
     "buttons": {
       "value": "3 tactile switches 6x6 mm with printed domed caps; centre one larger",
@@ -36,7 +36,7 @@
       "value": {
         "width": 74,
         "height_with_nub": 86,
-        "thickness": 22
+        "thickness": 30
       },
       "source": "default"
     },
@@ -53,11 +53,11 @@
       "source": "user"
     },
     "key_pcb_implementation": {
-      "value": "Shaped three-key carrier PCB, 59x26.5 mm envelope, right-angle Grove display socket, XIAO D0/D1/D3 keys and D9/D10 display; two-layer FR4, manual through-hole assembly; solder wire pigtails to DNP header footprints.",
+      "value": "Shaped 52.5x45.5 mm XIAO/key/7P TFT carrier, 2-layer 1.6 mm FR4. Original USB/XIAO and button XY retained; two 3 mm low 8P machined sockets plus 3 mm 4+3 round male headers, seven positions used. Screen header shell centre (20.2,-13), vertical +Z, pin1 on +X end. Keys D7/D9/D3; TFT D8/D10/D4/D5/D6.",
       "source": "default"
     },
     "display_grove_on_pcb": {
-      "value": "Integrate the display Grove connector onto pet-keys PCB",
+      "value": "Replace the Grove display connector with a 7-pin plug-in cable connector on pet-keys, for the selected YouXin 1.3-inch TFT; adapt PCB and enclosure.",
       "source": "user"
     },
     "charging_opening_appearance": {
@@ -65,8 +65,29 @@
       "source": "user"
     },
     "button_group_spacing": {
-      "value": "Bring the three front buttons closer together.",
+      "value": "Place the left and right front buttons at the green marked lower-inner positions in mark 1; keep the middle button at its current position.",
       "source": "user"
+    },
+    "xiao_direct_plug": {
+      "value": "XIAO ESP32-S3 plugs directly into pet-keys via two 7-position 2.54 mm rows; verify enclosure fit.",
+      "source": "user"
+    },
+    "display_interface": {
+      "value": "7-pin 2.54 mm SPI: GND,VCC,SCL,SDA,RES,DC,BLK; no CS. SCL is SPI clock and SDA is MOSI. BLK low disables backlight; default floating state enabled. Seller drawings in uploaded 20261110T152829794Z images.",
+      "source": "research"
+    },
+    "display_geometry_mm": {
+      "value": {
+        "pcb_width": 27.78,
+        "pcb_height": 39.22,
+        "active_width": 23.4,
+        "active_height": 23.4
+      },
+      "source": "research"
+    },
+    "display_cable": {
+      "value": "One pre-crimped 7P female-to-female 2.54 mm cable, 100 mm wire length, pin 1 to pin 1, no reversal; female housings default envelope 17.78x2.6x14 mm.",
+      "source": "default"
     }
   },
   "open_questions": []

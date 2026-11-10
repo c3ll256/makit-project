@@ -1,35 +1,34 @@
-f = part("form")
-show_refs = param("show_reference_parts", 1.0)
-
-# Grove 1.2in IPS display: 40x40 board with 8 edge notches (vendor .brd), LCM on the front, Grove socket on the back
-bcx, bcy = f.board_c
-board = Pos(bcx, bcy, f.board_back_z) * Box(f.DISP_BOARD, f.DISP_BOARD, f.DISP_BOARD_T, align=(Align.CENTER, Align.CENTER, Align.MIN))
-for (nx, ny) in [(-10, 20), (10, 20), (-10, -20), (10, -20), (20, 10), (20, -10), (-20, 10), (-20, -10)]:
-    board = board - Pos(bcx + nx, bcy + ny, f.board_back_z) * Cylinder(2.0, 10)
-lcm = Pos(bcx, bcy + 0.25, f.board_front_z) * Box(f.DISP_LCM_W, f.DISP_LCM_H, f.DISP_LCM_T, align=(Align.CENTER, Align.CENTER, Align.MIN))
-j1 = Pos(bcx, (f.j1_box[1] + f.j1_box[2]) / 2, f.board_back_z) * Box(2 * f.j1_box[0], f.j1_box[2] - f.j1_box[1], f.DISP_J1_H, align=(Align.CENTER, Align.CENTER, Align.MAX))
-board.color = srgb("#1f6fb8")
-lcm.color = srgb("#14161c")
-j1.color = srgb("#f2f2f2")
-publish("display_ref", [board, lcm, j1], "Grove 1.2in IPS display", role="reference")
-
-battery = Pos(f.bat_c[0], f.bat_c[1], f.bat_floor_z) * Box(f.BAT_X, f.BAT_Y, f.BAT_T, align=(Align.CENTER, Align.CENTER, Align.MIN))
-battery.color = srgb("#b8b8b8")
-publish("battery_ref", battery, "503035 LiPo", role="reference")
-
-xpcb = Pos(f.xiao_xc, 0, f.xiao_bottom_z) * Box(f.XIAO_L, f.XIAO_W, f.XIAO_PCB_T, align=(Align.CENTER, Align.CENTER, Align.MIN))
-# USB-C receptacle: 8.94 x 3.2 shell with fully round ends
-usb_len = 7.4
-usb = Pos(f.xiao_x1 + f.XIAO_USB_OVERHANG - usb_len / 2, 0, f.xiao_bottom_z + f.XIAO_PCB_T + f.XIAO_USB_H / 2) * Rot(0, 90, 0) * extrude(SlotOverall(8.94, f.XIAO_USB_H, rotation=90), usb_len / 2, both=True)
-xpcb.color = srgb("#2b5fa8")
-usb.color = srgb("#c0c0c0")
-publish("xiao_ref", [xpcb, usb], "XIAO ESP32-S3", role="reference")
-
-
-# Existing detachable XIAO display harness, retained alongside the PCB.
-hdr = Pos((f.dupont_x0 + f.dupont_x1)/2, -f.XIAO_W/2 + f.HDR_BODY_W/2, f.dupont_z0) * Box(f.dupont_x1-f.dupont_x0, f.HDR_BODY_W, f.HDR_BODY_H, align=(Align.CENTER,Align.CENTER,Align.MIN))
-plugs=[hdr]
-for k in f.dupont_pins:
-    plugs.append(Pos(f.xiao_pin_x(k),-f.XIAO_W/2 + f.HDR_BODY_W + f.DUPONT_LEN/2 + 0.1,f.dupont_z0)*Box(f.DUPONT_SQ-0.1,f.DUPONT_LEN,f.HDR_BODY_H,align=(Align.CENTER,Align.CENTER,Align.MIN)))
-for p in plugs: p.color=srgb("#202020")
-publish("dupont_ref",plugs,"XIAO detachable display harness",role="reference")
+f=part("form")
+show_refs=param("show_reference_parts",1.0)
+corner=param("display_pcb_corner_chamfer",0.8)
+pin_size=param("display_pin_square",0.64)
+hdr_body=param("display_header_body",2.5)
+pin_len=param("display_pin_length",6.0)
+bcx,bcy=f.board_c
+board=Pos(bcx,bcy,f.board_back_z)*Box(f.DISP_W,f.DISP_H,f.DISP_BOARD_T,align=(Align.CENTER,Align.CENTER,Align.MIN))
+board=chamfer(board.edges().filter_by(Axis.Z),corner)
+holes=[]
+for sx in (-1,1):
+    for sy in (-1,1):
+        holes.append(Pos(bcx+sx*(f.DISP_W/2-f.DISP_HOLE_INSET),bcy+sy*(f.DISP_H/2-f.DISP_HOLE_INSET),f.board_back_z-0.1)*Cylinder(f.DISP_HOLE_R,f.DISP_BOARD_T+0.2,align=(Align.CENTER,Align.CENTER,Align.MIN)))
+board=board.cut(*holes)
+frame=Pos(bcx,bcy,f.board_front_z)*Box(f.DISP_LCM_W,f.DISP_LCM_H,f.DISP_LCM_T,align=(Align.CENTER,Align.CENTER,Align.MIN))
+# Thin metal frame surrounds the active glass; no generic 40 mm placeholder.
+active=param("display_active_width",23.4)
+glass_cut=Pos(f.screen_cx,f.screen_cy,f.lcm_front_z)*Box(active,active,0.5)
+frame=frame-glass_cut
+glass=Pos(f.screen_cx,f.screen_cy,f.lcm_front_z-0.25)*Box(active,active,0.5)
+hy=bcy+f.DISP_H/2-f.DISP_HEADER_Y
+header=Pos(0,hy,f.board_back_z-hdr_body)*Box(17.78,2.5,hdr_body,align=(Align.CENTER,Align.CENTER,Align.MIN))
+pins=[]
+for i in range(7):
+    pins.append(Pos((i-3)*2.54,hy,f.board_back_z-hdr_body-pin_len)*Box(pin_size,pin_size,pin_len,align=(Align.CENTER,Align.CENTER,Align.MIN)))
+board.color=srgb("#277ba3")
+frame.color=srgb("#63686d")
+glass.color=srgb("#14171e")
+header.color=srgb("#26282b")
+for p in pins:p.color=srgb("#b9a15a")
+publish("display_ref",[board,frame,glass,header,*pins],"YouXin 1.3in 7P ST7789",role="reference")
+battery=Pos(f.bat_c[0],f.bat_c[1],f.bat_floor_z)*Box(f.BAT_X,f.BAT_Y,f.BAT_T,align=(Align.CENTER,Align.CENTER,Align.MIN))
+battery.color=srgb("#b8b8b8")
+publish("battery_ref",battery,"503035 LiPo",role="reference")

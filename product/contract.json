@@ -2,12 +2,12 @@
   "version": 2,
   "artifact_level": "assembly",
   "deliverable_intent": "manufacturing_package",
-  "summary": "Handheld cloud-shaped virtual pet: FDM two-piece shell holding a XIAO ESP32-S3, a Grove 1.2in 240x240 IPS display, a LiPo cell and three tactile buttons.",
+  "summary": "Handheld cloud-shaped virtual pet: FDM shell holding a directly socketed XIAO ESP32-S3, user-selected YouXin 1.3in 240x240 ST7789 7-pin TFT, LiPo and three buttons.",
   "required_interfaces": [
     {
       "id": "display_fit",
       "kind": "internal_fit",
-      "description": "40x40 mm display board seated behind a window exposing the 24.76x26.8 mm screen",
+      "description": "Seat the selected 27.78x39.22 mm YouXin 7-pin display PCB; expose its 23.4x23.4 mm active area. Include the pre-soldered header and mating cable envelope using disclosed defaults where the seller supplies no height.",
       "source": "contract_interface",
       "required": true
     },
@@ -28,7 +28,7 @@
     {
       "id": "key_pcb_fit",
       "kind": "internal_fit",
-      "description": "U-shaped 60x26x1.6 mm key PCB, top at shell Z13.5; replace switch clips and shorten underlying posts before assembly.",
+      "description": "Direct-plug XIAO/key/7P TFT carrier; 7-pin plug-in cable replaces Grove by user choice. Preserve USB position and three button axes.",
       "source": "contract_interface",
       "required": true
     }
@@ -52,13 +52,32 @@
       "description": "Seeed XIAO ESP32-S3 wiki (dimensions, pin map)"
     },
     {
-      "id": "grove_ips_1_2_wiki",
-      "source": "catalog_required",
-      "description": "Seeed Grove 1.2-inch IPS Display wiki (screen and board size)"
+      "id": "youxin_tft_variant",
+      "source": "user_requested",
+      "description": "Selected 1.3-inch metal-frame 7P pre-soldered YouXin TFT variant",
+      "path": "product/references/uploads/20261110T152829794Z-1-img-1025.jpg"
+    },
+    {
+      "id": "youxin_tft_specs",
+      "source": "user_requested",
+      "description": "Seller table: 1.3-inch column gives ST7789,240x240,3.3V,SPI and dimensions",
+      "path": "product/references/uploads/20261110T152829794Z-2-img-1021.jpg"
+    },
+    {
+      "id": "youxin_tft_drawing",
+      "source": "user_requested",
+      "description": "Use upper 1.3-inch 7P drawing only; lower drawing is another module",
+      "path": "product/references/uploads/20261110T152829794Z-3-img-1023.jpg"
+    },
+    {
+      "id": "youxin_tft_pins",
+      "source": "user_requested",
+      "description": "Seller interface definitions; 1.3-inch lacks CS and BLK is low-off",
+      "path": "product/references/uploads/20261110T152829794Z-5-img-1022.jpg"
     }
   ],
   "assembly_story": {
-    "installation": "Display and buttons sit in the front shell, XIAO and battery in the back shell; the halves close with screws from the back.",
+    "installation": "Fit XIAO on its carrier, seat battery, and mount the selected YouXin display with its matching bezel and supports. Connect the display using the seven-pin straight-through female cable; verify header and cable clearances before lowering front assembly and closing rear screws.",
     "maintenance": "Remove the back screws to replace the battery.",
     "user_access": [
       "three front buttons",
@@ -80,13 +99,17 @@
         "interface_ids": [
           "display_fit",
           "usb_c_access",
-          "button_caps"
+          "button_caps",
+          "key_pcb_fit"
         ],
         "reference_ids": [
           "ref_handheld_photo",
           "ref_cloud_outline",
           "xiao_esp32s3_wiki",
-          "grove_ips_1_2_wiki"
+          "youxin_tft_variant",
+          "youxin_tft_specs",
+          "youxin_tft_drawing",
+          "youxin_tft_pins"
         ]
       }
     ]

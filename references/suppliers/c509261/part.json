@@ -1,0 +1,91 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-10T14:13:11.168Z",
+  "lcsc_code": "C509261",
+  "manufacturer": "XFCN(兴飞)",
+  "manufacturer_part_number": "MH254V-11-04-1000",
+  "description": "Pin Header 4 Position 2.54mm Pitch Single Row Through Hole -40°C~+105°C",
+  "category": "排针",
+  "package": "Through Hole,P=2.54mm",
+  "jlcpcb_part_class": "extended",
+  "parameters": {
+    "Connector Type": "Through Hole",
+    "Number of Rows": "1",
+    "Pitch": "2.54mm",
+    "Current Rating": "3A",
+    "Circluar Pins/Square Pins": "Round Pin",
+    "Insulation Height": "3mm",
+    "Length of Mating Pin": "3.5mm",
+    "Number of PINs": "4P",
+    "Operating Temperature": "-40°C~+105°C",
+    "Length of End Connection Pin": "3.5mm",
+    "Color": "Black",
+    "Pin Structure": "1x4P"
+  },
+  "lcsc_stock": 8320,
+  "price_breaks": [
+    {
+      "quantity": 5,
+      "unitPrice": 0.5338,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 50,
+      "unitPrice": 0.4186,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 150,
+      "unitPrice": 0.361,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1000,
+      "unitPrice": 0.3178,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 2000,
+      "unitPrice": 0.2832,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 5000,
+      "unitPrice": 0.2659,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 5,
+      "unitPrice": 0.0875,
+      "currency": "USD"
+    },
+    {
+      "quantity": 50,
+      "unitPrice": 0.0687,
+      "currency": "USD"
+    },
+    {
+      "quantity": 150,
+      "unitPrice": 0.0592,
+      "currency": "USD"
+    },
+    {
+      "quantity": 1000,
+      "unitPrice": 0.0521,
+      "currency": "USD"
+    },
+    {
+      "quantity": 2000,
+      "unitPrice": 0.0465,
+      "currency": "USD"
+    },
+    {
+      "quantity": 5000,
+      "unitPrice": 0.0436,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/523020.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/3e33f8cd8deda556a808675a8aa3b092.pdf?productCode=C509261",
+  "datasheet_file": "references/suppliers/c509261/c509261-datasheet.pdf"
+}

@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "releaseId": "9d8ce43d260fdabeef3a9211db0f142047ae84c5dc72cf83e389f6a19debcfc8",
+  "designId": "pet-keys",
+  "buildId": "7be8bffbb235877e7c5e5718cbc0493aee4e7a844df5cb96d4fcd4b3f61ceef7",
+  "candidateId": "58c645d7b476da1a3a05e90d5d4686859cd171e62fa6986e815aec2db548c7e2",
+  "approvedAt": "2026-11-10T15:56:50.399Z",
+  "sections": [
+    {
+      "id": "fabrication",
+      "status": "ready",
+      "files": [
+        "drill/board-NPTH.drl",
+        "drill/board-PTH.drl",
+        "drill/pet-keys-drill-report.txt",
+        "gerbers/board-B_Cu.gbl",
+        "gerbers/board-B_Mask.gbs",
+        "gerbers/board-B_Paste.gbp",
+        "gerbers/board-B_Silkscreen.gbo",
+        "gerbers/board-Edge_Cuts.gm1",
+        "gerbers/board-F_Cu.gtl",
+        "gerbers/board-F_Mask.gts",
+        "gerbers/board-F_Paste.gtp",
+        "gerbers/board-F_Silkscreen.gto",
+        "gerbers/board-job.gbrjob"
+      ],
+      "blockingCodes": []
+    },
+    {
+      "id": "assembly",
+      "status": "ready",
+      "files": [
+        "jlc-smt-bom.csv",
+        "jlc-smt-placement.csv"
+      ],
+      "blockingCodes": []
+    },
+    {
+      "id": "mechanical",
+      "status": "ready",
+      "files": [
+        "3dmodels/pet-keys.3dshapes/SW_PUSH_6mm_H5mm.step",
+        "3dmodels/pet-keys.3dshapes/xiao-esp32s3.step",
+        "assembly.glb",
+        "assembly.step"
+      ],
+      "blockingCodes": []
+    }
+  ],
+  "package": [
+    {
+      "path": "3dmodels/pet-keys.3dshapes/SW_PUSH_6mm_H5mm.step",
+      "sha256": "4461bd8b9765c0569a962e3d7bf254d3f2785ff83e20b087ee0469fb2f89fe2c",
+      "sizeBytes": 179948
+    },
+    {
+      "path": "3dmodels/pet-keys.3dshapes/xiao-esp32s3.step",
+      "sha256": "870ad45c7af5d92324cec4c6ae65fbf86e3b049d5a97ab9ffd9039ebd73455dd",
+      "sizeBytes": 1335902
+    },
+    {
+      "path": "assembly.glb",
+      "sha256": "717624fd1d6100e6d418707bc42827c311825bee412b59ac38362645ca000892",
+      "sizeBytes": 24291624
+    },
+    {
+      "path": "assembly.step",
+      "sha256": "29fc2a7f6f6e4b51e461504595b95e87c341bb95897acae1e9132e302d527883",
+      "sizeBytes": 8149304
+    },
+    {
+      "path": "circuit.json",
+      "sha256": "d8e8192882fc2aea4f66c049faa123d1361a57f28cf7bc44bb87c89808e1d045",
+      "sizeBytes": 421122
+    },
+    {
+      "path": "drill/board-NPTH.drl",
+      "sha256": "608f379cfc9db438496c79fd84a7f69587611caeca20397ea68f80ff950e3700",
+      "sizeBytes": 355
+    },
+    {
+      "path": "drill/board-PTH.drl",
+      "sha256": "9814f32ae1c793d09421423b758b9ea29c4627a4871ce5bdba338849437a4285",
+      "sizeBytes": 1033
+    },
+    {
+      "path": "drill/pet-keys-drill-report.txt",
+      "sha256": "cdaef1ddd6c6214344357adee9f28d22cc6a1eaaf4705101993aa1b931b83f61",
+      "sizeBytes": 716
+    },
+    {
+      "path": "gerbers/board-B_Cu.gbl",
+      "sha256": "a2d38a7f37bb988179150947c3aba6ecad89818113d4edfcb98929a25e1d9a1f",
+      "sizeBytes": 64937
+    },
+    {
+      "path": "gerbers/board-B_Mask.gbs",
+      "sha256": "28650d1338aa432bfb74be1f28f4e0633ab1f5e4e5ffcbf74778ab4f4c8ea570",
+      "sizeBytes": 1723
+    },
+    {
+      "path": "gerbers/board-B_Paste.gbp",
+      "sha256": "b97d3db0d32893e97dfa24fb8fba90d262d22bef91af22e435a5929f78f4e862",
+      "sizeBytes": 450
+    },
+    {
+      "path": "gerbers/board-B_Silkscreen.gbo",
+      "sha256": "c1c7f628972a8d364ea05e965315eca116ef9031afff36b98ca7dcad2751b9b0",
+      "sizeBytes": 451
+    },
+    {
+      "path": "gerbers/board-Edge_Cuts.gm1",
+      "sha256": "acf396994f6c766134f05406834af1e0bdf7d41f334a0f320b44e0fb27b1dee1",
+      "sizeBytes": 3024
+    },
+    {
+      "path": "gerbers/board-F_Cu.gtl",
+      "sha256": "c085bc413d75171f7fbe616873b875aeecd74bb7c23049858f8970dc9a14db72",
+      "sizeBytes": 67585
+    },
+    {
+      "path": "gerbers/board-F_Mask.gts",
+      "sha256": "5cf7180a850df8dd48ba9d97d482068a7e1fbd94d172b9a01bfd5a8ebcbfb57b",
+      "sizeBytes": 1723
+    },
+    {
+      "path": "gerbers/board-F_Paste.gtp",
+      "sha256": "5978329a0025967b506cfd5d2c8f4a166e08dfb725d3c6b7d4b7b70caf974b9c",
+      "sizeBytes": 450
+    },
+    {
+      "path": "gerbers/board-F_Silkscreen.gto",
+      "sha256": "bc5fcdc3d6f4565ef895e10fda29ebb7a92e087e883272ef1793c3ad4707fdf8",
+      "sizeBytes": 5917
+    },
+    {
+      "path": "gerbers/board-job.gbrjob",
+      "sha256": "0157db8d2c18fb6486ebc0b6e92d0cac87b7404218cd33c1889170ec0dea7d2d",
+      "sizeBytes": 2657
+    },
+    {
+      "path": "jlc-smt-bom.csv",
+      "sha256": "aa1612c451e93d09b111d32b4569cc296efc2d633dfe8745feda984e6b0a473c",
+      "sizeBytes": 72
+    },
+    {
+      "path": "jlc-smt-placement.csv",
+      "sha256": "9f7341ff1e2e3b6c2c0d7cb9ba2dfdac47befb92965ff74f99c129c23e83ff30",
+      "sizeBytes": 83
+    },
+    {
+      "path": "manifest.json",
+      "sha256": "2a11805696a49ae6ad0dc9e44c1e9c3b9453d6b0317d5140a529f0477258f83f",
+      "sizeBytes": 14400
+    },
+    {
+      "path": "previews/gerber-bottom.png",
+      "sha256": "48c8e2c318eb27f7c57e7539335bb90804e1d50029117ab5af202edb18971723",
+      "sizeBytes": 142751
+    },
+    {
+      "path": "previews/gerber-bottom.svg",
+      "sha256": "787f56209b558445ec06b965449c8ea6b4111f0a0d16da6dba0862c65717e129",
+      "sizeBytes": 65209
+    },
+    {
+      "path": "previews/gerber-top.png",
+      "sha256": "056f3ffa24222158f4e31b1d0a75110b7c12176d40fdc0a2f3c34f49034bdf77",
+      "sizeBytes": 144263
+    },
+    {
+      "path": "previews/gerber-top.svg",
+      "sha256": "68bb1c566d254348c138bff65348108b046a8206a8cb6a5a13c1ef822c0c145f",
+      "sizeBytes": 71280
+    }
+  ]
+}

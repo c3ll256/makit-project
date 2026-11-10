@@ -5,61 +5,56 @@
   "fits": [],
   "steps": [
     {
-      "title": "放稳前壳",
+      "title": "准备后壳",
       "parts": [
-        "pet-shell:front_shell"
+        "pet-shell:back_shell"
       ]
     },
     {
-      "title": "从正面插入三个按键帽",
+      "title": "焊接并插好XIAO，定位载板",
+      "note": "开关及7P背脚修至≤0.6 mm；排母原尾脚约0.81 mm可保留。XIAO用3 mm圆针，配3 mm低排母，每侧第八位空，USB端对1脚。",
       "parts": [
-        "pet-shell:button_left",
-        "pet-shell:button_mid",
-        "pet-shell:button_right"
+        "pet-shell:carrier_assembly"
       ],
       "from": "+z"
     },
     {
-      "title": "从壳内压入三个对应推板",
-      "note": "长端指向对应开关，压到帽销止口肩；默认0.15 mm直径干涉，先试装一组，不要锤击。",
+      "title": "垫胶固定电池",
+      "note": "用1 mm胶，电池接XIAO BAT+/BAT-，不叠胶、不挤压电池。",
       "parts": [
+        "pet-shell:battery_pad_ref",
+        "pet-shell:battery_ref"
+      ],
+      "from": "+z"
+    },
+    {
+      "title": "预装前壳与屏幕、按钮",
+      "note": "在台面装好屏幕与边框；帽从前面插入，挡片从后面压上，检查长杆自由滑动。此步骤表示前壳组件就位，先保持开盖以接线。",
+      "parts": [
+        "pet-shell:front_shell",
+        "pet-shell:bezel",
+        "pet-shell:display_ref",
+        "pet-shell:button_left",
+        "pet-shell:button_mid",
+        "pet-shell:button_right",
         "pet-shell:pusher_left",
         "pet-shell:pusher_mid",
         "pet-shell:pusher_right"
       ],
-      "from": "-z"
+      "from": "+z"
     },
     {
-      "title": "装入边框、屏幕和三键板",
-      "note": "两个板端排针不装，短线直接焊孔；确认推板远端落在开关按杆顶面。",
+      "title": "接好7针线并合盖",
+      "note": "母对母100 mm预压接线按GND/VCC/SCL/SDA/RES/DC/BLK逐脚对应，勿反插。余线平铺电池上方；前壳组件竖直降低，USB经后开通道就位。",
       "parts": [
-        "pet-shell:bezel",
-        "pet-shell:display_ref",
-        "pet-shell:keys_pcb"
-      ],
-      "from": "-z"
+        "pet-shell:lcd_display_plug",
+        "pet-shell:lcd_carrier_plug",
+        "pet-shell:lcd_cable_route"
+      ]
     },
     {
-      "title": "连接主控、电池和屏幕线",
-      "note": "XIAO弯排针朝内，线束平铺；胶不垫高USB板位。",
-      "parts": [
-        "pet-shell:xiao_ref",
-        "pet-shell:dupont_ref",
-        "pet-shell:battery_ref",
-        "pet-shell:grove_cable_route"
-      ],
-      "from": "-z"
-    },
-    {
-      "title": "对齐定位销，合上后盖",
-      "parts": [
-        "pet-shell:back_shell"
-      ],
-      "from": "-z"
-    },
-    {
-      "title": "轻拧四颗 M2×6 螺丝",
-      "note": "确认三个按键自由回弹，线束未被挤住，再均匀拧紧。",
+      "title": "检查回弹后轻拧背面四颗螺钉",
+      "note": "4×M2×6 ISO7046沉头螺钉。确认不夹线，再均匀轻拧。",
       "parts": [
         "pet-shell:screw_0",
         "pet-shell:screw_1",
@@ -69,5 +64,5 @@
       "from": "-z"
     }
   ],
-  "updatedAt": "2026-11-09T20:58:16.652Z"
+  "updatedAt": "2026-11-10T16:05:24.210Z"
 }

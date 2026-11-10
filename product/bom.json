@@ -2,7 +2,7 @@
   "schema_version": 1,
   "status": "draft",
   "bom_ready": true,
-  "requirements_digest": "ed78b9d936ff32e35b14c4512ae3319eb4b1b3d872c3bb5095a568ec5eeac565",
+  "requirements_digest": "cceeaad530c35fdc1378bf7e5891a696692e63e3c96ea37daf96d36a68c25ad1",
   "items": [
     {
       "id": "mcu",
@@ -15,28 +15,32 @@
       "platform_ref": "seeed/xiao-esp32s3",
       "source": "platform_index",
       "datasheet_url": "https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/",
-      "selection_reason": "Smallest indexed MCU with LiPo charging and USB-C; fits behind the display in a 22 mm thick shell.",
+      "selection_reason": "Existing XIAO ESP32-S3, directly socketed at the same USB opening using its exact vendor STEP.",
       "cad_relevance": {
         "notes": "USB-C opening on shell side; 21x17.8 mm board pocket"
       },
-      "part_identity": "054df65989fd25d0"
+      "part_identity": "054df65989fd25d0",
+      "designators": [
+        "U_XIAO"
+      ]
     },
     {
       "id": "display",
       "role": "screen",
-      "name": "Grove - 1.2 Inch IPS Display",
-      "description": "1.2 in 240x240 IPS, ST7789, 2-wire serial, 40x40 mm board, screen 24.76x26.8 mm",
+      "name": "优信电子 1.3寸TFT彩屏模块(带铁框)_7P焊接",
+      "description": "240x240 IPS colour display, ST7789, 3.3V SPI, 7 pre-soldered pins, no buttons and no CS pin; 27.78x39.22 mm PCB, 23.4x23.4 mm active area.",
       "quantity": 1,
-      "manufacturer": "Seeed Studio",
-      "part_number": "seeed/grove-1-2inch-ips-display",
-      "platform_ref": "seeed/grove-1-2inch-ips-display",
-      "source": "platform_index",
-      "datasheet_url": "https://wiki.seeedstudio.com/grove_1.2inch_ips_display/",
-      "selection_reason": "Square colour screen like the reference; the only indexed 240x240 square IPS module.",
+      "supplier": "优信电子 / YouXin Electronic",
+      "part_number": "1.3寸TFT彩屏模块(带铁框)_7P焊接",
+      "source": "user",
+      "procurement_status": "external_procurement_required",
+      "required_user_evidence": [],
+      "supply_risk": "Seller photos establish variant, supply, pin order and planar dimensions. No overall stack-height drawing; use disclosed dimensional defaults during CAD. Module bought separately; a store link and current stock/price are procurement reminders only.",
+      "selection_reason": "User selected this exact seven-pin, metal-frame module; supplied specification and mechanical images establish the facts. It replaces the Grove display in the target product.",
       "cad_relevance": {
-        "notes": "40x40 mm board pocket and screen window"
+        "notes": "27.78x39.22 mm PCB; AA 23.4 square. Four 2 mm holes, side centres 2.5 mm from PCB edges by default. Module front stack default 3.6 mm (1.6 PCB+2.0 LCM); presoldered male body 2.5 mm and 6 mm pins; matching 14 mm cable housing reserved. Seller gives no total thickness."
       },
-      "part_identity": "ec33c9d53cee4d94"
+      "part_identity": "802a64d5f61d22f8"
     },
     {
       "id": "battery",
@@ -47,9 +51,9 @@
       "part_number": "503035",
       "source": "generic",
       "procurement_status": "generic_default",
-      "selection_reason": "Default size that fits under the display board inside the shell.",
+      "selection_reason": "Retain 30x35x5 mm cell in tray centre(-8.6,1.5), floor Z2.1. Screen shifts upward1.3 mm to clear its top edge and avoid lower closing boss.",
       "cad_relevance": {
-        "notes": "tray 30.6 x 35.6 mm behind the display (cell laid with its 30 mm side across); leads to XIAO BAT+/BAT- pads"
+        "notes": "30x35x5 mm, tray centre(-8.6,1.5), floor Z2.1; no compression."
       },
       "part_identity": "c306e0eab1dc70a9"
     },
@@ -84,7 +88,7 @@
       },
       "selection_reason": "Supplier drawing p1: 6x6 body, 5 mm total height, 6.5x4.5 mm pin spacing; supplier footprint selected. Pins 1/2 common, pins 3/4 common; press joins the two groups.",
       "cad_relevance": {
-        "notes": "Fixed released PCB switches; visible caps cluster via three detachable 1.2 mm eccentric pushers: side caps 3 mm inward/2 mm down, middle cap 1 mm up; pitch23.428 mm. Pushers press onto 3.2 mm cap pegs; shoulder transmits force."
+        "notes": "Caps and switch actuator centres at shell (-14.5,-23.5),(0,-26.5),(14.5,-23.5); side switches rotate -35/+35 degrees to clear screen and curved board edge. Cap pegs act directly; separate discs retain caps."
       },
       "part_identity": "c0f0c6700ba0bcdf",
       "image_url": "https://assets.lcsc.com/images/lcsc/900x900/20250911_Korean-Hroparts-Elec-K2-1102DP-C4SW-04_C110153_front.jpg"
@@ -107,141 +111,187 @@
     {
       "id": "hookup_wire",
       "role": "cable",
-      "name": "30 AWG silicone hookup wire, ~60 cm",
-      "description": "Two four-wire PCB pigtails; board ends soldered directly to J_KEYS/J_LCD_MCU holes; display harness detachable at the inward-facing XIAO header.",
+      "name": "30 AWG silicone wire for battery leads, ~20 cm",
+      "description": "Battery leads only; MCU-to-carrier signal harnesses removed.",
       "quantity": 1,
       "part_number": "30AWG silicone wire",
       "source": "generic",
       "procurement_status": "generic_default",
-      "selection_reason": "Default wire allowance for eight short conductors plus service slack, 0.8 mm maximum insulation diameter in the routing envelope.",
+      "selection_reason": "Only BAT+/BAT- remain soldered; the display uses a bought pre-crimped seven-way cable and keys route on PCB.",
       "part_identity": "ed3fc91e62b772dd"
     },
     {
       "id": "foam_tape",
       "role": "consumable",
       "name": "Double-sided foam tape, 1 mm thick",
-      "description": "holds the XIAO on its ledges and the battery in its tray",
+      "description": "Holds battery in the offset tray",
       "quantity": 1,
       "part_number": "1mm double-sided foam tape",
       "source": "generic",
       "procurement_status": "generic_default",
-      "selection_reason": "The XIAO has no mounting holes; tape is the vendor-neutral way to fix it.",
+      "selection_reason": "Retain battery in the offset tray; XIAO remains socketed.",
       "part_identity": "ca3a41afcd1b7ddd"
     },
     {
       "id": "shell_print",
       "role": "printed_part",
-      "name": "Printed parts: front shell, back shell, screen bezel, 3 button caps, 3 eccentric pushers",
-      "description": "FDM PETG: lavender shells, caps and detachable pushers; dark bezel. Caps insert from the outside; pushers press onto cap pegs from inside.",
+      "name": "Printed parts: front shell, back shell, screen bezel, 3 button caps, 3 retaining discs",
+      "description": "30 mm thick matched front/back shells, narrow TFT supports, 23.8 mm square bezel window, three long button rods and retaining discs.",
       "quantity": 1,
       "part_number": "pet-shell printed set",
       "source": "printed",
       "procurement_status": "printed",
-      "selection_reason": "Model in this project.",
+      "selection_reason": "Preserve approved cloud outline and USB position; 30 mm default thickness clears two ordinary14 mm cable housings and wire turns. Screen centre Y4.3, 1.3 mm above previous position.",
       "part_identity": "9d1fcea5dcdaafb4"
-    },
-    {
-      "id": "header",
-      "role": "connector",
-      "name": "2.54 mm right-angle male pin header, 1x4 (cut from a 1x40 strip)",
-      "description": "soldered on the XIAO underside at GND, 3V3, D10, D9",
-      "quantity": 1,
-      "part_number": "2.54mm right angle header 1x4",
-      "source": "generic",
-      "procurement_status": "generic_default",
-      "selection_reason": "XIAO display header faces inward under the XIAO; the four female housings point toward +Y, clear of PCB and closure bosses.",
-      "cad_relevance": {
-        "notes": "2.5 mm plastic body under the XIAO edge"
-      },
-      "part_identity": "812a5563e77416ea"
-    },
-    {
-      "id": "key_header",
-      "role": "connector",
-      "name": "HX PZ2.54-1x4P ZZ",
-      "description": "Pin Header 4 Position 2.54mm Pitch Single Row Through Hole -40°C~+105°C",
-      "designators": [
-        "J_KEYS",
-        "J_LCD_MCU"
-      ],
-      "quantity": 2,
-      "supplier": "LCSC",
-      "manufacturer": "hanxia(韩下)",
-      "part_number": "HX PZ2.54-1x4P ZZ",
-      "mpn": "HX PZ2.54-1x4P ZZ",
-      "lcsc_code": "C32713270",
-      "jlc_smt_library": "extended",
-      "procurement_status": "selected",
-      "package": "Through Hole,P=2.54mm",
-      "footprint": "jlcpcb:C32713270",
-      "stock": 23205,
-      "source": "lcsc",
-      "product_url": "https://item.szlcsc.com/34444550.html",
-      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/98f9d1b96e707a9c30bcf0ccd8a51ba5.pdf?productCode=C32713270",
-      "assembly": {
-        "population": "not_mounted",
-        "method": "not_assembled"
-      },
-      "selection_reason": "DNP headers: solder low-profile wire pigtails to the existing through-hole pads instead, retaining XIAO-side detachability. Required by 22 mm enclosure height.",
-      "cad_relevance": {
-        "notes": "Both header footprints remain DNP; solder pigtails directly. No vertical headers or rear female plugs."
-      },
-      "part_identity": "f1b4f1ddcfaadf41",
-      "image_url": "https://assets.lcsc.com/images/lcsc/900x900/20240819_hanxia-HX-PZ2-54-1x4P-ZZ_C32713270_front.jpg"
-    },
-    {
-      "id": "grove_socket",
-      "role": "connector",
-      "name": "ZX-HY2.0-4PWZ",
-      "description": "Connector Header 4 position 2mm Pitch 2A Right Angle -25°C~+85°C",
-      "designators": [
-        "J_GROVE"
-      ],
-      "quantity": 1,
-      "supplier": "LCSC",
-      "manufacturer": "Megastar(兆星)",
-      "part_number": "ZX-HY2.0-4PWZ",
-      "mpn": "ZX-HY2.0-4PWZ",
-      "lcsc_code": "C7429589",
-      "jlc_smt_library": "extended",
-      "procurement_status": "selected",
-      "package": "Through Hole,Right Angle,P=2mm",
-      "footprint": "jlcpcb:C7429589",
-      "stock": 526,
-      "source": "lcsc",
-      "product_url": "https://item.szlcsc.com/8427506.html",
-      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/750cd1231fb455332ddba790b34a0c60.pdf?productCode=C7429589",
-      "image_url": "https://assets.lcsc.com/images/lcsc/900x900/20230704_Megastar-ZX-HY2-0-4PWZ_C7429589_front.jpg",
-      "assembly": {
-        "population": "mounted",
-        "method": "through_hole",
-        "side": "bottom"
-      },
-      "selection_reason": "Right-angle HY 2.0 mm 4P. Drawing matches Grove NS-Tech mating geometry: 10 mm housing, 3.5 mm key, 0.5 mm square pins; 5.1 mm height. Validate final pin order against source Grove schematic.",
-      "cad_relevance": {
-        "notes": "Rear central bridge at PCB (10,-5), rotation180; shell (10,-26.5), opens +Y; plug envelope checked."
-      },
-      "part_identity": "424a5a7e663592d2"
-    },
-    {
-      "id": "grove_cable",
-      "role": "cable",
-      "name": "Grove - Universal 4 Pin Buckled cable (screen-supplied)",
-      "quantity": 1,
-      "part_number": "Grove 4-pin cable supplied with display",
-      "source": "vendor",
-      "procurement_status": "generic_default",
-      "source_url": "https://wiki.seeedstudio.com/grove_1.2inch_ips_display/",
-      "part_identity": "7a43dae7980644a4"
     },
     {
       "id": "pet_keys_pcb",
       "role": "custom_pcb",
-      "name": "Pet device key and Grove carrier PCB, 59x26.5 mm shaped outline, 2-layer FR4 1.6 mm 1 oz",
+      "name": "Pet key/7P TFT/XIAO socket carrier, shaped 2-layer FR4 1.6 mm 1 oz",
       "quantity": 1,
       "source": "custom",
-      "selection_reason": "User requested custom key board and integrated display Grove socket; outline and boss notches fitted to cloud shell.",
+      "selection_reason": "Direct XIAO plug-in and three button axes retained; 7-pin ST7789 interface replaces Grove by user choice.",
       "part_identity": "df3f619804a92fdb"
+    },
+    {
+      "id": "xiao_pin_4",
+      "role": "connector",
+      "name": "MH254V-11-04-1000",
+      "description": "Pin Header 4 Position 2.54mm Pitch Single Row Through Hole -40°C~+105°C",
+      "quantity": 2,
+      "supplier": "LCSC",
+      "manufacturer": "XFCN(兴飞)",
+      "part_number": "MH254V-11-04-1000",
+      "mpn": "MH254V-11-04-1000",
+      "lcsc_code": "C509261",
+      "jlc_smt_library": "extended",
+      "procurement_status": "selected",
+      "package": "Through Hole,P=2.54mm",
+      "source": "lcsc",
+      "product_url": "https://item.szlcsc.com/523020.html",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/3e33f8cd8deda556a808675a8aa3b092.pdf?productCode=C509261",
+      "stock": 8320,
+      "selection_reason": "3 mm insulation, 2.54 mm pitch. Two 4+3 contact segments make each 7-pin row without cutting. Manual assembly; Extended parts selected for mechanical fit.",
+      "part_identity": "ae5fb2903b29a86c",
+      "designators": [
+        "P_XIAO_A4",
+        "P_XIAO_B4"
+      ],
+      "assembly": {
+        "population": "mounted",
+        "method": "module_mount",
+        "side": "top"
+      },
+      "image_url": "https://assets.lcsc.com/images/lcsc/900x900/20240304_XFCN-MH254V-11-04-1000_C509261_front.jpg"
+    },
+    {
+      "id": "xiao_pin_3",
+      "role": "connector",
+      "name": "MH254V-11-03-1000",
+      "description": "Pin Header 3 Position 2.54mm Pitch Single Row Through Hole -40°C~+105°C",
+      "quantity": 2,
+      "supplier": "LCSC",
+      "manufacturer": "XFCN(兴飞)",
+      "part_number": "MH254V-11-03-1000",
+      "mpn": "MH254V-11-03-1000",
+      "lcsc_code": "C2844842",
+      "jlc_smt_library": "extended",
+      "procurement_status": "selected",
+      "package": "Through Hole,P=2.54mm",
+      "source": "lcsc",
+      "product_url": "https://item.szlcsc.com/3036865.html",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/d3b0c9beb2cfc53f660013bcacf31f9c.pdf?productCode=C2844842",
+      "stock": 6962,
+      "selection_reason": "3 mm insulation, 2.54 mm pitch. Two 4+3 contact segments make each 7-pin row without cutting. Manual assembly; Extended parts selected for mechanical fit.",
+      "part_identity": "f735afa4d2207bb7",
+      "designators": [
+        "P_XIAO_A3",
+        "P_XIAO_B3"
+      ],
+      "assembly": {
+        "population": "mounted",
+        "method": "module_mount",
+        "side": "top"
+      },
+      "image_url": "https://assets.lcsc.com/images/lcsc/900x900/20230128_XFCN-MH254V-11-03-1000_C2844842_front.jpg"
+    },
+    {
+      "id": "xiao_sockets",
+      "role": "connector",
+      "name": "MF254V-11-08-0540",
+      "description": "Female Header 8 Position 2.54mm Pitch Single Row Through Hole -40°C~+105°C",
+      "designators": [
+        "J_XIAO_A",
+        "J_XIAO_B"
+      ],
+      "quantity": 2,
+      "supplier": "LCSC",
+      "manufacturer": "XFCN(兴飞)",
+      "part_number": "MF254V-11-08-0540",
+      "mpn": "MF254V-11-08-0540",
+      "lcsc_code": "C2915256",
+      "jlc_smt_library": "extended",
+      "procurement_status": "selected",
+      "package": "Through Hole,P=2.54mm",
+      "footprint": "jlcpcb:C2915256",
+      "stock": 1544,
+      "source": "lcsc",
+      "product_url": "https://item.szlcsc.com/3208216.html",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/0aba9e4b7c05cfc7ea1c1270bc86973f.pdf?productCode=C2915256",
+      "image_url": "https://assets.lcsc.com/images/lcsc/900x900/20260526_XFCN-MF254V-11-08-0540_C2915256_front.jpg",
+      "assembly": {
+        "population": "mounted",
+        "method": "through_hole",
+        "side": "top"
+      },
+      "selection_reason": "3 mm low-profile 2.54 mm machined sockets, inner seven positions used by XIAO; eighth position at antenna end remains unused. Extended/manual assembly chosen for fit.",
+      "part_identity": "a64c991fcc81658e"
+    },
+    {
+      "id": "lcd_header",
+      "role": "connector",
+      "name": "HX PZ2.54-1x7P ZZ",
+      "description": "Pin Header 7 Position 2.54mm Pitch Single Row Through Hole -40°C~+105°C",
+      "designators": [
+        "J_LCD"
+      ],
+      "quantity": 1,
+      "supplier": "LCSC",
+      "manufacturer": "hanxia(韩下)",
+      "part_number": "HX PZ2.54-1x7P ZZ",
+      "mpn": "HX PZ2.54-1x7P ZZ",
+      "lcsc_code": "C32713273",
+      "jlc_smt_library": "extended",
+      "procurement_status": "selected",
+      "package": "Through Hole,P=2.54mm",
+      "footprint": "jlcpcb:C32713273",
+      "stock": 1467,
+      "source": "lcsc",
+      "product_url": "https://item.szlcsc.com/34444553.html",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/f79f1905a9f9ea419348ed1fcaf69eab.pdf?productCode=C32713273",
+      "image_url": "https://assets.lcsc.com/images/lcsc/900x900/20240819_hanxia-HX-PZ2-54-1x7P-ZZ_C32713273_front.jpg",
+      "assembly": {
+        "population": "mounted",
+        "method": "through_hole",
+        "side": "top"
+      },
+      "selection_reason": "Supplier drawing p1: 7 contacts at 2.54 mm, 17.78 mm body, 2.5 mm insulation, 6 mm mating pins, 3 mm solder tails. Vertical hand-soldered header ahead of keys, outside XIAO body. Right-angle candidates rejected because mated cable crossed the XIAO socket row.",
+      "cad_relevance": {
+        "notes": "At shell(20.2,-13), vertical +Z mating, pin1 at+X. Header insulation ends Z7.235;14 mm female housing ends Z21.235; cable turns below screen board Z23.3."
+      },
+      "part_identity": "a44233f444e37d51"
+    },
+    {
+      "id": "lcd_cable",
+      "role": "cable",
+      "name": "2.54 mm 1x7P female-to-female pre-crimped cable, 100 mm, straight through",
+      "part_number": "2.54mm 7P F-F 100mm straight-through",
+      "quantity": 1,
+      "source": "generic",
+      "procurement_status": "generic_default",
+      "description": "Seven insulated 28 AWG wires, 100 mm between housings, female terminals for 0.64 mm square pins; GND-to-GND through BLK-to-BLK. Default 17.78x2.6x14 mm housings.",
+      "selection_reason": "User chose one 7-pin cable. Buy pre-crimped, not seven loose soldered wires; confirm function labels at both ends because connector insertion directions differ.",
+      "part_identity": "b55ca09692e4d9f2"
     }
   ]
 }

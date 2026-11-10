@@ -8,9 +8,9 @@
     },
     {
       "ref": "display",
-      "platform": "seeed/grove-1-2inch-ips-display",
+      "name": "优信电子 1.3寸TFT彩屏模块(带铁框)_7P焊接",
       "quantity": 1,
-      "note": "Display-supplied Grove-to-Grove cable to J_GROVE on pet-keys; J_LCD_MCU harness to XIAO GND/3V3/D10/D9."
+      "note": "User-selected external module, ST7789 240x240 3.3V; one 7P female-to-female cable to carrier J_LCD."
     },
     {
       "ref": "battery",
@@ -36,94 +36,16 @@
   "connections": [
     {
       "from": {
-        "part": "display",
-        "pin": "SCL"
-      },
-      "to": {
-        "part": "mcu",
-        "pin": "D9"
-      },
-      "bus": "spi",
-      "via": "grove-4pin",
-      "note": "Display Grove cable → pet-keys J_GROVE.4 → PCB → J_LCD_MCU.4 → XIAO D9/GPIO8 clock yellow. Supplier J_GROVE numbering is reversed relative to the display connector: cable colour/function is preserved. PCB-side headers are DNP: solder short wires into the named holes; screen harness uses the inward-facing XIAO right-angle header.",
-      "evidence": [
-        "https://raw.githubusercontent.com/Seeed-Studio/wiki-documents/docusaurus-version/sites/en/docs/Sensor/LCD_Displays/Grove_Series/Grove-1.2_inch_IPS_Display.md",
-        "https://raw.githubusercontent.com/Seeed-Studio/wiki-documents/docusaurus-version/sites/en/docs/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO_ESP32S3_Getting_Started.md",
-        "https://raw.githubusercontent.com/Longan-Labs/Grove-1.2-Inch-IPS-Display/main/datasheet_WLK1201SPI-4PIN%20.pdf",
-        "https://core-electronics.com.au/grove-4-pin-female-jumper-to-grove-4-pin-conversion-cable-5-pcs-per-pack-seeed-studio.html",
-        "https://item.szlcsc.com/8427506.html"
-      ]
-    },
-    {
-      "from": {
-        "part": "display",
-        "pin": "SDA"
-      },
-      "to": {
-        "part": "mcu",
-        "pin": "D10"
-      },
-      "bus": "spi",
-      "via": "grove-4pin",
-      "note": "Display Grove cable → pet-keys J_GROVE.3 → PCB → J_LCD_MCU.3 → XIAO D10/GPIO9 data white. Supplier J_GROVE numbering is reversed relative to the display connector: cable colour/function is preserved. PCB-side headers are DNP: solder short wires into the named holes; screen harness uses the inward-facing XIAO right-angle header.",
-      "evidence": [
-        "https://raw.githubusercontent.com/Seeed-Studio/wiki-documents/docusaurus-version/sites/en/docs/Sensor/LCD_Displays/Grove_Series/Grove-1.2_inch_IPS_Display.md",
-        "https://raw.githubusercontent.com/Seeed-Studio/wiki-documents/docusaurus-version/sites/en/docs/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO_ESP32S3_Getting_Started.md",
-        "https://raw.githubusercontent.com/Longan-Labs/Grove-1.2-Inch-IPS-Display/main/datasheet_WLK1201SPI-4PIN%20.pdf",
-        "https://core-electronics.com.au/grove-4-pin-female-jumper-to-grove-4-pin-conversion-cable-5-pcs-per-pack-seeed-studio.html",
-        "https://item.szlcsc.com/8427506.html"
-      ]
-    },
-    {
-      "from": {
-        "part": "display",
-        "pin": "VCC"
-      },
-      "to": {
-        "part": "mcu",
-        "pin": "3V3"
-      },
-      "bus": "power",
-      "via": "grove-4pin",
-      "note": "Display Grove cable → pet-keys J_GROVE.2 → PCB → J_LCD_MCU.2 → XIAO 3.3 V red. Supplier J_GROVE numbering is reversed relative to the display connector: cable colour/function is preserved. PCB-side headers are DNP: solder short wires into the named holes; screen harness uses the inward-facing XIAO right-angle header.",
-      "evidence": [
-        "https://raw.githubusercontent.com/Seeed-Studio/wiki-documents/docusaurus-version/sites/en/docs/Sensor/LCD_Displays/Grove_Series/Grove-1.2_inch_IPS_Display.md",
-        "https://raw.githubusercontent.com/Seeed-Studio/wiki-documents/docusaurus-version/sites/en/docs/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO_ESP32S3_Getting_Started.md",
-        "https://core-electronics.com.au/grove-4-pin-female-jumper-to-grove-4-pin-conversion-cable-5-pcs-per-pack-seeed-studio.html",
-        "https://item.szlcsc.com/8427506.html"
-      ]
-    },
-    {
-      "from": {
-        "part": "display",
-        "pin": "GND"
-      },
-      "to": {
-        "part": "mcu",
-        "pin": "GND"
-      },
-      "bus": "power",
-      "via": "grove-4pin",
-      "note": "Display Grove cable → pet-keys J_GROVE.1 → PCB → J_LCD_MCU.1 → XIAO ground black. Supplier J_GROVE numbering is reversed relative to the display connector: cable colour/function is preserved. PCB-side headers are DNP: solder short wires into the named holes; screen harness uses the inward-facing XIAO right-angle header.",
-      "evidence": [
-        "https://raw.githubusercontent.com/Seeed-Studio/wiki-documents/docusaurus-version/sites/en/docs/Sensor/LCD_Displays/Grove_Series/Grove-1.2_inch_IPS_Display.md",
-        "https://raw.githubusercontent.com/Seeed-Studio/wiki-documents/docusaurus-version/sites/en/docs/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO_ESP32S3_Getting_Started.md",
-        "https://core-electronics.com.au/grove-4-pin-female-jumper-to-grove-4-pin-conversion-cable-5-pcs-per-pack-seeed-studio.html",
-        "https://item.szlcsc.com/8427506.html"
-      ]
-    },
-    {
-      "from": {
         "part": "btn_left",
         "pin": "1"
       },
       "to": {
         "part": "mcu",
-        "pin": "D0"
+        "pin": "D7"
       },
       "bus": "gpio",
-      "via": "solder",
-      "note": "D0 = GPIO1, internal pull-up; switch leg 2 to GND; via key PCB J_KEYS.2 and four-wire harness. Switch pads 1/2=KEY, 3/4=GND. PCB-side headers are DNP: solder short wires into the named holes; screen harness uses the inward-facing XIAO right-angle header.",
+      "via": "other",
+      "note": "Direct plug-in carrier: keys D7/D9/D3 through J_XIAO_A; screen D9/D10/3V3/GND through J_XIAO_B and J_GROVE. No MCU signal pigtails. USB end aligns pin 1 of both sockets. Supplier Grove numbering reversed relative to display; preserve cable functions.",
       "evidence": [
         "https://raw.githubusercontent.com/Seeed-Studio/wiki-documents/docusaurus-version/sites/en/docs/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO_ESP32S3_Getting_Started.md",
         "https://item.szlcsc.com/111374.html"
@@ -136,11 +58,11 @@
       },
       "to": {
         "part": "mcu",
-        "pin": "D1"
+        "pin": "D9"
       },
       "bus": "gpio",
-      "via": "solder",
-      "note": "D1 = GPIO2, internal pull-up; switch leg 2 to GND; via key PCB J_KEYS.3 and four-wire harness. Switch pads 1/2=KEY, 3/4=GND. PCB-side headers are DNP: solder short wires into the named holes; screen harness uses the inward-facing XIAO right-angle header.",
+      "via": "other",
+      "note": "Direct plug-in carrier: keys D7/D9/D3 through J_XIAO_A; screen D9/D10/3V3/GND through J_XIAO_B and J_GROVE. No MCU signal pigtails. USB end aligns pin 1 of both sockets. Supplier Grove numbering reversed relative to display; preserve cable functions.",
       "evidence": [
         "https://raw.githubusercontent.com/Seeed-Studio/wiki-documents/docusaurus-version/sites/en/docs/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO_ESP32S3_Getting_Started.md",
         "https://item.szlcsc.com/111374.html"
@@ -156,8 +78,8 @@
         "pin": "D3"
       },
       "bus": "gpio",
-      "via": "solder",
-      "note": "D3 = GPIO4, internal pull-up; D2/GPIO3 skipped (JTAG strapping pin); via key PCB J_KEYS.4 and four-wire harness. Switch pads 1/2=KEY, 3/4=GND. PCB-side headers are DNP: solder short wires into the named holes; screen harness uses the inward-facing XIAO right-angle header.",
+      "via": "other",
+      "note": "Direct plug-in carrier: keys D7/D9/D3 through J_XIAO_A; screen D9/D10/3V3/GND through J_XIAO_B and J_GROVE. No MCU signal pigtails. USB end aligns pin 1 of both sockets. Supplier Grove numbering reversed relative to display; preserve cable functions.",
       "evidence": [
         "https://raw.githubusercontent.com/Seeed-Studio/wiki-documents/docusaurus-version/sites/en/docs/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO_ESP32S3_Getting_Started.md",
         "https://item.szlcsc.com/111374.html"
@@ -166,53 +88,53 @@
     {
       "from": {
         "part": "btn_left",
-        "pin": "2"
+        "pin": "3"
       },
       "to": {
         "part": "mcu",
         "pin": "GND"
       },
       "bus": "gpio",
-      "via": "solder",
+      "via": "other",
       "evidence": [
         "https://raw.githubusercontent.com/Seeed-Studio/wiki-documents/docusaurus-version/sites/en/docs/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO_ESP32S3_Getting_Started.md",
         "https://item.szlcsc.com/111374.html"
       ],
-      "note": "; via key PCB J_KEYS.1 and four-wire harness. Switch pads 1/2=KEY, 3/4=GND. PCB-side headers are DNP: solder short wires into the named holes; screen harness uses the inward-facing XIAO right-angle header."
+      "note": "K2-1102DP-C4SW-04: pins1/2 are internally common GPIO, pins3/4 internally common GND. All four pads carry corresponding PCB nets; press joins groups. Keys left/mid/right D7/D9/D3."
     },
     {
       "from": {
         "part": "btn_mid",
-        "pin": "2"
+        "pin": "3"
       },
       "to": {
         "part": "mcu",
         "pin": "GND"
       },
       "bus": "gpio",
-      "via": "solder",
+      "via": "other",
       "evidence": [
         "https://raw.githubusercontent.com/Seeed-Studio/wiki-documents/docusaurus-version/sites/en/docs/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO_ESP32S3_Getting_Started.md",
         "https://item.szlcsc.com/111374.html"
       ],
-      "note": "; via key PCB J_KEYS.1 and four-wire harness. Switch pads 1/2=KEY, 3/4=GND. PCB-side headers are DNP: solder short wires into the named holes; screen harness uses the inward-facing XIAO right-angle header."
+      "note": "K2-1102DP-C4SW-04: pins1/2 are internally common GPIO, pins3/4 internally common GND. All four pads carry corresponding PCB nets; press joins groups. Keys left/mid/right D7/D9/D3."
     },
     {
       "from": {
         "part": "btn_right",
-        "pin": "2"
+        "pin": "3"
       },
       "to": {
         "part": "mcu",
         "pin": "GND"
       },
       "bus": "gpio",
-      "via": "solder",
+      "via": "other",
       "evidence": [
         "https://raw.githubusercontent.com/Seeed-Studio/wiki-documents/docusaurus-version/sites/en/docs/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO_ESP32S3_Getting_Started.md",
         "https://item.szlcsc.com/111374.html"
       ],
-      "note": "; via key PCB J_KEYS.1 and four-wire harness. Switch pads 1/2=KEY, 3/4=GND. PCB-side headers are DNP: solder short wires into the named holes; screen harness uses the inward-facing XIAO right-angle header."
+      "note": "K2-1102DP-C4SW-04: pins1/2 are internally common GPIO, pins3/4 internally common GND. All four pads carry corresponding PCB nets; press joins groups. Keys left/mid/right D7/D9/D3."
     },
     {
       "from": {
@@ -244,6 +166,132 @@
       "evidence": [
         "https://raw.githubusercontent.com/Seeed-Studio/wiki-documents/docusaurus-version/sites/en/docs/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO_ESP32S3_Getting_Started.md"
       ]
+    },
+    {
+      "from": {
+        "part": "display",
+        "pin": "GND"
+      },
+      "to": {
+        "part": "mcu",
+        "pin": "GND"
+      },
+      "bus": "power",
+      "via": "other",
+      "note": "J_LCD pin 1, single 7P straight-through cable; verify function labels before battery connection. SCL/SDA are SPI, no CS pin; dedicated SPI bus. BLK low=off, high-Z=on; GPIO controls, does not supply LED current.",
+      "evidence": [
+        "https://raw.githubusercontent.com/espressif/arduino-esp32/master/variants/XIAO_ESP32S3/pins_arduino.h",
+        "product/references/uploads/20261110T152829794Z-3-img-1023.jpg",
+        "product/references/uploads/20261110T152829794Z-5-img-1022.jpg"
+      ]
+    },
+    {
+      "from": {
+        "part": "display",
+        "pin": "VCC"
+      },
+      "to": {
+        "part": "mcu",
+        "pin": "3V3"
+      },
+      "bus": "power",
+      "via": "other",
+      "note": "J_LCD pin 2, single 7P straight-through cable; verify function labels before battery connection. SCL/SDA are SPI, no CS pin; dedicated SPI bus. BLK low=off, high-Z=on; GPIO controls, does not supply LED current.",
+      "evidence": [
+        "https://raw.githubusercontent.com/espressif/arduino-esp32/master/variants/XIAO_ESP32S3/pins_arduino.h",
+        "product/references/uploads/20261110T152829794Z-3-img-1023.jpg",
+        "product/references/uploads/20261110T152829794Z-5-img-1022.jpg"
+      ]
+    },
+    {
+      "from": {
+        "part": "display",
+        "pin": "SCL"
+      },
+      "to": {
+        "part": "mcu",
+        "pin": "D8"
+      },
+      "bus": "spi",
+      "via": "other",
+      "note": "J_LCD pin 3, single 7P straight-through cable; verify function labels before battery connection. SCL/SDA are SPI, no CS pin; dedicated SPI bus. BLK low=off, high-Z=on; GPIO controls, does not supply LED current.",
+      "evidence": [
+        "https://raw.githubusercontent.com/espressif/arduino-esp32/master/variants/XIAO_ESP32S3/pins_arduino.h",
+        "product/references/uploads/20261110T152829794Z-3-img-1023.jpg",
+        "product/references/uploads/20261110T152829794Z-5-img-1022.jpg"
+      ]
+    },
+    {
+      "from": {
+        "part": "display",
+        "pin": "SDA"
+      },
+      "to": {
+        "part": "mcu",
+        "pin": "D10"
+      },
+      "bus": "spi",
+      "via": "other",
+      "note": "J_LCD pin 4, single 7P straight-through cable; verify function labels before battery connection. SCL/SDA are SPI, no CS pin; dedicated SPI bus. BLK low=off, high-Z=on; GPIO controls, does not supply LED current.",
+      "evidence": [
+        "https://raw.githubusercontent.com/espressif/arduino-esp32/master/variants/XIAO_ESP32S3/pins_arduino.h",
+        "product/references/uploads/20261110T152829794Z-3-img-1023.jpg",
+        "product/references/uploads/20261110T152829794Z-5-img-1022.jpg"
+      ]
+    },
+    {
+      "from": {
+        "part": "display",
+        "pin": "RES"
+      },
+      "to": {
+        "part": "mcu",
+        "pin": "D4"
+      },
+      "bus": "gpio",
+      "via": "other",
+      "note": "J_LCD pin 5, single 7P straight-through cable; verify function labels before battery connection. SCL/SDA are SPI, no CS pin; dedicated SPI bus. BLK low=off, high-Z=on; GPIO controls, does not supply LED current.",
+      "evidence": [
+        "https://raw.githubusercontent.com/espressif/arduino-esp32/master/variants/XIAO_ESP32S3/pins_arduino.h",
+        "product/references/uploads/20261110T152829794Z-3-img-1023.jpg",
+        "product/references/uploads/20261110T152829794Z-5-img-1022.jpg"
+      ]
+    },
+    {
+      "from": {
+        "part": "display",
+        "pin": "DC"
+      },
+      "to": {
+        "part": "mcu",
+        "pin": "D5"
+      },
+      "bus": "gpio",
+      "via": "other",
+      "note": "J_LCD pin 6, single 7P straight-through cable; verify function labels before battery connection. SCL/SDA are SPI, no CS pin; dedicated SPI bus. BLK low=off, high-Z=on; GPIO controls, does not supply LED current.",
+      "evidence": [
+        "https://raw.githubusercontent.com/espressif/arduino-esp32/master/variants/XIAO_ESP32S3/pins_arduino.h",
+        "product/references/uploads/20261110T152829794Z-3-img-1023.jpg",
+        "product/references/uploads/20261110T152829794Z-5-img-1022.jpg"
+      ]
+    },
+    {
+      "from": {
+        "part": "display",
+        "pin": "BLK"
+      },
+      "to": {
+        "part": "mcu",
+        "pin": "D6"
+      },
+      "bus": "gpio",
+      "via": "other",
+      "note": "J_LCD pin 7, single 7P straight-through cable; verify function labels before battery connection. SCL/SDA are SPI, no CS pin; dedicated SPI bus. BLK low=off, high-Z=on; GPIO controls, does not supply LED current.",
+      "evidence": [
+        "https://raw.githubusercontent.com/espressif/arduino-esp32/master/variants/XIAO_ESP32S3/pins_arduino.h",
+        "product/references/uploads/20261110T152829794Z-3-img-1023.jpg",
+        "product/references/uploads/20261110T152829794Z-5-img-1022.jpg"
+      ]
     }
   ],
   "power": [
@@ -265,7 +313,7 @@
       "consumers": [
         "display"
       ],
-      "note": "XIAO 3V3 regulator, up to 700 mA"
+      "note": "Display fed from XIAO regulated 3.3V, shared with on-board ESP32-S3. Seller gives no measured module/backlight current; no 700mA external-load capability claimed."
     }
   ]
 }

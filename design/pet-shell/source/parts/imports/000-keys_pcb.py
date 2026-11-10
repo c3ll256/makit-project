@@ -1,1 +1,0 @@
-publish("keys_pcb", asset("design/pet-shell/source/assets/13e16d91701a895ff2f5010f015f7d36a8f9e122c4a740a58be84dace34fff6d.step"), "Integrated Grove key PCB")
