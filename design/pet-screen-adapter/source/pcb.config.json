@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "title": "7P TFT thin locking adapter",
+  "manufacturing": {
+    "name": "ordinary-2layer-fr4-1oz",
+    "layers": 2,
+    "copperThicknessOz": {
+      "outer": 1
+    },
+    "finishedThicknessMm": 1.0,
+    "defaultTraceWidthMm": 0.3,
+    "absoluteMinimumTraceWidthMm": 0.2,
+    "absoluteMinimumCopperClearanceMm": 0.15,
+    "preferredRoutingClearanceMm": 0.25,
+    "copperToBoardEdgeMm": 1,
+    "via": {
+      "diameterMm": 0.6,
+      "drillMm": 0.3
+    },
+    "waveSolderVia": {
+      "diameterMm": 0.8,
+      "drillMm": 0.4
+    }
+  },
+  "netClasses": {
+    "signal": {
+      "nominalWidthMm": 0.3,
+      "minimumWidthMm": 0.25,
+      "clearanceMm": 0.25
+    },
+    "cpu_io": {
+      "nominalWidthMm": 0.25,
+      "minimumWidthMm": 0.25,
+      "clearanceMm": 0.25
+    },
+    "power": {
+      "nominalWidthMm": 0.5,
+      "minimumWidthMm": 0.25,
+      "clearanceMm": 0.25
+    },
+    "high_current": {
+      "nominalWidthMm": 0.5,
+      "minimumWidthMm": 0.4572,
+      "clearanceMm": 0.25
+    },
+    "ground": {
+      "nominalWidthMm": 0.5,
+      "minimumWidthMm": 0.25,
+      "clearanceMm": 0.25
+    },
+    "sensitive_analog": {
+      "nominalWidthMm": 0.3,
+      "minimumWidthMm": 0.25,
+      "clearanceMm": 0.25
+    },
+    "clock_high_speed": {
+      "nominalWidthMm": 0.3,
+      "minimumWidthMm": 0.25,
+      "clearanceMm": 0.25
+    },
+    "differential_pair": {
+      "nominalWidthMm": 0.25,
+      "minimumWidthMm": 0.2,
+      "clearanceMm": 0.25
+    }
+  },
+  "nets": {
+    "GND": {
+      "class": "ground",
+      "rationale": "Active-low switch to ground; XIAO internal pullup, firmware debounce 20 ms."
+    },
+    "LCD_SCK": {
+      "class": "cpu_io",
+      "rationale": "Dedicated hardware SPI clock from XIAO D8/GPIO7 to 7P ST7789, no CS on selected screen."
+    },
+    "LCD_DATA": {
+      "class": "cpu_io",
+      "rationale": "Existing display serial data from XIAO D10/GPIO9."
+    },
+    "V3V3": {
+      "class": "power",
+      "nominalWidthMm": 0.5,
+      "minimumWidthMm": 0.5,
+      "rationale": "Pass-through XIAO regulated 3.3 V to display, no supply conversion. Reserve 0.5 mm trace; no increase to vendor current capability claimed."
+    },
+    "LCD_RES": {
+      "class": "cpu_io",
+      "rationale": "3.3V screen control from XIAO D4/GPIO5; BLK open-drain low-off/high-Z-on, never GPIO LED supply."
+    },
+    "LCD_DC": {
+      "class": "cpu_io",
+      "rationale": "3.3V screen control from XIAO D5/GPIO6; BLK open-drain low-off/high-Z-on, never GPIO LED supply."
+    },
+    "LCD_BLK": {
+      "class": "cpu_io",
+      "rationale": "3.3V screen control from XIAO D6/GPIO43; BLK open-drain low-off/high-Z-on, never GPIO LED supply."
+    }
+  },
+  "footprintExceptions": [],
+  "copperPours": {
+    "enabled": true,
+    "groundLayers": [
+      "top",
+      "bottom"
+    ],
+    "planeLayers": [],
+    "clearanceMm": 0.3,
+    "padMarginMm": 0.3,
+    "traceMarginMm": 0.3,
+    "boardEdgeMarginMm": 1.05,
+    "cutoutMarginMm": 0.5,
+    "removeIslands": true
+  },
+  "stitchingVias": [],
+  "copperAreas": [],
+  "keepouts": [],
+  "allowedOverlaps": [],
+  "allowedViaInPadComponents": [],
+  "pcbRuleExceptions": [],
+  "componentOrientations": [
+    {
+      "componentRef": "J_SCREEN",
+      "vertical": true,
+      "rationale": "Female square sockets mate to shortened screen pins from +Z."
+    },
+    {
+      "componentRef": "J_SCREEN_GH",
+      "nativeOpening": "down",
+      "targetOpening": "up",
+      "expectedLayer": "bottom",
+      "rationale": "Cable exits +Y away from screen; mounted bottom so cable does not cross display board."
+    }
+  ],
+  "bomBindings": [
+    {
+      "bomItemId": "screen_socket",
+      "designators": [
+        "J_SCREEN"
+      ],
+      "populate": true
+    },
+    {
+      "bomItemId": "lcd_header",
+      "designators": [
+        "J_SCREEN_GH"
+      ],
+      "populate": true
+    }
+  ]
+}

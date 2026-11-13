@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "releases": [
     {
-      "releaseId": "9d8ce43d260fdabeef3a9211db0f142047ae84c5dc72cf83e389f6a19debcfc8",
+      "releaseId": "4e94c1507d5086709e09b0a4c5b8b252b9c1f29c5f2c88f369132c7514e58671",
       "designId": "pet-keys",
-      "buildId": "7be8bffbb235877e7c5e5718cbc0493aee4e7a844df5cb96d4fcd4b3f61ceef7",
-      "candidateId": "58c645d7b476da1a3a05e90d5d4686859cd171e62fa6986e815aec2db548c7e2",
-      "approvedAt": "2026-11-10T15:56:50.399Z"
+      "buildId": "faf451533c23975188655dd4880b5e90a12dbaf7b5ee8520ae3bd1ab153c70b7",
+      "candidateId": "6f093fbb141740073ca5ecada0b48f4d2c44fe7a1efa74a5d04da21c3b6f9ff8",
+      "approvedAt": "2026-11-13T15:09:41.710Z"
     }
   ]
 }

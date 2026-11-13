@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "title": "宠物机一套混拼板，66x60x1.0mm",
+  "manufacturing": {
+    "name": "ordinary-2layer-fr4-1oz",
+    "layers": 2,
+    "copperThicknessOz": {
+      "outer": 1
+    },
+    "finishedThicknessMm": 1.0,
+    "defaultTraceWidthMm": 0.3,
+    "absoluteMinimumTraceWidthMm": 0.2,
+    "absoluteMinimumCopperClearanceMm": 0.15,
+    "preferredRoutingClearanceMm": 0.25,
+    "copperToBoardEdgeMm": 1,
+    "via": {
+      "diameterMm": 0.6,
+      "drillMm": 0.3
+    },
+    "waveSolderVia": {
+      "diameterMm": 0.8,
+      "drillMm": 0.4
+    }
+  },
+  "netClasses": {
+    "signal": {
+      "nominalWidthMm": 0.3,
+      "minimumWidthMm": 0.25,
+      "clearanceMm": 0.25
+    },
+    "cpu_io": {
+      "nominalWidthMm": 0.25,
+      "minimumWidthMm": 0.25,
+      "clearanceMm": 0.25
+    },
+    "power": {
+      "nominalWidthMm": 0.5,
+      "minimumWidthMm": 0.25,
+      "clearanceMm": 0.25
+    },
+    "high_current": {
+      "nominalWidthMm": 0.5,
+      "minimumWidthMm": 0.4572,
+      "clearanceMm": 0.25
+    },
+    "ground": {
+      "nominalWidthMm": 0.5,
+      "minimumWidthMm": 0.25,
+      "clearanceMm": 0.25
+    },
+    "sensitive_analog": {
+      "nominalWidthMm": 0.3,
+      "minimumWidthMm": 0.25,
+      "clearanceMm": 0.25
+    },
+    "clock_high_speed": {
+      "nominalWidthMm": 0.3,
+      "minimumWidthMm": 0.25,
+      "clearanceMm": 0.25
+    },
+    "differential_pair": {
+      "nominalWidthMm": 0.25,
+      "minimumWidthMm": 0.2,
+      "clearanceMm": 0.25
+    }
+  },
+  "nets": {},
+  "footprintExceptions": [],
+  "copperPours": {
+    "enabled": false,
+    "groundLayers": [
+      "top",
+      "bottom"
+    ],
+    "planeLayers": [],
+    "clearanceMm": 0.3,
+    "padMarginMm": 0.3,
+    "traceMarginMm": 0.3,
+    "boardEdgeMarginMm": 1.05,
+    "cutoutMarginMm": 0.5,
+    "removeIslands": true
+  },
+  "stitchingVias": [],
+  "copperAreas": [],
+  "keepouts": [],
+  "allowedOverlaps": [],
+  "allowedViaInPadComponents": [],
+  "pcbRuleExceptions": [],
+  "componentOrientations": [],
+  "bomBindings": [],
+  "panel": {
+    "widthMm": 66,
+    "heightMm": 60,
+    "slotWidthMm": 2,
+    "tabLengthMm": 5,
+    "mouseBiteDiameterMm": 0.6,
+    "mouseBitePitchMm": 1,
+    "instances": [
+      {
+        "name": "CARRIER",
+        "designId": "pet-keys",
+        "buildId": "faf451533c23975188655dd4880b5e90a12dbaf7b5ee8520ae3bd1ab153c70b7",
+        "xMm": -5,
+        "yMm": -10,
+        "rotationDeg": 0,
+        "tabs": [
+          {
+            "xMm": 15,
+            "yMm": 32
+          },
+          {
+            "xMm": 31,
+            "yMm": 17
+          },
+          {
+            "xMm": -8,
+            "yMm": 3.8
+          },
+          {
+            "xMm": 0,
+            "yMm": -13.5
+          }
+        ]
+      },
+      {
+        "name": "SCREEN",
+        "designId": "pet-screen-adapter",
+        "buildId": "7223942871a8e28c89b22ba751bb47ce31f8b5cc0baeb176b866e5bf49a9cb7b",
+        "xMm": -13,
+        "yMm": 8,
+        "rotationDeg": 0,
+        "tabs": [
+          {
+            "xMm": -10,
+            "yMm": 0
+          },
+          {
+            "xMm": 10,
+            "yMm": 0
+          }
+        ]
+      }
+    ],
+    "toolingHoles": [
+      {
+        "xMm": -29,
+        "yMm": -26,
+        "diameterMm": 3
+      },
+      {
+        "xMm": 29,
+        "yMm": -26,
+        "diameterMm": 3
+      },
+      {
+        "xMm": -29,
+        "yMm": 26,
+        "diameterMm": 3
+      }
+    ]
+  }
+}

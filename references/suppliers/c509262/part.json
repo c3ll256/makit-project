@@ -1,0 +1,89 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-10T14:13:17.098Z",
+  "lcsc_code": "C509262",
+  "manufacturer": "XFCN(兴飞)",
+  "manufacturer_part_number": "MF254V-11-04-0540",
+  "description": "Female Header 4 Position 2.54mm Pitch Single Row Through Hole -40°C~+105°C",
+  "category": "排母",
+  "package": "Through Hole,P=2.54mm",
+  "jlcpcb_part_class": "extended",
+  "parameters": {
+    "Operating Temperature": "-40°C~+105°C",
+    "Mounting Type": "Through Hole",
+    "Number of Pins": "4P",
+    "Current Rating": "3A",
+    "Insulation Height": "3mm",
+    "Holes Structure": "1x4P",
+    "Pitch": "2.54mm",
+    "Holes Direction": "Top",
+    "Number of Rows": "1",
+    "Circular Hole / Square Hole": "Round Hole"
+  },
+  "lcsc_stock": 2536,
+  "price_breaks": [
+    {
+      "quantity": 5,
+      "unitPrice": 1.1359,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 50,
+      "unitPrice": 0.898,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 150,
+      "unitPrice": 0.796,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1500,
+      "unitPrice": 0.6688,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 3000,
+      "unitPrice": 0.6121,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 4500,
+      "unitPrice": 0.5781,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 5,
+      "unitPrice": 0.1877,
+      "currency": "USD"
+    },
+    {
+      "quantity": 50,
+      "unitPrice": 0.1484,
+      "currency": "USD"
+    },
+    {
+      "quantity": 150,
+      "unitPrice": 0.1315,
+      "currency": "USD"
+    },
+    {
+      "quantity": 1500,
+      "unitPrice": 0.1105,
+      "currency": "USD"
+    },
+    {
+      "quantity": 3000,
+      "unitPrice": 0.1012,
+      "currency": "USD"
+    },
+    {
+      "quantity": 4500,
+      "unitPrice": 0.0955,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/523021.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/b4ea11470ad425df60578f40a4125a9b.pdf?productCode=C509262",
+  "datasheet_file": "references/suppliers/c509262/c509262-datasheet.pdf"
+}

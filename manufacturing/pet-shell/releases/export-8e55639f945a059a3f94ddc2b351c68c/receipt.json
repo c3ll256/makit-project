@@ -1,0 +1,270 @@
+{
+  "designId": "pet-shell",
+  "revision": "5d02ad63d87704e51942418f322328902c01e5f739a935f6852ed0fcc82d71d7",
+  "schemaVersion": 3,
+  "exportId": "export-8e55639f945a059a3f94ddc2b351c68c",
+  "generatedAt": "2026-11-13T15:20:00.986Z",
+  "designSha256": "f2fc08873898fdc050f3e496653ba05bb32ff68f9368666c128ba8c96fc9b126",
+  "role": "enclosure",
+  "stateHash": "dc33280ebd36bec6500a4565aeb81bd6ed6050144da9ca58c9ecc5f906919eb5",
+  "stateManifest": {
+    "schemaVersion": 4,
+    "designId": "pet-shell",
+    "role": "enclosure",
+    "design": {
+      "revision": "5d02ad63d87704e51942418f322328902c01e5f739a935f6852ed0fcc82d71d7",
+      "designSha256": "5bb372ad8cce429427ece60aa4b6b491e1d5577f9e6d691ff8395e5d4b18ca35",
+      "manifestSha256": "729d5f01fb3e8290a9c588b23880413d145d1c53cc69c2ecbc494123b229951c",
+      "modelSha256": "b7626552e95e1dc88f0d569c47f4eb815f97f8cdf953b12b581ec73763278aca",
+      "pcbReleases": []
+    },
+    "brief": {
+      "path": "design/pet-shell/README.md",
+      "sha256": "fccfcd04f22e14f430da90a9d8fbe168e0da67d406a7861ce8f176a1c87eebab"
+    },
+    "requirement": {
+      "artifactContractPath": "product/contract.json",
+      "artifactContractSha256": "abd503a06fad0b203cf95c9d0f6eb059930cac04b67a3df1c90ec4e15636fcdf",
+      "designRequirementSha256": "c9bbd616754f8f0bdba963b8096733e9d42d40051a477aaf3f81ee635865128f",
+      "inputs": [
+        {
+          "role": "external-reference",
+          "id": "ref_broad_side_roll_20261112",
+          "path": "product/references/uploads/20261112T130802147Z-1-mark-1.png",
+          "sha256": "f148151136ed94ef03e55dd95d84af1f176e25b4e05627a36fdccf72e6bf1127",
+          "sizeBytes": 547004
+        },
+        {
+          "role": "external-reference",
+          "id": "ref_cloud_outline",
+          "path": "product/references/uploads/20261109T131205554Z-2-product-references-uploads-20261109t125840053z-1-cleanshot-2026-11-09-at-20-58-30-2x.png",
+          "sha256": "4b17807959c83864071a324d28a976dc6573f97a29de151d8ad8af175827fc64",
+          "sizeBytes": 18593
+        },
+        {
+          "role": "external-reference",
+          "id": "ref_compact_cloud_20261112",
+          "path": "product/references/uploads/20261112T125222705Z-1-image.png",
+          "sha256": "f7189951db9daf4e6ba4b69a685e3e50b18978d64cd665ce5a3ad3e2a092eed6",
+          "sizeBytes": 470287
+        },
+        {
+          "role": "external-reference",
+          "id": "ref_handheld_photo",
+          "path": "product/references/uploads/20261109T131205554Z-1-product-references-uploads-20261108t045029838z-1-cleanshot-2026-11-08-at-12-50-09-2x.png",
+          "sha256": "b0c81ec6a4cd11f3938cee014227f81affe497c0142bf64975b725ff41267c6d",
+          "sizeBytes": 553329
+        },
+        {
+          "role": "external-reference",
+          "id": "ref_larger_middle_button_20261112",
+          "path": "product/references/uploads/20261112T130802147Z-2-mark-2.png",
+          "sha256": "e160bc54ba3c486b0c6598fce8c26e87ac8d02f3c6f996ed7e9a480a423b2fd6",
+          "sizeBytes": 698448
+        },
+        {
+          "role": "external-reference",
+          "id": "youxin_tft_drawing",
+          "path": "product/references/uploads/20261110T152829794Z-3-img-1023.jpg",
+          "sha256": "ef9c3becc0093647011eb6b965c22682afee8a9a738d38cff3eb034a3fc1d737",
+          "sizeBytes": 290768
+        },
+        {
+          "role": "external-reference",
+          "id": "youxin_tft_pins",
+          "path": "product/references/uploads/20261110T152829794Z-5-img-1022.jpg",
+          "sha256": "03f20f1fe75c64c6aef01837c9f575a65c86a823ed5cf79f7559a8e00c8671dd",
+          "sizeBytes": 280335
+        },
+        {
+          "role": "external-reference",
+          "id": "youxin_tft_specs",
+          "path": "product/references/uploads/20261110T152829794Z-2-img-1021.jpg",
+          "sha256": "e9be5a853fe107b4121e8ea1b1a91abcc5cf421284d61c5a88d242ab1ff899b2",
+          "sizeBytes": 299440
+        },
+        {
+          "role": "external-reference",
+          "id": "youxin_tft_variant",
+          "path": "product/references/uploads/20261110T152829794Z-1-img-1025.jpg",
+          "sha256": "0735faf0b77d6a93277e33c3de0e64b12ca963447e496a40ef707fcbf07fde44",
+          "sizeBytes": 133565
+        }
+      ]
+    },
+    "delivery": {
+      "target": "printable_part",
+      "formats": [
+        "step"
+      ]
+    },
+    "stateHash": "dc33280ebd36bec6500a4565aeb81bd6ed6050144da9ca58c9ecc5f906919eb5"
+  },
+  "buildArtifacts": {
+    "manifestSha256": "729d5f01fb3e8290a9c588b23880413d145d1c53cc69c2ecbc494123b229951c",
+    "modelSha256": "b7626552e95e1dc88f0d569c47f4eb815f97f8cdf953b12b581ec73763278aca"
+  },
+  "exportAlgorithm": {
+    "version": 1,
+    "bootstrapSha256": "7ca82f948e8cf477eace93432176464ac58bb4aeadfa87849939fe78d669d78e"
+  },
+  "sourceHashes": {
+    "battery_pad/battery_pad": "d0a39886900d7d45ff765b45a131be65b74a6e039c4c079c5df512bee4bc3a71",
+    "bezel/bezel": "295de831aa46ca115b62d48982fbd5691f97860fad2cbf5549064c04081ccddf",
+    "buttons/buttons": "7b816777ce86f4ac7b3f0c90178e49d33699d272b3e59f64a8b105d88a614041",
+    "carrier_clamps/carrier_clamps": "947e0135da268d0e872d8d93552ebd5f2d461884dffb833e8e96d1bad4a6e59a",
+    "electronics/electronics": "c272d6920bb3eb2c12fcbd050b53a4d1993184de304f42cf275f27bbbe014653",
+    "form/form": "7d14eb9d6cb36110983b4d362b31ae43b2de9b0dfb96e93ec1673e343abe0aeb",
+    "front_shell/front_shell": "b9e1f25936f45bfb2d567e7cfb272655951d960d2cc2407fc298e707f7b5a11b",
+    "harness/harness": "d9b9ae29a41fc5abf74a3f8419935af8f05c454ff7b05e912e4a49d50041ff88",
+    "imports/adapter_1mm_release": "870a8ee1d46464fe81519f206d7e4ca731f65447885c18aec94010997dd18824",
+    "imports/carrier_1mm_release": "8a40a1c8e37d94fb9feadcd74b05f240ddfb38de81ed5be7a274f355ce553c6d",
+    "internals/internals": "d6108673a277f57dc215c862ae32d36ee5c11cc05648bf69d7690c3f4d8fef83",
+    "pushers/pushers": "c563231f850b646ddd90202be677741bbd602273a8c87d2c5033bc3c2b21d4c1",
+    "retention_pads/retention_pads": "522b03b3be86bffae552c4096870845d0483d86208309e211c6cd6e4d81f7a9b",
+    "screen_adapter/screen_adapter": "a1371e61ca85cb53f2d2795f492346f56c924f7f037477c87d007076aff8f831",
+    "screen_keeper/screen_keeper": "f7b220bec9287b4e2f626e0a11858d0e14358fb619b1fdf061986198cd761c12"
+  },
+  "assetHashes": {
+    "adapter_1mm_release": "61ba7b0521c247fbcb54fc5878295b841b6ab5a899b6dd0c7517b12351e67239",
+    "carrier_1mm_release": "1923175e7cab06faa9851cbba0d6325b141ea46cefcecbd8921588a036ad542d"
+  },
+  "shapeHashes": {
+    "adapter_1mm_release": "3c21e232dbc7558b2b3364d0183c723b055b161b3a0726768cd0617fa0b7ad8e",
+    "adapter_foam_pads": "954e981a2e2e519e258d99a2168f83b8a0fe3638c0801609426a5bb2be875d9b",
+    "back_shell": "c2ee89c56ec7bacd279498848d9c6a73408eac7ff55269bce3d5a078b71bee91",
+    "battery_pad_ref": "357cb30561a2df43c3ece085a89d226c0fbfcfd0765d0d0b4fe5b4fa88dc137f",
+    "battery_ref": "e8e26a7354ced9054a1db5689f04f7b2d831a5624435c28ff376a79ccd2cfdb2",
+    "bezel": "545eba42ffe4e39e1d391843e507a5e1508482fa3f80f86b657915c380e46011",
+    "button_left": "bd200930df0ad11a0c087d13a50e3384fe4ed6bd4dd6c15dc5ee558029370b23",
+    "button_mid": "6a04f58d6577eebdbb2ffe6c11318a295c508e61869a3c6665fdfae33720c92d",
+    "button_right": "58c7ef43d734ddcd12e1bfc8cd1d7cd406f1c66d1d01d112c8b74a431e238a88",
+    "carrier_1mm_release": "eca596faa9b7d1abcf9160e013a51b757dc68ccff131ea8769bdb6e367a30c19",
+    "carrier_assembly": "d1673bbab1d590b124a930a0a2ac0c10bf971d3d51358eff1f0354c30143b0bb",
+    "carrier_clamp_0": "715d919e3d96de912965f0a94df1addf17d9c89d9a803943ae7ade397a8851a2",
+    "carrier_clamp_1": "7903b988d8d7d19faabab4cfee8d09124ce929de8e07b647f70b998741888b5e",
+    "carrier_screw_0": "7e317abebb287ad077273b71facfc9458807b0128d1b7bc7d251b90186d6b48b",
+    "carrier_screw_1": "7e9ceed111d9536bbc1ee9a3dbb9fa5e342cb8d2d29eff0fd6762ca8bca71245",
+    "display_ref": "15463c5ed3b98c9f02e52dab396334063301f52fb2c920cd98e71b5e39bd117b",
+    "front_shell": "db8fd94a7697c76ec51b8007a9f67b333aff2b1d1aa2188ebadec01e4f3b90e3",
+    "keeper_screw_0": "38718ee5007fe61214032c0011217596be6ba88c0a32743424fae3990cd4bc77",
+    "keeper_screw_1": "41b71310541b8f1d213a25d49cf00ea6f49cbdd0301162fe51adc9109b233a7a",
+    "keeper_screw_2": "7ee673695942ea994b8f8f4522ca2158b85bc2fdd7753742c879ace3b492bc62",
+    "keeper_screw_3": "31a6e447ea0327ce90c9a6f2966ec3b214193b37ade03ec23cac92b79e4e07fe",
+    "lcd_cable_route": "17f71653027f19597c49a668b4642e51ef62fa0fe1fd601dd1e85692aa8fd6db",
+    "lcd_carrier_plug": "c8c2a268dad540ca30594152efea2293e5c15a7f89df64e63bbaeb392fd70aed",
+    "lcd_display_plug": "8e3d5dea4083e2f2ecd4c493c8e3abba0538aa29a71d3f668330c26deebcc843",
+    "pusher_left": "873ce67b21201ac453c756c9dbc99c2e5e6dcb0c984e877eeb6aebbf254e7f72",
+    "pusher_mid": "aa19aceb6ff4ceca7c071b78972b5ecfe64a541e97ec31f8af486e708c6512eb",
+    "pusher_right": "b2609da48378d7de5a6a191a070415c77f837beda40e57813ade4b195d145a17",
+    "screen_adapter_assembly": "bbe319af46fc4f16bf9f4cf57a40a3b90d530ebf45ce4c358f757c595aa46010",
+    "screen_foam_pads": "cd37aca77cf495955558e820fdbed8a382beaf2d36f07fa14f7fdeb24ba4632e",
+    "screen_keeper": "99ba2bb9f7465139ce080cc36f4720ed9df8429d7935b864c9b0d72d57ea62ff",
+    "screw_0": "aa49f03ec774475155adafea1901f78fa8d25c5ec067a6d7ac21c9b74fc6a058",
+    "screw_1": "0a15c05f99073bf21eb902b53865344052cf9c1dfea91847048e8f9ab027dcfd",
+    "screw_2": "a9ac0a0e8dac0990eff30de73d16a4028c6c22bc7063dd166b08467d117f96ff",
+    "screw_3": "72646538b8551f04d86e2034c7349d590a2d7b25b1510d335fdffabd63dabef4",
+    "xiao_foam_pad": "cf1aade69c281c6370875591a9b67affa72848518d2b06d5ef6f2b402b6c7fa3"
+  },
+  "runtime": {
+    "manifestHash": "8eb5f308a44f839dc50cf686f6d6da8ad92b40572878cd12032d355cee3bdcc4",
+    "pythonVersion": "3.12.13",
+    "build123dVersion": "0.10.0",
+    "ocpVersion": "7.8.1.1.post1",
+    "cadpyHash": "8ab087f28d609f1842272b5901df88a3568e9ce0fbf1555bcec5ff4b5b3d8a21"
+  },
+  "artifacts": [
+    {
+      "path": "manufacturing/pet-shell/releases/export-8e55639f945a059a3f94ddc2b351c68c/model.step",
+      "role": "model/step",
+      "sha256": "5ed5632bf989f7ce31404d4bc0fa4e878aee48240c3ae354dc5c8d0dee609744",
+      "sizeBytes": 69822406
+    }
+  ],
+  "interference": {
+    "summary": "6 interfering pairs",
+    "counts": {
+      "objects": 35,
+      "pairs": 595,
+      "exact": 0,
+      "mesh": 0,
+      "cached": 106,
+      "interference": 6,
+      "undeclared": 0,
+      "over_budget": 0,
+      "undetermined": 0
+    },
+    "overlaps": [
+      {
+        "a": "adapter_foam_pads",
+        "b": "screen_adapter_assembly",
+        "verdict": "declared",
+        "kind": "compliant",
+        "reason": "1mm foam compressed0.2mm against adapter PCB underside, keeps square socket seated",
+        "maxDepthMm": 0.235,
+        "volumeMm3": 3.497895,
+        "budgetMm": 0.25
+      },
+      {
+        "a": "button_left",
+        "b": "pusher_left",
+        "verdict": "declared",
+        "kind": "press_fit",
+        "reason": "Retaining disc pressed onto cap peg, 0.15 mm diametral interference; the cap peg presses the switch directly.",
+        "maxDepthMm": 0.075,
+        "volumeMm3": 0.764143,
+        "budgetMm": 0.15
+      },
+      {
+        "a": "button_mid",
+        "b": "pusher_mid",
+        "verdict": "declared",
+        "kind": "press_fit",
+        "reason": "Retaining disc pressed onto cap peg, 0.15 mm diametral interference; the cap peg presses the switch directly.",
+        "maxDepthMm": 0.075,
+        "volumeMm3": 0.764143,
+        "budgetMm": 0.15
+      },
+      {
+        "a": "button_right",
+        "b": "pusher_right",
+        "verdict": "declared",
+        "kind": "press_fit",
+        "reason": "Retaining disc pressed onto cap peg, 0.15 mm diametral interference; the cap peg presses the switch directly.",
+        "maxDepthMm": 0.075,
+        "volumeMm3": 0.764143,
+        "budgetMm": 0.15
+      },
+      {
+        "a": "carrier_assembly",
+        "b": "xiao_foam_pad",
+        "verdict": "declared",
+        "kind": "compliant",
+        "reason": "1mm foam compressed0.2mm on rigid RF shield, prevents XIAO rocking",
+        "maxDepthMm": 0.2,
+        "volumeMm3": 5.999994,
+        "budgetMm": 0.25
+      },
+      {
+        "a": "display_ref",
+        "b": "screen_foam_pads",
+        "verdict": "declared",
+        "kind": "compliant",
+        "reason": "1mm foam compressed by0.2mm on display PCB corner lands; never glass",
+        "maxDepthMm": 0.2,
+        "volumeMm3": 4.126938,
+        "budgetMm": 0.25
+      }
+    ]
+  },
+  "authority": {
+    "version": 1,
+    "algorithm": "hmac-sha256",
+    "keyId": "f8032396c0de0155d5dda12f3821ce0f",
+    "projectId": "9e6ae992-7c45-409e-9357-f01657fcd9ca",
+    "receiptPath": "manufacturing/pet-shell/releases/export-8e55639f945a059a3f94ddc2b351c68c/receipt.json",
+    "payloadSha256": "839b527a28256967133c077738f723602c4f787cc0865c9ea2c319be74486c50",
+    "mac": "8b4b566534d20061eca76685628f1fbfb1156081ac33012aef03f2adcb6e7750"
+  },
+  "status": "handoff"
+}

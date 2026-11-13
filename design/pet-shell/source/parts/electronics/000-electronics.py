@@ -1,9 +1,9 @@
 f=part("form")
 max_tail = param("maximum_solder_tail_below_pcb", 0.6)
-socket_tail_limit = param("native_socket_tail_limit",0.85)
-raw = Pos(-100,78.5,f.key_pcb_bottom_z)*asset("design/pet-shell/source/assets/29fc2a7f6f6e4b51e461504595b95e87c341bb95897acae1e9132e302d527883.step")
-# Finished assembly: trim switch/display header leads to 0.6 mm.
-# Native low socket tails project about0.805 mm below carrier and fit the rear cavity; retain them.
+socket_tail_limit = param("native_socket_tail_limit",0.6)
+raw = Pos(-100,78.5,f.key_pcb_bottom_z)*asset("design/pet-shell/source/assets/1923175e7cab06faa9851cbba0d6325b141ea46cefcecbd8921588a036ad542d.step")
+# Finished 1.0mm carrier: trim all through-board leads and solder peaks,
+# including low socket tails, to at most0.6mm below the PCB.
 trim_plane=f.key_pcb_bottom_z-max_tail
 clip=Pos(0,0,trim_plane-100)*Box(400,400,200)
 finished_solids=[]

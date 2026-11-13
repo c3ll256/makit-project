@@ -5,35 +5,49 @@
   "fits": [],
   "steps": [
     {
-      "title": "准备后壳",
+      "title": "准备后壳与固定支点",
+      "note": "清理接缝、孔和支撑毛刺；保留电池缓冲空间。",
       "parts": [
         "pet-shell:back_shell"
       ]
     },
     {
-      "title": "焊接并插好XIAO，定位载板",
-      "note": "开关及7P背脚修至≤0.6 mm；排母原尾脚约0.81 mm可保留。XIAO用3 mm圆针，配3 mm低排母，每侧第八位空，USB端对1脚。",
+      "title": "锁住XIAO载板",
+      "note": "插好XIAO，两个1mm打印压垫配2颗M2×4；轻拧到载板不晃。",
       "parts": [
-        "pet-shell:carrier_assembly"
+        "pet-shell:carrier_assembly",
+        "pet-shell:carrier_clamp_0",
+        "pet-shell:carrier_clamp_1",
+        "pet-shell:carrier_screw_0",
+        "pet-shell:carrier_screw_1"
       ],
       "from": "+z"
     },
     {
-      "title": "垫胶固定电池",
-      "note": "用1 mm胶，电池接XIAO BAT+/BAT-，不叠胶、不挤压电池。",
+      "title": "固定电池与转接板支点垫",
+      "note": "电池仅底部1mm胶固定；两块转接板支点垫贴在后壳小柱，不压电池。",
       "parts": [
         "pet-shell:battery_pad_ref",
-        "pet-shell:battery_ref"
+        "pet-shell:battery_ref",
+        "pet-shell:adapter_foam_pads"
       ],
       "from": "+z"
     },
     {
-      "title": "预装前壳与屏幕、按钮",
-      "note": "在台面装好屏幕与边框；帽从前面插入，挡片从后面压上，检查长杆自由滑动。此步骤表示前壳组件就位，先保持开盖以接线。",
+      "title": "预装屏幕和按键，再合上前组件",
+      "note": "台面翻转前壳，安装防转屏框、四角软垫与压框，4颗内藏M2×6；屏幕针尖2.5mm，接薄转接板。帽与挡片保持回弹。先连接两端GH，再按Z方向合盖。",
       "parts": [
         "pet-shell:front_shell",
         "pet-shell:bezel",
         "pet-shell:display_ref",
+        "pet-shell:screen_keeper",
+        "pet-shell:keeper_screw_0",
+        "pet-shell:keeper_screw_1",
+        "pet-shell:keeper_screw_2",
+        "pet-shell:keeper_screw_3",
+        "pet-shell:screen_foam_pads",
+        "pet-shell:xiao_foam_pad",
+        "pet-shell:screen_adapter_assembly",
         "pet-shell:button_left",
         "pet-shell:button_mid",
         "pet-shell:button_right",
@@ -44,17 +58,18 @@
       "from": "+z"
     },
     {
-      "title": "接好7针线并合盖",
-      "note": "母对母100 mm预压接线按GND/VCC/SCL/SDA/RES/DC/BLK逐脚对应，勿反插。余线平铺电池上方；前壳组件竖直降低，USB经后开通道就位。",
+      "title": "检查7针锁扣与余线",
+      "note": "150mm预压接GH7P线，两端1对1。按功能核对，锁扣卡住后轻拉插壳；余线平铺固定，避免接缝和键杆。彩线是路线示意，不照折线剪线。",
       "parts": [
-        "pet-shell:lcd_display_plug",
         "pet-shell:lcd_carrier_plug",
+        "pet-shell:lcd_display_plug",
         "pet-shell:lcd_cable_route"
-      ]
+      ],
+      "from": "+z"
     },
     {
-      "title": "检查回弹后轻拧背面四颗螺钉",
-      "note": "4×M2×6 ISO7046沉头螺钉。确认不夹线，再均匀轻拧。",
+      "title": "拧紧原四颗背面螺丝",
+      "note": "4颗黑色M2×6沉头，轻拧；逐键检查回弹，首件摇动确认无明显晃动异响。",
       "parts": [
         "pet-shell:screw_0",
         "pet-shell:screw_1",
@@ -64,5 +79,5 @@
       "from": "-z"
     }
   ],
-  "updatedAt": "2026-11-10T16:05:24.210Z"
+  "updatedAt": "2026-11-11T09:21:26.598Z"
 }

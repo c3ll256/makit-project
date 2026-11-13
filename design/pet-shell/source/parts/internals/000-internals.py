@@ -3,7 +3,7 @@ show_refs=param("show_reference_parts",1.0)
 corner=param("display_pcb_corner_chamfer",0.8)
 pin_size=param("display_pin_square",0.64)
 hdr_body=param("display_header_body",2.5)
-pin_len=param("display_pin_length",6.0)
+pin_len=param("display_pin_length",2.5)
 bcx,bcy=f.board_c
 board=Pos(bcx,bcy,f.board_back_z)*Box(f.DISP_W,f.DISP_H,f.DISP_BOARD_T,align=(Align.CENTER,Align.CENTER,Align.MIN))
 board=chamfer(board.edges().filter_by(Axis.Z),corner)

@@ -4,10 +4,10 @@ from portcut import port_cut, PortSpec
 
 # ---------- Form (approved look) ----------
 lobe_count = int(param("lobe_count", 6))
-lobe_r = param("lobe_radius", 18.0)
-lobe_ring_r = param("lobe_ring_radius", 22.0)
-notch_r = param("notch_radius", 6.0)
-body_h = param("body_thickness", 30.0)
+lobe_r = param("lobe_radius", 25.0)
+lobe_ring_r = param("lobe_ring_radius", 13.0)
+notch_r = param("notch_radius", 16.0)
+body_h = param("body_thickness", 22.0)
 front_edge_r = param("front_edge_radius", 7.0)
 back_edge_r = param("back_edge_radius", 5.0)
 wall = param("wall_thickness", 2.0)
@@ -15,10 +15,10 @@ seam_z = param("seam_height", 8.0)
 reveal = param("seam_reveal", 0.5)
 
 screen_cx, screen_cy = 0.0, param("screen_center_y", 4.3)
-bezel_r = param("bezel_radius", 21.0)
-bezel_gap = 0.35
+bezel_r = param("bezel_radius", 24.2)
+bezel_gap = param("bezel_radial_gap",0.2)
 btn_side_r = param("side_button_radius", 4.5)
-btn_mid_r = param("mid_button_radius", 5.5)
+btn_mid_r = param("mid_button_radius", 6.5)
 btn_gap = 0.3
 btn_pocket_depth = 0.8
 btn_stem_hole_r = 2.9
@@ -86,23 +86,24 @@ nub_c = (0.0, lobe_ring_r + lobe_r + nub_r * 0.25, seam_z + reveal + nub_r + 0.3
 bezel_inset = 0.6
 bezel_t = 2.4
 bezel_bottom_z = body_h - bezel_inset - bezel_t
-lcm_front_z = bezel_bottom_z - 0.1
+lcm_front_z = bezel_bottom_z
 board_front_z = lcm_front_z - DISP_LCM_T
 board_back_z = board_front_z - DISP_BOARD_T
 support_top_z = board_back_z - 0.1
 board_c = (screen_cx, screen_cy - DISP_AA_OFFSET_Y)
 j1_box = (6.1, board_c[1] + 10.4, board_c[1] + 19.6)   # half-width, y0, y1 (vendor .brd)
 
-bat_c = (param("battery_center_x", -8.6), param("battery_center_y", 1.5))
+bat_c = (param("battery_center_x", -8.6), param("battery_center_y", 1.0))
 bat_floor_z = param("battery_floor_height",2.1)
 box_t = 1.2
 box_clear = 0.3
 box_in_x = BAT_X / 2 + box_clear
 box_in_y0, box_in_y1 = bat_c[1] - BAT_Y / 2 - box_clear, bat_c[1] + BAT_Y / 2 + box_clear
 
-sw_plunger_top_z = param("switch_top_z", 27.1)
-key_pcb_bottom_z = param("key_pcb_bottom_z", 3.140)
-key_pcb_top_z = key_pcb_bottom_z + 1.545
+sw_plunger_top_z = param("switch_top_z", 19.1)
+production_pcb_t = param("production_pcb_thickness", 1.0)
+key_pcb_bottom_z = param("key_pcb_bottom_z", 3.740)
+key_pcb_top_z = key_pcb_bottom_z + production_pcb_t - 0.055
 actuator_contact_z = param("actuator_contact_z", 9.735)
 guide_outer_r = param("button_guide_outer_radius", 5.2)
 guide_inner_r = param("button_guide_inner_radius", 2.9)
@@ -126,14 +127,31 @@ screw_xy = [(27.0, 13.0), (-27.0, 13.0), (24.0, -20.0), (-24.0, -20.0)]
 
 # ---------- Outer form ----------
 outline = cloud_outline()
-body = extrude(outline, body_h)
-body = fillet(body.faces().sort_by(Axis.Z)[-1].edges(), front_edge_r)
-body = fillet(body.faces().sort_by(Axis.Z)[0].edges(), back_edge_r)
+# Two full-height elliptical rolls share their widest section at the seam.
+# The lateral radii keep the existing front/back face margins; stretching only
+# the outer form in Z removes the former straight side band. All hardware
+# is placed later and retains its original coordinates.
+upper_roll = extrude(outline, front_edge_r + 1)
+upper_roll = fillet(upper_roll.faces().sort_by(Axis.Z)[-1].edges(), front_edge_r)
+upper_roll = upper_roll - Pos(0, 0, 1 - 100) * Box(400, 400, 200)
+upper_roll = scale(upper_roll, by=(1, 1, (body_h-seam_z)/front_edge_r))
+upper_roll = Pos(0, 0, seam_z-upper_roll.bounding_box().min.Z) * upper_roll
+lower_roll = extrude(outline, back_edge_r + 1)
+lower_roll = fillet(lower_roll.faces().sort_by(Axis.Z)[0].edges(), back_edge_r)
+lower_roll = lower_roll - Pos(0, 0, back_edge_r + 100) * Box(400, 400, 200)
+lower_roll = scale(lower_roll, by=(1, 1, seam_z/back_edge_r))
+lower_roll = Pos(0, 0, -lower_roll.bounding_box().min.Z) * lower_roll
+body = upper_roll + lower_roll
+assert body.is_valid and len(body.solids()) == 1, "Outer rolls must join as one solid"
 inner = offset(body, -wall)
+assert inner.is_valid and len(inner.solids()) == 1, "Uniform wall offset failed"
 
 # Right valley: where the USB-C opening goes
 x_outer = (outline & (Pos(60, 0) * Rectangle(120, 0.05))).bounding_box().max.X
-xiao_x1 = x_outer - usb_recess - XIAO_USB_OVERHANG    # PCB end under the receptacle
+# Fixed physical carrier pose from the released STEP; changing the cloud outline
+# must not move the XIAO or the already approved recessed USB-C face.
+XIAO_CARRIER_PCB_END_X = 31.2833399745186
+xiao_x1 = XIAO_CARRIER_PCB_END_X
 xiao_x0 = xiao_x1 - XIAO_L
 xiao_xc = (xiao_x0 + xiao_x1) / 2
 # Pin k = 0..6 along the 5V row (k = 6 is 5V, next to USB); that row faces -Y with USB toward +X
@@ -204,20 +222,8 @@ front_shell=front_shell-entry
 # ---------- Front-half internals ----------
 ZTOP = body_h + 1
 front_feat = []
-# Front corner rails locate the narrow PCB with 0.2 mm side clearance.
-bx0,bx1=-DISP_W/2,DISP_W/2
-by0,by1=board_c[1]-DISP_H/2,board_c[1]+DISP_H/2
-rib_g,rib_t=0.2,1.2
-rib_z0=board_back_z-1.2
-for sx in (-1,1):
-    for yy in (by0+1.8,by1-1.8):
-        front_feat.append(Pos(sx*(DISP_W/2+rib_g+rib_t/2),yy,rib_z0)*Box(rib_t,3,ZTOP-rib_z0,align=(Align.CENTER,Align.CENTER,Align.MIN)))
-    # Hidden lower ledge traps the PCB against the front bezel; no glass contact.
-    front_feat.append(Pos(sx*(DISP_W/2-0.6),by0+1.3,board_back_z-1.2)*Box(2.4,2.6,1.0,align=(Align.CENTER,Align.CENTER,Align.MIN)))
-    front_feat.append(Pos(sx*(DISP_W/2-1.8),by0-rib_g-rib_t/2,rib_z0)*Box(4,rib_t,ZTOP-rib_z0,align=(Align.CENTER,Align.CENTER,Align.MIN)))
-# The PCB is located by the rear pins and trapped with a 0.2 mm axial gap.
-for px, py in key_locators:
-    front_feat.append(Pos(px, py - (0.3 if px == 0 else 0), key_pcb_top_z + key_upper_gap) * Cylinder(1.8, ZTOP - key_pcb_top_z - key_upper_gap, align=(Align.CENTER, Align.CENTER, Align.MIN)))
+# Screen edge locators belong to the enlarged bezel, where they join its underside.
+# Carrier is positively screwed to the rear half.
 def solids_of(shape):
     if isinstance(shape, list): return [s for child in shape for s in solids_of(child)]
     return list(shape.solids())
@@ -234,6 +240,8 @@ for feature in ff.solids():
     cut_feature=feature-flange_clear
     if cut_feature is not None: front_parts.extend(solids_of(cut_feature))
 front_shell=front_shell.fuse(*front_parts)
+# Clearance shelf for the wider bezel flange beneath the curved front skin.
+front_shell=front_shell-flange_clear
 
 # ---------- Back-half internals ----------
 back_feat = []
@@ -246,9 +254,7 @@ tray=box_out-box_in
 tray=tray-Pos(bat_c[0]+BAT_X/2+box_clear,0,4.9)*Box(5,40,20,align=(Align.CENTER,Align.CENTER,Align.MIN))
 tray=tray-Pos(0,20.5,3.7)*Box(22,5,20,align=(Align.CENTER,Align.CENTER,Align.MIN))
 back_feat.append(tray)
-# Support the upper PCB corners and right edge, outside battery/header/carrier.
-for sx,sy in [(-11.39,21.3),(11.39,21.3),(13.3,13.0)]:
-    back_feat.append(Pos(sx,sy,wall-0.5)*Cylinder(1.25,support_top_z-wall+0.5,align=(Align.CENTER,Align.CENTER,Align.MIN)))
+# Screen retained by the separate keeper, not tall rear posts.
 # Supports under clear edge regions of the XIAO carrier.
 for sx,sy in [(30.2,7.5),(30.2,-7.5),(8.0,9.5)]:
     back_feat.append(Pos(sx,sy,wall-0.5) * Cylinder(0.65,key_pcb_bottom_z-0.035-wall+0.5,align=(Align.CENTER,Align.CENTER,Align.MIN)))
@@ -257,7 +263,7 @@ for (sxp,syp),br in buttons:
     back_feat.append(Pos(sxp,syp,wall-0.5)*Cylinder(key_support_r,key_pcb_bottom_z-0.035-wall+0.5,align=(Align.CENTER,Align.CENTER,Align.MIN)))
 for px, py in key_locators:
     back_feat.append(Pos(px, py, wall - 0.5) * Cylinder(2.0, key_pcb_bottom_z - 0.035 - wall + 0.5, align=(Align.CENTER, Align.CENTER, Align.MIN)))
-    back_feat.append(Pos(px, py, key_pcb_bottom_z - 0.1) * Cylinder(key_locator_r, 1.4, align=(Align.CENTER, Align.CENTER, Align.MIN)))
+
 dupont_zone = Pos((dupont_x0 + dupont_x1) / 2, (dupont_y0 + dupont_y1) / 2, 0) * Box(dupont_x1 - dupont_x0 + 2, dupont_y1 - dupont_y0 + 4, 100)
 # Alignment lip: rises above the seam inside the front half
 def ring(o_out, o_in, z0, h):
@@ -280,11 +286,26 @@ back_shell = back_shell - groove
 
 # A shallow board-shaped seating pocket clears the curved inside of the rear shell.
 pcb_relief_clearance=param("pcb_edge_pocket_clearance",0.15)
-pcb_ref=Pos(-100,78.5,key_pcb_bottom_z)*max(asset("design/pet-shell/source/assets/29fc2a7f6f6e4b51e461504595b95e87c341bb95897acae1e9132e302d527883.step").solids(),key=lambda s:s.volume)
+pcb_ref=Pos(-100,78.5,key_pcb_bottom_z)*max(asset("design/pet-shell/source/assets/1923175e7cab06faa9851cbba0d6325b141ea46cefcecbd8921588a036ad542d.step").solids(),key=lambda s:s.volume)
 pcb_face=max([a for a in pcb_ref.faces() if a.geom_type==GeomType.PLANE and abs(a.normal_at().Z)>0.99],key=lambda a:a.area)
 seat_face=Pos(0,0,key_pcb_bottom_z-0.04-pcb_face.center().Z)*pcb_face
 seat=extrude(offset(seat_face,pcb_relief_clearance),amount=1.8,dir=(0,0,1))
 back_shell=back_shell-seat
+
+if isinstance(back_shell,list): back_shell=Compound(children=back_shell)
+# Two M2 screws clamp the carrier directly to rear bosses.
+carrier_joints=[]
+clamps=part("carrier_clamps")
+for i,(px,py) in enumerate(key_locators):
+    if isinstance(back_shell,list): back_shell=Compound(children=back_shell)
+    j=make_screw_joint_v1(size="M2",at=Location((px,py,clamps.z+clamps.t)),through=[(clamps.clamp_parts[i],clamps.t),(pcb_ref,production_pcb_t-0.02)],seat="surface",head="pan",engage_depth=1.4,into=back_shell,material="PETG",lengths=(4,),label=f"carrier:{i}")
+    back_shell=back_shell+j.bosses-j.engage_cuts
+    carrier_joints.append(j)
+# Two padded rear posts keep the screen adapter seated without battery compression.
+adapter_bottom_z=board_back_z-2.5-5.7950061-(production_pcb_t-0.8)
+adapter_cy=board_c[1]+DISP_H/2-DISP_HEADER_Y+3.5
+for xx in (-8.5,8.5):
+    back_shell=back_shell+Pos(xx,adapter_cy+2,wall-0.1)*Box(2.6,3,adapter_bottom_z-0.8-wall+0.1,align=(Align.CENTER,Align.CENTER,Align.MIN))
 
 # Normalise boolean multi-solid results before the joint kit.
 if isinstance(front_shell,list): front_shell=Compound(children=front_shell)
@@ -304,13 +325,19 @@ for i, (sx, sy) in enumerate(screw_xy):
 
 # Clip the boss feet to the curved inner back surface; the screw-axis engagement is unchanged.
 front_shell = front_shell - back_shell
+if isinstance(front_shell,list): front_shell=Compound(children=front_shell)
 front_shell = front_shell.cut(*pusher_pockets)
 
-shell_color = srgb("#a594f0")
+shell_opacity = param("shell_opacity", 0.5)
+shell_color = srgb("#a594f0", shell_opacity)
 front_shell.color = shell_color
 back_shell.color = shell_color
-publish("front_shell", front_shell, "Front shell", material="petg")
+# Front finish is published by its own part after keeper receiving bosses are solved.
 publish("back_shell", back_shell, "Back shell", material="petg")
 for i, j in enumerate(screws):
     publish(f"screw_{i}", j.hardware, f"M2 screw {i + 1}", material="steel", role="fastener")
 screw_report = [(j.screw_length_mm, j.boss_length_mm, j.notes) for j in screws]
+
+for i,j in enumerate(carrier_joints):
+    publish(f"carrier_screw_{i}",j.hardware,f"Carrier M2x4 screw {i+1}",material="steel",role="fastener")
+print("Carrier joints",[(j.screw_length_mm,j.boss_length_mm,j.notes) for j in carrier_joints])

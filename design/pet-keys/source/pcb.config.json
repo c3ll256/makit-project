@@ -7,7 +7,7 @@
     "copperThicknessOz": {
       "outer": 1
     },
-    "finishedThicknessMm": 1.6,
+    "finishedThicknessMm": 1.0,
     "defaultTraceWidthMm": 0.3,
     "absoluteMinimumTraceWidthMm": 0.2,
     "absoluteMinimumCopperClearanceMm": 0.15,
@@ -132,12 +132,12 @@
       "shape": "circle",
       "xMm": 0,
       "yMm": -11,
-      "radiusMm": 2.1,
+      "radiusMm": 2.2,
       "layers": [
         "top",
         "bottom"
       ],
-      "rationale": "2.2 mm NPTH locator: reserve hole plus 1 mm against copper; headless printed locating pin."
+      "rationale": "2.4mm NPTH M2 clearance;1mm copper keepout around hole; M2 pan head clamps carrier."
     },
     {
       "name": "MH2",
@@ -145,12 +145,12 @@
       "shape": "circle",
       "xMm": -9,
       "yMm": -9,
-      "radiusMm": 2.1,
+      "radiusMm": 2.2,
       "layers": [
         "top",
         "bottom"
       ],
-      "rationale": "2.2 mm NPTH locator: reserve hole plus 1 mm against copper; headless printed locating pin."
+      "rationale": "2.4mm NPTH M2 clearance;1mm copper keepout around hole; M2 pan head clamps carrier."
     },
     {
       "name": "UPPER_BOSS_EDGE",
@@ -202,7 +202,7 @@
     {
       "componentRef": "J_LCD",
       "vertical": true,
-      "rationale": "7P female cable plugs along +Z outside XIAO board, ahead of key group."
+      "rationale": "GH top-entry at shell(17.5,-13), short locked plug rises in free lane outside XIAO and screen PCB."
     },
     {
       "componentRef": "P_XIAO_A3",
@@ -246,7 +246,7 @@
       "populate": true
     },
     {
-      "bomItemId": "lcd_header",
+      "bomItemId": "carrier_lcd_header",
       "designators": [
         "J_LCD"
       ],

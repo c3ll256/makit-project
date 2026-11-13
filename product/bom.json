@@ -2,7 +2,7 @@
   "schema_version": 1,
   "status": "draft",
   "bom_ready": true,
-  "requirements_digest": "cceeaad530c35fdc1378bf7e5891a696692e63e3c96ea37daf96d36a68c25ad1",
+  "requirements_digest": "a1cf852027632a667b1a56a944f36e55a01abf944d2e49be2e6dbe7b4444c20e",
   "items": [
     {
       "id": "mcu",
@@ -38,7 +38,7 @@
       "supply_risk": "Seller photos establish variant, supply, pin order and planar dimensions. No overall stack-height drawing; use disclosed dimensional defaults during CAD. Module bought separately; a store link and current stock/price are procurement reminders only.",
       "selection_reason": "User selected this exact seven-pin, metal-frame module; supplied specification and mechanical images establish the facts. It replaces the Grove display in the target product.",
       "cad_relevance": {
-        "notes": "27.78x39.22 mm PCB; AA 23.4 square. Four 2 mm holes, side centres 2.5 mm from PCB edges by default. Module front stack default 3.6 mm (1.6 PCB+2.0 LCM); presoldered male body 2.5 mm and 6 mm pins; matching 14 mm cable housing reserved. Seller gives no total thickness."
+        "notes": "27.78x39.22mm PCB,23.4 square AA. Default PCB1.6+LCM2mm, male insulator2.5mm. Shorten exposed male pins to2.5mm for female3mm cavity; adapter/socket replaces14mm Dupont housings."
       },
       "part_identity": "802a64d5f61d22f8"
     },
@@ -51,9 +51,9 @@
       "part_number": "503035",
       "source": "generic",
       "procurement_status": "generic_default",
-      "selection_reason": "Retain 30x35x5 mm cell in tray centre(-8.6,1.5), floor Z2.1. Screen shifts upward1.3 mm to clear its top edge and avoid lower closing boss.",
+      "selection_reason": "30x35x5mm cell in tray centre(-8.6,1.0), on1mm foam, bottomZ3.1; no top compression.",
       "cad_relevance": {
-        "notes": "30x35x5 mm, tray centre(-8.6,1.5), floor Z2.1; no compression."
+        "notes": "Tray centre(-8.6,1.0), bottomZ3.1, body30x35x5mm."
       },
       "part_identity": "c306e0eab1dc70a9"
     },
@@ -88,7 +88,7 @@
       },
       "selection_reason": "Supplier drawing p1: 6x6 body, 5 mm total height, 6.5x4.5 mm pin spacing; supplier footprint selected. Pins 1/2 common, pins 3/4 common; press joins the two groups.",
       "cad_relevance": {
-        "notes": "Caps and switch actuator centres at shell (-14.5,-23.5),(0,-26.5),(14.5,-23.5); side switches rotate -35/+35 degrees to clear screen and curved board edge. Cap pegs act directly; separate discs retain caps."
+        "notes": "Caps and switch actuator centres at shell (-14.5,-23.5),(0,-26.5),(14.5,-23.5); side switches rotate -35/+35 degrees to clear screen and curved board edge. Cap pegs act directly; separate discs retain caps. Printed cap diameters9/13/9mm; switch positions and electrical assembly unchanged."
       },
       "part_identity": "c0f0c6700ba0bcdf",
       "image_url": "https://assets.lcsc.com/images/lcsc/900x900/20250911_Korean-Hroparts-Elec-K2-1102DP-C4SW-04_C110153_front.jpg"
@@ -124,33 +124,33 @@
       "id": "foam_tape",
       "role": "consumable",
       "name": "Double-sided foam tape, 1 mm thick",
-      "description": "Holds battery in the offset tray",
+      "description": "1mm double-sided compliant foam for battery base and small anti-rattle screen/adapter/XIAO pads",
       "quantity": 1,
       "part_number": "1mm double-sided foam tape",
       "source": "generic",
       "procurement_status": "generic_default",
-      "selection_reason": "Retain battery in the offset tray; XIAO remains socketed.",
+      "selection_reason": "Battery attached at base without compression; small pads preload rigid PCB/metal shield only.",
       "part_identity": "ca3a41afcd1b7ddd"
     },
     {
       "id": "shell_print",
       "role": "printed_part",
-      "name": "Printed parts: front shell, back shell, screen bezel, 3 button caps, 3 retaining discs",
-      "description": "30 mm thick matched front/back shells, narrow TFT supports, 23.8 mm square bezel window, three long button rods and retaining discs.",
+      "name": "Printed front/back shells, keyed bezel, screen keeper,3 button caps,3 retaining discs,2 carrier clamps",
+      "description": "22mm body,23.4mm including button domes; keyed bezel, hidden screwed screen keeper,3 caps,3 retaining discs,2 screw load spreaders. All printed pieces one solid. Front/back shells and integral lanyard nub: translucent lavender-blue PETG; model opacity0.50 is a visualization default, not a measured optical specification. Dark opaque bezel and pale button caps retain existing finish. Front proportions follow the 2026-11-12 user photo: shallow smoothly blended lobes, moderate circular bezel and compact purple surround; original control and USB axes retained. Shell envelope72.508x81.621x22mm including lanyard nub; domes give23.4mm maximum. Visible bezel diameter45mm, screen edge locators integral with bezel, hidden keeper anchors(-21.5,22),(21.5,22),(-28,0),(27,-13). Side edge uses continuous broad elliptical rolls to front and back, with maximum width at the seam; button cap diameters9/13/9mm with unchanged actuator axes.",
       "quantity": 1,
       "part_number": "pet-shell printed set",
       "source": "printed",
       "procurement_status": "printed",
-      "selection_reason": "Preserve approved cloud outline and USB position; 30 mm default thickness clears two ordinary14 mm cable housings and wire turns. Screen centre Y4.3, 1.3 mm above previous position.",
+      "selection_reason": "Thin stack with low screen adapter and GH locking harness; screwed PCB and screen keeper with compliant pads. User requires a translucent shell; use translucent PETG stock rather than opaque lavender stock, and approve a same-wall-thickness sample for the desired translucency. User requests a rounder compact face with shallow valleys; resize the front surround and hidden keeper anchors while retaining the selected hardware. User requests a broader sloping side profile and a larger middle button; middle cap13mm is the disclosed dimensional default, other caps9mm. User requests a slightly smaller black bezel;45mm visible outer diameter is the disclosed default, with23.8x23.8mm display aperture retained and the mating shell opening adjusted together. Matched to common1.0mm mixed-panel stock: carrier supports raised0.6mm and adapter supports lowered0.2mm; component mating faces, USB and button heights retained.",
       "part_identity": "9d1fcea5dcdaafb4"
     },
     {
       "id": "pet_keys_pcb",
       "role": "custom_pcb",
-      "name": "Pet key/7P TFT/XIAO socket carrier, shaped 2-layer FR4 1.6 mm 1 oz",
+      "name": "Pet mixed-panel carrier piece, shaped52.5x45.5mm,2-layer FR4 1.0mm 1oz",
       "quantity": 1,
       "source": "custom",
-      "selection_reason": "Direct XIAO plug-in and three button axes retained; 7-pin ST7789 interface replaces Grove by user choice.",
+      "selection_reason": "Direct XIAO plug-in and three button axes retained; user chose a mixed production panel with the screen adapter. Common 1.0mm FR4 is the engineering default; carrier underside supports rise 0.6mm to preserve component top heights. One carrier per product and per mixed panel.",
       "part_identity": "df3f619804a92fdb"
     },
     {
@@ -250,48 +250,139 @@
     {
       "id": "lcd_header",
       "role": "connector",
-      "name": "HX PZ2.54-1x7P ZZ",
-      "description": "Pin Header 7 Position 2.54mm Pitch Single Row Through Hole -40°C~+105°C",
-      "designators": [
-        "J_LCD"
-      ],
+      "name": "SM07B-GHS-TB(LF)(SN)",
+      "description": "Connector Header 7 position 1.25mm Pitch 1A Surface Mount, Right Angle -25°C~+85°C",
       "quantity": 1,
+      "manufacturer": "JST",
+      "part_number": "SM07B-GHS-TB(LF)(SN)",
+      "mpn": "SM07B-GHS-TB(LF)(SN)",
+      "lcsc_code": "C495552",
+      "source": "lcsc",
       "supplier": "LCSC",
-      "manufacturer": "hanxia(韩下)",
-      "part_number": "HX PZ2.54-1x7P ZZ",
-      "mpn": "HX PZ2.54-1x7P ZZ",
-      "lcsc_code": "C32713273",
+      "jlc_smt_library": "extended",
+      "procurement_status": "selected",
+      "package": "SMD,P=1.25mm,Surface Mount,Right Angle",
+      "footprint": "jlcpcb:C495552",
+      "stock": 12636,
+      "designators": [
+        "J_SCREEN_GH"
+      ],
+      "assembly": {
+        "population": "mounted",
+        "method": "manual",
+        "side": "bottom"
+      },
+      "product_url": "https://item.szlcsc.com/506561.html",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/8bd43f6af33d6ab9377e1c8e3056086d.pdf?productCode=C495552",
+      "part_identity": "b6e2f4b594f46389",
+      "selection_reason": "JST GH 7P1.25mm side-entry positive lock on screen adapter bottom; mates GHR-07V-S. Auxiliary solder tabs take cable load.",
+      "image_url": "https://assets.lcsc.com/images/lcsc/900x900/20230119_JST-SM07B-GHS-TB-LF-SN_C495552_front.jpg"
+    },
+    {
+      "id": "lcd_cable",
+      "role": "cable",
+      "name": "JST GH1.25mm7P GHR-07V-S to GHR-07V-S precrimped cable,150mm,1-to-1",
+      "part_number": "GHR-07V-S / SSHL-002T-P0.2 7P150mm straight through",
+      "quantity": 1,
+      "source": "generic",
+      "procurement_status": "generic_default",
+      "description": "Seven30AWG wires,150mm between housings, genuine GH positive lock; contact SSHL-002T-P0.2. Not SH/ZH/PicoBlade. Lay excess flat in two layers and retain with foam tape tabs.",
+      "selection_reason": "Modeled independent paths91.55–110.47mm leave assembly and bend allowance;150mm standard GH7P cable provides service slack secured above battery. Paths run below keeper, then rise on staggered lanes beyond its upper edge.",
+      "part_identity": "8ff29aad7b21a9a0"
+    },
+    {
+      "id": "screen_socket",
+      "role": "connector",
+      "name": "HC-PM254-5.0H-1x7PZ",
+      "description": "Female Header 7 Position 2.54mm Pitch Single Row Through Hole -40°C~+105°C",
+      "quantity": 1,
+      "manufacturer": "HC(虹成电子)",
+      "part_number": "HC-PM254-5.0H-1x7PZ",
+      "mpn": "HC-PM254-5.0H-1x7PZ",
+      "lcsc_code": "C27985232",
+      "source": "lcsc",
+      "supplier": "LCSC",
       "jlc_smt_library": "extended",
       "procurement_status": "selected",
       "package": "Through Hole,P=2.54mm",
-      "footprint": "jlcpcb:C32713273",
-      "stock": 1467,
-      "source": "lcsc",
-      "product_url": "https://item.szlcsc.com/34444553.html",
-      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/f79f1905a9f9ea419348ed1fcaf69eab.pdf?productCode=C32713273",
-      "image_url": "https://assets.lcsc.com/images/lcsc/900x900/20240819_hanxia-HX-PZ2-54-1x7P-ZZ_C32713273_front.jpg",
+      "footprint": "jlcpcb:C27985232",
+      "stock": 1332,
+      "designators": [
+        "J_SCREEN"
+      ],
       "assembly": {
         "population": "mounted",
         "method": "through_hole",
         "side": "top"
       },
-      "selection_reason": "Supplier drawing p1: 7 contacts at 2.54 mm, 17.78 mm body, 2.5 mm insulation, 6 mm mating pins, 3 mm solder tails. Vertical hand-soldered header ahead of keys, outside XIAO body. Right-angle candidates rejected because mated cable crossed the XIAO socket row.",
-      "cad_relevance": {
-        "notes": "At shell(20.2,-13), vertical +Z mating, pin1 at+X. Header insulation ends Z7.235;14 mm female housing ends Z21.235; cable turns below screen board Z23.3."
-      },
-      "part_identity": "a44233f444e37d51"
+      "product_url": "https://item.szlcsc.com/29721190.html",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/459ae8ff1ec8327b929b62e0d4d9ab63.pdf?productCode=C27985232",
+      "part_identity": "9d5fdc17fee3e1dd",
+      "selection_reason": "Square-hole 7P accepts selected 0.64 mm square screen pins. Supplier drawing: 5 mm body, 3 mm cavity, 2.54 mm pitch, body18.18x2.4; shorten screen exposed pin tips to2.5 mm, trim solder tails0.6 mm.",
+      "image_url": "https://assets.lcsc.com/images/lcsc/900x900/20240724_Hong-Cheng-HC-PM254-5-0H-1x7PZ_C27985232_front.jpg"
     },
     {
-      "id": "lcd_cable",
-      "role": "cable",
-      "name": "2.54 mm 1x7P female-to-female pre-crimped cable, 100 mm, straight through",
-      "part_number": "2.54mm 7P F-F 100mm straight-through",
+      "id": "screen_adapter_pcb",
+      "role": "custom_pcb",
+      "name": "Pet mixed-panel screen adapter piece,20x11mm,2-layer FR4 1.0mm 1oz",
+      "part_number": "pet-screen-adapter",
       "quantity": 1,
+      "source": "custom",
+      "selection_reason": "Low side-entry GH locking harness, 5mm socket on top and GH on bottom. User chose a mixed panel with the carrier; common 1.0mm FR4 is the engineering default. Socket mating face stays fixed; adapter underside, bottom connector and support pads sit0.2mm lower. One adapter per product and per mixed panel.",
+      "part_identity": "61dfba6f3c3eecbb"
+    },
+    {
+      "id": "carrier_screws",
+      "role": "fastener",
+      "name": "M2x4mm pan-head cross-recess screw ISO7045",
+      "part_number": "ISO7045 M2x4",
+      "quantity": 2,
       "source": "generic",
       "procurement_status": "generic_default",
-      "description": "Seven insulated 28 AWG wires, 100 mm between housings, female terminals for 0.64 mm square pins; GND-to-GND through BLK-to-BLK. Default 17.78x2.6x14 mm housings.",
-      "selection_reason": "User chose one 7-pin cable. Buy pre-crimped, not seven loose soldered wires; confirm function labels at both ends because connector insertion directions differ.",
-      "part_identity": "b55ca09692e4d9f2"
+      "selection_reason": "Two carrier screws into rear PETG bosses, fixed board axes.",
+      "part_identity": "b04fc075135f7fd3"
+    },
+    {
+      "id": "screen_screws",
+      "role": "fastener",
+      "name": "M2x6mm pan-head cross-recess screw ISO7045",
+      "part_number": "ISO7045 M2x6",
+      "quantity": 4,
+      "source": "generic",
+      "procurement_status": "generic_default",
+      "selection_reason": "Hidden screen keeper screws into front shell PETG bosses.",
+      "part_identity": "75fd637e3ff936c0"
+    },
+    {
+      "id": "carrier_lcd_header",
+      "role": "connector",
+      "name": "BM07B-GHS-TBT(LF)(SN)(N)",
+      "part_number": "BM07B-GHS-TBT(LF)(SN)(N)",
+      "mpn": "BM07B-GHS-TBT(LF)(SN)(N)",
+      "manufacturer": "JST",
+      "lcsc_code": "C378970",
+      "quantity": 1,
+      "designators": [
+        "J_LCD"
+      ],
+      "source": "lcsc",
+      "supplier": "LCSC",
+      "jlc_smt_library": "extended",
+      "procurement_status": "selected",
+      "package": "SMD,P=1.25mm",
+      "description": "Connector Header 7 position 1.25mm Pitch 1A Surface Mount,Vertical -25°C~+85°C",
+      "footprint": "jlcpcb:C378970",
+      "product_url": "https://item.szlcsc.com/351381.html",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/80dc7ab1445718afe1c2981a4a6ba75c.pdf?productCode=C378970",
+      "image_url": "https://assets.lcsc.com/images/lcsc/900x900/20230108_JST-BM07B-GHS-TBT-LF-SN-N_C378970_front.jpg",
+      "stock": 4178,
+      "assembly": {
+        "population": "mounted",
+        "method": "manual",
+        "side": "top"
+      },
+      "selection_reason": "JST GH7P positive-lock top-entry at shell(17,-12.5); supplier solid body topZ8.795, conservative mated plug/wire exitZ12.235 leaves room below screen. Mates GHR-07V-S.",
+      "part_identity": "60c7d3562340b8f0"
     }
   ]
 }

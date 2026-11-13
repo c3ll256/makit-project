@@ -1,1 +1,0 @@
-publish("carrier_final_release", asset("design/pet-shell/source/assets/29fc2a7f6f6e4b51e461504595b95e87c341bb95897acae1e9132e302d527883.step"), "7P TFT carrier release")

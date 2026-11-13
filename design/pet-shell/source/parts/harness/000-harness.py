@@ -1,39 +1,47 @@
 f=part("form")
 wire_r=param("wire_envelope_radius",0.4)
-plug_w=param("lcd_plug_width",17.78)
-plug_d=param("lcd_plug_depth",2.6)
-plug_h=param("lcd_plug_length",14.0)
-contact_r=param("lcd_plug_contact_clearance",0.53)
-hy=f.board_c[1]+f.DISP_H/2-f.DISP_HEADER_Y
-screen_plug_top=f.board_back_z-2.5
-screen_plug_bottom=screen_plug_top-plug_h
-screen_plug=Pos(0,hy,screen_plug_bottom)*Box(plug_w,plug_d,plug_h,align=(Align.CENTER,Align.CENTER,Align.MIN))
-carrier_plug_bottom=7.235
-carrier_plug_top=carrier_plug_bottom+plug_h
-carrier_plug=Pos(20.2,-13,carrier_plug_bottom)*Box(plug_w,plug_d,plug_h,align=(Align.CENTER,Align.CENTER,Align.MIN))
-screen_bores=[];carrier_bores=[]
-for i in range(7):
-    screen_bores.append(Pos((i-3)*2.54,hy,screen_plug_top-6.6)*Cylinder(contact_r,7,align=(Align.CENTER,Align.CENTER,Align.MIN)))
-    carrier_bores.append(Pos(20.2-(i-3)*2.54,-13,carrier_plug_bottom-0.1)*Cylinder(contact_r,7,align=(Align.CENTER,Align.CENTER,Align.MIN)))
-screen_plug=screen_plug.cut(*screen_bores)
-carrier_plug=carrier_plug.cut(*carrier_bores)
-screen_plug.color=srgb("#303237")
-carrier_plug.color=srgb("#303237")
-publish("lcd_display_plug",screen_plug,"Screen 7P cable plug",role="reference")
-publish("lcd_carrier_plug",carrier_plug,"Carrier 7P cable plug",role="reference")
+housing_w=param("gh_housing_width",10.0)
+housing_d=param("gh_mated_external_length",3.0)
+housing_h=param("gh_housing_height",3.0)
+carrier_y=-12.5
+carrier_z=10.735
+screen_y=f.adapter_cy+3.8491679+housing_d/2
+screen_z=f.adapter_bottom_z-2.22
+carrier_bottom=param("carrier_gh_opening_z",8.795)
+carrier_top=carrier_z+housing_h/2
+carrier_plug=Pos(17,carrier_y,carrier_bottom)*Box(housing_w,housing_d,carrier_top-carrier_bottom,align=(Align.CENTER,Align.CENTER,Align.MIN))
+screen_plug=Pos(0,screen_y,screen_z)*Box(housing_w,housing_d,housing_h)
+carrier_plug.color=srgb("#e6e2da")
+screen_plug.color=srgb("#e6e2da")
+publish("lcd_carrier_plug",carrier_plug,"GH7 locked cable carrier end",role="reference")
+publish("lcd_display_plug",screen_plug,"GH7 locked cable display end",role="reference")
+riser_outer_x=param("wire_riser_outer_x",17.2)
+riser_pitch=param("wire_riser_pitch",0.9)
+riser_first_y=param("wire_riser_first_y",26.8)
+cross_outer_z=param("wire_cross_outer_z",16.0)
 wires=[];wire_lengths=[]
 colors=["#29292c","#b43f46","#ede8dc","#e3b944","#bd7650","#54816d","#737caa"]
 for i,col in enumerate(colors):
-    x=(i-3)*2.54
-    d=(i-3)*0.95
-    tx=20.2-(i-3)*2.54
-    mid=18-(i-3)*0.9
-    low=4.8+i*0.9
-    high=17+i*0.7
-    pts=[(x,hy,screen_plug_bottom-0.05),(x,hy,4.8),(x,hy+1.97,4.8),(x,hy+1.97,low),(x,24.0,low),(mid,24.0,low),(mid,24.0,high),(mid,0,high),(tx,-8,22.3),(tx,-13,22.3),(tx,-13,carrier_plug_top+0.05)]
-    pts=[p for j,p in enumerate(pts) if j==0 or (Vector(p)-Vector(pts[j-1])).length>0.001]
-    route=Polyline(*pts)
-    w=sweep(Plane(origin=pts[0],z_dir=Vector(pts[1])-Vector(pts[0]))*Circle(wire_r),path=route,transition=Transition.ROUND)
-    w.color=srgb(col);wires.append(w);wire_lengths.append(route.length)
-print("Wire routing lengths mm:",wire_lengths)
-publish("lcd_cable_route",wires,"Seven-wire cable routing",role="reference")
+ sx=17-(i-3)*1.25
+ ex=(i-3)*1.25
+ j=i%3
+ g=i//3
+ mx=21.5 if i==6 else 23.1-j*0.8
+ zz=15.1+(i//3)*0.9
+ fan_y=-10.2-g+j*0.85
+ fan_z=12.9+g*0.85
+ low_z=5.2+i*0.8
+ cross_z=cross_outer_z-i*0.85
+ approach=33.0
+ pts=[(sx,carrier_y,carrier_z+housing_h/2),(sx,carrier_y,fan_z),(sx+0.9,fan_y,fan_z),(mx,fan_y,fan_z),(mx,fan_y,zz),(mx,11+g,zz),(mx,11+g,low_z)]
+ lx=riser_outer_x-i*riser_pitch
+ lane_y=20.0-0.9*g
+ rise_y=riser_first_y+0.9*g
+ pts.extend([(mx,lane_y,low_z),(lx,lane_y,low_z),(lx,rise_y,low_z),(lx,rise_y,cross_z),(ex,rise_y,cross_z),(ex,approach,cross_z),(ex,approach,screen_z),(ex,screen_y+housing_d/2,screen_z)])
+ pts=[p for j,p in enumerate(pts) if j==0 or (Vector(p)-Vector(pts[j-1])).length>0.001]
+ route=Polyline(*pts)
+ w=sweep(Plane(origin=pts[0],z_dir=Vector(pts[1])-Vector(pts[0]))*Circle(wire_r),path=route,transition=Transition.ROUND)
+ assert w.is_valid, f"Invalid wire envelope {i}"
+ w.color=srgb(col);wires.append(w);wire_lengths.append(route.length)
+publish("lcd_cable_route",wires,"Locked 7-wire cable route",role="reference")
+print("Wire route lengths",wire_lengths)

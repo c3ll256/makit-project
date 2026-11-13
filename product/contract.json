@@ -74,10 +74,28 @@
       "source": "user_requested",
       "description": "Seller interface definitions; 1.3-inch lacks CS and BLK is low-off",
       "path": "product/references/uploads/20261110T152829794Z-5-img-1022.jpg"
+    },
+    {
+      "id": "ref_compact_cloud_20261112",
+      "source": "user_requested",
+      "description": "User handheld photo: smooth shallow scallops, narrow translucent purple surround and larger circular black bezel.",
+      "path": "product/references/uploads/20261112T125222705Z-1-image.png"
+    },
+    {
+      "id": "ref_broad_side_roll_20261112",
+      "source": "user_requested",
+      "description": "Side-view green stroke requests broader continuously sloping edge profile.",
+      "path": "product/references/uploads/20261112T130802147Z-1-mark-1.png"
+    },
+    {
+      "id": "ref_larger_middle_button_20261112",
+      "source": "user_requested",
+      "description": "Front-view blue circle requests a larger middle button.",
+      "path": "product/references/uploads/20261112T130802147Z-2-mark-2.png"
     }
   ],
   "assembly_story": {
-    "installation": "Fit XIAO on its carrier, seat battery, and mount the selected YouXin display with its matching bezel and supports. Connect the display using the seven-pin straight-through female cable; verify header and cable clearances before lowering front assembly and closing rear screws.",
+    "installation": "Screw carrier into rear with two M2x4 screws and printed load spreaders. Bond battery at base, no compression. On bench assemble keyed bezel, display, foam-loaded hidden keeper and low screen adapter; shorten screen exposed tips2.5mm. Plug150mm locking GH7P cable, spread retained slack above battery, check keys, lower front assembly and close original four M2x6 screws.",
     "maintenance": "Remove the back screws to replace the battery.",
     "user_access": [
       "three front buttons",
@@ -109,7 +127,10 @@
           "youxin_tft_variant",
           "youxin_tft_specs",
           "youxin_tft_drawing",
-          "youxin_tft_pins"
+          "youxin_tft_pins",
+          "ref_compact_cloud_20261112",
+          "ref_broad_side_roll_20261112",
+          "ref_larger_middle_button_20261112"
         ]
       }
     ]

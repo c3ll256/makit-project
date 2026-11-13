@@ -1,0 +1,58 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-09T16:43:01.466Z",
+  "lcsc_code": "C608991",
+  "manufacturer": "Seeed(矽递科技)",
+  "manufacturer_part_number": "110990030",
+  "description": "110990030",
+  "category": "特殊逻辑IC",
+  "package": "-",
+  "jlcpcb_part_class": "unknown",
+  "parameters": {},
+  "lcsc_stock": null,
+  "price_breaks": [
+    {
+      "quantity": 1,
+      "unitPrice": 21.36,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 200,
+      "unitPrice": 8.27,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 7.98,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1000,
+      "unitPrice": 7.84,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1,
+      "unitPrice": 3.4687,
+      "currency": "USD"
+    },
+    {
+      "quantity": 200,
+      "unitPrice": 1.343,
+      "currency": "USD"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 1.2959,
+      "currency": "USD"
+    },
+    {
+      "quantity": 1000,
+      "unitPrice": 1.2732,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/638692.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/cb544c37c412f6cd868585da6079caca.pdf?productCode=C608991",
+  "datasheet_file": "references/suppliers/c608991/c608991-datasheet.pdf"
+}

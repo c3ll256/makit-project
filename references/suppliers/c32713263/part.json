@@ -1,0 +1,94 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-10T14:10:29.023Z",
+  "lcsc_code": "C32713263",
+  "manufacturer": "hanxia(韩下)",
+  "manufacturer_part_number": "HX PZ2.54-1x4P WZ",
+  "description": "Pin Header 4 Position 2.54mm Pitch Single Row Through Hole, Right Angle -40°C~+105°C",
+  "category": "排针",
+  "package": "Through Hole,Right Angle,P=2.54mm",
+  "jlcpcb_part_class": "extended",
+  "parameters": {
+    "Connector Type": "Right Angle",
+    "Voltage Rating (Max)": "1kV",
+    "Contact Material": "Brass",
+    "Number of Rows": "1",
+    "Pitch": "2.54mm",
+    "Circluar Pins/Square Pins": "Square pin",
+    "Current Rating": "3A",
+    "Insulation Height": "2.5mm",
+    "Length of Mating Pin": "6mm",
+    "Length of End Connection Pin": "3mm",
+    "Operating Temperature": "-40°C~+105°C",
+    "Contact Plating": "Gold",
+    "Number of PINs": "4P",
+    "Color": "Black",
+    "Pin Structure": "1x4P"
+  },
+  "lcsc_stock": 1363,
+  "price_breaks": [
+    {
+      "quantity": 20,
+      "unitPrice": 0.2315,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 200,
+      "unitPrice": 0.1807,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 600,
+      "unitPrice": 0.1525,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 2000,
+      "unitPrice": 0.1375,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 10000,
+      "unitPrice": 0.1229,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 20000,
+      "unitPrice": 0.115,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 20,
+      "unitPrice": 0.0381,
+      "currency": "USD"
+    },
+    {
+      "quantity": 200,
+      "unitPrice": 0.0298,
+      "currency": "USD"
+    },
+    {
+      "quantity": 600,
+      "unitPrice": 0.0251,
+      "currency": "USD"
+    },
+    {
+      "quantity": 2000,
+      "unitPrice": 0.0227,
+      "currency": "USD"
+    },
+    {
+      "quantity": 10000,
+      "unitPrice": 0.0203,
+      "currency": "USD"
+    },
+    {
+      "quantity": 20000,
+      "unitPrice": 0.019,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/34444543.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/1487f0d8e18e6402cb685e7df1b04665.pdf?productCode=C32713263",
+  "datasheet_file": "references/suppliers/c32713263/c32713263-datasheet.pdf"
+}

@@ -1,0 +1,318 @@
+{
+  "schemaVersion": 3,
+  "backend": "tscircuit-kicad",
+  "designId": "pet-screen-adapter",
+  "candidateId": "8b0bfc9f542d88743fa0ab62e81bea0f79ab60877b689acb9e3db993c2a3fb6a",
+  "exportId": "8b0bfc9f542d88743fa0ab62e81bea0f79ab60877b689acb9e3db993c2a3fb6a",
+  "status": "ready",
+  "readyForFabrication": true,
+  "sections": [
+    {
+      "id": "fabrication",
+      "status": "ready",
+      "files": [
+        "manufacturing/drill/board-NPTH.drl",
+        "manufacturing/drill/board-PTH.drl",
+        "manufacturing/drill/pet-screen-adapter-drill-report.txt",
+        "manufacturing/gerbers/board-B_Cu.gbl",
+        "manufacturing/gerbers/board-B_Mask.gbs",
+        "manufacturing/gerbers/board-B_Paste.gbp",
+        "manufacturing/gerbers/board-B_Silkscreen.gbo",
+        "manufacturing/gerbers/board-Edge_Cuts.gm1",
+        "manufacturing/gerbers/board-F_Cu.gtl",
+        "manufacturing/gerbers/board-F_Mask.gts",
+        "manufacturing/gerbers/board-F_Paste.gtp",
+        "manufacturing/gerbers/board-F_Silkscreen.gto",
+        "manufacturing/gerbers/board-job.gbrjob"
+      ],
+      "blockingCodes": []
+    },
+    {
+      "id": "assembly",
+      "status": "ready",
+      "files": [
+        "manufacturing/jlc-smt-bom.csv",
+        "manufacturing/jlc-smt-placement.csv"
+      ],
+      "blockingCodes": []
+    },
+    {
+      "id": "mechanical",
+      "status": "ready",
+      "files": [
+        "manufacturing/assembly.glb",
+        "manufacturing/assembly.step"
+      ],
+      "blockingCodes": []
+    }
+  ],
+  "generatedAt": "2026-11-13T15:09:47.054Z",
+  "files": [
+    {
+      "type": "glb",
+      "path": "manufacturing/assembly.glb",
+      "sha256": "9ceb369b264aaf02757fdd2ff3c5db2eee17c19f923b9062e34f16879763ddf3",
+      "sizeBytes": 5471124
+    },
+    {
+      "type": "step",
+      "path": "manufacturing/assembly.step",
+      "sha256": "61ba7b0521c247fbcb54fc5878295b841b6ab5a899b6dd0c7517b12351e67239",
+      "sizeBytes": 2782931
+    },
+    {
+      "type": "manifest",
+      "path": "manufacturing/circuit.json",
+      "sha256": "3f70d5582735acc3cbeffffb371855bf5af7d37947958dae6f4604b6b4284973",
+      "sizeBytes": 104608
+    },
+    {
+      "type": "drill",
+      "path": "manufacturing/drill/board-NPTH.drl",
+      "sha256": "3a182d5bb4db579d284735a43dd93954ee508b80b518e7a0f148aec605e39432",
+      "sizeBytes": 264
+    },
+    {
+      "type": "drill",
+      "path": "manufacturing/drill/board-PTH.drl",
+      "sha256": "4b6a915c79254abc43450ebac9f6788468651087cea35095a23581a3b79bae6b",
+      "sizeBytes": 487
+    },
+    {
+      "type": "drill",
+      "path": "manufacturing/drill/pet-screen-adapter-drill-report.txt",
+      "sha256": "0fb9d96d2b56a15623f7f76bddf952ce217199a8332530a7444a0534721eaa3c",
+      "sizeBytes": 637
+    },
+    {
+      "type": "gerber",
+      "path": "manufacturing/gerbers/board-B_Cu.gbl",
+      "sha256": "50a156e117c1e57dc52acf7728549c1e408f6dc6a25d53a4819c663c46f55f20",
+      "sizeBytes": 10688
+    },
+    {
+      "type": "gerber",
+      "path": "manufacturing/gerbers/board-B_Mask.gbs",
+      "sha256": "668bd67d2cb948a7af2fa83956c020ce189fbd27f820873bd11f64fefff11ebb",
+      "sizeBytes": 1034
+    },
+    {
+      "type": "gerber",
+      "path": "manufacturing/gerbers/board-B_Paste.gbp",
+      "sha256": "63569c6ca39ad3e7b8c2318b59414fe3cf41c0e5dac8ccf63d0581d6f4946b43",
+      "sizeBytes": 770
+    },
+    {
+      "type": "gerber",
+      "path": "manufacturing/gerbers/board-B_Silkscreen.gbo",
+      "sha256": "b346827d79dc81a61e6ee18a4b27e793d4ac6514dd815295fbd5b0743ade4de1",
+      "sizeBytes": 1046
+    },
+    {
+      "type": "gerber",
+      "path": "manufacturing/gerbers/board-Edge_Cuts.gm1",
+      "sha256": "caba4ace44ff91f1f39bb7bcb278ee3b62ce047d241299a66d75115dce6c434d",
+      "sizeBytes": 680
+    },
+    {
+      "type": "gerber",
+      "path": "manufacturing/gerbers/board-F_Cu.gtl",
+      "sha256": "fa78b8d0540089007900ecaf1506205f7b21022a41b0e5656a99109486b75719",
+      "sizeBytes": 10795
+    },
+    {
+      "type": "gerber",
+      "path": "manufacturing/gerbers/board-F_Mask.gts",
+      "sha256": "f2cacae311e9862575c5beeb334a79ff60d7585a130f253029f9013f09492f29",
+      "sizeBytes": 714
+    },
+    {
+      "type": "gerber",
+      "path": "manufacturing/gerbers/board-F_Paste.gtp",
+      "sha256": "064219e7a03ffe50df3d026157077e57ab47e687e5b982743a5bff7aa7e3044f",
+      "sizeBytes": 450
+    },
+    {
+      "type": "gerber",
+      "path": "manufacturing/gerbers/board-F_Silkscreen.gto",
+      "sha256": "aa8df875541f5e85228a3146319845c5aa5ef761f0cc34f0ee7db1a16ec74222",
+      "sizeBytes": 702
+    },
+    {
+      "type": "gerber",
+      "path": "manufacturing/gerbers/board-job.gbrjob",
+      "sha256": "4b0430361fafef497e84335ca4aed6bf3cbe2effb69d00d8b3d199c5fb7597d5",
+      "sizeBytes": 2657
+    },
+    {
+      "type": "bom",
+      "path": "manufacturing/jlc-smt-bom.csv",
+      "sha256": "aa1612c451e93d09b111d32b4569cc296efc2d633dfe8745feda984e6b0a473c",
+      "sizeBytes": 72
+    },
+    {
+      "type": "pick-and-place",
+      "path": "manufacturing/jlc-smt-placement.csv",
+      "sha256": "9f7341ff1e2e3b6c2c0d7cb9ba2dfdac47befb92965ff74f99c129c23e83ff30",
+      "sizeBytes": 83
+    }
+  ],
+  "diagnostics": [
+    {
+      "stage": "fabrication-export",
+      "severity": "info",
+      "tier": "advisory",
+      "code": "command_output",
+      "message": "Plotted to '/Users/c3ll256/Documents/Makit/点子宠物机/manufacturing/pet-screen-adapter/exports/.staging/8b0bfc9f542d88743fa0ab62e81bea0f79ab60877b689acb9e3db993c2a3fb6a-b09711ff-ffb2-4439-a670-d76aa8f42027/gerbers/board-F_Cu.gtl'.\nPlotted to '/Users/c3ll256/Documents/Makit/点子宠物机/manufacturing/pet-screen-adapter/exports/.staging/8b0bfc9f542d88743fa0ab62e81bea0f79ab60877b689acb9e3db993c2a3fb6a-b09711ff-ffb2-4439-a670-d76aa8f42027/gerbers/board-B_Cu.gbl'.\nPlotted to '/Users/c3ll256/Documents/Makit/点子宠物机/manufacturing/pet-screen-adapter/exports/.staging/8b0bfc9f542d88743fa0ab62e81bea0f79ab60877b689acb9e3db993c2a3fb6a-b09711ff-ffb2-4439-a670-d76aa8f42027/gerbers/board-F_Paste.gtp'.\nPlotted to '/Users/c3ll256/Documents/Makit/点子宠物机/manufacturing/pet-screen-adapter/exports/.staging/8b0bfc9f542d88743fa0ab62e81bea0f79ab60877b689acb9e3db993c2a3fb6a-b09711ff-ffb2-4439-a670-d76aa8f42027/gerbers/board-B_Paste.gbp'.\nPlotted to '/Users/c3ll256/Documents/Makit/点子宠物机/manufacturing/pet-screen-adapter/exports/.staging/8b0bfc9f542d88743fa0ab62e81bea0f79ab60877b689acb9e3db993c2a3fb6a-b09711ff-ffb2-4439-a670-d76aa8f42027/gerbers/board-F_Silkscreen.gto'.\nPlotted to '/Users/c3ll256/Documents/Makit/点子宠物机/manufacturing/pet-screen-adapter/exports/.staging/8b0bfc9f542d88743fa0ab62e81bea0f79ab60877b689acb9e3db993c2a3fb6a-b09711ff-ffb2-4439-a670-d76aa8f42027/gerbers/board-B_Silkscreen.gbo'.\nPlotted to '/Users/c3ll256/Documents/Makit/点子宠物机/manufacturing/pet-screen-adapter/exports/.staging/8b0bfc9f542d88743fa0ab62e81bea0f79ab60877b689acb9e3db993c2a3fb6a-b09711ff-ffb2-4439-a670-d76aa8f42027/gerbers/board-F_Mask.gts'.\nPlotted to '/Users/c3ll256/Documents/Makit/点子宠物机/manufacturing/pet-screen-adapter/exports/.staging/8b0bfc9f542d88743fa0ab62e81bea0f79ab60877b689acb9e3db993c2a3fb6a-b09711ff-ffb2-4439-a670-d76aa8f42027/gerbers/board-B_Mask.gbs'.\nPlotted to '/Users/c3ll256/Documents/Makit/点子宠物机/manufacturing/pet-screen-adapter/exports/.staging/8b0bfc9f542d88743fa0ab62e81bea0f79ab60877b689acb9e3db993c2a3fb6a-b09711ff-ffb2-4439-a670-d76aa8f42027/gerbers/board-Edge_Cuts.gm1'.",
+      "file": "manufacturing/gerbers",
+      "details": {
+        "exitCode": 0
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "info",
+      "tier": "advisory",
+      "code": "command_output",
+      "message": "Created file '/Users/c3ll256/Documents/Makit/点子宠物机/manufacturing/pet-screen-adapter/exports/.staging/8b0bfc9f542d88743fa0ab62e81bea0f79ab60877b689acb9e3db993c2a3fb6a-b09711ff-ffb2-4439-a670-d76aa8f42027/drill/board-PTH.drl'\nCreated file '/Users/c3ll256/Documents/Makit/点子宠物机/manufacturing/pet-screen-adapter/exports/.staging/8b0bfc9f542d88743fa0ab62e81bea0f79ab60877b689acb9e3db993c2a3fb6a-b09711ff-ffb2-4439-a670-d76aa8f42027/drill/board-NPTH.drl'\nDone.",
+      "file": "manufacturing/drill",
+      "details": {
+        "exitCode": 0
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "info",
+      "tier": "advisory",
+      "code": "command_output",
+      "message": "Fontconfig error: Cannot load default config file: No such file: (null)\nWarning: schematic has annotation errors, please use the schematic editor to fix them\nWrote bill of materials to '/Users/c3ll256/Documents/Makit/点子宠物机/manufacturing/pet-screen-adapter/exports/.staging/8b0bfc9f542d88743fa0ab62e81bea0f79ab60877b689acb9e3db993c2a3fb6a-b09711ff-ffb2-4439-a670-d76aa8f42027/bom.csv'.",
+      "file": "manufacturing/bom.csv",
+      "details": {
+        "exitCode": 0
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "info",
+      "tier": "advisory",
+      "code": "command_output",
+      "message": "Wrote position data to '/Users/c3ll256/Documents/Makit/点子宠物机/manufacturing/pet-screen-adapter/exports/.staging/8b0bfc9f542d88743fa0ab62e81bea0f79ab60877b689acb9e3db993c2a3fb6a-b09711ff-ffb2-4439-a670-d76aa8f42027/placement.csv'.",
+      "file": "manufacturing/placement.csv",
+      "details": {
+        "exitCode": 0
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "info",
+      "tier": "advisory",
+      "code": "command_output",
+      "message": "STEP file '/Users/c3ll256/Documents/Makit/点子宠物机/manufacturing/pet-screen-adapter/exports/.staging/8b0bfc9f542d88743fa0ab62e81bea0f79ab60877b689acb9e3db993c2a3fb6a-b09711ff-ffb2-4439-a670-d76aa8f42027/assembly.step' created.\n\nExport time 0.657 s",
+      "file": "manufacturing/assembly.step",
+      "details": {
+        "exitCode": 0
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "info",
+      "tier": "advisory",
+      "code": "assembly_step_required_models_verified",
+      "message": "Verified 2 required mounted assembly model occurrence(s) in the final KiCad STEP: J_SCREEN, J_SCREEN_GH.",
+      "file": "manufacturing/assembly.step",
+      "details": {
+        "checked_model_refs": [
+          "J_SCREEN",
+          "J_SCREEN_GH"
+        ]
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "info",
+      "tier": "advisory",
+      "code": "assembly_surface_appearance_built",
+      "message": "Prepared deterministic board appearance for the main PCB.",
+      "file": "manufacturing/assembly-appearance.json",
+      "details": {
+        "spec_sha256": "25b1785695428cf4c32bdd7cbdb228f8c59e0d740f029162932a194c132115e4",
+        "overlay_ids": [
+          "main-pcb:pet-screen-adapter"
+        ]
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "info",
+      "tier": "advisory",
+      "code": "assembly_glb_derived_from_step",
+      "message": "assembly.glb was generated from the final KiCad assembly.step, so the fabrication preview and released solid share one geometry source.",
+      "file": "manufacturing/assembly.glb",
+      "details": {
+        "source": "assembly-step",
+        "source_path": "manufacturing/assembly.step",
+        "source_step_sha256": "61ba7b0521c247fbcb54fc5878295b841b6ab5a899b6dd0c7517b12351e67239",
+        "preview_sha256": "9ceb369b264aaf02757fdd2ff3c5db2eee17c19f923b9062e34f16879763ddf3",
+        "appearance_spec_sha256": "25b1785695428cf4c32bdd7cbdb228f8c59e0d740f029162932a194c132115e4",
+        "surface_texture_overlay_ids": [
+          "main-pcb:pet-screen-adapter"
+        ],
+        "surface_decal_ids": [],
+        "material_override_ids": [],
+        "verified_source_material_ids": []
+      }
+    }
+  ],
+  "previews": [
+    {
+      "type": "gerber-preview-svg",
+      "path": "manufacturing/previews/gerber-top.svg",
+      "role": "fabrication",
+      "side": "top"
+    },
+    {
+      "type": "gerber-preview-png",
+      "path": "manufacturing/previews/gerber-top.png",
+      "role": "fabrication",
+      "side": "top"
+    },
+    {
+      "type": "gerber-preview-svg",
+      "path": "manufacturing/previews/gerber-bottom.svg",
+      "role": "fabrication",
+      "side": "bottom"
+    },
+    {
+      "type": "gerber-preview-png",
+      "path": "manufacturing/previews/gerber-bottom.png",
+      "role": "fabrication",
+      "side": "bottom"
+    },
+    {
+      "type": "three-d-glb",
+      "path": "manufacturing/assembly.glb",
+      "role": "assembly"
+    }
+  ],
+  "finishedThicknessMm": 1,
+  "validatedBoardSpec": {
+    "layers": 2,
+    "material": "FR4",
+    "materialNote": "FR4 is the only substrate this system fabricates designs for; source/pcb.config.json has no material field to override it.",
+    "copperThicknessOz": {
+      "outer": 1
+    },
+    "capabilityProfileName": "jlcpcb-2layer-1oz",
+    "capabilityLimits": {
+      "minTrackWidthMm": 0.1,
+      "minViaDrillMm": 0.15,
+      "minViaDiameterMm": 0.25,
+      "minAnnularRingMm": 0.05,
+      "minPlatedHoleDrillMm": 0.15,
+      "minSilkLineWidthMm": 0.15,
+      "minSilkTextHeightMm": 1,
+      "minSilkPadClearanceMm": 0.15
+    },
+    "reorderWarning": "This design was DFM-validated as a 2-layer board at 1 oz outer copper (capability profile \"jlcpcb-2layer-1oz\", minimum trace width 0.1 mm). Ordering the board at a different layer count or copper weight invalidates this DFM check, because the real fabrication minimums (trace width, via drill/diameter, annular ring, plated-hole drill) change with both. To change either, edit manufacturing.layers or manufacturing.copperThicknessOz in source/pcb.config.json and re-run pcb.run(profile=\"check\")."
+  }
+}

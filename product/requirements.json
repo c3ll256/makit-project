@@ -5,7 +5,7 @@
       "source": "user"
     },
     "outline_shape": {
-      "value": "six soft cloud lobes like reference image 2: shallow round bumps around a near-circular body",
+      "value": "Six shallow, smoothly joined cloud lobes around a near-circular compact body, following the handheld reference uploaded 2026-11-12; avoid pronounced deep valleys.",
       "source": "user"
     },
     "layout": {
@@ -34,9 +34,9 @@
     },
     "envelope_mm": {
       "value": {
-        "width": 74,
-        "height_with_nub": 86,
-        "thickness": 30
+        "width": 72.508,
+        "height_with_nub": 81.621,
+        "thickness": 22
       },
       "source": "default"
     },
@@ -45,7 +45,7 @@
       "source": "default"
     },
     "design_direction": {
-      "value": "soft six-lobed cloud pebble in translucent lavender-blue, dark round bezel around the square screen, three domed paw-pad buttons on the three lower lobes, small lanyard ball on top",
+      "value": "Compact translucent lavender-blue cloud pebble with smooth shallow scallops, a moderately sized dark circular screen bezel around the square display, broad curved side slopes, three lower domed buttons with a larger middle button, and a small top lanyard ball.",
       "source": "user"
     },
     "custom_pcb": {
@@ -53,7 +53,7 @@
       "source": "user"
     },
     "key_pcb_implementation": {
-      "value": "Shaped 52.5x45.5 mm XIAO/key/7P TFT carrier, 2-layer 1.6 mm FR4. Original USB/XIAO and button XY retained; two 3 mm low 8P machined sockets plus 3 mm 4+3 round male headers, seven positions used. Screen header shell centre (20.2,-13), vertical +Z, pin1 on +X end. Keys D7/D9/D3; TFT D8/D10/D4/D5/D6.",
+      "value": "One 66x60x1.0mm 2-layer FR4 mixed production panel contains one52.5x45.5mm carrier and one20x11mm screen adapter. Finished piece outlines, switch axes, USB/XIAO position and connector directions retained. Common1.0mm thickness requires carrier underside supports+0.6mm and adapter underside supports-0.2mm while mating/component top faces stay fixed; CAD adaptation must be checked before printing.",
       "source": "default"
     },
     "display_grove_on_pcb": {
@@ -86,7 +86,59 @@
       "source": "research"
     },
     "display_cable": {
-      "value": "One pre-crimped 7P female-to-female 2.54 mm cable, 100 mm wire length, pin 1 to pin 1, no reversal; female housings default envelope 17.78x2.6x14 mm.",
+      "value": "JST GH1.25mm7P positive-lock precrimped150mm cable, GHR-07V-S housings and SSHL-002T-P0.2 contacts both ends,pin1-to-pin1. Not SH/ZH/PicoBlade. Screen exposed square pin tips shortened to2.5mm for3mm socket cavity; no desoldering.",
+      "source": "default"
+    },
+    "thin_body": {
+      "value": "整个机器不要这么厚；保留已选彩屏和云朵造型，压缩内部接插件堆叠。",
+      "source": "user"
+    },
+    "firm_assembly": {
+      "value": "整机不要松垮：屏幕、载板和插接件牢固固定，避免晃动和异响；按键可正常回弹。",
+      "source": "user"
+    },
+    "shell_finish": {
+      "value": "前壳、后壳及一体挂绳球均为半透明外壳。",
+      "source": "user"
+    },
+    "shell_visual_opacity": {
+      "value": 0.5,
+      "source": "default"
+    },
+    "front_proportions": {
+      "value": "外缘更加圆滑，六瓣之间没有明显深凹；正面紫色区域更窄、整体更紧凑，按2026-11-12用户参考图调整。",
+      "source": "user"
+    },
+    "side_edge_profile": {
+      "value": "按2026-11-12侧视绿线标记，边缘改为更大范围、更大坡度的连续圆滑收边，减少中段直立壁面。",
+      "source": "user"
+    },
+    "middle_button_larger": {
+      "value": "放大正面中间按钮，保留中间键中心位置。",
+      "source": "user"
+    },
+    "button_cap_diameters_mm": {
+      "value": [
+        9,
+        13,
+        9
+      ],
+      "source": "default"
+    },
+    "bezel_size_preference": {
+      "value": "黑色圆形屏框小一点；按用户指定的bezel部件调整。",
+      "source": "user"
+    },
+    "bezel_outer_diameter_mm": {
+      "value": 45,
+      "source": "default"
+    },
+    "pcb_panel_manufacturing": {
+      "value": "主载板和屏幕转接板混拼在同一张生产板上加工，分板后装配。",
+      "source": "user"
+    },
+    "pcb_common_thickness_mm": {
+      "value": 1,
       "source": "default"
     }
   },

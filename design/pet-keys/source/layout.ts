@@ -1,5 +1,5 @@
 // Board XY equals shell XY + (0,21.5); carrier top Z4.740 mm.
-export const board = { width: 52.5, height: 45.5, thickness: 1.6 };
+export const board = { width: 52.5, height: 45.5, thickness: 1.0 };
 export const shellOffset = {x:0,y:-21.5,zTop:4.740};
 const P=(x:number,y:number)=>({x,y:y+21.5});
 const rightBoss=Array.from({length:17},(_,i)=>P(24+3.6*Math.cos(i*Math.PI/16),-20+3.6*Math.sin(i*Math.PI/16)));
@@ -17,4 +17,5 @@ export const sockets=[
  {ref:'J_XIAO_B',x:xiao.x-1.27,y:xiao.y-7.62,rotation:180,code:'C2915256',mpn:'MF254V-11-08-0540',labels:{pin1:'VBUS',pin2:'GND',pin3:'V3V3',pin4:'D10',pin5:'D9',pin6:'D8',pin7:'D7',pin8:'SPARE_B'},connections:{GND:'net.GND',V3V3:'net.V3V3',D10:'net.LCD_DATA',D8:'net.LCD_SCK',D7:'net.KEY_LEFT',D9:'net.KEY_MID'},noConnect:['VBUS','SPARE_B']}
 ];
 // Vertical screen cable connector outside XIAO and above the key group.
-export const lcd={x:20.2,y:8.5,rotation:180};
+const rotationForOpening=(native:number,target:number)=>(target-native+360)%360;
+export const lcd={x:17,y:9.0,rotation:0};

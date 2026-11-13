@@ -1,0 +1,96 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-11T08:58:06.185Z",
+  "lcsc_code": "C378970",
+  "manufacturer": "JST",
+  "manufacturer_part_number": "BM07B-GHS-TBT(LF)(SN)(N)",
+  "description": "Connector Header 7 position 1.25mm Pitch 1A Surface Mount,Vertical -25°C~+85°C",
+  "category": "线对板针座",
+  "package": "SMD,P=1.25mm",
+  "jlcpcb_part_class": "extended",
+  "parameters": {
+    "Connector Type": "Surface Mount,Vertical",
+    "Reference Series": "GH",
+    "Voltage Rating (Max)": "50V",
+    "Contact Material": "Phosphor Bronze",
+    "Number of PINs Per Row": "7",
+    "Number of Rows": "1",
+    "Pitch": "1.25mm",
+    "Flame Retardant Rating": "UL94V-0",
+    "Current Rating": "1A",
+    "Supplementary Features": "Auxiliary Solder Pin",
+    "Number of PINs": "7P",
+    "Operating Temperature": "-25°C~+85°C",
+    "Contact Plating": "Tin",
+    "Plastic Material": "PA9T",
+    "Color": "White",
+    "X-Length of Bottom Edge on Board (Spacing Line)": "12mm",
+    "Pin Structure": "1x7P"
+  },
+  "lcsc_stock": 4178,
+  "price_breaks": [
+    {
+      "quantity": 5,
+      "unitPrice": 1.8639,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 50,
+      "unitPrice": 1.4646,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 150,
+      "unitPrice": 1.2934,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 1.0799,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 2500,
+      "unitPrice": 0.9848,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 5000,
+      "unitPrice": 0.9278,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 5,
+      "unitPrice": 0.3072,
+      "currency": "USD"
+    },
+    {
+      "quantity": 50,
+      "unitPrice": 0.2414,
+      "currency": "USD"
+    },
+    {
+      "quantity": 150,
+      "unitPrice": 0.2132,
+      "currency": "USD"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 0.178,
+      "currency": "USD"
+    },
+    {
+      "quantity": 2500,
+      "unitPrice": 0.1623,
+      "currency": "USD"
+    },
+    {
+      "quantity": 5000,
+      "unitPrice": 0.1529,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/351381.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/80dc7ab1445718afe1c2981a4a6ba75c.pdf?productCode=C378970",
+  "datasheet_file": "references/suppliers/c378970/c378970-datasheet.pdf"
+}

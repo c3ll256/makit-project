@@ -1,0 +1,94 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-10T15:38:34.958Z",
+  "lcsc_code": "C54907657",
+  "manufacturer": "SHOU HAN(首韩)",
+  "manufacturer_part_number": "PZ2.54-1x7PWZ-L13.8-P",
+  "description": "1x7P 间距:2.54mm 方针 弯插",
+  "category": "排针",
+  "package": "Through Hole,Right Angle,P=2.54mm",
+  "jlcpcb_part_class": "extended",
+  "parameters": {
+    "Connector Type": "Right Angle",
+    "Voltage Rating (Max)": "250V",
+    "Contact Material": "Brass",
+    "Number of Rows": "1",
+    "Pitch": "2.54mm",
+    "Circluar Pins/Square Pins": "Square pin",
+    "Current Rating": "3A",
+    "Insulation Height": "2.5mm",
+    "Length of Mating Pin": "6mm",
+    "Number of PINs": "7P",
+    "Operating Temperature": "-40°C~+105°C",
+    "Length of End Connection Pin": "3mm",
+    "Contact Plating": "Gold",
+    "Color": "Black",
+    "Pin Structure": "1x7P"
+  },
+  "lcsc_stock": 338,
+  "price_breaks": [
+    {
+      "quantity": 10,
+      "unitPrice": 0.3614,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 100,
+      "unitPrice": 0.2875,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 300,
+      "unitPrice": 0.2505,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 2000,
+      "unitPrice": 0.2228,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 4000,
+      "unitPrice": 0.2007,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 10000,
+      "unitPrice": 0.1896,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 10,
+      "unitPrice": 0.0593,
+      "currency": "USD"
+    },
+    {
+      "quantity": 100,
+      "unitPrice": 0.0472,
+      "currency": "USD"
+    },
+    {
+      "quantity": 300,
+      "unitPrice": 0.0411,
+      "currency": "USD"
+    },
+    {
+      "quantity": 2000,
+      "unitPrice": 0.0366,
+      "currency": "USD"
+    },
+    {
+      "quantity": 4000,
+      "unitPrice": 0.0329,
+      "currency": "USD"
+    },
+    {
+      "quantity": 10000,
+      "unitPrice": 0.0311,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/58437426.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/285908df62220d63aa839f06ebff4ad4.pdf?productCode=C54907657",
+  "datasheet_file": "references/suppliers/c54907657/c54907657-datasheet.pdf"
+}

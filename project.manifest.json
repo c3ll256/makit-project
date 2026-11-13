@@ -1,5 +1,13 @@
 {
   "formatVersion": 4,
   "name": "电子宠物机",
+  "title": "TamaGPT",
+  "summary": "A palm-sized virtual pet with a translucent shell, a colour display, and three playful buttons, powered by the ESP32-S3.",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "c3ll256"
+    }
+  ],
   "artifacts": "rebuild"
 }

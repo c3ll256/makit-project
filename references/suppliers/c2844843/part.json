@@ -1,0 +1,89 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-10T14:14:49.750Z",
+  "lcsc_code": "C2844843",
+  "manufacturer": "XFCN(兴飞)",
+  "manufacturer_part_number": "MF254V-11-03-0540",
+  "description": "1x3P 间距:2.54mm 直插",
+  "category": "排母",
+  "package": "Through Hole,P=2.54mm",
+  "jlcpcb_part_class": "extended",
+  "parameters": {
+    "Operating Temperature": "-40°C~+105°C",
+    "Mounting Type": "Through Hole",
+    "Number of Pins": "3P",
+    "Current Rating": "3A",
+    "Insulation Height": "3mm",
+    "Holes Structure": "1x3P",
+    "Pitch": "2.54mm",
+    "Holes Direction": "Top",
+    "Number of Rows": "1",
+    "Circular Hole / Square Hole": "Round Hole"
+  },
+  "lcsc_stock": 7605,
+  "price_breaks": [
+    {
+      "quantity": 5,
+      "unitPrice": 0.7645,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 50,
+      "unitPrice": 0.6109,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 150,
+      "unitPrice": 0.5341,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1000,
+      "unitPrice": 0.4765,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 2000,
+      "unitPrice": 0.4304,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 5000,
+      "unitPrice": 0.4073,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 5,
+      "unitPrice": 0.1253,
+      "currency": "USD"
+    },
+    {
+      "quantity": 50,
+      "unitPrice": 0.1002,
+      "currency": "USD"
+    },
+    {
+      "quantity": 150,
+      "unitPrice": 0.0876,
+      "currency": "USD"
+    },
+    {
+      "quantity": 1000,
+      "unitPrice": 0.0781,
+      "currency": "USD"
+    },
+    {
+      "quantity": 2000,
+      "unitPrice": 0.0706,
+      "currency": "USD"
+    },
+    {
+      "quantity": 5000,
+      "unitPrice": 0.0668,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/3036866.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/ae9f0270c8583c0ed11d711ff4493ccf.pdf?productCode=C2844843",
+  "datasheet_file": "references/suppliers/c2844843/c2844843-datasheet.pdf"
+}

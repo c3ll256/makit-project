@@ -12,10 +12,12 @@
           "target": "form",
           "order": 0,
           "path": "design/pet-shell/source/parts/form/000-form.py",
-          "sha256": "342326a432776f56a5cb6f14956928123d8050af372784764ad9f054c8c2c88b"
+          "sha256": "7d14eb9d6cb36110983b4d362b31ae43b2de9b0dfb96e93ec1673e343abe0aeb"
         }
       ],
-      "dependencies": []
+      "dependencies": [
+        "carrier_clamps"
+      ]
     },
     {
       "id": "bezel",
@@ -26,11 +28,12 @@
           "target": "bezel",
           "order": 0,
           "path": "design/pet-shell/source/parts/bezel/000-bezel.py",
-          "sha256": "a9cdb16f88dc641890087179338420e52b6208a180ff7d8a0ee3cd0fba09d300"
+          "sha256": "295de831aa46ca115b62d48982fbd5691f97860fad2cbf5549064c04081ccddf"
         }
       ],
       "dependencies": [
-        "form"
+        "form",
+        "screen_keeper"
       ]
     },
     {
@@ -58,7 +61,7 @@
           "target": "internals",
           "order": 0,
           "path": "design/pet-shell/source/parts/internals/000-internals.py",
-          "sha256": "5a31a1ef853247f107a7c801c44694c8f7edc057457a39ebd4adccd6460f8413"
+          "sha256": "d6108673a277f57dc215c862ae32d36ee5c11cc05648bf69d7690c3f4d8fef83"
         }
       ],
       "dependencies": [
@@ -70,11 +73,18 @@
       "label": "imports",
       "cells": [
         {
-          "id": "carrier_final_release",
+          "id": "carrier_1mm_release",
           "target": "imports",
           "order": 0,
-          "path": "design/pet-shell/source/parts/imports/000-carrier_final_release.py",
-          "sha256": "a7e98adc1e95288523fa02561480b199a09124900e6127cf60035d38da184091"
+          "path": "design/pet-shell/source/parts/imports/000-carrier_1mm_release.py",
+          "sha256": "8a40a1c8e37d94fb9feadcd74b05f240ddfb38de81ed5be7a274f355ce553c6d"
+        },
+        {
+          "id": "adapter_1mm_release",
+          "target": "imports",
+          "order": 1,
+          "path": "design/pet-shell/source/parts/imports/001-adapter_1mm_release.py",
+          "sha256": "870a8ee1d46464fe81519f206d7e4ca731f65447885c18aec94010997dd18824"
         }
       ],
       "dependencies": []
@@ -88,7 +98,7 @@
           "target": "harness",
           "order": 0,
           "path": "design/pet-shell/source/parts/harness/000-harness.py",
-          "sha256": "3008892d3311f21c3d2114d3eafef06eabde6ceab40ea18245c2e8d58b892c19"
+          "sha256": "d9b9ae29a41fc5abf74a3f8419935af8f05c454ff7b05e912e4a49d50041ff88"
         }
       ],
       "dependencies": [
@@ -121,7 +131,7 @@
           "target": "electronics",
           "order": 0,
           "path": "design/pet-shell/source/parts/electronics/000-electronics.py",
-          "sha256": "75c2ec21f2da3b23536119d699b03a2e04bada60d57ebe20df439db2b26ce0ea"
+          "sha256": "c272d6920bb3eb2c12fcbd050b53a4d1993184de304f42cf275f27bbbe014653"
         }
       ],
       "dependencies": [
@@ -143,6 +153,86 @@
       "dependencies": [
         "form"
       ]
+    },
+    {
+      "id": "carrier_clamps",
+      "label": "carrier_clamps",
+      "cells": [
+        {
+          "id": "carrier_clamps",
+          "target": "carrier_clamps",
+          "order": 0,
+          "path": "design/pet-shell/source/parts/carrier_clamps/000-carrier_clamps.py",
+          "sha256": "947e0135da268d0e872d8d93552ebd5f2d461884dffb833e8e96d1bad4a6e59a"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "screen_keeper",
+      "label": "screen_keeper",
+      "cells": [
+        {
+          "id": "screen_keeper",
+          "target": "screen_keeper",
+          "order": 0,
+          "path": "design/pet-shell/source/parts/screen_keeper/000-screen_keeper.py",
+          "sha256": "f7b220bec9287b4e2f626e0a11858d0e14358fb619b1fdf061986198cd761c12"
+        }
+      ],
+      "dependencies": [
+        "form"
+      ]
+    },
+    {
+      "id": "front_shell",
+      "label": "front_shell",
+      "cells": [
+        {
+          "id": "front_shell",
+          "target": "front_shell",
+          "order": 0,
+          "path": "design/pet-shell/source/parts/front_shell/000-front_shell.py",
+          "sha256": "b9e1f25936f45bfb2d567e7cfb272655951d960d2cc2407fc298e707f7b5a11b"
+        }
+      ],
+      "dependencies": [
+        "form",
+        "screen_keeper"
+      ]
+    },
+    {
+      "id": "screen_adapter",
+      "label": "screen_adapter",
+      "cells": [
+        {
+          "id": "screen_adapter",
+          "target": "screen_adapter",
+          "order": 0,
+          "path": "design/pet-shell/source/parts/screen_adapter/000-screen_adapter.py",
+          "sha256": "a1371e61ca85cb53f2d2795f492346f56c924f7f037477c87d007076aff8f831"
+        }
+      ],
+      "dependencies": [
+        "form"
+      ]
+    },
+    {
+      "id": "retention_pads",
+      "label": "retention_pads",
+      "cells": [
+        {
+          "id": "retention_pads",
+          "target": "retention_pads",
+          "order": 0,
+          "path": "design/pet-shell/source/parts/retention_pads/000-retention_pads.py",
+          "sha256": "522b03b3be86bffae552c4096870845d0483d86208309e211c6cd6e4d81f7a9b"
+        }
+      ],
+      "dependencies": [
+        "form",
+        "screen_keeper"
+      ]
     }
   ],
   "objects": [
@@ -152,7 +242,7 @@
       "label": "Back shell",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "c33916594b9480e178fe63f628ae87c908e35ce9f0d58b40346a96a715e11e75",
+      "shapeHash": "c2ee89c56ec7bacd279498848d9c6a73408eac7ff55269bce3d5a078b71bee91",
       "transform": {
         "positionMm": [
           0,
@@ -174,12 +264,41 @@
       "datums": []
     },
     {
-      "id": "front_shell",
+      "id": "carrier_screw_0",
       "target": "form",
-      "label": "Front shell",
-      "material": "petg",
+      "label": "Carrier M2x4 screw 1",
+      "material": "steel",
+      "role": "fastener",
       "kind": "generated",
-      "shapeHash": "ba692d2224c97d231fd2c2449972ae7b720d1b0a13e1a4e6e8f03ab137ed2e49",
+      "shapeHash": "7e317abebb287ad077273b71facfc9458807b0128d1b7bc7d251b90186d6b48b",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "carrier_screw_1",
+      "target": "form",
+      "label": "Carrier M2x4 screw 2",
+      "material": "steel",
+      "role": "fastener",
+      "kind": "generated",
+      "shapeHash": "7e9ceed111d9536bbc1ee9a3dbb9fa5e342cb8d2d29eff0fd6762ca8bca71245",
       "transform": {
         "positionMm": [
           0,
@@ -316,9 +435,9 @@
       "id": "bezel",
       "target": "bezel",
       "label": "Screen bezel",
-      "material": "pla",
+      "material": "petg",
       "kind": "generated",
-      "shapeHash": "31caf4f9875499320fccd192f6e96395b50a9ddf64085439b7730be991cfe863",
+      "shapeHash": "545eba42ffe4e39e1d391843e507a5e1508482fa3f80f86b657915c380e46011",
       "transform": {
         "positionMm": [
           0,
@@ -345,7 +464,7 @@
       "label": "Left button",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "5582ddfca9055d6126cbeedde0dfa10fb3c46c02cf77814c046fda8a96835d06",
+      "shapeHash": "bd200930df0ad11a0c087d13a50e3384fe4ed6bd4dd6c15dc5ee558029370b23",
       "transform": {
         "positionMm": [
           0,
@@ -372,7 +491,7 @@
       "label": "Middle button",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "2da18d12dc4c1a1bbcf62605f1bc46c3ecc65f95b82fc4b3a826fac90ac01bf8",
+      "shapeHash": "6a04f58d6577eebdbb2ffe6c11318a295c508e61869a3c6665fdfae33720c92d",
       "transform": {
         "positionMm": [
           0,
@@ -399,7 +518,7 @@
       "label": "Right button",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "b0f4c9b81d314c4401d14a36f892a3de43255a0b0a5e2cba915f5b03ba77892a",
+      "shapeHash": "58c7ef43d734ddcd12e1bfc8cd1d7cd406f1c66d1d01d112c8b74a431e238a88",
       "transform": {
         "positionMm": [
           0,
@@ -426,7 +545,7 @@
       "label": "503035 LiPo",
       "role": "reference",
       "kind": "generated",
-      "shapeHash": "6461e6073fefa71a3b0e303a52c58e4debe58bc03cb13bc7c50f0ae6b61a184e",
+      "shapeHash": "e8e26a7354ced9054a1db5689f04f7b2d831a5624435c28ff376a79ccd2cfdb2",
       "transform": {
         "positionMm": [
           0,
@@ -453,7 +572,7 @@
       "label": "YouXin 1.3in 7P ST7789",
       "role": "reference",
       "kind": "generated",
-      "shapeHash": "4de7dfee2c089bf21d7cc74579fa289e8833a80183569e6aaeaee768f9be9fa4",
+      "shapeHash": "15463c5ed3b98c9f02e52dab396334063301f52fb2c920cd98e71b5e39bd117b",
       "transform": {
         "positionMm": [
           0,
@@ -475,16 +594,42 @@
       "datums": []
     },
     {
-      "id": "carrier_final_release",
+      "id": "adapter_1mm_release",
       "target": "imports",
-      "label": "7P TFT carrier release",
+      "label": "1.0mm screen adapter release",
       "kind": "imported",
-      "shapeHash": "d2bfe99ad4a840a7fece5fa618c4604489985a90f92783adf6802f97942f6fc3",
+      "shapeHash": "3c21e232dbc7558b2b3364d0183c723b055b161b3a0726768cd0617fa0b7ad8e",
+      "transform": {
+        "positionMm": [
+          -20,
+          145,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "carrier_1mm_release",
+      "target": "imports",
+      "label": "1.0mm carrier release",
+      "kind": "imported",
+      "shapeHash": "eca596faa9b7d1abcf9160e013a51b757dc68ccff131ea8769bdb6e367a30c19",
       "transform": {
         "positionMm": [
           -20,
           78.5,
-          3.14
+          3.74
         ],
         "rotationDeg": [
           0,
@@ -503,10 +648,10 @@
     {
       "id": "lcd_cable_route",
       "target": "harness",
-      "label": "Seven-wire cable routing",
+      "label": "Locked 7-wire cable route",
       "role": "reference",
       "kind": "generated",
-      "shapeHash": "9da57f3016c4097fedcbab9d7916297fdcf0e289c0f0f2038935940f8d28d422",
+      "shapeHash": "17f71653027f19597c49a668b4642e51ef62fa0fe1fd601dd1e85692aa8fd6db",
       "transform": {
         "positionMm": [
           0,
@@ -530,10 +675,10 @@
     {
       "id": "lcd_carrier_plug",
       "target": "harness",
-      "label": "Carrier 7P cable plug",
+      "label": "GH7 locked cable carrier end",
       "role": "reference",
       "kind": "generated",
-      "shapeHash": "c2c5060488d1f56176559bb4ba9e272221ee6f6552dece9ce8667db8686a6b39",
+      "shapeHash": "c8c2a268dad540ca30594152efea2293e5c15a7f89df64e63bbaeb392fd70aed",
       "transform": {
         "positionMm": [
           0,
@@ -557,10 +702,10 @@
     {
       "id": "lcd_display_plug",
       "target": "harness",
-      "label": "Screen 7P cable plug",
+      "label": "GH7 locked cable display end",
       "role": "reference",
       "kind": "generated",
-      "shapeHash": "60fb3e3ebf87da173ff0ea0c04e97ca6d07fc4387531c65c36552fb14d3f51a3",
+      "shapeHash": "8e3d5dea4083e2f2ecd4c493c8e3abba0538aa29a71d3f668330c26deebcc843",
       "transform": {
         "positionMm": [
           0,
@@ -587,7 +732,7 @@
       "label": "Retainer left",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "0a9ed50469814a40016d5201a72a4009be05a72c6a1d7c3488165f2c5a228e5d",
+      "shapeHash": "873ce67b21201ac453c756c9dbc99c2e5e6dcb0c984e877eeb6aebbf254e7f72",
       "transform": {
         "positionMm": [
           0,
@@ -614,7 +759,7 @@
       "label": "Retainer mid",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "fd6e6af7211c352c1da1a4f32deeede023cfbf2830f10590f4f3275592488b8c",
+      "shapeHash": "aa19aceb6ff4ceca7c071b78972b5ecfe64a541e97ec31f8af486e708c6512eb",
       "transform": {
         "positionMm": [
           0,
@@ -641,7 +786,7 @@
       "label": "Retainer right",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "f79b4afd5ae1da3934f3d281aa0d3ba7be53bd4dbb61bcf989070879b83d5d1a",
+      "shapeHash": "b2609da48378d7de5a6a191a070415c77f837beda40e57813ade4b195d145a17",
       "transform": {
         "positionMm": [
           0,
@@ -668,7 +813,7 @@
       "label": "XIAO socket carrier, trimmed leads",
       "role": "reference",
       "kind": "generated",
-      "shapeHash": "afa0feb2d844b89fdff230f6bb59a4e3120772096905396b73efecd1d3d9f216",
+      "shapeHash": "d1673bbab1d590b124a930a0a2ac0c10bf971d3d51358eff1f0354c30143b0bb",
       "transform": {
         "positionMm": [
           0,
@@ -695,7 +840,335 @@
       "label": "1mm battery foam tape",
       "role": "reference",
       "kind": "generated",
-      "shapeHash": "97bb828ca0788258801f20f1fee1acd39ed7ddfb5f8efcb1c6d40b704ced1f64",
+      "shapeHash": "357cb30561a2df43c3ece085a89d226c0fbfcfd0765d0d0b4fe5b4fa88dc137f",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "carrier_clamp_0",
+      "target": "carrier_clamps",
+      "label": "Carrier clamp 1",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "715d919e3d96de912965f0a94df1addf17d9c89d9a803943ae7ade397a8851a2",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "carrier_clamp_1",
+      "target": "carrier_clamps",
+      "label": "Carrier clamp 2",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "7903b988d8d7d19faabab4cfee8d09124ce929de8e07b647f70b998741888b5e",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "keeper_screw_0",
+      "target": "screen_keeper",
+      "label": "Keeper M2x6 screw 1",
+      "material": "steel",
+      "role": "fastener",
+      "kind": "generated",
+      "shapeHash": "38718ee5007fe61214032c0011217596be6ba88c0a32743424fae3990cd4bc77",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "keeper_screw_1",
+      "target": "screen_keeper",
+      "label": "Keeper M2x6 screw 2",
+      "material": "steel",
+      "role": "fastener",
+      "kind": "generated",
+      "shapeHash": "41b71310541b8f1d213a25d49cf00ea6f49cbdd0301162fe51adc9109b233a7a",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "keeper_screw_2",
+      "target": "screen_keeper",
+      "label": "Keeper M2x6 screw 3",
+      "material": "steel",
+      "role": "fastener",
+      "kind": "generated",
+      "shapeHash": "7ee673695942ea994b8f8f4522ca2158b85bc2fdd7753742c879ace3b492bc62",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "keeper_screw_3",
+      "target": "screen_keeper",
+      "label": "Keeper M2x6 screw 4",
+      "material": "steel",
+      "role": "fastener",
+      "kind": "generated",
+      "shapeHash": "31a6e447ea0327ce90c9a6f2966ec3b214193b37ade03ec23cac92b79e4e07fe",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "screen_keeper",
+      "target": "screen_keeper",
+      "label": "Screwed screen keeper",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "99ba2bb9f7465139ce080cc36f4720ed9df8429d7935b864c9b0d72d57ea62ff",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "front_shell",
+      "target": "front_shell",
+      "label": "Front shell with hidden screen bosses",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "db8fd94a7697c76ec51b8007a9f67b333aff2b1d1aa2188ebadec01e4f3b90e3",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "screen_adapter_assembly",
+      "target": "screen_adapter",
+      "label": "Thin screen adapter, trimmed tails",
+      "role": "reference",
+      "kind": "generated",
+      "shapeHash": "bbe319af46fc4f16bf9f4cf57a40a3b90d530ebf45ce4c358f757c595aa46010",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "adapter_foam_pads",
+      "target": "retention_pads",
+      "label": "Adapter preload foam",
+      "role": "reference",
+      "kind": "generated",
+      "shapeHash": "954e981a2e2e519e258d99a2168f83b8a0fe3638c0801609426a5bb2be875d9b",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "screen_foam_pads",
+      "target": "retention_pads",
+      "label": "Screen corner preload foam",
+      "role": "reference",
+      "kind": "generated",
+      "shapeHash": "cd37aca77cf495955558e820fdbed8a382beaf2d36f07fa14f7fdeb24ba4632e",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "xiao_foam_pad",
+      "target": "retention_pads",
+      "label": "XIAO shield hold-down foam",
+      "role": "reference",
+      "kind": "generated",
+      "shapeHash": "cf1aade69c281c6370875591a9b67affa72848518d2b06d5ef6f2b402b6c7fa3",
       "transform": {
         "positionMm": [
           0,
@@ -719,13 +1192,23 @@
   ],
   "assets": [
     {
-      "id": "carrier_final_release",
+      "id": "carrier_1mm_release",
       "kind": "step",
-      "path": "design/pet-shell/source/assets/29fc2a7f6f6e4b51e461504595b95e87c341bb95897acae1e9132e302d527883.step",
-      "sha256": "29fc2a7f6f6e4b51e461504595b95e87c341bb95897acae1e9132e302d527883",
-      "label": "7P TFT carrier release",
+      "path": "design/pet-shell/source/assets/1923175e7cab06faa9851cbba0d6325b141ea46cefcecbd8921588a036ad542d.step",
+      "sha256": "1923175e7cab06faa9851cbba0d6325b141ea46cefcecbd8921588a036ad542d",
+      "label": "1.0mm carrier release",
       "provenance": {
-        "sourcePath": "manufacturing/pet-keys/releases/9d8ce43d260fdabeef3a9211db0f142047ae84c5dc72cf83e389f6a19debcfc8/package/assembly.step"
+        "sourcePath": "manufacturing/pet-keys/releases/4e94c1507d5086709e09b0a4c5b8b252b9c1f29c5f2c88f369132c7514e58671/package/assembly.step"
+      }
+    },
+    {
+      "id": "adapter_1mm_release",
+      "kind": "step",
+      "path": "design/pet-shell/source/assets/61ba7b0521c247fbcb54fc5878295b841b6ab5a899b6dd0c7517b12351e67239.step",
+      "sha256": "61ba7b0521c247fbcb54fc5878295b841b6ab5a899b6dd0c7517b12351e67239",
+      "label": "1.0mm screen adapter release",
+      "provenance": {
+        "sourcePath": "manufacturing/pet-screen-adapter/releases/cfb730bef75ca35e02884b9fc0d1668c6c5e2f6001a223d4f5fa1ab05bd0ed46/package/assembly.step"
       }
     }
   ],
@@ -750,25 +1233,46 @@
       "reason": "Retaining disc pressed onto cap peg, 0.15 mm diametral interference; the cap peg presses the switch directly.",
       "a": "pusher_right",
       "b": "button_right"
+    },
+    {
+      "kind": "compliant",
+      "budget_mm": 0.25,
+      "reason": "1mm foam compressed by0.2mm on display PCB corner lands; never glass",
+      "a": "screen_foam_pads",
+      "b": "display_ref"
+    },
+    {
+      "kind": "compliant",
+      "budget_mm": 0.25,
+      "reason": "1mm foam compressed0.2mm against adapter PCB underside, keeps square socket seated",
+      "a": "adapter_foam_pads",
+      "b": "screen_adapter_assembly"
+    },
+    {
+      "kind": "compliant",
+      "budget_mm": 0.25,
+      "reason": "1mm foam compressed0.2mm on rigid RF shield, prevents XIAO rocking",
+      "a": "xiao_foam_pad",
+      "b": "carrier_assembly"
     }
   ],
-  "updatedAt": "2026-11-10T16:04:21.345Z",
+  "updatedAt": "2026-11-13T15:20:00.986Z",
   "parameters": {
     "form": {
       "lobe_count": 6,
-      "lobe_radius": 18,
-      "lobe_ring_radius": 22,
-      "notch_radius": 6,
-      "body_thickness": 30,
+      "lobe_radius": 25,
+      "lobe_ring_radius": 13,
+      "notch_radius": 16,
+      "body_thickness": 22,
       "front_edge_radius": 7,
       "back_edge_radius": 5,
       "wall_thickness": 2,
       "seam_height": 8,
       "seam_reveal": 0.5,
       "screen_center_y": 4.3,
-      "bezel_radius": 21,
+      "bezel_radius": 22.5,
       "side_button_radius": 4.5,
-      "mid_button_radius": 5.5,
+      "mid_button_radius": 6.5,
       "nub_radius": 4.5,
       "nub_cord_hole_radius": 1.3,
       "usb_opening_clearance": 0.6,
@@ -777,8 +1281,8 @@
       "usb_pocket_corner_radius": 1.5,
       "usb_surround_width": 1.2,
       "usb_face_to_socket": 1.35,
-      "switch_top_z": 27.1,
-      "key_pcb_bottom_z": 3.14,
+      "switch_top_z": 19.1,
+      "key_pcb_bottom_z": 3.74,
       "key_locator_radius": 0.9,
       "key_support_radius": 1.5,
       "key_upper_retention_gap": 0.2,
@@ -790,7 +1294,7 @@
       "button_side_y": -23.5,
       "button_middle_y": -26.5,
       "battery_center_x": -8.6,
-      "battery_center_y": 1.5,
+      "battery_center_y": 1,
       "actuator_contact_z": 9.735,
       "button_guide_outer_radius": 5.2,
       "button_guide_inner_radius": 2.9,
@@ -809,7 +1313,10 @@
       "display_mount_hole_radius": 1,
       "display_mount_hole_inset": 2.5,
       "battery_floor_height": 3.1,
-      "battery_tray_rim_top_7p": 11.6
+      "battery_tray_rim_top_7p": 8.3,
+      "bezel_radial_gap": 0.2,
+      "shell_opacity": 0.5,
+      "production_pcb_thickness": 1
     },
     "bezel": {
       "bezel_thickness": 2.4,
@@ -817,7 +1324,10 @@
       "bezel_flange": 2,
       "screen_window_width": 23.8,
       "screen_window_height": 23.8,
-      "screen_window_corner": 0.4
+      "screen_window_corner": 0.4,
+      "shield_hold_down_bottom": 14.785,
+      "bezel_screen_locator_thickness": 1.2,
+      "bezel_screen_locator_gap": 0.2
     },
     "buttons": {
       "button_dome_height": 1.8,
@@ -828,7 +1338,7 @@
       "display_pcb_corner_chamfer": 0.8,
       "display_pin_square": 0.64,
       "display_header_body": 2.5,
-      "display_pin_length": 6,
+      "display_pin_length": 2.5,
       "display_active_width": 23.4
     },
     "imports": {},
@@ -841,7 +1351,15 @@
       "lcd_plug_width": 17.78,
       "lcd_plug_depth": 2.6,
       "lcd_plug_length": 14,
-      "lcd_plug_contact_clearance": 0.53
+      "lcd_plug_contact_clearance": 0.53,
+      "gh_housing_width": 10,
+      "gh_mated_external_length": 3,
+      "gh_housing_height": 3,
+      "carrier_gh_opening_z": 8.795,
+      "wire_riser_outer_x": 17.2,
+      "wire_riser_pitch": 0.9,
+      "wire_riser_first_y": 26.8,
+      "wire_cross_outer_z": 16
     },
     "pushers": {
       "pusher_socket_diametral_interference": 0.15,
@@ -849,12 +1367,40 @@
     },
     "electronics": {
       "maximum_solder_tail_below_pcb": 0.6,
-      "native_socket_tail_limit": 0.85
+      "native_socket_tail_limit": 0.6
     },
     "battery_pad": {
       "adhesive_thickness": 1,
       "adhesive_width": 20,
       "adhesive_height": 25
+    },
+    "carrier_clamps": {
+      "clamp_thickness": 1,
+      "clamp_outer_radius": 2.75,
+      "clamp_hole_radius": 1.2,
+      "carrier_top_height": 4.685
+    },
+    "screen_keeper": {
+      "keeper_thickness": 2,
+      "keeper_compressed_pad_gap": 0.8,
+      "wire_corner_relief_radius": 0.6,
+      "keeper_top_screw_x": 21.5,
+      "keeper_top_screw_y": 22,
+      "keeper_side_screw_x": -28,
+      "keeper_side_screw_y": 0,
+      "keeper_lower_screw_x": 27,
+      "keeper_lower_screw_y": -13
+    },
+    "front_shell": {
+      "bezel_key_clearance": 0.2
+    },
+    "screen_adapter": {
+      "adapter_solder_tail_limit": 0.6
+    },
+    "retention_pads": {
+      "pad_nominal_thickness": 1,
+      "screen_pad_width": 3.2,
+      "screen_pad_height": 2.8
     }
   }
 }

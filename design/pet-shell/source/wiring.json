@@ -10,7 +10,7 @@
       "ref": "display",
       "name": "优信电子 1.3寸TFT彩屏模块(带铁框)_7P焊接",
       "quantity": 1,
-      "note": "User-selected external module, ST7789 240x240 3.3V; one 7P female-to-female cable to carrier J_LCD."
+      "note": "Selected7P ST7789 display plugs into square socket J_SCREEN on pet-screen-adapter;150mm GH7P pin1-to-pin1 harness connects J_SCREEN_GH to carrier J_LCD."
     },
     {
       "ref": "battery",
@@ -45,7 +45,7 @@
       },
       "bus": "gpio",
       "via": "other",
-      "note": "Direct plug-in carrier: keys D7/D9/D3 through J_XIAO_A; screen D9/D10/3V3/GND through J_XIAO_B and J_GROVE. No MCU signal pigtails. USB end aligns pin 1 of both sockets. Supplier Grove numbering reversed relative to display; preserve cable functions.",
+      "note": "Direct socket carrier; keys left/mid/right D7/D9/D3. USB end aligns pin1 of both XIAO sockets; no signal pigtails.",
       "evidence": [
         "https://raw.githubusercontent.com/Seeed-Studio/wiki-documents/docusaurus-version/sites/en/docs/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO_ESP32S3_Getting_Started.md",
         "https://item.szlcsc.com/111374.html"
@@ -62,7 +62,7 @@
       },
       "bus": "gpio",
       "via": "other",
-      "note": "Direct plug-in carrier: keys D7/D9/D3 through J_XIAO_A; screen D9/D10/3V3/GND through J_XIAO_B and J_GROVE. No MCU signal pigtails. USB end aligns pin 1 of both sockets. Supplier Grove numbering reversed relative to display; preserve cable functions.",
+      "note": "Direct socket carrier; keys left/mid/right D7/D9/D3. USB end aligns pin1 of both XIAO sockets; no signal pigtails.",
       "evidence": [
         "https://raw.githubusercontent.com/Seeed-Studio/wiki-documents/docusaurus-version/sites/en/docs/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO_ESP32S3_Getting_Started.md",
         "https://item.szlcsc.com/111374.html"
@@ -79,7 +79,7 @@
       },
       "bus": "gpio",
       "via": "other",
-      "note": "Direct plug-in carrier: keys D7/D9/D3 through J_XIAO_A; screen D9/D10/3V3/GND through J_XIAO_B and J_GROVE. No MCU signal pigtails. USB end aligns pin 1 of both sockets. Supplier Grove numbering reversed relative to display; preserve cable functions.",
+      "note": "Direct socket carrier; keys left/mid/right D7/D9/D3. USB end aligns pin1 of both XIAO sockets; no signal pigtails.",
       "evidence": [
         "https://raw.githubusercontent.com/Seeed-Studio/wiki-documents/docusaurus-version/sites/en/docs/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO_ESP32S3_Getting_Started.md",
         "https://item.szlcsc.com/111374.html"
@@ -178,7 +178,7 @@
       },
       "bus": "power",
       "via": "other",
-      "note": "J_LCD pin 1, single 7P straight-through cable; verify function labels before battery connection. SCL/SDA are SPI, no CS pin; dedicated SPI bus. BLK low=off, high-Z=on; GPIO controls, does not supply LED current.",
+      "note": "Display/adapter/GH pin 1, square socket J_SCREEN -> J_SCREEN_GH ->150mm JST GH7P pin1-to-pin1 harness -> J_LCD; verify function labels before battery connection. SCL/SDA are SPI, no CS pin; dedicated SPI bus. BLK low=off, high-Z=on; GPIO controls, does not supply LED current.",
       "evidence": [
         "https://raw.githubusercontent.com/espressif/arduino-esp32/master/variants/XIAO_ESP32S3/pins_arduino.h",
         "product/references/uploads/20261110T152829794Z-3-img-1023.jpg",
@@ -196,7 +196,7 @@
       },
       "bus": "power",
       "via": "other",
-      "note": "J_LCD pin 2, single 7P straight-through cable; verify function labels before battery connection. SCL/SDA are SPI, no CS pin; dedicated SPI bus. BLK low=off, high-Z=on; GPIO controls, does not supply LED current.",
+      "note": "Display/adapter/GH pin 2, square socket J_SCREEN -> J_SCREEN_GH ->150mm JST GH7P pin1-to-pin1 harness -> J_LCD; verify function labels before battery connection. SCL/SDA are SPI, no CS pin; dedicated SPI bus. BLK low=off, high-Z=on; GPIO controls, does not supply LED current.",
       "evidence": [
         "https://raw.githubusercontent.com/espressif/arduino-esp32/master/variants/XIAO_ESP32S3/pins_arduino.h",
         "product/references/uploads/20261110T152829794Z-3-img-1023.jpg",
@@ -214,7 +214,7 @@
       },
       "bus": "spi",
       "via": "other",
-      "note": "J_LCD pin 3, single 7P straight-through cable; verify function labels before battery connection. SCL/SDA are SPI, no CS pin; dedicated SPI bus. BLK low=off, high-Z=on; GPIO controls, does not supply LED current.",
+      "note": "Display/adapter/GH pin 3, square socket J_SCREEN -> J_SCREEN_GH ->150mm JST GH7P pin1-to-pin1 harness -> J_LCD; verify function labels before battery connection. SCL/SDA are SPI, no CS pin; dedicated SPI bus. BLK low=off, high-Z=on; GPIO controls, does not supply LED current.",
       "evidence": [
         "https://raw.githubusercontent.com/espressif/arduino-esp32/master/variants/XIAO_ESP32S3/pins_arduino.h",
         "product/references/uploads/20261110T152829794Z-3-img-1023.jpg",
@@ -232,7 +232,7 @@
       },
       "bus": "spi",
       "via": "other",
-      "note": "J_LCD pin 4, single 7P straight-through cable; verify function labels before battery connection. SCL/SDA are SPI, no CS pin; dedicated SPI bus. BLK low=off, high-Z=on; GPIO controls, does not supply LED current.",
+      "note": "Display/adapter/GH pin 4, square socket J_SCREEN -> J_SCREEN_GH ->150mm JST GH7P pin1-to-pin1 harness -> J_LCD; verify function labels before battery connection. SCL/SDA are SPI, no CS pin; dedicated SPI bus. BLK low=off, high-Z=on; GPIO controls, does not supply LED current.",
       "evidence": [
         "https://raw.githubusercontent.com/espressif/arduino-esp32/master/variants/XIAO_ESP32S3/pins_arduino.h",
         "product/references/uploads/20261110T152829794Z-3-img-1023.jpg",
@@ -250,7 +250,7 @@
       },
       "bus": "gpio",
       "via": "other",
-      "note": "J_LCD pin 5, single 7P straight-through cable; verify function labels before battery connection. SCL/SDA are SPI, no CS pin; dedicated SPI bus. BLK low=off, high-Z=on; GPIO controls, does not supply LED current.",
+      "note": "Display/adapter/GH pin 5, square socket J_SCREEN -> J_SCREEN_GH ->150mm JST GH7P pin1-to-pin1 harness -> J_LCD; verify function labels before battery connection. SCL/SDA are SPI, no CS pin; dedicated SPI bus. BLK low=off, high-Z=on; GPIO controls, does not supply LED current.",
       "evidence": [
         "https://raw.githubusercontent.com/espressif/arduino-esp32/master/variants/XIAO_ESP32S3/pins_arduino.h",
         "product/references/uploads/20261110T152829794Z-3-img-1023.jpg",
@@ -268,7 +268,7 @@
       },
       "bus": "gpio",
       "via": "other",
-      "note": "J_LCD pin 6, single 7P straight-through cable; verify function labels before battery connection. SCL/SDA are SPI, no CS pin; dedicated SPI bus. BLK low=off, high-Z=on; GPIO controls, does not supply LED current.",
+      "note": "Display/adapter/GH pin 6, square socket J_SCREEN -> J_SCREEN_GH ->150mm JST GH7P pin1-to-pin1 harness -> J_LCD; verify function labels before battery connection. SCL/SDA are SPI, no CS pin; dedicated SPI bus. BLK low=off, high-Z=on; GPIO controls, does not supply LED current.",
       "evidence": [
         "https://raw.githubusercontent.com/espressif/arduino-esp32/master/variants/XIAO_ESP32S3/pins_arduino.h",
         "product/references/uploads/20261110T152829794Z-3-img-1023.jpg",
@@ -286,7 +286,7 @@
       },
       "bus": "gpio",
       "via": "other",
-      "note": "J_LCD pin 7, single 7P straight-through cable; verify function labels before battery connection. SCL/SDA are SPI, no CS pin; dedicated SPI bus. BLK low=off, high-Z=on; GPIO controls, does not supply LED current.",
+      "note": "Display/adapter/GH pin 7, square socket J_SCREEN -> J_SCREEN_GH ->150mm JST GH7P pin1-to-pin1 harness -> J_LCD; verify function labels before battery connection. SCL/SDA are SPI, no CS pin; dedicated SPI bus. BLK low=off, high-Z=on; GPIO controls, does not supply LED current.",
       "evidence": [
         "https://raw.githubusercontent.com/espressif/arduino-esp32/master/variants/XIAO_ESP32S3/pins_arduino.h",
         "product/references/uploads/20261110T152829794Z-3-img-1023.jpg",

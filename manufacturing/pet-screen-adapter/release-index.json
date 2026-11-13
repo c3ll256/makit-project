@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "releases": [
+    {
+      "releaseId": "cfb730bef75ca35e02884b9fc0d1668c6c5e2f6001a223d4f5fa1ab05bd0ed46",
+      "designId": "pet-screen-adapter",
+      "buildId": "7223942871a8e28c89b22ba751bb47ce31f8b5cc0baeb176b866e5bf49a9cb7b",
+      "candidateId": "31a3d3332114d37966f77b660fe1265c442b061480aab107bd802e3679ae53f8",
+      "approvedAt": "2026-11-13T15:09:47.141Z"
+    }
+  ]
+}
