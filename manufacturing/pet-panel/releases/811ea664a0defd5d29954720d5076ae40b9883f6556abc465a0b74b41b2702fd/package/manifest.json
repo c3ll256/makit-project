@@ -2,8 +2,8 @@
   "schemaVersion": 3,
   "backend": "tscircuit-kicad",
   "designId": "pet-panel",
-  "candidateId": "544691f1770048c21c289fe33712076a30e6dad68f6dffc90ed6890307a1e414",
-  "exportId": "544691f1770048c21c289fe33712076a30e6dad68f6dffc90ed6890307a1e414",
+  "candidateId": "a96ccccebd54c4dbb47cbd7783ac95c832dcc77ddbdafa464ab7ad8a6c6eab65",
+  "exportId": "a96ccccebd54c4dbb47cbd7783ac95c832dcc77ddbdafa464ab7ad8a6c6eab65",
   "status": "ready",
   "readyForFabrication": true,
   "sections": [
@@ -57,7 +57,7 @@
       "blockingCodes": []
     }
   ],
-  "generatedAt": "2026-11-13T15:24:14.235Z",
+  "generatedAt": "2026-11-16T17:07:18.478Z",
   "files": [
     {
       "type": "step",
@@ -122,125 +122,153 @@
     {
       "type": "glb",
       "path": "manufacturing/assembly.glb",
-      "sha256": "70dad566391d17451bad13f7c828a5ad56a87f90f0e7ec56b0a6da91feeb6f2e",
-      "sizeBytes": 28419648
+      "sha256": "4174ea8b206b7e90a6a6ed942630a1dbd2f67487dcd9a811d9ce9a1db9fd1b2a",
+      "sizeBytes": 28411420
     },
     {
       "type": "step",
       "path": "manufacturing/assembly.step",
-      "sha256": "d3ed2979a6a75cc87898118594bc472f4f41fafa3e958568446f497110ee84c5",
-      "sizeBytes": 12710601
+      "sha256": "e3c4c994c12cfd628f35ef4327a8f1943e3a020406515bc4405534e6961ebe66",
+      "sizeBytes": 12714732
     },
     {
       "type": "manifest",
       "path": "manufacturing/circuit.json",
-      "sha256": "88c9f25ef6e98023556ed508042b3b9175969ac1aab8725d104bea2e0af9e290",
-      "sizeBytes": 562569
+      "sha256": "18504d5728751667678e4ffbe497be8bac563fb99778e4ac87f05944a60ae397",
+      "sizeBytes": 562769
     },
     {
       "type": "drill",
       "path": "manufacturing/drill/board-NPTH.drl",
-      "sha256": "ae5eda23314120b8e38a3b7419a6628c84b94b83672a59765dff39558f7b1bfb",
+      "sha256": "181d9955717140fa81eeb322bf4f12d1d8b5e2d15d4362d331b377e67b53a592",
       "sizeBytes": 1281
     },
     {
       "type": "drill",
       "path": "manufacturing/drill/board-PTH.drl",
-      "sha256": "645b04da2fabb382ba066aec296c2f6411b9947b5e834c3412e1fa15819efc26",
+      "sha256": "c898f2056e694367bf529f9b21949f10a841ecb9216f9b9f10ed6b9a1c4e3ac5",
       "sizeBytes": 1043
     },
     {
       "type": "drill",
       "path": "manufacturing/drill/pet-panel-drill-report.txt",
-      "sha256": "c755fbf101c916e3a581756b36d19de21d72d23368c6a2452f9b1502ce57f44d",
+      "sha256": "271653ae4d91575360996ec04f6f4f672ae63ca6ae4637999c94148d5fe77e40",
       "sizeBytes": 792
     },
     {
       "type": "gerber",
       "path": "manufacturing/gerbers/board-B_Cu.gbl",
-      "sha256": "6cc120ce94529bda428d09a098c79bfa563381ce2f05994e3b17f3155d73407e",
-      "sizeBytes": 54291
+      "sha256": "94b170b39ead43be75f9a0c98202c8d1fae1bc38bc9f3079bc6c74dcb0181f63",
+      "sizeBytes": 53924
     },
     {
       "type": "gerber",
       "path": "manufacturing/gerbers/board-B_Mask.gbs",
-      "sha256": "9c4cd0b434d1230ee1969a2957967b2800563655f8feaa92fcf186edc5cd81e8",
-      "sizeBytes": 4670
+      "sha256": "b7ffb04c5eaeb2dd3712793b7c3f3c488f887cc3696ed530f1aa7fa958453196",
+      "sizeBytes": 4350
     },
     {
       "type": "gerber",
       "path": "manufacturing/gerbers/board-B_Paste.gbp",
-      "sha256": "17e71048f2b6aff92a4f3822e88cd1911e6129e47e1f6b02a974ab2cf2aa7998",
-      "sizeBytes": 765
+      "sha256": "758a443d7a4868c2dee27343cd274bb670d0c9dde120814d21028af7c1599adb",
+      "sizeBytes": 450
     },
     {
       "type": "gerber",
       "path": "manufacturing/gerbers/board-B_Silkscreen.gbo",
-      "sha256": "055b1cc657d1a96afacb6425c9195f8488d149da262f743fadd6cccc11f109e7",
-      "sizeBytes": 1036
+      "sha256": "5688d28c6262ffdade607482d485692d9d787eb7b71058079ff1bbe1ad29d4d2",
+      "sizeBytes": 697
     },
     {
       "type": "gerber",
       "path": "manufacturing/gerbers/board-Edge_Cuts.gm1",
-      "sha256": "6f11a25a5915c58d2386c245e1d90b1fecee1ea2283a007f99fb7907dfb53edc",
+      "sha256": "8603675afb1435a52f94cbcd2cb2a2db2ad6732edcf10961d733e68968beda83",
       "sizeBytes": 7598
     },
     {
       "type": "gerber",
       "path": "manufacturing/gerbers/board-F_Cu.gtl",
-      "sha256": "a0e84bdf56110b17c4c786efe238d911ab9fa7a7c83e578f6a50354bd1eb211b",
-      "sizeBytes": 58223
+      "sha256": "1fd1e8bd4b948c517d675af80638563d59c8fddbaa56c11a332c7d42e93edb73",
+      "sizeBytes": 58542
     },
     {
       "type": "gerber",
       "path": "manufacturing/gerbers/board-F_Mask.gts",
-      "sha256": "f655e6f9823c9bec75b370752333f92bdb781151ae14d4a33bf560847a608ee2",
-      "sizeBytes": 4681
+      "sha256": "bbf91608bebc94911d468bcd382ee43d83124871ea8d72be4838c8014160e2c7",
+      "sizeBytes": 4968
     },
     {
       "type": "gerber",
       "path": "manufacturing/gerbers/board-F_Paste.gtp",
-      "sha256": "b29a6e7c2a9dff74da59ed60a52708a19d2ac8096a5d4d370233511cd4344f28",
-      "sizeBytes": 771
+      "sha256": "c45ec1c71786ecf3924554f17afabcb70bb5239b6108291a8205c766d413195c",
+      "sizeBytes": 1058
     },
     {
       "type": "gerber",
       "path": "manufacturing/gerbers/board-F_Silkscreen.gto",
-      "sha256": "b6dde0ee3fc2912a9753120ed0d025e667c237c1261a853af79f3e1a30be3c15",
-      "sizeBytes": 7915
+      "sha256": "1628516f8318d2919c19690a423756d4fd66b9b6f846455d376b7df803ce359a",
+      "sizeBytes": 8254
     },
     {
       "type": "gerber",
       "path": "manufacturing/gerbers/board-job.gbrjob",
-      "sha256": "42b3f23a9446162a7d3f0e6cdd727cfc100945e3186263c84c441e3baeae2821",
+      "sha256": "ca004d19c3fdb5c2ea31286b7bf20ce04a8036fb01406e4b63ed0370309800a3",
       "sizeBytes": 2657
     },
     {
       "type": "bom",
       "path": "manufacturing/jlc-smt-bom.csv",
-      "sha256": "aa1612c451e93d09b111d32b4569cc296efc2d633dfe8745feda984e6b0a473c",
-      "sizeBytes": 72
+      "sha256": "aa0ecfb1094891b1402bc62e06265fab93133ffe3f826fe601f31fc83d419c82",
+      "sizeBytes": 386
     },
     {
       "type": "pick-and-place",
       "path": "manufacturing/jlc-smt-placement.csv",
-      "sha256": "9f7341ff1e2e3b6c2c0d7cb9ba2dfdac47befb92965ff74f99c129c23e83ff30",
-      "sizeBytes": 83
+      "sha256": "68950d83b81fd9f1498699761b3c02f6158ee84287e155c5c8da55db5493342d",
+      "sizeBytes": 256
     },
     {
       "type": "manifest",
       "path": "manufacturing/panel-manifest.json",
-      "sha256": "e5560c63f405405cc92f8c930325a0ec8444e1735306cc7f0fe6156f45096f47",
+      "sha256": "778352cf53f44cf92df706e85b305542373bb18af94d6158373c9389b8f3b34f",
       "sizeBytes": 1025
     }
   ],
   "diagnostics": [
     {
       "stage": "fabrication-export",
+      "severity": "warning",
+      "tier": "advisory",
+      "code": "hardware.bom.jlc_smt_extended_library",
+      "message": "JLC SMT BOM item \"lcd_header\" uses an Extended library part.",
+      "file": "product/bom.json",
+      "jsonPointer": "/items/12/jlc_smt_library",
+      "nextAction": "Search for a Basic JLC SMT substitute with matching electrical, package, footprint, and pinout constraints. Keep the Extended part only when no credible Basic substitute exists, or move the part to manual assembly when that is cheaper.",
+      "details": {
+        "line": 262,
+        "expected": "Prefer jlc_smt_library: \"basic\" when a compatible Basic library substitute exists."
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "warning",
+      "tier": "advisory",
+      "code": "hardware.bom.jlc_smt_extended_library",
+      "message": "JLC SMT BOM item \"carrier_lcd_header\" uses an Extended library part.",
+      "file": "product/bom.json",
+      "jsonPointer": "/items/18/jlc_smt_library",
+      "nextAction": "Search for a Basic JLC SMT substitute with matching electrical, package, footprint, and pinout constraints. Keep the Extended part only when no credible Basic substitute exists, or move the part to manual assembly when that is cheaper.",
+      "details": {
+        "line": 372,
+        "expected": "Prefer jlc_smt_library: \"basic\" when a compatible Basic library substitute exists."
+      }
+    },
+    {
+      "stage": "fabrication-export",
       "severity": "info",
       "tier": "advisory",
       "code": "command_output",
-      "message": "Plotted to '/Users/c3ll256/Documents/Makit/点子宠物机/manufacturing/pet-panel/exports/.staging/544691f1770048c21c289fe33712076a30e6dad68f6dffc90ed6890307a1e414-aae4113a-fd33-4d89-8b44-a12838ffd7f3/gerbers/board-F_Cu.gtl'.\nPlotted to '/Users/c3ll256/Documents/Makit/点子宠物机/manufacturing/pet-panel/exports/.staging/544691f1770048c21c289fe33712076a30e6dad68f6dffc90ed6890307a1e414-aae4113a-fd33-4d89-8b44-a12838ffd7f3/gerbers/board-B_Cu.gbl'.\nPlotted to '/Users/c3ll256/Documents/Makit/点子宠物机/manufacturing/pet-panel/exports/.staging/544691f1770048c21c289fe33712076a30e6dad68f6dffc90ed6890307a1e414-aae4113a-fd33-4d89-8b44-a12838ffd7f3/gerbers/board-F_Paste.gtp'.\nPlotted to '/Users/c3ll256/Documents/Makit/点子宠物机/manufacturing/pet-panel/exports/.staging/544691f1770048c21c289fe33712076a30e6dad68f6dffc90ed6890307a1e414-aae4113a-fd33-4d89-8b44-a12838ffd7f3/gerbers/board-B_Paste.gbp'.\nPlotted to '/Users/c3ll256/Documents/Makit/点子宠物机/manufacturing/pet-panel/exports/.staging/544691f1770048c21c289fe33712076a30e6dad68f6dffc90ed6890307a1e414-aae4113a-fd33-4d89-8b44-a12838ffd7f3/gerbers/board-F_Silkscreen.gto'.\nPlotted to '/Users/c3ll256/Documents/Makit/点子宠物机/manufacturing/pet-panel/exports/.staging/544691f1770048c21c289fe33712076a30e6dad68f6dffc90ed6890307a1e414-aae4113a-fd33-4d89-8b44-a12838ffd7f3/gerbers/board-B_Silkscreen.gbo'.\nPlotted to '/Users/c3ll256/Documents/Makit/点子宠物机/manufacturing/pet-panel/exports/.staging/544691f1770048c21c289fe33712076a30e6dad68f6dffc90ed6890307a1e414-aae4113a-fd33-4d89-8b44-a12838ffd7f3/gerbers/board-F_Mask.gts'.\nPlotted to '/Users/c3ll256/Documents/Makit/点子宠物机/manufacturing/pet-panel/exports/.staging/544691f1770048c21c289fe33712076a30e6dad68f6dffc90ed6890307a1e414-aae4113a-fd33-4d89-8b44-a12838ffd7f3/gerbers/board-B_Mask.gbs'.\nPlotted to '/Users/c3ll256/Documents/Makit/点子宠物机/manufacturing/pet-panel/exports/.staging/544691f1770048c21c289fe33712076a30e6dad68f6dffc90ed6890307a1e414-aae4113a-fd33-4d89-8b44-a12838ffd7f3/gerbers/board-Edge_Cuts.gm1'.",
+      "message": "Plotted to '/Users/c3ll256/Documents/Makit/点子宠物机/manufacturing/pet-panel/exports/.staging/a96ccccebd54c4dbb47cbd7783ac95c832dcc77ddbdafa464ab7ad8a6c6eab65-f6f6d290-cbc2-4d45-a251-5db1b0b473e0/gerbers/board-F_Cu.gtl'.\nPlotted to '/Users/c3ll256/Documents/Makit/点子宠物机/manufacturing/pet-panel/exports/.staging/a96ccccebd54c4dbb47cbd7783ac95c832dcc77ddbdafa464ab7ad8a6c6eab65-f6f6d290-cbc2-4d45-a251-5db1b0b473e0/gerbers/board-B_Cu.gbl'.\nPlotted to '/Users/c3ll256/Documents/Makit/点子宠物机/manufacturing/pet-panel/exports/.staging/a96ccccebd54c4dbb47cbd7783ac95c832dcc77ddbdafa464ab7ad8a6c6eab65-f6f6d290-cbc2-4d45-a251-5db1b0b473e0/gerbers/board-F_Paste.gtp'.\nPlotted to '/Users/c3ll256/Documents/Makit/点子宠物机/manufacturing/pet-panel/exports/.staging/a96ccccebd54c4dbb47cbd7783ac95c832dcc77ddbdafa464ab7ad8a6c6eab65-f6f6d290-cbc2-4d45-a251-5db1b0b473e0/gerbers/board-B_Paste.gbp'.\nPlotted to '/Users/c3ll256/Documents/Makit/点子宠物机/manufacturing/pet-panel/exports/.staging/a96ccccebd54c4dbb47cbd7783ac95c832dcc77ddbdafa464ab7ad8a6c6eab65-f6f6d290-cbc2-4d45-a251-5db1b0b473e0/gerbers/board-F_Silkscreen.gto'.\nPlotted to '/Users/c3ll256/Documents/Makit/点子宠物机/manufacturing/pet-panel/exports/.staging/a96ccccebd54c4dbb47cbd7783ac95c832dcc77ddbdafa464ab7ad8a6c6eab65-f6f6d290-cbc2-4d45-a251-5db1b0b473e0/gerbers/board-B_Silkscreen.gbo'.\nPlotted to '/Users/c3ll256/Documents/Makit/点子宠物机/manufacturing/pet-panel/exports/.staging/a96ccccebd54c4dbb47cbd7783ac95c832dcc77ddbdafa464ab7ad8a6c6eab65-f6f6d290-cbc2-4d45-a251-5db1b0b473e0/gerbers/board-F_Mask.gts'.\nPlotted to '/Users/c3ll256/Documents/Makit/点子宠物机/manufacturing/pet-panel/exports/.staging/a96ccccebd54c4dbb47cbd7783ac95c832dcc77ddbdafa464ab7ad8a6c6eab65-f6f6d290-cbc2-4d45-a251-5db1b0b473e0/gerbers/board-B_Mask.gbs'.\nPlotted to '/Users/c3ll256/Documents/Makit/点子宠物机/manufacturing/pet-panel/exports/.staging/a96ccccebd54c4dbb47cbd7783ac95c832dcc77ddbdafa464ab7ad8a6c6eab65-f6f6d290-cbc2-4d45-a251-5db1b0b473e0/gerbers/board-Edge_Cuts.gm1'.",
       "file": "manufacturing/gerbers",
       "details": {
         "exitCode": 0
@@ -251,7 +279,7 @@
       "severity": "info",
       "tier": "advisory",
       "code": "command_output",
-      "message": "Created file '/Users/c3ll256/Documents/Makit/点子宠物机/manufacturing/pet-panel/exports/.staging/544691f1770048c21c289fe33712076a30e6dad68f6dffc90ed6890307a1e414-aae4113a-fd33-4d89-8b44-a12838ffd7f3/drill/board-PTH.drl'\nCreated file '/Users/c3ll256/Documents/Makit/点子宠物机/manufacturing/pet-panel/exports/.staging/544691f1770048c21c289fe33712076a30e6dad68f6dffc90ed6890307a1e414-aae4113a-fd33-4d89-8b44-a12838ffd7f3/drill/board-NPTH.drl'\nDone.",
+      "message": "Created file '/Users/c3ll256/Documents/Makit/点子宠物机/manufacturing/pet-panel/exports/.staging/a96ccccebd54c4dbb47cbd7783ac95c832dcc77ddbdafa464ab7ad8a6c6eab65-f6f6d290-cbc2-4d45-a251-5db1b0b473e0/drill/board-PTH.drl'\nCreated file '/Users/c3ll256/Documents/Makit/点子宠物机/manufacturing/pet-panel/exports/.staging/a96ccccebd54c4dbb47cbd7783ac95c832dcc77ddbdafa464ab7ad8a6c6eab65-f6f6d290-cbc2-4d45-a251-5db1b0b473e0/drill/board-NPTH.drl'\nDone.",
       "file": "manufacturing/drill",
       "details": {
         "exitCode": 0
@@ -262,7 +290,7 @@
       "severity": "info",
       "tier": "advisory",
       "code": "command_output",
-      "message": "Fontconfig error: Cannot load default config file: No such file: (null)\nWarning: schematic has annotation errors, please use the schematic editor to fix them\nWrote bill of materials to '/Users/c3ll256/Documents/Makit/点子宠物机/manufacturing/pet-panel/exports/.staging/544691f1770048c21c289fe33712076a30e6dad68f6dffc90ed6890307a1e414-aae4113a-fd33-4d89-8b44-a12838ffd7f3/bom.csv'.",
+      "message": "Fontconfig error: Cannot load default config file: No such file: (null)\nWarning: schematic has annotation errors, please use the schematic editor to fix them\nWrote bill of materials to '/Users/c3ll256/Documents/Makit/点子宠物机/manufacturing/pet-panel/exports/.staging/a96ccccebd54c4dbb47cbd7783ac95c832dcc77ddbdafa464ab7ad8a6c6eab65-f6f6d290-cbc2-4d45-a251-5db1b0b473e0/bom.csv'.",
       "file": "manufacturing/bom.csv",
       "details": {
         "exitCode": 0
@@ -273,7 +301,7 @@
       "severity": "info",
       "tier": "advisory",
       "code": "command_output",
-      "message": "Wrote position data to '/Users/c3ll256/Documents/Makit/点子宠物机/manufacturing/pet-panel/exports/.staging/544691f1770048c21c289fe33712076a30e6dad68f6dffc90ed6890307a1e414-aae4113a-fd33-4d89-8b44-a12838ffd7f3/placement.csv'.",
+      "message": "Wrote position data to '/Users/c3ll256/Documents/Makit/点子宠物机/manufacturing/pet-panel/exports/.staging/a96ccccebd54c4dbb47cbd7783ac95c832dcc77ddbdafa464ab7ad8a6c6eab65-f6f6d290-cbc2-4d45-a251-5db1b0b473e0/placement.csv'.",
       "file": "manufacturing/placement.csv",
       "details": {
         "exitCode": 0
@@ -284,7 +312,7 @@
       "severity": "info",
       "tier": "advisory",
       "code": "command_output",
-      "message": "STEP file '/Users/c3ll256/Documents/Makit/点子宠物机/manufacturing/pet-panel/exports/.staging/544691f1770048c21c289fe33712076a30e6dad68f6dffc90ed6890307a1e414-aae4113a-fd33-4d89-8b44-a12838ffd7f3/assembly.step' created.\n\nExport time 3.441 s",
+      "message": "STEP file '/Users/c3ll256/Documents/Makit/点子宠物机/manufacturing/pet-panel/exports/.staging/a96ccccebd54c4dbb47cbd7783ac95c832dcc77ddbdafa464ab7ad8a6c6eab65-f6f6d290-cbc2-4d45-a251-5db1b0b473e0/assembly.step' created.\n\nExport time 2.991 s",
       "file": "manufacturing/assembly.step",
       "details": {
         "exitCode": 0
@@ -322,7 +350,7 @@
       "message": "Prepared deterministic board appearance for the main PCB.",
       "file": "manufacturing/assembly-appearance.json",
       "details": {
-        "spec_sha256": "45385aaf0022403847f8baa98b8a1406e973b85fa0abb541baf2569d3287a9a3",
+        "spec_sha256": "fe55661f4403ed289635096c50bfade1aff35a2b34c3b99f4517dd1f5eed418c",
         "overlay_ids": [
           "main-pcb:pet-panel"
         ]
@@ -338,9 +366,9 @@
       "details": {
         "source": "assembly-step",
         "source_path": "manufacturing/assembly.step",
-        "source_step_sha256": "d3ed2979a6a75cc87898118594bc472f4f41fafa3e958568446f497110ee84c5",
-        "preview_sha256": "70dad566391d17451bad13f7c828a5ad56a87f90f0e7ec56b0a6da91feeb6f2e",
-        "appearance_spec_sha256": "45385aaf0022403847f8baa98b8a1406e973b85fa0abb541baf2569d3287a9a3",
+        "source_step_sha256": "e3c4c994c12cfd628f35ef4327a8f1943e3a020406515bc4405534e6961ebe66",
+        "preview_sha256": "4174ea8b206b7e90a6a6ed942630a1dbd2f67487dcd9a811d9ce9a1db9fd1b2a",
+        "appearance_spec_sha256": "fe55661f4403ed289635096c50bfade1aff35a2b34c3b99f4517dd1f5eed418c",
         "surface_texture_overlay_ids": [
           "main-pcb:pet-panel"
         ],

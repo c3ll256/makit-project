@@ -127,8 +127,8 @@
       "componentRef": "J_SCREEN_GH",
       "nativeOpening": "down",
       "targetOpening": "up",
-      "expectedLayer": "bottom",
-      "rationale": "Cable exits +Y away from screen; mounted bottom so cable does not cross display board."
+      "expectedLayer": "top",
+      "rationale": "Whole adapter turned over for top-only panel SMT; cable still exits +Y. Screen socket is now production bottom; installed board is turned about Y so socket faces display and GH stays underneath."
     }
   ],
   "bomBindings": [

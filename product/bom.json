@@ -2,7 +2,7 @@
   "schema_version": 1,
   "status": "draft",
   "bom_ready": true,
-  "requirements_digest": "a1cf852027632a667b1a56a944f36e55a01abf944d2e49be2e6dbe7b4444c20e",
+  "requirements_digest": "bc23e094751926845ebe03be1c1ab120fca03a267bb09aa42b06b00414d58611",
   "items": [
     {
       "id": "mcu",
@@ -269,13 +269,15 @@
       ],
       "assembly": {
         "population": "mounted",
-        "method": "manual",
-        "side": "bottom"
+        "method": "jlc_smt",
+        "side": "top",
+        "risk_class": "mechanical_smt",
+        "jlc_smt_verified": true
       },
       "product_url": "https://item.szlcsc.com/506561.html",
       "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/8bd43f6af33d6ab9377e1c8e3056086d.pdf?productCode=C495552",
       "part_identity": "b6e2f4b594f46389",
-      "selection_reason": "JST GH 7P1.25mm side-entry positive lock on screen adapter bottom; mates GHR-07V-S. Auxiliary solder tabs take cable load.",
+      "selection_reason": "JST GH 7P1.25mm side-entry positive lock on screen adapter production top (installed underside); mates GHR-07V-S. Auxiliary solder tabs take cable load. Factory SMT on production top; exact JST GH locking variant retained for mating and enclosure fit (Extended library).",
       "image_url": "https://assets.lcsc.com/images/lcsc/900x900/20230119_JST-SM07B-GHS-TB-LF-SN_C495552_front.jpg"
     },
     {
@@ -313,12 +315,12 @@
       "assembly": {
         "population": "mounted",
         "method": "through_hole",
-        "side": "top"
+        "side": "bottom"
       },
       "product_url": "https://item.szlcsc.com/29721190.html",
       "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/459ae8ff1ec8327b929b62e0d4d9ab63.pdf?productCode=C27985232",
       "part_identity": "9d5fdc17fee3e1dd",
-      "selection_reason": "Square-hole 7P accepts selected 0.64 mm square screen pins. Supplier drawing: 5 mm body, 3 mm cavity, 2.54 mm pitch, body18.18x2.4; shorten screen exposed pin tips to2.5 mm, trim solder tails0.6 mm.",
+      "selection_reason": "Square-hole 7P accepts selected 0.64 mm square screen pins. Supplier drawing: 5 mm body, 3 mm cavity, 2.54 mm pitch, body18.18x2.4; shorten screen exposed pin tips to2.5 mm, trim solder tails0.6 mm. Through-hole insertion from production bottom; faces the display after the finished adapter is turned over for installation.",
       "image_url": "https://assets.lcsc.com/images/lcsc/900x900/20240724_Hong-Cheng-HC-PM254-5-0H-1x7PZ_C27985232_front.jpg"
     },
     {
@@ -328,7 +330,7 @@
       "part_number": "pet-screen-adapter",
       "quantity": 1,
       "source": "custom",
-      "selection_reason": "Low side-entry GH locking harness, 5mm socket on top and GH on bottom. User chose a mixed panel with the carrier; common 1.0mm FR4 is the engineering default. Socket mating face stays fixed; adapter underside, bottom connector and support pads sit0.2mm lower. One adapter per product and per mixed panel.",
+      "selection_reason": "20x11x1.0mm adapter turned over as a whole for production: GH on manufacturing top, 5mm socket on manufacturing bottom. Flip about Y after depaneling to preserve the installed screen-facing socket, GH cable direction, original pin order and enclosure stack. One adapter per product and per mixed panel.",
       "part_identity": "61dfba6f3c3eecbb"
     },
     {
@@ -378,10 +380,12 @@
       "stock": 4178,
       "assembly": {
         "population": "mounted",
-        "method": "manual",
-        "side": "top"
+        "method": "jlc_smt",
+        "side": "top",
+        "risk_class": "mechanical_smt",
+        "jlc_smt_verified": true
       },
-      "selection_reason": "JST GH7P positive-lock top-entry at shell(17,-12.5); supplier solid body topZ8.795, conservative mated plug/wire exitZ12.235 leaves room below screen. Mates GHR-07V-S.",
+      "selection_reason": "JST GH7P positive-lock top-entry at shell(17,-12.5); supplier solid body topZ8.795, conservative mated plug/wire exitZ12.235 leaves room below screen. Mates GHR-07V-S. Factory SMT on production top; exact JST GH locking variant retained for mating and enclosure fit (Extended library).",
       "part_identity": "60c7d3562340b8f0"
     }
   ]

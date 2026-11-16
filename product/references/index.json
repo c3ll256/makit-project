@@ -170,6 +170,13 @@
       "share": false
     },
     {
+      "file": "uploads/20261116T165641937Z-1-mark-1.png",
+      "sha256": "70b8169708dce8de44514f938611145782dfedfb9cf8c013bff1db145f7a3960",
+      "bytes": 261745,
+      "addedAt": "2026-11-16T16:56:42.828Z",
+      "share": false
+    },
+    {
       "file": "xiao-esp32s3-model.zip",
       "sha256": "0d552ed2cc7359ea132601f4f7fe2c9d816e2dfe4f58f6463e83f84a901d3650",
       "bytes": 4382912,

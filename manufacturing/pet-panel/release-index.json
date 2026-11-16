@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "releases": [
     {
-      "releaseId": "93e38f16a5595af14c789086d1b62d95244b5b923991d4c983eef53095c0299f",
+      "releaseId": "811ea664a0defd5d29954720d5076ae40b9883f6556abc465a0b74b41b2702fd",
       "designId": "pet-panel",
-      "buildId": "c03d5e1fe7ca0927154dbdc8d719f9bbd5ada23bf9d89d58fc1fd33937ef8105",
-      "candidateId": "52255f77590b9f351f3e51dade0a886fbfa0aa427116eaff975abe6caf31a041",
-      "approvedAt": "2026-11-13T15:24:14.720Z"
+      "buildId": "27fbbad9c480171f4d015d18405f050cd396d1e71f33e88c09cdfe5ec7528e30",
+      "candidateId": "ca55ea94a0ec415812c2843b5e69c1d05eab2aa16fb137f71bcb9975370ff3c5",
+      "approvedAt": "2026-11-16T17:07:18.946Z"
     }
   ]
 }

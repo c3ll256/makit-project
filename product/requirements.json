@@ -140,6 +140,10 @@
     "pcb_common_thickness_mm": {
       "value": 1,
       "source": "default"
+    },
+    "pcb_single_side_smt": {
+      "value": "混拼生产板仅做顶面单面贴装：主载板与屏幕转接板的两只GH连接器均朝上；转接板整块翻面定义生产顶面，分板装机后GH仍背向屏幕。穿孔按键、排母与主控模块另行焊接/插装。",
+      "source": "user"
     }
   },
   "open_questions": []

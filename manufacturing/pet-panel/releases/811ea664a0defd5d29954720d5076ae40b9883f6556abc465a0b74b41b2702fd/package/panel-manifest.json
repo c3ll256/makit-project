@@ -9,12 +9,12 @@
   "boards": [
     {
       "designId": "pet-keys",
-      "buildId": "faf451533c23975188655dd4880b5e90a12dbaf7b5ee8520ae3bd1ab153c70b7",
+      "buildId": "3e4db541d6d897af038dc8ed1f5014e4c65d19128766af396bde643843f7541a",
       "quantity": 1
     },
     {
       "designId": "pet-screen-adapter",
-      "buildId": "7223942871a8e28c89b22ba751bb47ce31f8b5cc0baeb176b866e5bf49a9cb7b",
+      "buildId": "c518232e1e2991873dd224f250ce62157bf4d8bd50968ad33a44ccccb8cb85b2",
       "quantity": 1
     }
   ],
@@ -22,7 +22,7 @@
     {
       "name": "CARRIER",
       "designId": "pet-keys",
-      "buildId": "faf451533c23975188655dd4880b5e90a12dbaf7b5ee8520ae3bd1ab153c70b7",
+      "buildId": "3e4db541d6d897af038dc8ed1f5014e4c65d19128766af396bde643843f7541a",
       "pcbBoardId": "CARRIER__pcb_board_0",
       "xMm": -5,
       "yMm": -10,
@@ -31,7 +31,7 @@
     {
       "name": "SCREEN",
       "designId": "pet-screen-adapter",
-      "buildId": "7223942871a8e28c89b22ba751bb47ce31f8b5cc0baeb176b866e5bf49a9cb7b",
+      "buildId": "c518232e1e2991873dd224f250ce62157bf4d8bd50968ad33a44ccccb8cb85b2",
       "pcbBoardId": "SCREEN__pcb_board_0",
       "xMm": -13,
       "yMm": 8,

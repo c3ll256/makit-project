@@ -1,6 +1,6 @@
 {
   "source": "LCSC",
-  "looked_up_at": "2026-11-11T08:18:48.761Z",
+  "looked_up_at": "2026-11-16T16:56:56.508Z",
   "lcsc_code": "C495552",
   "manufacturer": "JST",
   "manufacturer_part_number": "SM07B-GHS-TB(LF)(SN)",
@@ -27,7 +27,7 @@
     "X-Length of Bottom Edge on Board (Spacing Line)": "12mm",
     "Pin Structure": "1x7P"
   },
-  "lcsc_stock": 12636,
+  "lcsc_stock": 14479,
   "price_breaks": [
     {
       "quantity": 1,
@@ -92,5 +92,5 @@
   ],
   "product_url": "https://item.szlcsc.com/506561.html",
   "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/8bd43f6af33d6ab9377e1c8e3056086d.pdf?productCode=C495552",
-  "datasheet_file": "references/suppliers/c495552/c495552-datasheet.pdf"
+  "datasheet_file": null
 }
