@@ -1,1 +1,0 @@
-publish("carrier_1mm_release", asset("design/pet-shell/source/assets/1923175e7cab06faa9851cbba0d6325b141ea46cefcecbd8921588a036ad542d.step"), "1.0mm carrier release")

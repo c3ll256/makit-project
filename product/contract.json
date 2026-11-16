@@ -111,9 +111,6 @@
         "design_id": "pet-shell",
         "description": "Cloud-lobed two-piece shell with screen window, bezel and button caps",
         "delivery_target": "printable_part",
-        "required_formats": [
-          "step"
-        ],
         "interface_ids": [
           "display_fit",
           "usb_c_access",

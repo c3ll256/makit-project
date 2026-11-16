@@ -1,1 +1,0 @@
-publish("adapter_1mm_release", asset("design/pet-shell/source/assets/61ba7b0521c247fbcb54fc5878295b841b6ab5a899b6dd0c7517b12351e67239.step"), "1.0mm screen adapter release")

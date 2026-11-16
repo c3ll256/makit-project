@@ -1,21 +1,21 @@
 {
   "designId": "pet-shell",
-  "revision": "5d02ad63d87704e51942418f322328902c01e5f739a935f6852ed0fcc82d71d7",
+  "revision": "efb36f63b81b439046a491dfc3663da30501aee643cc43cdb4b782c831c98789",
   "schemaVersion": 3,
-  "exportId": "export-8e55639f945a059a3f94ddc2b351c68c",
-  "generatedAt": "2026-11-13T15:20:00.986Z",
-  "designSha256": "f2fc08873898fdc050f3e496653ba05bb32ff68f9368666c128ba8c96fc9b126",
+  "exportId": "export-313800a7aae51b7f30d33d977fbd3d0a",
+  "generatedAt": "2026-11-16T16:25:20.928Z",
+  "designSha256": "867279edb0905600a6022dd0548135b25d3f4a6bca69a3acae87fb74678c3997",
   "role": "enclosure",
-  "stateHash": "dc33280ebd36bec6500a4565aeb81bd6ed6050144da9ca58c9ecc5f906919eb5",
+  "stateHash": "394332ade13df6732149559bbee6cb3cc497a90da29b66930cbb60bbbc6f14ae",
   "stateManifest": {
-    "schemaVersion": 4,
+    "schemaVersion": 5,
     "designId": "pet-shell",
     "role": "enclosure",
     "design": {
-      "revision": "5d02ad63d87704e51942418f322328902c01e5f739a935f6852ed0fcc82d71d7",
-      "designSha256": "5bb372ad8cce429427ece60aa4b6b491e1d5577f9e6d691ff8395e5d4b18ca35",
-      "manifestSha256": "729d5f01fb3e8290a9c588b23880413d145d1c53cc69c2ecbc494123b229951c",
-      "modelSha256": "b7626552e95e1dc88f0d569c47f4eb815f97f8cdf953b12b581ec73763278aca",
+      "revision": "efb36f63b81b439046a491dfc3663da30501aee643cc43cdb4b782c831c98789",
+      "designSha256": "e0cd29ec42a935ffe220306aad11ec5ff72043c552429306cd00d8c9d8a34041",
+      "manifestSha256": "88ed90e4482d7d3e15d4cb1b4fdc579502e75b83fc9e9ccd25fefd26587a89b2",
+      "modelSha256": "37db95b7bafa170a92750a3e32dc61a7e72ba49f6e427bd2778dc4bfd71f035e",
       "pcbReleases": []
     },
     "brief": {
@@ -24,8 +24,8 @@
     },
     "requirement": {
       "artifactContractPath": "product/contract.json",
-      "artifactContractSha256": "abd503a06fad0b203cf95c9d0f6eb059930cac04b67a3df1c90ec4e15636fcdf",
-      "designRequirementSha256": "c9bbd616754f8f0bdba963b8096733e9d42d40051a477aaf3f81ee635865128f",
+      "artifactContractSha256": "109a3d21ff986cc407c85a5c871eb561a01adaed69484870b128d0127e1e0814",
+      "designRequirementSha256": "6301affec49b07ee0f111ec82c5705571b28763265303763fb9c828a98d0aa7f",
       "inputs": [
         {
           "role": "external-reference",
@@ -93,16 +93,13 @@
       ]
     },
     "delivery": {
-      "target": "printable_part",
-      "formats": [
-        "step"
-      ]
+      "target": "printable_part"
     },
-    "stateHash": "dc33280ebd36bec6500a4565aeb81bd6ed6050144da9ca58c9ecc5f906919eb5"
+    "stateHash": "394332ade13df6732149559bbee6cb3cc497a90da29b66930cbb60bbbc6f14ae"
   },
   "buildArtifacts": {
-    "manifestSha256": "729d5f01fb3e8290a9c588b23880413d145d1c53cc69c2ecbc494123b229951c",
-    "modelSha256": "b7626552e95e1dc88f0d569c47f4eb815f97f8cdf953b12b581ec73763278aca"
+    "manifestSha256": "88ed90e4482d7d3e15d4cb1b4fdc579502e75b83fc9e9ccd25fefd26587a89b2",
+    "modelSha256": "37db95b7bafa170a92750a3e32dc61a7e72ba49f6e427bd2778dc4bfd71f035e"
   },
   "exportAlgorithm": {
     "version": 1,
@@ -117,8 +114,6 @@
     "form/form": "7d14eb9d6cb36110983b4d362b31ae43b2de9b0dfb96e93ec1673e343abe0aeb",
     "front_shell/front_shell": "b9e1f25936f45bfb2d567e7cfb272655951d960d2cc2407fc298e707f7b5a11b",
     "harness/harness": "d9b9ae29a41fc5abf74a3f8419935af8f05c454ff7b05e912e4a49d50041ff88",
-    "imports/adapter_1mm_release": "870a8ee1d46464fe81519f206d7e4ca731f65447885c18aec94010997dd18824",
-    "imports/carrier_1mm_release": "8a40a1c8e37d94fb9feadcd74b05f240ddfb38de81ed5be7a274f355ce553c6d",
     "internals/internals": "d6108673a277f57dc215c862ae32d36ee5c11cc05648bf69d7690c3f4d8fef83",
     "pushers/pushers": "c563231f850b646ddd90202be677741bbd602273a8c87d2c5033bc3c2b21d4c1",
     "retention_pads/retention_pads": "522b03b3be86bffae552c4096870845d0483d86208309e211c6cd6e4d81f7a9b",
@@ -130,7 +125,6 @@
     "carrier_1mm_release": "1923175e7cab06faa9851cbba0d6325b141ea46cefcecbd8921588a036ad542d"
   },
   "shapeHashes": {
-    "adapter_1mm_release": "3c21e232dbc7558b2b3364d0183c723b055b161b3a0726768cd0617fa0b7ad8e",
     "adapter_foam_pads": "954e981a2e2e519e258d99a2168f83b8a0fe3638c0801609426a5bb2be875d9b",
     "back_shell": "c2ee89c56ec7bacd279498848d9c6a73408eac7ff55269bce3d5a078b71bee91",
     "battery_pad_ref": "357cb30561a2df43c3ece085a89d226c0fbfcfd0765d0d0b4fe5b4fa88dc137f",
@@ -139,7 +133,6 @@
     "button_left": "bd200930df0ad11a0c087d13a50e3384fe4ed6bd4dd6c15dc5ee558029370b23",
     "button_mid": "6a04f58d6577eebdbb2ffe6c11318a295c508e61869a3c6665fdfae33720c92d",
     "button_right": "58c7ef43d734ddcd12e1bfc8cd1d7cd406f1c66d1d01d112c8b74a431e238a88",
-    "carrier_1mm_release": "eca596faa9b7d1abcf9160e013a51b757dc68ccff131ea8769bdb6e367a30c19",
     "carrier_assembly": "d1673bbab1d590b124a930a0a2ac0c10bf971d3d51358eff1f0354c30143b0bb",
     "carrier_clamp_0": "715d919e3d96de912965f0a94df1addf17d9c89d9a803943ae7ade397a8851a2",
     "carrier_clamp_1": "7903b988d8d7d19faabab4cfee8d09124ce929de8e07b647f70b998741888b5e",
@@ -175,17 +168,17 @@
   },
   "artifacts": [
     {
-      "path": "manufacturing/pet-shell/releases/export-8e55639f945a059a3f94ddc2b351c68c/model.step",
+      "path": "manufacturing/pet-shell/releases/export-313800a7aae51b7f30d33d977fbd3d0a/model.step",
       "role": "model/step",
-      "sha256": "5ed5632bf989f7ce31404d4bc0fa4e878aee48240c3ae354dc5c8d0dee609744",
-      "sizeBytes": 69822406
+      "sha256": "c1ce1426934340db4d9aa1246f035949d3e6d8df2d24cc76ac37aa7d9fd004b6",
+      "sizeBytes": 39910810
     }
   ],
   "interference": {
     "summary": "6 interfering pairs",
     "counts": {
-      "objects": 35,
-      "pairs": 595,
+      "objects": 33,
+      "pairs": 528,
       "exact": 0,
       "mesh": 0,
       "cached": 106,
@@ -262,9 +255,9 @@
     "algorithm": "hmac-sha256",
     "keyId": "f8032396c0de0155d5dda12f3821ce0f",
     "projectId": "9e6ae992-7c45-409e-9357-f01657fcd9ca",
-    "receiptPath": "manufacturing/pet-shell/releases/export-8e55639f945a059a3f94ddc2b351c68c/receipt.json",
-    "payloadSha256": "839b527a28256967133c077738f723602c4f787cc0865c9ea2c319be74486c50",
-    "mac": "8b4b566534d20061eca76685628f1fbfb1156081ac33012aef03f2adcb6e7750"
+    "receiptPath": "manufacturing/pet-shell/releases/export-313800a7aae51b7f30d33d977fbd3d0a/receipt.json",
+    "payloadSha256": "0209bd24b893ef70be164daf785e967317106549eab86e9fbe1c822af38e1683",
+    "mac": "4e39830b40dc0b654ea495e1910af2e8a43c6d24d983ed2bf3dfd15880cf5275"
   },
   "status": "handoff"
 }

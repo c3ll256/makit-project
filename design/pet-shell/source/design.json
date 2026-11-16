@@ -69,27 +69,6 @@
       ]
     },
     {
-      "id": "imports",
-      "label": "imports",
-      "cells": [
-        {
-          "id": "carrier_1mm_release",
-          "target": "imports",
-          "order": 0,
-          "path": "design/pet-shell/source/parts/imports/000-carrier_1mm_release.py",
-          "sha256": "8a40a1c8e37d94fb9feadcd74b05f240ddfb38de81ed5be7a274f355ce553c6d"
-        },
-        {
-          "id": "adapter_1mm_release",
-          "target": "imports",
-          "order": 1,
-          "path": "design/pet-shell/source/parts/imports/001-adapter_1mm_release.py",
-          "sha256": "870a8ee1d46464fe81519f206d7e4ca731f65447885c18aec94010997dd18824"
-        }
-      ],
-      "dependencies": []
-    },
-    {
       "id": "harness",
       "label": "harness",
       "cells": [
@@ -578,58 +557,6 @@
           0,
           0,
           0
-        ],
-        "rotationDeg": [
-          0,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
-      "id": "adapter_1mm_release",
-      "target": "imports",
-      "label": "1.0mm screen adapter release",
-      "kind": "imported",
-      "shapeHash": "3c21e232dbc7558b2b3364d0183c723b055b161b3a0726768cd0617fa0b7ad8e",
-      "transform": {
-        "positionMm": [
-          -20,
-          145,
-          0
-        ],
-        "rotationDeg": [
-          0,
-          0,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
-      "id": "carrier_1mm_release",
-      "target": "imports",
-      "label": "1.0mm carrier release",
-      "kind": "imported",
-      "shapeHash": "eca596faa9b7d1abcf9160e013a51b757dc68ccff131ea8769bdb6e367a30c19",
-      "transform": {
-        "positionMm": [
-          -20,
-          78.5,
-          3.74
         ],
         "rotationDeg": [
           0,
@@ -1256,7 +1183,7 @@
       "b": "carrier_assembly"
     }
   ],
-  "updatedAt": "2026-11-13T15:20:00.986Z",
+  "updatedAt": "2026-11-16T16:25:20.928Z",
   "parameters": {
     "form": {
       "lobe_count": 6,
@@ -1341,7 +1268,6 @@
       "display_pin_length": 2.5,
       "display_active_width": 23.4
     },
-    "imports": {},
     "harness": {
       "wire_envelope_radius": 0.4,
       "wire_bundle_pitch": 0.9,
