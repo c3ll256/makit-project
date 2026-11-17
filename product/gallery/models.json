@@ -2,18 +2,6 @@
   "schemaVersion": 1,
   "models": [
     {
-      "file": "models/pet-keys.glb",
-      "design": "pet-keys"
-    },
-    {
-      "file": "models/pet-panel.glb",
-      "design": "pet-panel"
-    },
-    {
-      "file": "models/pet-screen-adapter.glb",
-      "design": "pet-screen-adapter"
-    },
-    {
       "file": "models/pet-shell.glb",
       "design": "pet-shell"
     }
