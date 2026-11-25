@@ -1,11 +1,13 @@
-# TamaGPT Star Pet
+# Star Pet 🌟
 
-TamaGPT is a handheld virtual pet shaped like a five-pointed star. A black circular bezel frames a 1.54-inch square color display with 240 × 240 pixels to draw a blink, a yawn, or a sleepy pair of eyes. The translucent lavender shell measures about 10 cm across. Its two lower points taper toward the tips, and the top point holds a key ring.
+Star Pet is a handheld virtual pet you can print, assemble, and program. A black circular bezel frames a 1.54-inch square color screen. Its 240 × 240 pixels leave room for sleepy eyes, a crooked smile, or a face you draw yourself. The translucent lavender star is about 10 cm across, with tapered lower points and a key ring at the top.
 
-Three buttons form a small triangle on the lower-left point. The dark 12 mm main button sits above two 8 mm buttons that match the shell. One corner of the custom circuit board extends under this cluster so each button presses its own switch directly. The lowest button is reserved for voice messages. The plan is to hold it to record a message, then release it to hear the pet play it back.
+Three buttons sit together on the lower-left point. A dark 12 mm button sits just above two 8 mm buttons in lavender. The circuit board follows the shape of the star so each button presses its own switch directly. The lowest button is reserved for a planned voice feature. Hold it to record a message and release it to hear the pet play it back.
 
-## Building the hardware
+## Inside the star
 
-The front and back shells print in translucent PETG and fasten with four screws. Inside, a Seeed Studio XIAO ESP32S3 plugs into a custom two-layer carrier board. The display plugs into an eight-pin header, and the speaker has its own socket. A USB-C port on the right handles charging and programming.
+Four screws hold the printed PETG shell together. Inside, a Seeed Studio XIAO ESP32S3 plugs into a custom two-layer carrier board alongside the display and speaker connectors. The USB-C port on the right handles charging and programming.
 
-The project includes editable enclosure models, the carrier board design, and PCB fabrication and assembly files. Button travel has been checked in CAD, and the board has passed electrical checks. The first physical build will test button return, screen alignment, and how clearly the microphone and speaker work with the case closed.
+## Build status
+
+The editable enclosure models, board design, and fabrication and assembly files are ready for a first build. The three buttons clear the shell through their full travel in CAD, and the board has passed electrical checks. The first prototype will test how the buttons spring back, how the screen sits behind the bezel, and how the recording sounds with the case closed.
