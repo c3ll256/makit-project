@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "units": "mm",
+  "coordinateFrame": "makit-world-z-up",
+  "targets": [
+    {
+      "id": "mic_guide",
+      "label": "mic_guide",
+      "cells": [
+        {
+          "id": "mic_guide",
+          "target": "mic_guide",
+          "order": 0,
+          "path": "design/pet-mic-guide/source/parts/mic_guide/000-mic_guide.py",
+          "sha256": "e7df2fbcc45cdb10e278981a1f82021496d4935327a754644af4a19d8f1228bb"
+        }
+      ],
+      "dependencies": []
+    }
+  ],
+  "objects": [
+    {
+      "id": "mic_guide",
+      "target": "mic_guide",
+      "label": "TPU 柔性导声件",
+      "material": "tpu",
+      "kind": "generated",
+      "shapeHash": "cffd1a708f7b9d251db6a57cc4ffcd46c173a0c6f95bdb9bcd8dd33ab44c5d4e",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    }
+  ],
+  "assets": [],
+  "fits": [],
+  "updatedAt": "2026-11-24T07:46:24.750Z",
+  "parameters": {
+    "mic_guide": {
+      "length": 9.5,
+      "width": 3.4,
+      "height": 2.65,
+      "bore_diameter": 1.6,
+      "outlet_elevation": 1.18,
+      "inlet_to_end": 1.6
+    }
+  }
+}

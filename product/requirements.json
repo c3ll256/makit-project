@@ -5,23 +5,19 @@
       "source": "user"
     },
     "outline_shape": {
-      "value": "Six shallow, smoothly joined cloud lobes around a near-circular compact body, following the handheld reference uploaded 2026-11-12; avoid pronounced deep valleys.",
+      "value": "按星形吊件参考图的正面轮廓：圆顶、近水平双肩、两侧内收，底部两个圆角之间以向上提起的浅弧相连。",
       "source": "user"
     },
     "layout": {
-      "value": "square colour screen centred above three round buttons, lanyard nub on top, as reference image 1",
+      "value": "方屏和圆面居中；按标注把三键集中在左下星角，较大的键在上，两小键在其下方及右下方。",
       "source": "user"
     },
-    "base_board": {
-      "value": "seeed/xiao-esp32s3",
-      "source": "default"
-    },
     "display": {
-      "value": "优信电子 1.3寸TFT彩屏模块(带铁框)_7P焊接；ST7789，240x240 IPS，3.3V，无按键",
+      "value": "优信电子 1.54寸TFT彩屏模块_8P，ST7789，240×240 IPS，3.3 V SPI",
       "source": "user"
     },
     "buttons": {
-      "value": "3 tactile switches 6x6 mm with printed domed caps; centre one larger",
+      "value": "三颗板载轻触开关与各自键帽同轴直按，上方为深色主键，两颗辅助键与壳同色。",
       "source": "default"
     },
     "battery": {
@@ -29,14 +25,16 @@
       "source": "default"
     },
     "charging": {
-      "value": "USB-C on the XIAO, reachable through the shell side",
+      "value": "侧面 USB-C 为单节锂电池充电，也用于主控原生 USB 下载。",
       "source": "default"
     },
     "envelope_mm": {
       "value": {
-        "width": 72.508,
-        "height_with_nub": 81.621,
-        "thickness": 22
+        "width": 101.5,
+        "height": 102.8,
+        "thickness": 22,
+        "height_with_ring": 116.3,
+        "thickness_with_buttons": 22.45
       },
       "source": "default"
     },
@@ -45,52 +43,37 @@
       "source": "default"
     },
     "design_direction": {
-      "value": "Compact translucent lavender-blue cloud pebble with smooth shallow scallops, a moderately sized dark circular screen bezel around the square display, broad curved side slopes, three lower domed buttons with a larger middle button, and a small top lanyard ball.",
+      "value": "参考图五角星外壳和顶部挂环，半透明蓝紫色，三个按键集中于左下星角。",
       "source": "user"
     },
     "custom_pcb": {
       "value": "Custom PCB requested for pet device",
       "source": "user"
     },
-    "key_pcb_implementation": {
-      "value": "One 66x60x1.0mm 2-layer FR4 mixed production panel contains one52.5x45.5mm carrier and one20x11mm screen adapter. Finished piece outlines, switch axes, USB/XIAO position and connector directions retained. Common1.0mm thickness requires carrier underside supports+0.6mm and adapter underside supports-0.2mm while mating/component top faces stay fixed; CAD adaptation must be checked before printing.",
-      "source": "default"
-    },
-    "display_grove_on_pcb": {
-      "value": "Replace the Grove display connector with a 7-pin plug-in cable connector on pet-keys, for the selected YouXin 1.3-inch TFT; adapt PCB and enclosure.",
-      "source": "user"
-    },
     "charging_opening_appearance": {
-      "value": "Approved recessed rounded USB-C opening with same-colour inner surround; preserve opening and XIAO location during PCB adaptation.",
+      "value": "保留侧面已定的内凹圆角 USB-C 开口、同色内圈和接口位置。",
       "source": "user"
     },
     "button_group_spacing": {
-      "value": "Place the left and right front buttons at the green marked lower-inner positions in mark 1; keep the middle button at its current position.",
-      "source": "user"
-    },
-    "xiao_direct_plug": {
-      "value": "XIAO ESP32-S3 plugs directly into pet-keys via two 7-position 2.54 mm rows; verify enclosure fit.",
+      "value": "以 11 月 25 日三处绿色标记为三键中心，左下星角呈三角布局。",
       "source": "user"
     },
     "display_interface": {
-      "value": "7-pin 2.54 mm SPI: GND,VCC,SCL,SDA,RES,DC,BLK; no CS. SCL is SPI clock and SDA is MOSI. BLK low disables backlight; default floating state enabled. Seller drawings in uploaded 20261110T152829794Z images.",
+      "value": "8-pin 2.54 mm SPI: GND, VCC, SCL, SDA, RES, DC, CS, BLK. CS active low, BLK low disables backlight.",
       "source": "research"
     },
     "display_geometry_mm": {
       "value": {
-        "pcb_width": 27.78,
-        "pcb_height": 39.22,
-        "active_width": 23.4,
-        "active_height": 23.4
+        "pcb_width": 32,
+        "pcb_height": 43.72,
+        "active_width": 27.72,
+        "active_height": 27.72,
+        "pcb_thickness": 1.2
       },
       "source": "research"
     },
-    "display_cable": {
-      "value": "JST GH1.25mm7P positive-lock precrimped150mm cable, GHR-07V-S housings and SSHL-002T-P0.2 contacts both ends,pin1-to-pin1. Not SH/ZH/PicoBlade. Screen exposed square pin tips shortened to2.5mm for3mm socket cavity; no desoldering.",
-      "source": "default"
-    },
     "thin_body": {
-      "value": "整个机器不要这么厚；保留已选彩屏和云朵造型，压缩内部接插件堆叠。",
+      "value": "整机保持薄型，保留已选彩屏，压缩内部接插件堆叠。",
       "source": "user"
     },
     "firm_assembly": {
@@ -98,7 +81,7 @@
       "source": "user"
     },
     "shell_finish": {
-      "value": "前壳、后壳及一体挂绳球均为半透明外壳。",
+      "value": "前壳、后壳及顶角一体挂孔均为半透明外壳。",
       "source": "user"
     },
     "shell_visual_opacity": {
@@ -106,43 +89,59 @@
       "source": "default"
     },
     "front_proportions": {
-      "value": "外缘更加圆滑，六瓣之间没有明显深凹；正面紫色区域更窄、整体更紧凑，按2026-11-12用户参考图调整。",
+      "value": "按照片轮廓和黑色圆面对机身宽度的比例调整，让底部看起来轻。",
       "source": "user"
     },
     "side_edge_profile": {
       "value": "按2026-11-12侧视绿线标记，边缘改为更大范围、更大坡度的连续圆滑收边，减少中段直立壁面。",
       "source": "user"
     },
-    "middle_button_larger": {
-      "value": "放大正面中间按钮，保留中间键中心位置。",
-      "source": "user"
-    },
     "button_cap_diameters_mm": {
       "value": [
-        9,
-        13,
-        9
+        12,
+        8,
+        8
       ],
       "source": "default"
     },
     "bezel_size_preference": {
-      "value": "黑色圆形屏框小一点；按用户指定的bezel部件调整。",
+      "value": "黑色圆面按参考照片比例配合星形外轮廓。",
       "source": "user"
     },
     "bezel_outer_diameter_mm": {
-      "value": 45,
+      "value": 52,
       "source": "default"
-    },
-    "pcb_panel_manufacturing": {
-      "value": "主载板和屏幕转接板混拼在同一张生产板上加工，分板后装配。",
-      "source": "user"
     },
     "pcb_common_thickness_mm": {
       "value": 1,
       "source": "default"
     },
     "pcb_single_side_smt": {
-      "value": "混拼生产板仅做顶面单面贴装：主载板与屏幕转接板的两只GH连接器均朝上；转接板整块翻面定义生产顶面，分板装机后GH仍背向屏幕。穿孔按键、排母与主控模块另行焊接/插装。",
+      "value": "主板仅做顶面单面贴装。",
+      "source": "user"
+    },
+    "microphone": {
+      "value": "内置麦克风，主控可以采集声音。",
+      "source": "user"
+    },
+    "loudspeaker": {
+      "value": "内置喇叭，主控可以播放声音。",
+      "source": "user"
+    },
+    "audio_acceptance": {
+      "value": "按住三角键组最下方的小键进行近距离录音，松手后由机内喇叭回放。",
+      "source": "default"
+    },
+    "speaker_connection": {
+      "value": "喇叭出厂自带与载板配套的插头，装机时直接插接，无需焊线或压接。",
+      "source": "user"
+    },
+    "motherboard_assembly": {
+      "value": "保留原有 Seeed Studio XIAO ESP32S3 开发板。每台加工一块定制载板，承载 XIAO、三个按键、贴片麦克风和功放。现有优信八针彩屏和带线喇叭分别直插载板，由 XIAO 自带的 USB-C 对准原侧孔。",
+      "source": "user"
+    },
+    "carrier_shape": {
+      "value": "XIAO 载板外轮廓尽量简单，减少台阶、凸耳和局部切口。",
       "source": "user"
     }
   },

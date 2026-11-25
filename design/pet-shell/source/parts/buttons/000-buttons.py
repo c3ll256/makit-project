@@ -1,17 +1,19 @@
-import math
-f = part("form")
-dome_h = param("button_dome_height", 2.2)
-travel_gap = 0.4
-peg_r = param("button_coupling_peg_radius", 1.6)
+f=part("form")
+travel_gap=param("cap_boot_clearance",1.10)
+peg_r=param("button_coupling_peg_radius",1.6)
+cap_top=param("primary_key_top_z",22.45)
+aux_top=param("auxiliary_key_top_z",22.13)
 caps=[]
-for ((cx,cy),br),((sx,sy),_) in zip(f.cap_layout,f.buttons):
-    dome_z=f.body_h-f.btn_pocket_depth+travel_gap
-    dome=Pos(cx,cy,dome_z)*Cylinder(br,dome_h,align=(Align.CENTER,Align.CENTER,Align.MIN))
-    dome=fillet(dome.edges().group_by(Axis.Z)[-1],min(dome_h*0.9,br*0.6))
-    peg=Pos(cx,cy,f.sw_plunger_top_z)*Cylinder(peg_r,f.button_pusher_t+0.1,align=(Align.CENTER,Align.CENTER,Align.MIN))
-    main_stem=Pos(cx,cy,f.sw_plunger_top_z+f.button_pusher_t)*Cylinder(f.button_stem_r,dome_z-f.sw_plunger_top_z-f.button_pusher_t+0.2,align=(Align.CENTER,Align.CENTER,Align.MIN))
-    lower_stem = Pos(cx,cy,f.actuator_contact_z) * Cylinder(f.button_stem_r,f.sw_plunger_top_z-f.actuator_contact_z,align=(Align.CENTER,Align.CENTER,Align.MIN))
-    caps.append(dome.fuse(main_stem,peg,lower_stem))
-for cap,n,l in zip(caps,["button_left","button_mid","button_right"],["Left button","Middle button","Right button"]):
-    cap.color=srgb("#c9bfff")
-    publish(n,cap,l,material="petg")
+for index,((cx,cy),radius) in enumerate(f.cap_layout):
+    top=cap_top if index==0 else aux_top
+    bottom=f.body_h-f.btn_pocket_depth+travel_gap
+    dome=Pos(cx,cy,bottom)*Cylinder(radius,top-bottom,align=(Align.CENTER,Align.CENTER,Align.MIN))
+    dome=fillet(dome.edges().group_by(Axis.Z)[-1],min((top-bottom)*0.7,0.72))
+    stem_start=f.collar_z+f.collar_t
+    shank=Pos(cx,cy,stem_start)*Cylinder(f.button_stem_r,bottom-stem_start+0.08,align=(Align.CENTER,Align.CENTER,Align.MIN))
+    peg=Pos(cx,cy,f.actuator_contact_z)*Cylinder(peg_r,stem_start-f.actuator_contact_z+0.08,align=(Align.CENTER,Align.CENTER,Align.MIN))
+    key=dome.fuse(shank,peg)
+    caps.append(key)
+for index,(name,key) in enumerate(zip(["button_left","button_mid","button_right"],caps)):
+    key.color=srgb("#151721") if index==0 else srgb("#a594f0",f.shell_opacity)
+    publish(name,key,["Cluster main key","Cluster lower key","Cluster inner key"][index],material="petg")

@@ -1,0 +1,251 @@
+{
+  "units": "mm",
+  "frame": "pet-shell; XY at enclosure origin, +Z toward the display",
+  "status": "XIAO carrier in enclosure coordinates",
+  "enclosure_outer_mm": {
+    "w": 101.5,
+    "d": 102.8,
+    "h": 22,
+    "d_with_ring": 116.3,
+    "h_with_buttons": 22.45
+  },
+  "ports": [
+    {
+      "id": "usb_c",
+      "face": "+X",
+      "mouth_center_mm": [
+        32.28334,
+        0,
+        13.1
+      ],
+      "orientation": "long dimension parallel to Y",
+      "evidence": [
+        "design/pet-mainboard/source/models/xiao-esp32s3.step",
+        "pet-shell/form: usb_socket_front_x and usb_z"
+      ],
+      "origin": "Existing XIAO receptacle"
+    }
+  ],
+  "board_top_z_mm": 4.74,
+  "display": {
+    "rear_face_z_mm": 16.55,
+    "row_center_mm": [
+      0,
+      -14.51
+    ],
+    "row_x_mm": [
+      8.89,
+      6.35,
+      3.81,
+      1.27,
+      -1.27,
+      -3.81,
+      -6.35,
+      -8.89
+    ],
+    "socket_entry_side": "front",
+    "pins": [
+      "GND",
+      "VCC",
+      "SCL",
+      "SDA",
+      "RES",
+      "DC",
+      "CS",
+      "BLK"
+    ],
+    "pitch_mm": 2.54,
+    "header_insulator_mm": {
+      "value": 2.5,
+      "source": "default"
+    },
+    "available_socket_height_mm": 9.31,
+    "socket_top_max_nominal_mm": 8.5,
+    "footprint_notes": "One top-entry row. Recommended 1.02 mm plated holes. Socket height tolerance +/-0.15 mm. Validate actual TFT pin engagement before series assembly.",
+    "evidence": [
+      "references/suppliers/c2897371/c2897371-datasheet.pdf",
+      "product/references/uploads/20261124T090321777Z-1-cleanshot-2026-11-24-at-17-03-07-2x.png"
+    ],
+    "bezel_recess_increase_mm": 0.75,
+    "physical_rotation_deg": 180,
+    "screen_center_mm": [
+      0,
+      4.3
+    ],
+    "metal_front_z_mm": 19.75,
+    "nominal_header_to_socket_gap_mm": 0.81,
+    "header_gap_at_max_socket_height_mm": 0.66,
+    "active_area_mm": [
+      27.72,
+      27.72
+    ],
+    "window_mm": [
+      28.3,
+      28.3
+    ],
+    "board_size_mm": [
+      32,
+      43.72,
+      1.2
+    ],
+    "mounting_hole_centres_xy_mm": [
+      [
+        -13.5,
+        -13.51
+      ],
+      [
+        13.5,
+        -13.51
+      ],
+      [
+        -13.5,
+        25.21
+      ],
+      [
+        13.5,
+        25.21
+      ]
+    ],
+    "header_exposed_pin_mm": {
+      "value": 6.5,
+      "source": "default"
+    }
+  },
+  "battery_keepout_mm": {
+    "min": [
+      -23.6,
+      -9.5,
+      5.74
+    ],
+    "max": [
+      6.4,
+      25.5,
+      10.74
+    ],
+    "note": "1mm adhesive on clear laminate and rear ledge. Keep this space free of parts and protruding solder."
+  },
+  "buttons": {
+    "axes_xy_mm": [
+      [
+        -28.25,
+        -20.5
+      ],
+      [
+        -32.25,
+        -33
+      ],
+      [
+        -19,
+        -28
+      ]
+    ],
+    "switch_height_mm": 5,
+    "nominal_actuator_top_z_mm": 9.74,
+    "working_travel_mm": 0.25,
+    "note": "Three independent, coaxial plungers directly actuate SW_LEFT, SW_MID and SW_RIGHT on the extended carrier.",
+    "cap_axes_xy_mm": [
+      [
+        -28.25,
+        -20.5
+      ],
+      [
+        -32.25,
+        -33
+      ],
+      [
+        -19,
+        -28
+      ]
+    ],
+    "cap_diameters_mm": [
+      12,
+      8,
+      8
+    ],
+    "cap_labels": [
+      "upper_main",
+      "lower_aux",
+      "inner_aux"
+    ]
+  },
+  "audio": {
+    "microphone": {
+      "ref": "MIC1",
+      "body_xy_mm": [
+        25.4,
+        -12
+      ],
+      "size_mm": [
+        3.76,
+        4.72,
+        1.2
+      ],
+      "top_port_mm": [
+        25.4,
+        -10.96,
+        5.94
+      ],
+      "side_inlet_axis_z_mm": 7.12,
+      "side_inlet_bore_mm": 1.6
+    },
+    "speaker": {
+      "ref": "SPK1",
+      "footprint_origin_xy_mm": [
+        -14.9,
+        -14.15
+      ],
+      "orientation": "socket opens toward -X; insert horizontally in +X direction",
+      "transducer_center_mm": [
+        -28.35,
+        -6.8,
+        7.65
+      ],
+      "polarity": "pin 1 SPK_P, pin 2 SPK_N; both amplifier outputs"
+    }
+  },
+  "module": {
+    "platform": "seeed/xiao-esp32s3",
+    "board_xy_mm": [
+      20.21536,
+      0
+    ],
+    "stack_above_carrier_mm": 6,
+    "socket_rows_y_mm": [
+      -7.62,
+      7.62
+    ]
+  },
+  "board_bottom_z_mm": 3.74,
+  "board_outline": {
+    "width_mm": 68.5,
+    "height_mm": 48.25,
+    "thickness_mm": 1,
+    "outline_source": "design/pet-mainboard/source/components/outline.json",
+    "boss_relief_mm": {
+      "center": [
+        24,
+        -20
+      ],
+      "radius": 3.65,
+      "blend_radius": 1.5
+    }
+  },
+  "shell_closure_axes_xy_mm": [
+    [
+      27,
+      13
+    ],
+    [
+      -27,
+      13
+    ],
+    [
+      24,
+      -20
+    ],
+    [
+      -38.5,
+      -23.2
+    ]
+  ]
+}

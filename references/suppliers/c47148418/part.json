@@ -1,0 +1,73 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-23T17:29:59.801Z",
+  "lcsc_code": "C47148418",
+  "manufacturer": "LinkMems(聆麦声学)",
+  "manufacturer_part_number": "LMD4737T261-OAC05",
+  "description": "集成专用前置放大ASIC的MEMS麦克风,支持表面贴装和高温回流组装,数据格式为单比特PDM",
+  "category": "MEMS麦克风",
+  "package": "SMD-6P,4.7x3.8mm",
+  "jlcpcb_part_class": "extended",
+  "parameters": {
+    "Voltage - Supply": "1.8V",
+    "Current Consumption": "750uA",
+    "Width": "3.76mm",
+    "Direction": "Omnidirectional",
+    "Length": "4.72mm",
+    "Sensitivity": "-26dB",
+    "Height": "1.2mm",
+    "S/N Ratio": "55dB",
+    "Operating Temperature": "-40°C~+85°C"
+  },
+  "lcsc_stock": 12,
+  "price_breaks": [
+    {
+      "quantity": 5,
+      "unitPrice": 1.9372,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 50,
+      "unitPrice": 1.4836,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 150,
+      "unitPrice": 1.2892,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 5,
+      "unitPrice": 0.3111,
+      "currency": "USD"
+    },
+    {
+      "quantity": 50,
+      "unitPrice": 0.2382,
+      "currency": "USD"
+    },
+    {
+      "quantity": 150,
+      "unitPrice": 0.207,
+      "currency": "USD"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 0.1681,
+      "currency": "USD"
+    },
+    {
+      "quantity": 2500,
+      "unitPrice": 0.1507,
+      "currency": "USD"
+    },
+    {
+      "quantity": 5000,
+      "unitPrice": 0.1403,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/49348305.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/5b15467728fa628c49d9103dafffc505.pdf?productCode=C47148418",
+  "datasheet_file": "references/suppliers/c47148418/c47148418-datasheet.pdf"
+}

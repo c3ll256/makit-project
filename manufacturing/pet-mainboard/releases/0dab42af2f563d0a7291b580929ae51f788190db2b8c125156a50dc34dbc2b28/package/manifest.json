@@ -1,0 +1,602 @@
+{
+  "schemaVersion": 3,
+  "backend": "tscircuit-kicad",
+  "designId": "pet-mainboard",
+  "candidateId": "e80ec75b8ece69a04750c9f89e011591f3e9f14f899e1b5f611a95e5586c3816",
+  "exportId": "e80ec75b8ece69a04750c9f89e011591f3e9f14f899e1b5f611a95e5586c3816",
+  "status": "ready",
+  "readyForFabrication": true,
+  "sections": [
+    {
+      "id": "fabrication",
+      "status": "ready",
+      "files": [
+        "manufacturing/drill/board-NPTH.drl",
+        "manufacturing/drill/board-PTH.drl",
+        "manufacturing/drill/pet-mainboard-drill-report.txt",
+        "manufacturing/gerbers/board-B_Cu.gbl",
+        "manufacturing/gerbers/board-B_Mask.gbs",
+        "manufacturing/gerbers/board-B_Paste.gbp",
+        "manufacturing/gerbers/board-B_Silkscreen.gbo",
+        "manufacturing/gerbers/board-Edge_Cuts.gm1",
+        "manufacturing/gerbers/board-F_Cu.gtl",
+        "manufacturing/gerbers/board-F_Mask.gts",
+        "manufacturing/gerbers/board-F_Paste.gtp",
+        "manufacturing/gerbers/board-F_Silkscreen.gto",
+        "manufacturing/gerbers/board-job.gbrjob"
+      ],
+      "blockingCodes": []
+    },
+    {
+      "id": "assembly",
+      "status": "ready",
+      "files": [
+        "manufacturing/jlc-smt-bom.csv",
+        "manufacturing/jlc-smt-placement.csv"
+      ],
+      "blockingCodes": []
+    },
+    {
+      "id": "mechanical",
+      "status": "ready",
+      "files": [
+        "manufacturing/3dmodels/pet-mainboard.3dshapes/LMD4737T261-OAC05.step",
+        "manufacturing/3dmodels/pet-mainboard.3dshapes/Molex_PicoBlade_53261-0271_1x02-1MP_P1.25mm_Horizontal.step",
+        "manufacturing/3dmodels/pet-mainboard.3dshapes/SW_PUSH_6mm_H5mm.step",
+        "manufacturing/3dmodels/pet-mainboard.3dshapes/xiao-esp32s3.step",
+        "manufacturing/assembly.glb",
+        "manufacturing/assembly.step"
+      ],
+      "blockingCodes": []
+    }
+  ],
+  "generatedAt": "2026-11-25T12:31:54.160Z",
+  "files": [
+    {
+      "type": "step",
+      "path": "manufacturing/3dmodels/pet-mainboard.3dshapes/LMD4737T261-OAC05.step",
+      "sha256": "740bd1646a0daabbf6f4817013eec7d53be3db1b80004122ed4f6f79135c7b31",
+      "sizeBytes": 128721
+    },
+    {
+      "type": "step",
+      "path": "manufacturing/3dmodels/pet-mainboard.3dshapes/Molex_PicoBlade_53261-0271_1x02-1MP_P1.25mm_Horizontal.step",
+      "sha256": "3bf7491460fcd4959169e79d19563cc42d42c4ca298b28f2914f1ae8c8cfda49",
+      "sizeBytes": 213788
+    },
+    {
+      "type": "step",
+      "path": "manufacturing/3dmodels/pet-mainboard.3dshapes/SW_PUSH_6mm_H5mm.step",
+      "sha256": "4461bd8b9765c0569a962e3d7bf254d3f2785ff83e20b087ee0469fb2f89fe2c",
+      "sizeBytes": 179948
+    },
+    {
+      "type": "step",
+      "path": "manufacturing/3dmodels/pet-mainboard.3dshapes/xiao-esp32s3.step",
+      "sha256": "870ad45c7af5d92324cec4c6ae65fbf86e3b049d5a97ab9ffd9039ebd73455dd",
+      "sizeBytes": 1335902
+    },
+    {
+      "type": "glb",
+      "path": "manufacturing/assembly.glb",
+      "sha256": "3be4bc00249d572437880484a6256c76ee6047fb0454368cade24bf11858d5ba",
+      "sizeBytes": 38480580
+    },
+    {
+      "type": "step",
+      "path": "manufacturing/assembly.step",
+      "sha256": "9bd7e373a98483f95674f8d76e7d3f86b19858da93ef1c2d9e58967bc8d17a4e",
+      "sizeBytes": 14896105
+    },
+    {
+      "type": "manifest",
+      "path": "manufacturing/circuit.json",
+      "sha256": "389a03dd4423779403df3fc55c629ec1fba60ebfe3292139d11ac84a8886d77b",
+      "sizeBytes": 843603
+    },
+    {
+      "type": "drill",
+      "path": "manufacturing/drill/board-NPTH.drl",
+      "sha256": "bf46fe409cca22e3bad79dd50ecb62b7c100cc63bfa5b69ba335ba8e8f8c6a42",
+      "sizeBytes": 355
+    },
+    {
+      "type": "drill",
+      "path": "manufacturing/drill/board-PTH.drl",
+      "sha256": "55fc6cc256f96de59172b5cc1685bda69c189ed42dec6d5268e8604ffd274375",
+      "sizeBytes": 1398
+    },
+    {
+      "type": "drill",
+      "path": "manufacturing/drill/pet-mainboard-drill-report.txt",
+      "sha256": "a02c2e93724e7e3df4ab7ea7e309f29e57b426e6512248d35518d70665c6cbd6",
+      "sizeBytes": 717
+    },
+    {
+      "type": "gerber",
+      "path": "manufacturing/gerbers/board-B_Cu.gbl",
+      "sha256": "09a51e66907e23f07c439072c3dab2f3aa0baa61476624aaca863ba80cdc960f",
+      "sizeBytes": 75543
+    },
+    {
+      "type": "gerber",
+      "path": "manufacturing/gerbers/board-B_Mask.gbs",
+      "sha256": "94d91ce6643bb52893abe2af98219a7a6eab683e145dc2caf6a83f1985294f21",
+      "sizeBytes": 1708
+    },
+    {
+      "type": "gerber",
+      "path": "manufacturing/gerbers/board-B_Paste.gbp",
+      "sha256": "a1f1c3fd8faa203ffc655a51d1f781e301cc66ab4fb8f4d92cbd44f2b28ba46c",
+      "sizeBytes": 450
+    },
+    {
+      "type": "gerber",
+      "path": "manufacturing/gerbers/board-B_Silkscreen.gbo",
+      "sha256": "d21c5df3bdd092b09a97586293fd2abb41a1a5650279422f7115b147a606d985",
+      "sizeBytes": 451
+    },
+    {
+      "type": "gerber",
+      "path": "manufacturing/gerbers/board-Edge_Cuts.gm1",
+      "sha256": "abd3f2571135c795c1e8e84e02335b640d787ea4c834546d5d2824f162db5c16",
+      "sizeBytes": 5992
+    },
+    {
+      "type": "gerber",
+      "path": "manufacturing/gerbers/board-F_Cu.gtl",
+      "sha256": "9012e334a94ee8d365d72b133c15fb3ca643b2b7e151db1c9914419c702cc781",
+      "sizeBytes": 108867
+    },
+    {
+      "type": "gerber",
+      "path": "manufacturing/gerbers/board-F_Mask.gts",
+      "sha256": "3225707e327a5d3db5652a74ce5d7ab1dd4c44160dcfbd6a0e7cfafce94e54f7",
+      "sizeBytes": 4300
+    },
+    {
+      "type": "gerber",
+      "path": "manufacturing/gerbers/board-F_Paste.gtp",
+      "sha256": "a75408c69d4b7aa4889f294937a746b0a944e297c0d54b5006548c3fd01155a4",
+      "sizeBytes": 3032
+    },
+    {
+      "type": "gerber",
+      "path": "manufacturing/gerbers/board-F_Silkscreen.gto",
+      "sha256": "2c3ae121daaf0b890f7d8a4837549f04ac688ed3443811db234a956685306568",
+      "sizeBytes": 12399
+    },
+    {
+      "type": "gerber",
+      "path": "manufacturing/gerbers/board-job.gbrjob",
+      "sha256": "81f9a78523d2e3524971ca62e0ebe937a76b16804196a06dce2fbb4bd6cb989e",
+      "sizeBytes": 2658
+    },
+    {
+      "type": "bom",
+      "path": "manufacturing/jlc-smt-bom.csv",
+      "sha256": "395b6ef8534b743ba7bc8266209f8afa7e8d7f1b5702f7cbe5466340dca7be98",
+      "sizeBytes": 1216
+    },
+    {
+      "type": "pick-and-place",
+      "path": "manufacturing/jlc-smt-placement.csv",
+      "sha256": "fd946a1c2c22809d1118d28de4b89e57cd80ad7c908db56c5ad7c31a2f34e411",
+      "sizeBytes": 1541
+    }
+  ],
+  "diagnostics": [
+    {
+      "stage": "fabrication-export",
+      "severity": "warning",
+      "tier": "advisory",
+      "code": "hardware.bom.image_url_missing",
+      "message": "BOM item \"microphone\" has an LCSC/JLC supplier code but no image_url.",
+      "file": "product/bom.json",
+      "jsonPointer": "/items/15",
+      "nextAction": "Preserve image_url from electronics.search or supplier detail lookup when returned; do not drop it when writing component-selection.json or deriving product/bom.json.",
+      "details": {
+        "line": 308
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "warning",
+      "tier": "advisory",
+      "code": "hardware.bom.jlc_smt_extended_library",
+      "message": "JLC SMT BOM item \"microphone\" uses an Extended library part.",
+      "file": "product/bom.json",
+      "jsonPointer": "/items/15/jlc_smt_library",
+      "nextAction": "Search for a Basic JLC SMT substitute with matching electrical, package, footprint, and pinout constraints. Keep the Extended part only when no credible Basic substitute exists, or move the part to manual assembly when that is cheaper.",
+      "details": {
+        "line": 321,
+        "expected": "Prefer jlc_smt_library: \"basic\" when a compatible Basic library substitute exists."
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "warning",
+      "tier": "advisory",
+      "code": "hardware.bom.image_url_missing",
+      "message": "BOM item \"audio_amp\" has an LCSC/JLC supplier code but no image_url.",
+      "file": "product/bom.json",
+      "jsonPointer": "/items/16",
+      "nextAction": "Preserve image_url from electronics.search or supplier detail lookup when returned; do not drop it when writing component-selection.json or deriving product/bom.json.",
+      "details": {
+        "line": 339
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "warning",
+      "tier": "advisory",
+      "code": "hardware.bom.jlc_smt_extended_library",
+      "message": "JLC SMT BOM item \"audio_amp\" uses an Extended library part.",
+      "file": "product/bom.json",
+      "jsonPointer": "/items/16/jlc_smt_library",
+      "nextAction": "Search for a Basic JLC SMT substitute with matching electrical, package, footprint, and pinout constraints. Keep the Extended part only when no credible Basic substitute exists, or move the part to manual assembly when that is cheaper.",
+      "details": {
+        "line": 352,
+        "expected": "Prefer jlc_smt_library: \"basic\" when a compatible Basic library substitute exists."
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "warning",
+      "tier": "advisory",
+      "code": "hardware.bom.image_url_missing",
+      "message": "BOM item \"speaker\" has an LCSC/JLC supplier code but no image_url.",
+      "file": "product/bom.json",
+      "jsonPointer": "/items/17",
+      "nextAction": "Preserve image_url from electronics.search or supplier detail lookup when returned; do not drop it when writing component-selection.json or deriving product/bom.json.",
+      "details": {
+        "line": 370
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "warning",
+      "tier": "advisory",
+      "code": "hardware.bom.image_url_missing",
+      "message": "BOM item \"speaker_header\" has an LCSC/JLC supplier code but no image_url.",
+      "file": "product/bom.json",
+      "jsonPointer": "/items/18",
+      "nextAction": "Preserve image_url from electronics.search or supplier detail lookup when returned; do not drop it when writing component-selection.json or deriving product/bom.json.",
+      "details": {
+        "line": 393
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "warning",
+      "tier": "advisory",
+      "code": "hardware.bom.jlc_smt_extended_library",
+      "message": "JLC SMT BOM item \"speaker_header\" uses an Extended library part.",
+      "file": "product/bom.json",
+      "jsonPointer": "/items/18/jlc_smt_library",
+      "nextAction": "Search for a Basic JLC SMT substitute with matching electrical, package, footprint, and pinout constraints. Keep the Extended part only when no credible Basic substitute exists, or move the part to manual assembly when that is cheaper.",
+      "details": {
+        "line": 403,
+        "expected": "Prefer jlc_smt_library: \"basic\" when a compatible Basic library substitute exists."
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "warning",
+      "tier": "advisory",
+      "code": "hardware.bom.image_url_missing",
+      "message": "BOM item \"audio_c100n\" has an LCSC/JLC supplier code but no image_url.",
+      "file": "product/bom.json",
+      "jsonPointer": "/items/19",
+      "nextAction": "Preserve image_url from electronics.search or supplier detail lookup when returned; do not drop it when writing component-selection.json or deriving product/bom.json.",
+      "details": {
+        "line": 427
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "warning",
+      "tier": "advisory",
+      "code": "hardware.bom.image_url_missing",
+      "message": "BOM item \"audio_c1u\" has an LCSC/JLC supplier code but no image_url.",
+      "file": "product/bom.json",
+      "jsonPointer": "/items/20",
+      "nextAction": "Preserve image_url from electronics.search or supplier detail lookup when returned; do not drop it when writing component-selection.json or deriving product/bom.json.",
+      "details": {
+        "line": 460
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "warning",
+      "tier": "advisory",
+      "code": "hardware.bom.image_url_missing",
+      "message": "BOM item \"audio_c10u\" has an LCSC/JLC supplier code but no image_url.",
+      "file": "product/bom.json",
+      "jsonPointer": "/items/21",
+      "nextAction": "Preserve image_url from electronics.search or supplier detail lookup when returned; do not drop it when writing component-selection.json or deriving product/bom.json.",
+      "details": {
+        "line": 493
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "warning",
+      "tier": "advisory",
+      "code": "hardware.bom.image_url_missing",
+      "message": "BOM item \"audio_c1n\" has an LCSC/JLC supplier code but no image_url.",
+      "file": "product/bom.json",
+      "jsonPointer": "/items/22",
+      "nextAction": "Preserve image_url from electronics.search or supplier detail lookup when returned; do not drop it when writing component-selection.json or deriving product/bom.json.",
+      "details": {
+        "line": 524
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "warning",
+      "tier": "advisory",
+      "code": "hardware.bom.image_url_missing",
+      "message": "BOM item \"audio_c22n\" has an LCSC/JLC supplier code but no image_url.",
+      "file": "product/bom.json",
+      "jsonPointer": "/items/23",
+      "nextAction": "Preserve image_url from electronics.search or supplier detail lookup when returned; do not drop it when writing component-selection.json or deriving product/bom.json.",
+      "details": {
+        "line": 555
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "warning",
+      "tier": "advisory",
+      "code": "hardware.bom.image_url_missing",
+      "message": "BOM item \"audio_r1k\" has an LCSC/JLC supplier code but no image_url.",
+      "file": "product/bom.json",
+      "jsonPointer": "/items/24",
+      "nextAction": "Preserve image_url from electronics.search or supplier detail lookup when returned; do not drop it when writing component-selection.json or deriving product/bom.json.",
+      "details": {
+        "line": 587
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "warning",
+      "tier": "advisory",
+      "code": "hardware.bom.image_url_missing",
+      "message": "BOM item \"audio_r10k\" has an LCSC/JLC supplier code but no image_url.",
+      "file": "product/bom.json",
+      "jsonPointer": "/items/25",
+      "nextAction": "Preserve image_url from electronics.search or supplier detail lookup when returned; do not drop it when writing component-selection.json or deriving product/bom.json.",
+      "details": {
+        "line": 619
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "warning",
+      "tier": "advisory",
+      "code": "hardware.bom.image_url_missing",
+      "message": "BOM item \"audio_r30k\" has an LCSC/JLC supplier code but no image_url.",
+      "file": "product/bom.json",
+      "jsonPointer": "/items/26",
+      "nextAction": "Preserve image_url from electronics.search or supplier detail lookup when returned; do not drop it when writing component-selection.json or deriving product/bom.json.",
+      "details": {
+        "line": 652
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "info",
+      "tier": "advisory",
+      "code": "command_output",
+      "message": "Plotted to '/Users/c3ll256/Documents/Makit/点子宠物机/manufacturing/pet-mainboard/exports/.staging/e80ec75b8ece69a04750c9f89e011591f3e9f14f899e1b5f611a95e5586c3816-233bee54-66cb-4b3d-ad9b-d1b27a3dab31/gerbers/board-F_Cu.gtl'.\nPlotted to '/Users/c3ll256/Documents/Makit/点子宠物机/manufacturing/pet-mainboard/exports/.staging/e80ec75b8ece69a04750c9f89e011591f3e9f14f899e1b5f611a95e5586c3816-233bee54-66cb-4b3d-ad9b-d1b27a3dab31/gerbers/board-B_Cu.gbl'.\nPlotted to '/Users/c3ll256/Documents/Makit/点子宠物机/manufacturing/pet-mainboard/exports/.staging/e80ec75b8ece69a04750c9f89e011591f3e9f14f899e1b5f611a95e5586c3816-233bee54-66cb-4b3d-ad9b-d1b27a3dab31/gerbers/board-F_Paste.gtp'.\nPlotted to '/Users/c3ll256/Documents/Makit/点子宠物机/manufacturing/pet-mainboard/exports/.staging/e80ec75b8ece69a04750c9f89e011591f3e9f14f899e1b5f611a95e5586c3816-233bee54-66cb-4b3d-ad9b-d1b27a3dab31/gerbers/board-B_Paste.gbp'.\nPlotted to '/Users/c3ll256/Documents/Makit/点子宠物机/manufacturing/pet-mainboard/exports/.staging/e80ec75b8ece69a04750c9f89e011591f3e9f14f899e1b5f611a95e5586c3816-233bee54-66cb-4b3d-ad9b-d1b27a3dab31/gerbers/board-F_Silkscreen.gto'.\nPlotted to '/Users/c3ll256/Documents/Makit/点子宠物机/manufacturing/pet-mainboard/exports/.staging/e80ec75b8ece69a04750c9f89e011591f3e9f14f899e1b5f611a95e5586c3816-233bee54-66cb-4b3d-ad9b-d1b27a3dab31/gerbers/board-B_Silkscreen.gbo'.\nPlotted to '/Users/c3ll256/Documents/Makit/点子宠物机/manufacturing/pet-mainboard/exports/.staging/e80ec75b8ece69a04750c9f89e011591f3e9f14f899e1b5f611a95e5586c3816-233bee54-66cb-4b3d-ad9b-d1b27a3dab31/gerbers/board-F_Mask.gts'.\nPlotted to '/Users/c3ll256/Documents/Makit/点子宠物机/manufacturing/pet-mainboard/exports/.staging/e80ec75b8ece69a04750c9f89e011591f3e9f14f899e1b5f611a95e5586c3816-233bee54-66cb-4b3d-ad9b-d1b27a3dab31/gerbers/board-B_Mask.gbs'.\nPlotted to '/Users/c3ll256/Documents/Makit/点子宠物机/manufacturing/pet-mainboard/exports/.staging/e80ec75b8ece69a04750c9f89e011591f3e9f14f899e1b5f611a95e5586c3816-233bee54-66cb-4b3d-ad9b-d1b27a3dab31/gerbers/board-Edge_Cuts.gm1'.",
+      "file": "manufacturing/gerbers",
+      "details": {
+        "exitCode": 0
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "info",
+      "tier": "advisory",
+      "code": "command_output",
+      "message": "Created file '/Users/c3ll256/Documents/Makit/点子宠物机/manufacturing/pet-mainboard/exports/.staging/e80ec75b8ece69a04750c9f89e011591f3e9f14f899e1b5f611a95e5586c3816-233bee54-66cb-4b3d-ad9b-d1b27a3dab31/drill/board-PTH.drl'\nCreated file '/Users/c3ll256/Documents/Makit/点子宠物机/manufacturing/pet-mainboard/exports/.staging/e80ec75b8ece69a04750c9f89e011591f3e9f14f899e1b5f611a95e5586c3816-233bee54-66cb-4b3d-ad9b-d1b27a3dab31/drill/board-NPTH.drl'\nDone.",
+      "file": "manufacturing/drill",
+      "details": {
+        "exitCode": 0
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "info",
+      "tier": "advisory",
+      "code": "command_output",
+      "message": "Fontconfig error: Cannot load default config file: No such file: (null)\nWarning: schematic has annotation errors, please use the schematic editor to fix them\nWrote bill of materials to '/Users/c3ll256/Documents/Makit/点子宠物机/manufacturing/pet-mainboard/exports/.staging/e80ec75b8ece69a04750c9f89e011591f3e9f14f899e1b5f611a95e5586c3816-233bee54-66cb-4b3d-ad9b-d1b27a3dab31/bom.csv'.",
+      "file": "manufacturing/bom.csv",
+      "details": {
+        "exitCode": 0
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "info",
+      "tier": "advisory",
+      "code": "command_output",
+      "message": "Wrote position data to '/Users/c3ll256/Documents/Makit/点子宠物机/manufacturing/pet-mainboard/exports/.staging/e80ec75b8ece69a04750c9f89e011591f3e9f14f899e1b5f611a95e5586c3816-233bee54-66cb-4b3d-ad9b-d1b27a3dab31/placement.csv'.",
+      "file": "manufacturing/placement.csv",
+      "details": {
+        "exitCode": 0
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "info",
+      "tier": "advisory",
+      "code": "command_output",
+      "message": "STEP file '/Users/c3ll256/Documents/Makit/点子宠物机/manufacturing/pet-mainboard/exports/.staging/e80ec75b8ece69a04750c9f89e011591f3e9f14f899e1b5f611a95e5586c3816-233bee54-66cb-4b3d-ad9b-d1b27a3dab31/assembly.step' created.\n\nExport time 3.271 s",
+      "file": "manufacturing/assembly.step",
+      "details": {
+        "exitCode": 0
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "info",
+      "tier": "advisory",
+      "code": "assembly_step_required_models_verified",
+      "message": "Verified 30 required mounted assembly model occurrence(s) in the final KiCad STEP: C_BULK, C_BYP, C_EN, C_F1, C_F2, C_INN, C_INP, C_MIC, C_RF, C_VDD, J_SCREEN, J_XIAO_A, J_XIAO_B, MIC1, P_XIAO_A3, P_XIAO_A4, P_XIAO_B3, P_XIAO_B4, R_ATT, R_EN, R_F1, R_F2, R_INN, R_INP, R_OFF, SPK1, SW_LEFT, SW_MID, SW_RIGHT, U_AMP.",
+      "file": "manufacturing/assembly.step",
+      "details": {
+        "checked_model_refs": [
+          "C_BULK",
+          "C_BYP",
+          "C_EN",
+          "C_F1",
+          "C_F2",
+          "C_INN",
+          "C_INP",
+          "C_MIC",
+          "C_RF",
+          "C_VDD",
+          "J_SCREEN",
+          "J_XIAO_A",
+          "J_XIAO_B",
+          "MIC1",
+          "P_XIAO_A3",
+          "P_XIAO_A4",
+          "P_XIAO_B3",
+          "P_XIAO_B4",
+          "R_ATT",
+          "R_EN",
+          "R_F1",
+          "R_F2",
+          "R_INN",
+          "R_INP",
+          "R_OFF",
+          "SPK1",
+          "SW_LEFT",
+          "SW_MID",
+          "SW_RIGHT",
+          "U_AMP"
+        ]
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "info",
+      "tier": "advisory",
+      "code": "assembly_surface_appearance_built",
+      "message": "Prepared deterministic board appearance for the main PCB.",
+      "file": "manufacturing/assembly-appearance.json",
+      "details": {
+        "spec_sha256": "20c06f9c8a1308c5fe695641ba3e6800a132c5ff852f5a70b4c27b4abfbe1941",
+        "overlay_ids": [
+          "main-pcb:pet-mainboard"
+        ]
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "info",
+      "tier": "advisory",
+      "code": "assembly_glb_derived_from_step",
+      "message": "assembly.glb was generated from the final KiCad assembly.step, so the fabrication preview and released solid share one geometry source.",
+      "file": "manufacturing/assembly.glb",
+      "details": {
+        "source": "assembly-step",
+        "source_path": "manufacturing/assembly.step",
+        "source_step_sha256": "9bd7e373a98483f95674f8d76e7d3f86b19858da93ef1c2d9e58967bc8d17a4e",
+        "preview_sha256": "3be4bc00249d572437880484a6256c76ee6047fb0454368cade24bf11858d5ba",
+        "appearance_spec_sha256": "20c06f9c8a1308c5fe695641ba3e6800a132c5ff852f5a70b4c27b4abfbe1941",
+        "surface_texture_overlay_ids": [
+          "main-pcb:pet-mainboard"
+        ],
+        "surface_decal_ids": [],
+        "material_override_ids": [],
+        "verified_source_material_ids": []
+      }
+    },
+    {
+      "stage": "fabrication-export",
+      "severity": "info",
+      "tier": "advisory",
+      "code": "fab_jlc_extended_bom_parts",
+      "message": "8 BOM parts use JLCPCB Extended library (~$3 feeder fee each: xiao_pin_4, xiao_pin_3, xiao_sockets, buttons, screen_socket, microphone, ...).",
+      "file": "product/bom.json",
+      "nextAction": "Swap Extended library parts for Basic library equivalents in the BOM when low prototype cost is a priority.",
+      "details": {
+        "extended_count": 8,
+        "extended_parts": [
+          "xiao_pin_4",
+          "xiao_pin_3",
+          "xiao_sockets",
+          "buttons",
+          "screen_socket",
+          "microphone",
+          "audio_amp",
+          "speaker_header"
+        ],
+        "provenance": {
+          "kind": "source-derived",
+          "repo": "easyeda/eext-jlc-order-dfm-checker",
+          "path": "source/dfm/standards.ts",
+          "ref": "main",
+          "retrievedOn": "2026-07-26",
+          "detail": "JLCPCB PCBA extended component feeder loading fee (~$3 per unique extended part)"
+        }
+      }
+    }
+  ],
+  "previews": [
+    {
+      "type": "gerber-preview-svg",
+      "path": "manufacturing/previews/gerber-top.svg",
+      "role": "fabrication",
+      "side": "top"
+    },
+    {
+      "type": "gerber-preview-png",
+      "path": "manufacturing/previews/gerber-top.png",
+      "role": "fabrication",
+      "side": "top"
+    },
+    {
+      "type": "gerber-preview-svg",
+      "path": "manufacturing/previews/gerber-bottom.svg",
+      "role": "fabrication",
+      "side": "bottom"
+    },
+    {
+      "type": "gerber-preview-png",
+      "path": "manufacturing/previews/gerber-bottom.png",
+      "role": "fabrication",
+      "side": "bottom"
+    },
+    {
+      "type": "three-d-glb",
+      "path": "manufacturing/assembly.glb",
+      "role": "assembly"
+    }
+  ],
+  "finishedThicknessMm": 1,
+  "validatedBoardSpec": {
+    "layers": 2,
+    "material": "FR4",
+    "materialNote": "FR4 is the only substrate this system fabricates designs for; source/pcb.config.json has no material field to override it.",
+    "copperThicknessOz": {
+      "outer": 1
+    },
+    "capabilityProfileName": "jlcpcb-2layer-1oz",
+    "capabilityLimits": {
+      "minTrackWidthMm": 0.1,
+      "minViaDrillMm": 0.15,
+      "minViaDiameterMm": 0.25,
+      "minAnnularRingMm": 0.05,
+      "minPlatedHoleDrillMm": 0.15,
+      "minSilkLineWidthMm": 0.15,
+      "minSilkTextHeightMm": 1,
+      "minSilkPadClearanceMm": 0.15
+    },
+    "reorderWarning": "This design was DFM-validated as a 2-layer board at 1 oz outer copper (capability profile \"jlcpcb-2layer-1oz\", minimum trace width 0.1 mm). Ordering the board at a different layer count or copper weight invalidates this DFM check, because the real fabrication minimums (trace width, via drill/diameter, annular ring, plated-hole drill) change with both. To change either, edit manufacturing.layers or manufacturing.copperThicknessOz in source/pcb.config.json and re-run pcb.run(profile=\"check\")."
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "releases": [
+    {
+      "releaseId": "0dab42af2f563d0a7291b580929ae51f788190db2b8c125156a50dc34dbc2b28",
+      "designId": "pet-mainboard",
+      "buildId": "fb8f215081e91f26f02ba33d5d8387419b648b6fc6fb44d12aa689b10f0283f5",
+      "candidateId": "493da62b47af483657b1b32fdfd13ef8986d1cf231e9d46d8652b414c0b80e50",
+      "approvedAt": "2026-11-25T12:31:54.586Z"
+    }
+  ]
+}

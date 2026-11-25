@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "units": "mm",
+  "coordinateFrame": "makit-world-z-up",
+  "targets": [
+    {
+      "id": "microphone",
+      "label": "microphone",
+      "cells": [
+        {
+          "id": "microphone",
+          "target": "microphone",
+          "order": 0,
+          "path": "design/pet-microphone/source/parts/microphone/000-microphone.py",
+          "sha256": "62ceda7e736f7d3e00c2058bc6c37fdc7a7e43b1d1a9b27a277390ca0e0c86e6"
+        }
+      ],
+      "dependencies": []
+    }
+  ],
+  "objects": [
+    {
+      "id": "mic1",
+      "target": "microphone",
+      "label": "MIC1 贴片麦克风",
+      "role": "reference",
+      "kind": "generated",
+      "shapeHash": "70fe39789f9392c2b9c28f75866185555f9f4b2717a676105e9a7b73078048bd",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    }
+  ],
+  "assets": [],
+  "fits": [],
+  "updatedAt": "2026-11-23T20:48:33.708Z",
+  "parameters": {
+    "microphone": {
+      "package_width": 3.76,
+      "package_length": 4.72,
+      "seated_height": 1.2,
+      "port_diameter": 0.84,
+      "port_from_short_edge": 1.32,
+      "substrate_thickness": 0.26,
+      "terminal_thickness": 0.025,
+      "lid_edge_inset": 0.1,
+      "lid_corner_radius": 0.22
+    }
+  }
+}

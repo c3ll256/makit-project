@@ -1,0 +1,966 @@
+[
+  {
+    "ref": "U_MCU",
+    "x": 0,
+    "y": 15.23,
+    "rotation": 0,
+    "section": "Controller",
+    "mpn": "ESP32-S3-WROOM-1-N8R8",
+    "code": "C2913201",
+    "footprint": "jlcpcb:C2913201",
+    "nets": {
+      "pin1": "GND",
+      "pin2": "V3V3",
+      "pin3": "RESET",
+      "pin4": "KEY_R",
+      "pin5": "LCD_RES",
+      "pin6": "LCD_DC",
+      "pin7": "LCD_SCK",
+      "pin8": "MIC_CLK",
+      "pin9": "MIC_DATA",
+      "pin10": "AUDIO_PWM",
+      "pin11": "USB_LIMIT",
+      "pin12": "KEY_M",
+      "pin13": "MCU_DM",
+      "pin14": "MCU_DP",
+      "pin17": "LCD_DATA",
+      "pin18": "LCD_BLK",
+      "pin22": "KEY_L",
+      "pin27": "BOOT",
+      "pin40": "GND",
+      "pin41": "GND"
+    },
+    "unused": [
+      "pin15",
+      "pin16",
+      "pin19",
+      "pin20",
+      "pin21",
+      "pin23",
+      "pin24",
+      "pin25",
+      "pin26",
+      "pin28",
+      "pin29",
+      "pin30",
+      "pin31",
+      "pin32",
+      "pin33",
+      "pin34",
+      "pin35",
+      "pin36",
+      "pin37",
+      "pin38",
+      "pin39"
+    ]
+  },
+  {
+    "ref": "C_MCU",
+    "x": -11.5,
+    "y": 14.0,
+    "rotation": 90,
+    "section": "Controller",
+    "mpn": "CL21A106KAYNNNE",
+    "code": "C15850",
+    "footprint": "jlcpcb:C15850",
+    "nets": {
+      "pin1": "V3V3",
+      "pin2": "GND"
+    }
+  },
+  {
+    "ref": "C_MCU_HF",
+    "x": -11.15,
+    "y": 17.9,
+    "rotation": 90,
+    "section": "Controller",
+    "mpn": "CC0603KRX7R9BB104",
+    "code": "C14663",
+    "footprint": "jlcpcb:C14663",
+    "nets": {
+      "pin1": "V3V3",
+      "pin2": "GND"
+    }
+  },
+  {
+    "ref": "R_RESET",
+    "x": -14.35,
+    "y": 15.55,
+    "rotation": 0,
+    "section": "Controller",
+    "mpn": "0603WAF1002T5E",
+    "code": "C25804",
+    "footprint": "jlcpcb:C25804",
+    "nets": {
+      "pin1": "V3V3",
+      "pin2": "RESET"
+    }
+  },
+  {
+    "ref": "C_RESET",
+    "x": -4.0,
+    "y": 0.05,
+    "rotation": 0,
+    "section": "Controller",
+    "mpn": "CL10A105KB8NNNC",
+    "code": "C15849",
+    "footprint": "jlcpcb:C15849",
+    "nets": {
+      "pin1": "RESET",
+      "pin2": "GND"
+    }
+  },
+  {
+    "ref": "R_BOOT",
+    "x": 11.95,
+    "y": 13.55,
+    "rotation": 0,
+    "section": "Controller",
+    "mpn": "0603WAF1002T5E",
+    "code": "C25804",
+    "footprint": "jlcpcb:C25804",
+    "nets": {
+      "pin1": "V3V3",
+      "pin2": "BOOT"
+    }
+  },
+  {
+    "ref": "SW_RESET",
+    "x": -15.5,
+    "y": 13.0,
+    "rotation": 0,
+    "section": "Controller",
+    "mpn": "LCK-TA036H065-2WL",
+    "code": "C52036984",
+    "footprint": "jlcpcb:C52036984",
+    "nets": {
+      "pin1": "RESET",
+      "pin2": "GND"
+    }
+  },
+  {
+    "ref": "SW_BOOT",
+    "x": 15.0,
+    "y": 16.0,
+    "rotation": 0,
+    "section": "Controller",
+    "mpn": "LCK-TA036H065-2WL",
+    "code": "C52036984",
+    "footprint": "jlcpcb:C52036984",
+    "nets": {
+      "pin1": "BOOT",
+      "pin2": "GND"
+    }
+  },
+  {
+    "ref": "SW_LEFT",
+    "x": -14.5,
+    "y": -23.5,
+    "rotation": -35,
+    "section": "User controls",
+    "mpn": "K2-1102DP-C4SW-04",
+    "code": "C110153",
+    "footprint": "jlcpcb:C110153",
+    "nets": {
+      "pin1": "KEY_L",
+      "pin2": "KEY_L",
+      "pin3": "GND",
+      "pin4": "GND"
+    }
+  },
+  {
+    "ref": "SW_MID",
+    "x": 0,
+    "y": -26.5,
+    "rotation": 0,
+    "section": "User controls",
+    "mpn": "K2-1102DP-C4SW-04",
+    "code": "C110153",
+    "footprint": "jlcpcb:C110153",
+    "nets": {
+      "pin1": "KEY_M",
+      "pin2": "KEY_M",
+      "pin3": "GND",
+      "pin4": "GND"
+    }
+  },
+  {
+    "ref": "SW_RIGHT",
+    "x": 14.5,
+    "y": -23.5,
+    "rotation": 35,
+    "section": "User controls",
+    "mpn": "K2-1102DP-C4SW-04",
+    "code": "C110153",
+    "footprint": "jlcpcb:C110153",
+    "nets": {
+      "pin1": "KEY_R",
+      "pin2": "KEY_R",
+      "pin3": "GND",
+      "pin4": "GND"
+    }
+  },
+  {
+    "ref": "J_SCREEN",
+    "x": 7.62,
+    "y": -14.77,
+    "rotation": 180,
+    "section": "TFT",
+    "mpn": "HLE-107-02-F-DV-PE-LC",
+    "code": "C5649637",
+    "footprint": "kicad:Connector_Samtec_HLE_THT/Samtec_HLE-107-02-xx-DV-PE-LC_2x07_P2.54mm_Horizontal",
+    "nets": {
+      "pin1": "GND",
+      "pin3": "V3V3",
+      "pin5": "LCD_SCK",
+      "pin7": "LCD_DATA",
+      "pin9": "LCD_RES",
+      "pin11": "LCD_DC",
+      "pin13": "LCD_BLK"
+    },
+    "unused": [
+      "pin2",
+      "pin4",
+      "pin6",
+      "pin8",
+      "pin10",
+      "pin12",
+      "pin14"
+    ]
+  },
+  {
+    "ref": "J_USB",
+    "x": 27.15,
+    "y": 0,
+    "rotation": 90,
+    "section": "USB",
+    "mpn": "HC-TYPE-C-16P-CH2.58-3A-02",
+    "code": "C5307759",
+    "footprint": "jlcpcb:C5307759",
+    "nets": {
+      "pin1": "GND",
+      "pin2": "CC2",
+      "pin4": "USB_DP",
+      "pin5": "USB_DM",
+      "pin6": "USB_DP",
+      "pin7": "USB_DM",
+      "pin8": "CC1",
+      "pin10": "VBUS",
+      "pin11": "GND",
+      "pin12": "VBUS",
+      "pin13": "GND"
+    },
+    "unused": [
+      "pin3",
+      "pin9"
+    ]
+  },
+  {
+    "ref": "D_USB",
+    "x": 19.1,
+    "y": 0,
+    "rotation": 90,
+    "section": "USB",
+    "mpn": "USBLC6-2SC6",
+    "code": "C7519",
+    "footprint": "jlcpcb:C7519",
+    "nets": {
+      "pin1": "USB_DP",
+      "pin2": "GND",
+      "pin3": "USB_DM",
+      "pin4": "USB_DM",
+      "pin5": "VBUS",
+      "pin6": "USB_DP"
+    }
+  },
+  {
+    "ref": "R_CC1",
+    "x": 20.35,
+    "y": 4.0,
+    "rotation": 0,
+    "section": "USB",
+    "mpn": "0603WAF5101T5E",
+    "code": "C23186",
+    "footprint": "jlcpcb:C23186",
+    "nets": {
+      "pin1": "CC1",
+      "pin2": "GND"
+    }
+  },
+  {
+    "ref": "R_CC2",
+    "x": 20.35,
+    "y": -4.0,
+    "rotation": 0,
+    "section": "USB",
+    "mpn": "0603WAF5101T5E",
+    "code": "C23186",
+    "footprint": "jlcpcb:C23186",
+    "nets": {
+      "pin1": "CC2",
+      "pin2": "GND"
+    }
+  },
+  {
+    "ref": "R_DM",
+    "x": -12.25,
+    "y": 9.35,
+    "rotation": 0,
+    "section": "USB",
+    "mpn": "0603WAF220JT5E",
+    "code": "C23345",
+    "footprint": "jlcpcb:C23345",
+    "nets": {
+      "pin1": "USB_DM",
+      "pin2": "MCU_DM"
+    }
+  },
+  {
+    "ref": "R_DP",
+    "x": -12.25,
+    "y": 7.45,
+    "rotation": 0,
+    "section": "USB",
+    "mpn": "0603WAF220JT5E",
+    "code": "C23345",
+    "footprint": "jlcpcb:C23345",
+    "nets": {
+      "pin1": "USB_DP",
+      "pin2": "MCU_DP"
+    }
+  },
+  {
+    "ref": "U_CHG",
+    "x": 18.0,
+    "y": -8.5,
+    "rotation": 0,
+    "section": "Battery charger",
+    "mpn": "BQ24074RGTR",
+    "code": "C54313",
+    "footprint": "jlcpcb:C54313",
+    "nets": {
+      "pin1": "CELL_TS",
+      "pin2": "BAT",
+      "pin3": "BAT",
+      "pin4": "GND",
+      "pin5": "GND",
+      "pin6": "USB_LIMIT",
+      "pin8": "GND",
+      "pin10": "SYS",
+      "pin11": "SYS",
+      "pin12": "LIM",
+      "pin13": "VBUS",
+      "pin14": "TIMER",
+      "pin16": "ISET",
+      "pin17": "GND"
+    },
+    "unused": [
+      "pin7",
+      "pin9",
+      "pin15"
+    ]
+  },
+  {
+    "ref": "R_ISET",
+    "x": 18.6,
+    "y": -12.1,
+    "rotation": 0,
+    "section": "Battery charger",
+    "mpn": "0603WAF4531T5E",
+    "code": "C25971",
+    "footprint": "jlcpcb:C25971",
+    "nets": {
+      "pin1": "ISET",
+      "pin2": "GND"
+    }
+  },
+  {
+    "ref": "R_TMR",
+    "x": 15.1,
+    "y": -12.1,
+    "rotation": 0,
+    "section": "Battery charger",
+    "mpn": "0603WAF4642T5E",
+    "code": "C23059",
+    "footprint": "jlcpcb:C23059",
+    "nets": {
+      "pin1": "TIMER",
+      "pin2": "GND"
+    }
+  },
+  {
+    "ref": "R_ILIM",
+    "x": 21.4,
+    "y": -8.7,
+    "rotation": 90,
+    "section": "Battery charger",
+    "mpn": "0603WAF4531T5E",
+    "code": "C25971",
+    "footprint": "jlcpcb:C25971",
+    "nets": {
+      "pin1": "LIM",
+      "pin2": "GND"
+    }
+  },
+  {
+    "ref": "C_CHG_IN",
+    "x": 24.3,
+    "y": -6.8,
+    "rotation": 0,
+    "section": "Battery charger",
+    "mpn": "CL10A105KB8NNNC",
+    "code": "C15849",
+    "footprint": "jlcpcb:C15849",
+    "nets": {
+      "pin1": "VBUS",
+      "pin2": "GND"
+    }
+  },
+  {
+    "ref": "C_CHG_OUT",
+    "x": 14.3,
+    "y": -7.1,
+    "rotation": 90,
+    "section": "Battery charger",
+    "mpn": "CL21A106KAYNNNE",
+    "code": "C15850",
+    "footprint": "jlcpcb:C15850",
+    "nets": {
+      "pin1": "SYS",
+      "pin2": "GND"
+    }
+  },
+  {
+    "ref": "C_BAT",
+    "x": 16.05,
+    "y": -3.35,
+    "rotation": 0,
+    "section": "Battery charger",
+    "mpn": "CL21A106KAYNNNE",
+    "code": "C15850",
+    "footprint": "jlcpcb:C15850",
+    "nets": {
+      "pin1": "BAT",
+      "pin2": "GND"
+    }
+  },
+  {
+    "ref": "J_BAT",
+    "x": 12.0,
+    "y": -16.2,
+    "rotation": 0,
+    "section": "Battery charger",
+    "mpn": "503035",
+    "code": null,
+    "footprint": "kicad:Connector_Wire/SolderWire-0.127sqmm_1x02_P3.7mm_D0.48mm_OD1mm",
+    "nets": {
+      "pin1": "BAT",
+      "pin2": "GND"
+    }
+  },
+  {
+    "ref": "TH_CELL",
+    "x": 2.9,
+    "y": -19.4,
+    "rotation": 0,
+    "section": "Battery charger",
+    "mpn": "HNTC-103F3435FA-100B",
+    "code": "C52204612",
+    "footprint": "kicad:Connector_Wire/SolderWire-0.127sqmm_1x02_P3.7mm_D0.48mm_OD1mm",
+    "nets": {
+      "pin1": "CELL_TS",
+      "pin2": "GND"
+    }
+  },
+  {
+    "ref": "U_REG",
+    "x": 10.8,
+    "y": 0.2,
+    "rotation": 0,
+    "section": "3V3 supply",
+    "mpn": "TPS63070RNMR",
+    "code": "C109322",
+    "footprint": "jlcpcb:C109322",
+    "nets": {
+      "pin1": "REG_EN",
+      "pin3": "VAUX",
+      "pin4": "GND",
+      "pin5": "FB",
+      "pin6": "GND",
+      "pin7": "V3V3",
+      "pin8": "V3V3",
+      "pin9": "L2",
+      "pin10": "GND",
+      "pin11": "L1",
+      "pin12": "SYS",
+      "pin13": "SYS",
+      "pin14": "REG_EN",
+      "pin15": "GND"
+    },
+    "unused": [
+      "pin2"
+    ]
+  },
+  {
+    "ref": "L_SYS",
+    "x": 12.75,
+    "y": 4.95,
+    "rotation": 180,
+    "section": "3V3 supply",
+    "mpn": "XFL4020-152MEC",
+    "code": "C3033018",
+    "footprint": "jlcpcb:C3033018",
+    "nets": {
+      "pin1": "L2",
+      "pin2": "L1"
+    }
+  },
+  {
+    "ref": "C_IN1",
+    "x": 11.5,
+    "y": -4.2,
+    "rotation": 90,
+    "section": "3V3 supply",
+    "mpn": "CL21A106KAYNNNE",
+    "code": "C15850",
+    "footprint": "jlcpcb:C15850",
+    "nets": {
+      "pin1": "SYS",
+      "pin2": "GND"
+    }
+  },
+  {
+    "ref": "C_IN2",
+    "x": 16.75,
+    "y": 5.25,
+    "rotation": 90,
+    "section": "3V3 supply",
+    "mpn": "CL21A106KAYNNNE",
+    "code": "C15850",
+    "footprint": "jlcpcb:C15850",
+    "nets": {
+      "pin1": "SYS",
+      "pin2": "GND"
+    }
+  },
+  {
+    "ref": "C_LOCAL_IN",
+    "x": 14.85,
+    "y": -0.9,
+    "rotation": 0,
+    "section": "3V3 supply",
+    "mpn": "TMK107BBJ106MA-T",
+    "code": "C386081",
+    "footprint": "jlcpcb:C386081",
+    "nets": {
+      "pin1": "SYS",
+      "pin2": "GND"
+    }
+  },
+  {
+    "ref": "C_LOCAL_OUT",
+    "x": 7.45,
+    "y": 0.1,
+    "rotation": 90,
+    "section": "3V3 supply",
+    "mpn": "TMK107BBJ106MA-T",
+    "code": "C386081",
+    "footprint": "jlcpcb:C386081",
+    "nets": {
+      "pin1": "V3V3",
+      "pin2": "GND"
+    }
+  },
+  {
+    "ref": "C_OUT1",
+    "x": 5.0,
+    "y": 0.4,
+    "rotation": 90,
+    "section": "3V3 supply",
+    "mpn": "GRM21BC81C226ME44L",
+    "code": "C258782",
+    "footprint": "jlcpcb:C258782",
+    "nets": {
+      "pin1": "V3V3",
+      "pin2": "GND"
+    }
+  },
+  {
+    "ref": "C_OUT2",
+    "x": 2.55,
+    "y": 0.4,
+    "rotation": 90,
+    "section": "3V3 supply",
+    "mpn": "GRM21BC81C226ME44L",
+    "code": "C258782",
+    "footprint": "jlcpcb:C258782",
+    "nets": {
+      "pin1": "V3V3",
+      "pin2": "GND"
+    }
+  },
+  {
+    "ref": "C_OUT3",
+    "x": 0.1,
+    "y": 0.4,
+    "rotation": 90,
+    "section": "3V3 supply",
+    "mpn": "GRM21BC81C226ME44L",
+    "code": "C258782",
+    "footprint": "jlcpcb:C258782",
+    "nets": {
+      "pin1": "V3V3",
+      "pin2": "GND"
+    }
+  },
+  {
+    "ref": "C_VAUX",
+    "x": 8.45,
+    "y": -2.95,
+    "rotation": 0,
+    "section": "3V3 supply",
+    "mpn": "CC0603KRX7R9BB104",
+    "code": "C14663",
+    "footprint": "jlcpcb:C14663",
+    "nets": {
+      "pin1": "VAUX",
+      "pin2": "GND"
+    }
+  },
+  {
+    "ref": "R_FB_HIGH",
+    "x": 4.85,
+    "y": -2.95,
+    "rotation": 0,
+    "section": "3V3 supply",
+    "mpn": "0603WAF4703T5E",
+    "code": "C23178",
+    "footprint": "jlcpcb:C23178",
+    "nets": {
+      "pin1": "V3V3",
+      "pin2": "FB"
+    }
+  },
+  {
+    "ref": "R_FB_LOW",
+    "x": 1.25,
+    "y": -4.1,
+    "rotation": 0,
+    "section": "3V3 supply",
+    "mpn": "0603WAF1503T5E",
+    "code": "C22807",
+    "footprint": "jlcpcb:C22807",
+    "nets": {
+      "pin1": "FB",
+      "pin2": "GND"
+    }
+  },
+  {
+    "ref": "R_REG_EN",
+    "x": 11.55,
+    "y": -10.35,
+    "rotation": 0,
+    "section": "3V3 supply",
+    "mpn": "0603WAF1002T5E",
+    "code": "C25804",
+    "footprint": "jlcpcb:C25804",
+    "nets": {
+      "pin1": "SYS",
+      "pin2": "REG_EN"
+    }
+  },
+  {
+    "ref": "MIC1",
+    "x": 26.7,
+    "y": -12,
+    "rotation": 0,
+    "section": "Microphone",
+    "mpn": "LMD4737T261-OAC05",
+    "code": "C47148418",
+    "footprint": "jlcpcb:C47148418",
+    "nets": {
+      "pin1": "GND",
+      "pin2": "GND",
+      "pin3": "GND",
+      "pin4": "MIC_CLK",
+      "pin5": "MIC_DATA",
+      "pin6": "V3V3"
+    }
+  },
+  {
+    "ref": "C_MIC",
+    "x": 22.2,
+    "y": -12.0,
+    "rotation": 90,
+    "section": "Microphone",
+    "mpn": "CC0603KRX7R9BB104",
+    "code": "C14663",
+    "footprint": "jlcpcb:C14663",
+    "nets": {
+      "pin1": "V3V3",
+      "pin2": "GND"
+    }
+  },
+  {
+    "ref": "SPK1",
+    "x": -15.1,
+    "y": 1.2,
+    "rotation": 0,
+    "section": "Speaker",
+    "mpn": "532610271",
+    "code": "C177225",
+    "footprint": "kicad:Connector_Molex/Molex_PicoBlade_53261-0271_1x02-1MP_P1.25mm_Horizontal",
+    "nets": {
+      "pin1": "SPK_P",
+      "pin2": "SPK_N"
+    },
+    "unused": [
+      "pin3",
+      "pin4"
+    ]
+  },
+  {
+    "ref": "U_AMP",
+    "x": -8.05,
+    "y": -1.0,
+    "rotation": 0,
+    "section": "Speaker",
+    "mpn": "NS4150B",
+    "code": "C189961",
+    "footprint": "jlcpcb:C189961",
+    "nets": {
+      "pin1": "AMP_EN",
+      "pin2": "BYPASS",
+      "pin3": "AMP_P",
+      "pin4": "AMP_N",
+      "pin5": "SPK_N",
+      "pin6": "V3V3",
+      "pin7": "GND",
+      "pin8": "SPK_P"
+    }
+  },
+  {
+    "ref": "C_VDD",
+    "x": -16.0,
+    "y": -7.25,
+    "rotation": 0,
+    "section": "Speaker",
+    "mpn": "CL10A105KB8NNNC",
+    "code": "C15849",
+    "footprint": "jlcpcb:C15849",
+    "nets": {
+      "pin1": "V3V3",
+      "pin2": "GND"
+    }
+  },
+  {
+    "ref": "C_RF",
+    "x": -16.1,
+    "y": -9.15,
+    "rotation": 0,
+    "section": "Speaker",
+    "mpn": "CL10B102KB8NNNC",
+    "code": "C1588",
+    "footprint": "jlcpcb:C1588",
+    "nets": {
+      "pin1": "V3V3",
+      "pin2": "GND"
+    }
+  },
+  {
+    "ref": "C_BULK",
+    "x": -17.5,
+    "y": -11.4,
+    "rotation": 0,
+    "section": "Speaker",
+    "mpn": "CL21A106KAYNNNE",
+    "code": "C15850",
+    "footprint": "jlcpcb:C15850",
+    "nets": {
+      "pin1": "V3V3",
+      "pin2": "GND"
+    }
+  },
+  {
+    "ref": "C_BYP",
+    "x": -11.35,
+    "y": -7.0,
+    "rotation": 0,
+    "section": "Speaker",
+    "mpn": "CL10A105KB8NNNC",
+    "code": "C15849",
+    "footprint": "jlcpcb:C15849",
+    "nets": {
+      "pin1": "BYPASS",
+      "pin2": "GND"
+    }
+  },
+  {
+    "ref": "R_INN",
+    "x": -11.6,
+    "y": -9.0,
+    "rotation": 0,
+    "section": "Speaker",
+    "mpn": "0603WAF3002T5E",
+    "code": "C22984",
+    "footprint": "jlcpcb:C22984",
+    "nets": {
+      "pin1": "COUP_NEG",
+      "pin2": "AMP_N"
+    }
+  },
+  {
+    "ref": "R_INP",
+    "x": -13.25,
+    "y": -11.25,
+    "rotation": 0,
+    "section": "Speaker",
+    "mpn": "0603WAF3002T5E",
+    "code": "C22984",
+    "footprint": "jlcpcb:C22984",
+    "nets": {
+      "pin1": "COUP_POS",
+      "pin2": "AMP_P"
+    }
+  },
+  {
+    "ref": "C_INP",
+    "x": -18.15,
+    "y": -13.6,
+    "rotation": 0,
+    "section": "Speaker",
+    "mpn": "CC0603KRX7R9BB104",
+    "code": "C14663",
+    "footprint": "jlcpcb:C14663",
+    "nets": {
+      "pin1": "LPF",
+      "pin2": "COUP_POS"
+    }
+  },
+  {
+    "ref": "C_INN",
+    "x": -11.6,
+    "y": -13.15,
+    "rotation": 0,
+    "section": "Speaker",
+    "mpn": "CC0603KRX7R9BB104",
+    "code": "C14663",
+    "footprint": "jlcpcb:C14663",
+    "nets": {
+      "pin1": "GND",
+      "pin2": "COUP_NEG"
+    }
+  },
+  {
+    "ref": "R_F1",
+    "x": -3.0,
+    "y": -1.9,
+    "rotation": 0,
+    "section": "Speaker",
+    "mpn": "0603WAF1002T5E",
+    "code": "C25804",
+    "footprint": "jlcpcb:C25804",
+    "nets": {
+      "pin1": "AUDIO_PWM",
+      "pin2": "ATT"
+    }
+  },
+  {
+    "ref": "R_ATT",
+    "x": -4.2,
+    "y": -3.9,
+    "rotation": 0,
+    "section": "Speaker",
+    "mpn": "0603WAF1001T5E",
+    "code": "C21190",
+    "footprint": "jlcpcb:C21190",
+    "nets": {
+      "pin1": "ATT",
+      "pin2": "GND"
+    }
+  },
+  {
+    "ref": "C_F1",
+    "x": 1.85,
+    "y": 4.2,
+    "rotation": 0,
+    "section": "Speaker",
+    "mpn": "CL10B223KB8NNNC",
+    "code": "C21122",
+    "footprint": "jlcpcb:C21122",
+    "nets": {
+      "pin1": "ATT",
+      "pin2": "GND"
+    }
+  },
+  {
+    "ref": "R_F2",
+    "x": -6.5,
+    "y": -27.05,
+    "rotation": 0,
+    "section": "Speaker",
+    "mpn": "0603WAF1001T5E",
+    "code": "C21190",
+    "footprint": "jlcpcb:C21190",
+    "nets": {
+      "pin1": "ATT",
+      "pin2": "LPF"
+    }
+  },
+  {
+    "ref": "C_F2",
+    "x": -11.6,
+    "y": -15.3,
+    "rotation": 0,
+    "section": "Speaker",
+    "mpn": "CL10B223KB8NNNC",
+    "code": "C21122",
+    "footprint": "jlcpcb:C21122",
+    "nets": {
+      "pin1": "LPF",
+      "pin2": "GND"
+    }
+  },
+  {
+    "ref": "R_EN",
+    "x": 6.35,
+    "y": 3.65,
+    "rotation": 0,
+    "section": "Speaker",
+    "mpn": "0603WAF1002T5E",
+    "code": "C25804",
+    "footprint": "jlcpcb:C25804",
+    "nets": {
+      "pin1": "AUDIO_PWM",
+      "pin2": "AMP_EN"
+    }
+  },
+  {
+    "ref": "R_OFF",
+    "x": -13.9,
+    "y": 17.6,
+    "rotation": 0,
+    "section": "Speaker",
+    "mpn": "0603WAF1002T5E",
+    "code": "C25804",
+    "footprint": "jlcpcb:C25804",
+    "nets": {
+      "pin1": "AUDIO_PWM",
+      "pin2": "GND"
+    }
+  },
+  {
+    "ref": "C_EN",
+    "x": -15.2,
+    "y": -15.65,
+    "rotation": 0,
+    "section": "Speaker",
+    "mpn": "CL10A105KB8NNNC",
+    "code": "C15849",
+    "footprint": "jlcpcb:C15849",
+    "nets": {
+      "pin1": "AMP_EN",
+      "pin2": "GND"
+    }
+  }
+]

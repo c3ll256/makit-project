@@ -1,53 +1,90 @@
 {
   "schemaVersion": 2,
   "coordinateFrame": "makit-world-z-up",
-  "placements": {},
+  "placements": {
+    "pet-mic-guide": {
+      "positionMm": [
+        23.8,
+        -10.96,
+        5.94
+      ],
+      "rotationDeg": [
+        0,
+        0,
+        0
+      ],
+      "rotationOrder": "XYZ"
+    },
+    "pet-microphone": {
+      "positionMm": [
+        25.4,
+        -12,
+        4.74
+      ],
+      "rotationDeg": [
+        0,
+        0,
+        0
+      ],
+      "rotationOrder": "XYZ"
+    }
+  },
   "fits": [],
   "steps": [
     {
-      "title": "准备后壳与固定支点",
-      "note": "清理接缝、孔和支撑毛刺；保留电池缓冲空间。",
+      "title": "清理后壳与固定支点",
       "parts": [
         "pet-shell:back_shell"
       ]
     },
     {
-      "title": "锁住XIAO载板",
-      "note": "插好XIAO，两个1mm打印压垫配2颗M2×4；轻拧到载板不晃。",
+      "title": "固定载板并检查插座",
+      "note": "通孔焊尾与焊点最高露出板底 0.60 mm。将两块压垫对准安装孔，轻拧两颗 M2×4。",
       "parts": [
         "pet-shell:carrier_assembly",
+        "pet-shell:display_socket",
+        "pet-shell:spk_socket",
         "pet-shell:carrier_clamp_0",
         "pet-shell:carrier_clamp_1",
         "pet-shell:carrier_screw_0",
-        "pet-shell:carrier_screw_1"
+        "pet-shell:carrier_screw_1",
+        "pet-microphone:mic1"
       ],
       "from": "+z"
     },
     {
-      "title": "固定电池与转接板支点垫",
-      "note": "电池仅底部1mm胶固定；两块转接板支点垫贴在后壳小柱，不压电池。",
+      "title": "插入 XIAO",
+      "note": "USB-C 朝向右侧开口，将两排针同时插到底。电池线接 XIAO 的 BAT+ 和 BAT−，装配期间断电。",
       "parts": [
+        "pet-shell:xiao_board",
+        "pet-shell:usb_body"
+      ],
+      "from": "+z"
+    },
+    {
+      "title": "安放电池、喇叭与导声件",
+      "note": "将喇叭朝左侧声孔，握住插头，从左向右滑入 SPK1。将余线平铺。电池用 1 mm 泡棉固定在板上空白区和齐平的后壳托面。右侧导声件底孔对准 MIC1。",
+      "parts": [
+        "pet-shell:speaker_ref",
         "pet-shell:battery_pad_ref",
         "pet-shell:battery_ref",
-        "pet-shell:adapter_foam_pads"
+        "pet-mic-guide:mic_guide"
       ],
       "from": "+z"
     },
     {
-      "title": "预装屏幕和按键，再合上前组件",
-      "note": "台面翻转前壳，安装防转屏框、四角软垫与压框，4颗内藏M2×6；屏幕针尖2.5mm，接薄转接板。帽与挡片保持回弹。先连接两端GH，再按Z方向合盖。",
+      "title": "对准八针屏座并合上前壳",
+      "note": "三颗键帽从外侧装入左下星角。由内侧将挡圈压到各键杆台阶，试按确认独立回弹。装入屏框、屏幕、角垫和压框，均匀锁紧四颗 M2×6，随后把屏幕与八针插座平行对合。",
       "parts": [
         "pet-shell:front_shell",
         "pet-shell:bezel",
         "pet-shell:display_ref",
+        "pet-shell:screen_foam_pads",
         "pet-shell:screen_keeper",
         "pet-shell:keeper_screw_0",
         "pet-shell:keeper_screw_1",
         "pet-shell:keeper_screw_2",
         "pet-shell:keeper_screw_3",
-        "pet-shell:screen_foam_pads",
-        "pet-shell:xiao_foam_pad",
-        "pet-shell:screen_adapter_assembly",
         "pet-shell:button_left",
         "pet-shell:button_mid",
         "pet-shell:button_right",
@@ -58,18 +95,8 @@
       "from": "+z"
     },
     {
-      "title": "检查7针锁扣与余线",
-      "note": "150mm预压接GH7P线，两端1对1。按功能核对，锁扣卡住后轻拉插壳；余线平铺固定，避免接缝和键杆。彩线是路线示意，不照折线剪线。",
-      "parts": [
-        "pet-shell:lcd_carrier_plug",
-        "pet-shell:lcd_display_plug",
-        "pet-shell:lcd_cable_route"
-      ],
-      "from": "+z"
-    },
-    {
-      "title": "拧紧原四颗背面螺丝",
-      "note": "4颗黑色M2×6沉头，轻拧；逐键检查回弹，首件摇动确认无明显晃动异响。",
+      "title": "锁紧后盖并检查回弹",
+      "note": "检查接缝内无夹线，轻拧四颗 M2×6 沉头螺钉，逐一检查三键回弹。",
       "parts": [
         "pet-shell:screw_0",
         "pet-shell:screw_1",
@@ -77,7 +104,23 @@
         "pet-shell:screw_3"
       ],
       "from": "-z"
+    },
+    {
+      "title": "粘贴圆形透光面片",
+      "note": "清洁屏框，在平整的周边贴 0.10 mm 透明环形胶，撕掉面片内侧保护膜，对中后仅沿周边轻压。",
+      "parts": [
+        "pet-shell:face_lens"
+      ],
+      "from": "+z"
+    },
+    {
+      "title": "把双圈挂环旋入顶角",
+      "note": "从挂环开口处穿入顶角一侧的孔，沿弧形孔旋入双圈，检查两侧可轻微活动。",
+      "parts": [
+        "pet-shell:keyring_ref"
+      ],
+      "from": "+y"
     }
   ],
-  "updatedAt": "2026-11-11T09:21:26.598Z"
+  "updatedAt": "2026-11-25T12:29:13.320Z"
 }

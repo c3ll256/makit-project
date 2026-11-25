@@ -51,6 +51,13 @@
       "share": false
     },
     {
+      "file": "hle-1xx-02-xx-dv-xe-xx-mkt.pdf",
+      "sha256": "5495a24eee9d949aa74a1728c46a2eb069ae26e457a3bd67eaee4df7666a2a7d",
+      "bytes": 194193,
+      "addedAt": "2026-11-24T06:41:49.221Z",
+      "share": false
+    },
+    {
       "file": "pcb-panelization.md",
       "sha256": "9e50b0c19d1a7ec8bfbbb13829e44662a098730d454f23c96fb6645a15604b06",
       "bytes": 1454,
@@ -174,6 +181,27 @@
       "sha256": "70b8169708dce8de44514f938611145782dfedfb9cf8c013bff1db145f7a3960",
       "bytes": 261745,
       "addedAt": "2026-11-16T16:56:42.828Z",
+      "share": false
+    },
+    {
+      "file": "uploads/20261124T090321777Z-1-cleanshot-2026-11-24-at-17-03-07-2x.png",
+      "sha256": "59739cd9d39149a5dfb5812862c7748023257aef042d6f38e6dea4ca4f7ea4c3",
+      "bytes": 671176,
+      "addedAt": "2026-11-24T09:04:23.850Z",
+      "share": false
+    },
+    {
+      "file": "uploads/20261125T100837706Z-1-image.png",
+      "sha256": "e7e30dfb19d821e38858049b62432bee910f8006c7f8a940e75a4a1d96d29212",
+      "bytes": 485619,
+      "addedAt": "2026-11-25T10:08:37.920Z",
+      "share": false
+    },
+    {
+      "file": "uploads/20261125T122015804Z-1-mark-1.png",
+      "sha256": "6a51622d311bf10780b2f2b3fd0f8c14c86b0b88c74c96de51a9d3dcf6457e31",
+      "bytes": 725514,
+      "addedAt": "2026-11-25T12:24:20.071Z",
       "share": false
     },
     {

@@ -1,0 +1,12 @@
+length=param("length",8.2)
+width=param("width",3.4)
+height=param("height",2.65)
+port=param("bore_diameter",1.6)
+riser=param("outlet_elevation",1.18)
+inlet=param("inlet_to_end",1.6)
+body=Box(length,width,height,align=(Align.MIN,Align.CENTER,Align.MIN))
+vertical=Pos(inlet,0,0)*Cylinder(port/2,riser,align=(Align.CENTER,Align.CENTER,Align.MIN))
+channel=Pos((inlet+length)/2,0,riser)*Rot(0,90,0)*Cylinder(port/2,length-inlet+.02)
+guide=body-vertical-channel
+guide.color=srgb("#514a5d")
+publish("mic_guide",guide,"TPU 柔性导声件",material="tpu")

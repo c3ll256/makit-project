@@ -2,34 +2,48 @@
   "version": 2,
   "artifact_level": "assembly",
   "deliverable_intent": "manufacturing_package",
-  "summary": "Handheld cloud-shaped virtual pet: FDM shell holding a directly socketed XIAO ESP32-S3, user-selected YouXin 1.3in 240x240 ST7789 7-pin TFT, LiPo and three buttons.",
+  "summary": "One custom carrier supports the existing Seeed Studio XIAO ESP32S3, three switches, a MEMS microphone, amplifier and direct plug-in connections for the YouXin TFT and speaker.",
   "required_interfaces": [
     {
       "id": "display_fit",
       "kind": "internal_fit",
-      "description": "Seat the selected 27.78x39.22 mm YouXin 7-pin display PCB; expose its 23.4x23.4 mm active area. Include the pre-soldered header and mating cable envelope using disclosed defaults where the seller supplies no height.",
+      "description": "Direct 8-pin 2.54 mm socket for the 32 x 43.72 mm display. Centre the entire 27.72 mm square active area inside the bezel and clamp the PCB on its corner lands.",
       "source": "contract_interface",
       "required": true
     },
     {
       "id": "usb_c_access",
       "kind": "port_access",
-      "description": "XIAO ESP32-S3 USB-C reachable through the shell for charging and flashing",
+      "description": "Align the XIAO onboard USB-C receptacle with the existing shell opening for charging and download.",
       "source": "contract_interface",
       "required": true
     },
     {
       "id": "button_caps",
       "kind": "user_control",
-      "description": "Three domed caps pressing 6x6 mm tactile switches",
+      "description": "Three direct-acting caps at the marked lower-left triangle. Each stem aligns with its own PCB switch.",
       "source": "user_requested",
       "required": true
     },
     {
       "id": "key_pcb_fit",
       "kind": "internal_fit",
-      "description": "Direct-plug XIAO/key/7P TFT carrier; 7-pin plug-in cable replaces Grove by user choice. Preserve USB position and three button axes.",
+      "description": "Fit the original socketed XIAO ESP32S3 on a single custom carrier with the TFT socket and speaker connector. Verify button axes, battery, antenna and screen clearance.",
       "source": "contract_interface",
+      "required": true
+    },
+    {
+      "id": "mic_inlet",
+      "kind": "port_access",
+      "description": "Provide an open, isolated sound path from the outside to the microphone port.",
+      "source": "user_requested",
+      "required": true
+    },
+    {
+      "id": "speaker_fit",
+      "kind": "internal_fit",
+      "description": "Retain the rear grille and accommodate the supplied speaker lead and its polarized two-pin plug at SPK1 on the motherboard.",
+      "source": "user_requested",
       "required": true
     }
   ],
@@ -41,38 +55,27 @@
       "path": "product/references/uploads/20261109T131205554Z-1-product-references-uploads-20261108t045029838z-1-cleanshot-2026-11-08-at-12-50-09-2x.png"
     },
     {
-      "id": "ref_cloud_outline",
-      "source": "user_requested",
-      "description": "Cloud icon whose bumpy outline the shell edge follows",
-      "path": "product/references/uploads/20261109T131205554Z-2-product-references-uploads-20261109t125840053z-1-cleanshot-2026-11-09-at-20-58-30-2x.png"
-    },
-    {
-      "id": "xiao_esp32s3_wiki",
-      "source": "catalog_required",
-      "description": "Seeed XIAO ESP32-S3 wiki (dimensions, pin map)"
-    },
-    {
       "id": "youxin_tft_variant",
       "source": "user_requested",
-      "description": "Selected 1.3-inch metal-frame 7P pre-soldered YouXin TFT variant",
-      "path": "product/references/uploads/20261110T152829794Z-1-img-1025.jpg"
+      "description": "Selected 1.54-inch 8P colour TFT, pin labels and mechanical outline.",
+      "path": "product/references/uploads/20261124T090321777Z-1-cleanshot-2026-11-24-at-17-03-07-2x.png"
     },
     {
       "id": "youxin_tft_specs",
       "source": "user_requested",
-      "description": "Seller table: 1.3-inch column gives ST7789,240x240,3.3V,SPI and dimensions",
+      "description": "1.54-inch column: ST7789, SPI, 3.3 V and 240 x 240 pixels.",
       "path": "product/references/uploads/20261110T152829794Z-2-img-1021.jpg"
     },
     {
       "id": "youxin_tft_drawing",
       "source": "user_requested",
-      "description": "Use upper 1.3-inch 7P drawing only; lower drawing is another module",
-      "path": "product/references/uploads/20261110T152829794Z-3-img-1023.jpg"
+      "description": "Selected 1.54-inch 8P colour TFT, pin labels and mechanical outline.",
+      "path": "product/references/uploads/20261124T090321777Z-1-cleanshot-2026-11-24-at-17-03-07-2x.png"
     },
     {
       "id": "youxin_tft_pins",
       "source": "user_requested",
-      "description": "Seller interface definitions; 1.3-inch lacks CS and BLK is low-off",
+      "description": "8P pin functions including CS and active-low backlight disable.",
       "path": "product/references/uploads/20261110T152829794Z-5-img-1022.jpg"
     },
     {
@@ -92,15 +95,51 @@
       "source": "user_requested",
       "description": "Front-view blue circle requests a larger middle button.",
       "path": "product/references/uploads/20261112T130802147Z-2-mark-2.png"
+    },
+    {
+      "id": "mic1_package_drawing",
+      "source": "catalog_required",
+      "description": "LinkMems LMD4737T261-OAC05 package and acoustic port drawing, page 7.",
+      "path": "references/suppliers/c47148418/c47148418-datasheet.pdf"
+    },
+    {
+      "id": "module_outline",
+      "source": "catalog_required",
+      "description": "Seeed XIAO ESP32S3 vendor STEP used for the carrier sockets and USB-C face.",
+      "path": "design/pet-mainboard/source/models/xiao-esp32s3.step"
+    },
+    {
+      "id": "display_socket_drawing",
+      "source": "catalog_required",
+      "description": "Eight-way 2.54 mm socket, 8.5 mm seating height.",
+      "path": "references/suppliers/c2897371/c2897371-datasheet.pdf"
+    },
+    {
+      "id": "usb_receptacle_drawing",
+      "source": "catalog_required",
+      "description": "Onboard USB-C receptacle in the original XIAO assembly.",
+      "path": "product/references/xiao-esp32s3-model.zip"
+    },
+    {
+      "id": "ref_rounded_star",
+      "source": "user_requested",
+      "description": "Primary reference for front silhouette, black face diameter, visible ring and upper-left button.",
+      "path": "product/references/uploads/20261125T100837706Z-1-image.png"
+    },
+    {
+      "id": "key_cluster_mark",
+      "source": "user_requested",
+      "description": "Three green painted cap footprints in the lower-left point.",
+      "path": "product/references/uploads/20261125T122015804Z-1-mark-1.png"
     }
   ],
   "assembly_story": {
-    "installation": "Screw carrier into rear with two M2x4 screws and printed load spreaders. Bond battery at base, no compression. On bench assemble keyed bezel, display, foam-loaded hidden keeper and low screen adapter; shorten screen exposed tips2.5mm. Plug150mm locking GH7P cable, spread retained slack above battery, check keys, lower front assembly and close original four M2x6 screws.",
+    "installation": "Fit the display in the keyed front bezel and install the keeper against its PCB. Mate the motherboard straight onto the eight screen pins using the housing guides, then secure the board independently. Install the speaker behind the grille, plug its supplied lead into SPK1 and restrain slack. Fit the battery without compression. Check the mic seal, button return and USB plug clearance before closing the four back screws.",
     "maintenance": "Remove the back screws to replace the battery.",
     "user_access": [
       "three front buttons",
       "USB-C on the side",
-      "lanyard nub on top"
+      "split ring at the top star point"
     ]
   },
   "cad": {
@@ -109,25 +148,52 @@
       {
         "role": "enclosure",
         "design_id": "pet-shell",
-        "description": "Cloud-lobed two-piece shell with screen window, bezel and button caps",
+        "description": "Photo-traced star with circular face and three direct-acting keys in the lower-left point.",
         "delivery_target": "printable_part",
         "interface_ids": [
           "display_fit",
           "usb_c_access",
           "button_caps",
-          "key_pcb_fit"
+          "key_pcb_fit",
+          "mic_inlet",
+          "speaker_fit"
         ],
         "reference_ids": [
           "ref_handheld_photo",
-          "ref_cloud_outline",
-          "xiao_esp32s3_wiki",
+          "ref_rounded_star",
           "youxin_tft_variant",
           "youxin_tft_specs",
           "youxin_tft_drawing",
           "youxin_tft_pins",
-          "ref_compact_cloud_20261112",
           "ref_broad_side_roll_20261112",
-          "ref_larger_middle_button_20261112"
+          "module_outline",
+          "display_socket_drawing",
+          "usb_receptacle_drawing",
+          "key_cluster_mark"
+        ]
+      },
+      {
+        "role": "microphone_gasket",
+        "design_id": "pet-mic-guide",
+        "description": "Separate flexible TPU microphone sound guide, printed on its flat face; aligns the top-port MEMS with the side inlet.",
+        "delivery_target": "printable_part",
+        "interface_ids": [
+          "mic_inlet"
+        ],
+        "reference_ids": [
+          "mic1_package_drawing"
+        ]
+      },
+      {
+        "role": "microphone_package",
+        "design_id": "pet-microphone",
+        "description": "MIC1 purchased surface-mount MEMS reference geometry for the carrier PCB.",
+        "delivery_target": "fit_check",
+        "interface_ids": [
+          "mic_inlet"
+        ],
+        "reference_ids": [
+          "mic1_package_drawing"
         ]
       }
     ]

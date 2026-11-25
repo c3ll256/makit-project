@@ -2,7 +2,7 @@
   "schema_version": 1,
   "status": "draft",
   "bom_ready": true,
-  "requirements_digest": "bc23e094751926845ebe03be1c1ab120fca03a267bb09aa42b06b00414d58611",
+  "requirements_digest": "bf4af6ad967a68626bfc20a142031780fbe2eb04a02d001780340c469df4d1f8",
   "items": [
     {
       "id": "mcu",
@@ -23,135 +23,6 @@
       "designators": [
         "U_XIAO"
       ]
-    },
-    {
-      "id": "display",
-      "role": "screen",
-      "name": "优信电子 1.3寸TFT彩屏模块(带铁框)_7P焊接",
-      "description": "240x240 IPS colour display, ST7789, 3.3V SPI, 7 pre-soldered pins, no buttons and no CS pin; 27.78x39.22 mm PCB, 23.4x23.4 mm active area.",
-      "quantity": 1,
-      "supplier": "优信电子 / YouXin Electronic",
-      "part_number": "1.3寸TFT彩屏模块(带铁框)_7P焊接",
-      "source": "user",
-      "procurement_status": "external_procurement_required",
-      "required_user_evidence": [],
-      "supply_risk": "Seller photos establish variant, supply, pin order and planar dimensions. No overall stack-height drawing; use disclosed dimensional defaults during CAD. Module bought separately; a store link and current stock/price are procurement reminders only.",
-      "selection_reason": "User selected this exact seven-pin, metal-frame module; supplied specification and mechanical images establish the facts. It replaces the Grove display in the target product.",
-      "cad_relevance": {
-        "notes": "27.78x39.22mm PCB,23.4 square AA. Default PCB1.6+LCM2mm, male insulator2.5mm. Shorten exposed male pins to2.5mm for female3mm cavity; adapter/socket replaces14mm Dupont housings."
-      },
-      "part_identity": "802a64d5f61d22f8"
-    },
-    {
-      "id": "battery",
-      "role": "battery",
-      "name": "3.7V LiPo 503035 500mAh (35x30x5 mm) with 2-wire lead",
-      "description": "single-cell LiPo pouch ~35x30x5 mm",
-      "quantity": 1,
-      "part_number": "503035",
-      "source": "generic",
-      "procurement_status": "generic_default",
-      "selection_reason": "30x35x5mm cell in tray centre(-8.6,1.0), on1mm foam, bottomZ3.1; no top compression.",
-      "cad_relevance": {
-        "notes": "Tray centre(-8.6,1.0), bottomZ3.1, body30x35x5mm."
-      },
-      "part_identity": "c306e0eab1dc70a9"
-    },
-    {
-      "id": "buttons",
-      "role": "input",
-      "name": "K2-1102DP-C4SW-04",
-      "description": "Tactile Switch SPST 250gf 5mm 6mm x 6mm Through Hole",
-      "designators": [
-        "SW_LEFT",
-        "SW_MID",
-        "SW_RIGHT"
-      ],
-      "quantity": 3,
-      "supplier": "LCSC",
-      "manufacturer": "韩国韩荣",
-      "part_number": "K2-1102DP-C4SW-04",
-      "mpn": "K2-1102DP-C4SW-04",
-      "lcsc_code": "C110153",
-      "jlc_smt_library": "extended",
-      "procurement_status": "selected",
-      "package": "Through Hole-4P,6x6mm",
-      "footprint": "jlcpcb:C110153",
-      "stock": 6935,
-      "source": "lcsc",
-      "product_url": "https://item.szlcsc.com/111374.html",
-      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/cba7e973dea59ba592ee1d81fd516f49.pdf?productCode=C110153",
-      "assembly": {
-        "population": "mounted",
-        "method": "through_hole",
-        "side": "top"
-      },
-      "selection_reason": "Supplier drawing p1: 6x6 body, 5 mm total height, 6.5x4.5 mm pin spacing; supplier footprint selected. Pins 1/2 common, pins 3/4 common; press joins the two groups.",
-      "cad_relevance": {
-        "notes": "Caps and switch actuator centres at shell (-14.5,-23.5),(0,-26.5),(14.5,-23.5); side switches rotate -35/+35 degrees to clear screen and curved board edge. Cap pegs act directly; separate discs retain caps. Printed cap diameters9/13/9mm; switch positions and electrical assembly unchanged."
-      },
-      "part_identity": "c0f0c6700ba0bcdf",
-      "image_url": "https://assets.lcsc.com/images/lcsc/900x900/20250911_Korean-Hroparts-Elec-K2-1102DP-C4SW-04_C110153_front.jpg"
-    },
-    {
-      "id": "screws",
-      "role": "fastener",
-      "name": "M2 x 6 mm countersunk cross-recess machine screw (ISO 7046), black",
-      "description": "closes the back half into printed standoffs; self-forms its thread in PETG",
-      "quantity": 4,
-      "part_number": "ISO 7046 M2x6",
-      "source": "generic",
-      "procurement_status": "generic_default",
-      "selection_reason": "Solved by the printed screw joint for a 2 mm back wall plus 4 mm engagement.",
-      "cad_relevance": {
-        "notes": "countersunk flush in the back face"
-      },
-      "part_identity": "6bb02f206f9a61c9"
-    },
-    {
-      "id": "hookup_wire",
-      "role": "cable",
-      "name": "30 AWG silicone wire for battery leads, ~20 cm",
-      "description": "Battery leads only; MCU-to-carrier signal harnesses removed.",
-      "quantity": 1,
-      "part_number": "30AWG silicone wire",
-      "source": "generic",
-      "procurement_status": "generic_default",
-      "selection_reason": "Only BAT+/BAT- remain soldered; the display uses a bought pre-crimped seven-way cable and keys route on PCB.",
-      "part_identity": "ed3fc91e62b772dd"
-    },
-    {
-      "id": "foam_tape",
-      "role": "consumable",
-      "name": "Double-sided foam tape, 1 mm thick",
-      "description": "1mm double-sided compliant foam for battery base and small anti-rattle screen/adapter/XIAO pads",
-      "quantity": 1,
-      "part_number": "1mm double-sided foam tape",
-      "source": "generic",
-      "procurement_status": "generic_default",
-      "selection_reason": "Battery attached at base without compression; small pads preload rigid PCB/metal shield only.",
-      "part_identity": "ca3a41afcd1b7ddd"
-    },
-    {
-      "id": "shell_print",
-      "role": "printed_part",
-      "name": "Printed front/back shells, keyed bezel, screen keeper,3 button caps,3 retaining discs,2 carrier clamps",
-      "description": "22mm body,23.4mm including button domes; keyed bezel, hidden screwed screen keeper,3 caps,3 retaining discs,2 screw load spreaders. All printed pieces one solid. Front/back shells and integral lanyard nub: translucent lavender-blue PETG; model opacity0.50 is a visualization default, not a measured optical specification. Dark opaque bezel and pale button caps retain existing finish. Front proportions follow the 2026-11-12 user photo: shallow smoothly blended lobes, moderate circular bezel and compact purple surround; original control and USB axes retained. Shell envelope72.508x81.621x22mm including lanyard nub; domes give23.4mm maximum. Visible bezel diameter45mm, screen edge locators integral with bezel, hidden keeper anchors(-21.5,22),(21.5,22),(-28,0),(27,-13). Side edge uses continuous broad elliptical rolls to front and back, with maximum width at the seam; button cap diameters9/13/9mm with unchanged actuator axes.",
-      "quantity": 1,
-      "part_number": "pet-shell printed set",
-      "source": "printed",
-      "procurement_status": "printed",
-      "selection_reason": "Thin stack with low screen adapter and GH locking harness; screwed PCB and screen keeper with compliant pads. User requires a translucent shell; use translucent PETG stock rather than opaque lavender stock, and approve a same-wall-thickness sample for the desired translucency. User requests a rounder compact face with shallow valleys; resize the front surround and hidden keeper anchors while retaining the selected hardware. User requests a broader sloping side profile and a larger middle button; middle cap13mm is the disclosed dimensional default, other caps9mm. User requests a slightly smaller black bezel;45mm visible outer diameter is the disclosed default, with23.8x23.8mm display aperture retained and the mating shell opening adjusted together. Matched to common1.0mm mixed-panel stock: carrier supports raised0.6mm and adapter supports lowered0.2mm; component mating faces, USB and button heights retained.",
-      "part_identity": "9d1fcea5dcdaafb4"
-    },
-    {
-      "id": "pet_keys_pcb",
-      "role": "custom_pcb",
-      "name": "Pet mixed-panel carrier piece, shaped52.5x45.5mm,2-layer FR4 1.0mm 1oz",
-      "quantity": 1,
-      "source": "custom",
-      "selection_reason": "Direct XIAO plug-in and three button axes retained; user chose a mixed production panel with the screen adapter. Common 1.0mm FR4 is the engineering default; carrier underside supports rise 0.6mm to preserve component top heights. One carrier per product and per mixed panel.",
-      "part_identity": "df3f619804a92fdb"
     },
     {
       "id": "xiao_pin_4",
@@ -248,90 +119,168 @@
       "part_identity": "a64c991fcc81658e"
     },
     {
-      "id": "lcd_header",
-      "role": "connector",
-      "name": "SM07B-GHS-TB(LF)(SN)",
-      "description": "Connector Header 7 position 1.25mm Pitch 1A Surface Mount, Right Angle -25°C~+85°C",
+      "id": "display",
+      "role": "screen",
+      "name": "优信电子 1.54寸TFT彩屏模块_8P",
+      "description": "ST7789, 240 x 240 IPS, 3.3 V SPI. PCB 32 x 43.72 x 1.20 mm, active square 27.72 mm, eight 2.54 mm pins.",
       "quantity": 1,
-      "manufacturer": "JST",
-      "part_number": "SM07B-GHS-TB(LF)(SN)",
-      "mpn": "SM07B-GHS-TB(LF)(SN)",
-      "lcsc_code": "C495552",
-      "source": "lcsc",
-      "supplier": "LCSC",
-      "jlc_smt_library": "extended",
-      "procurement_status": "selected",
-      "package": "SMD,P=1.25mm,Surface Mount,Right Angle",
-      "footprint": "jlcpcb:C495552",
-      "stock": 12636,
-      "designators": [
-        "J_SCREEN_GH"
-      ],
-      "assembly": {
-        "population": "mounted",
-        "method": "jlc_smt",
-        "side": "top",
-        "risk_class": "mechanical_smt",
-        "jlc_smt_verified": true
+      "supplier": "优信电子 / YouXin Electronic",
+      "part_number": "1.54寸TFT彩屏模块_8P",
+      "source": "user",
+      "procurement_status": "external_procurement_required",
+      "required_user_evidence": [],
+      "supply_risk": "Order the pictured eight-pin version with underside straight header. Confirm pin insertion at first assembly.",
+      "selection_reason": "User-selected 1.54-inch module. Its factory header mounts toward the carrier.",
+      "cad_relevance": {
+        "notes": "Use the seller drawing. Header axis 1.50 mm from PCB edge. Four Ø2 holes on 27 x 38.72 mm centres. Header insulator thickness 2.50 mm assumed."
       },
-      "product_url": "https://item.szlcsc.com/506561.html",
-      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/8bd43f6af33d6ab9377e1c8e3056086d.pdf?productCode=C495552",
-      "part_identity": "b6e2f4b594f46389",
-      "selection_reason": "JST GH 7P1.25mm side-entry positive lock on screen adapter production top (installed underside); mates GHR-07V-S. Auxiliary solder tabs take cable load. Factory SMT on production top; exact JST GH locking variant retained for mating and enclosure fit (Extended library).",
-      "image_url": "https://assets.lcsc.com/images/lcsc/900x900/20230119_JST-SM07B-GHS-TB-LF-SN_C495552_front.jpg"
+      "part_identity": "2cf923a88c96b0f5"
     },
     {
-      "id": "lcd_cable",
-      "role": "cable",
-      "name": "JST GH1.25mm7P GHR-07V-S to GHR-07V-S precrimped cable,150mm,1-to-1",
-      "part_number": "GHR-07V-S / SSHL-002T-P0.2 7P150mm straight through",
+      "id": "battery",
+      "role": "battery",
+      "name": "3.7V LiPo 503035 500mAh (35x30x5 mm) with 2-wire lead",
+      "description": "single-cell LiPo pouch ~35x30x5 mm",
       "quantity": 1,
+      "part_number": "503035",
       "source": "generic",
       "procurement_status": "generic_default",
-      "description": "Seven30AWG wires,150mm between housings, genuine GH positive lock; contact SSHL-002T-P0.2. Not SH/ZH/PicoBlade. Lay excess flat in two layers and retain with foam tape tabs.",
-      "selection_reason": "Modeled independent paths91.55–110.47mm leave assembly and bend allowance;150mm standard GH7P cable provides service slack secured above battery. Paths run below keeper, then rise on staggered lanes beyond its upper edge.",
-      "part_identity": "8ff29aad7b21a9a0"
+      "selection_reason": "503035 cell on 1 mm underlay above the bare area of the carrier and its coplanar rear ledge. Centre (-8.6,8.0); base Z5.74. No upper compression.",
+      "cad_relevance": {
+        "notes": "Envelope X -23.6..6.4, Y -9.5..25.5, Z 5.74..10.74."
+      },
+      "part_identity": "c306e0eab1dc70a9"
     },
     {
-      "id": "screen_socket",
-      "role": "connector",
-      "name": "HC-PM254-5.0H-1x7PZ",
-      "description": "Female Header 7 Position 2.54mm Pitch Single Row Through Hole -40°C~+105°C",
-      "quantity": 1,
-      "manufacturer": "HC(虹成电子)",
-      "part_number": "HC-PM254-5.0H-1x7PZ",
-      "mpn": "HC-PM254-5.0H-1x7PZ",
-      "lcsc_code": "C27985232",
-      "source": "lcsc",
+      "id": "buttons",
+      "role": "input",
+      "name": "K2-1102DP-C4SW-04",
+      "description": "Tactile Switch SPST 250gf 5mm 6mm x 6mm Through Hole",
+      "designators": [
+        "SW_LEFT",
+        "SW_MID",
+        "SW_RIGHT"
+      ],
+      "quantity": 3,
       "supplier": "LCSC",
+      "manufacturer": "韩国韩荣",
+      "part_number": "K2-1102DP-C4SW-04",
+      "mpn": "K2-1102DP-C4SW-04",
+      "lcsc_code": "C110153",
       "jlc_smt_library": "extended",
       "procurement_status": "selected",
-      "package": "Through Hole,P=2.54mm",
-      "footprint": "jlcpcb:C27985232",
-      "stock": 1332,
-      "designators": [
-        "J_SCREEN"
-      ],
+      "package": "Through Hole-4P,6x6mm",
+      "footprint": "jlcpcb:C110153",
+      "stock": 6935,
+      "source": "lcsc",
+      "product_url": "https://item.szlcsc.com/111374.html",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/cba7e973dea59ba592ee1d81fd516f49.pdf?productCode=C110153",
       "assembly": {
         "population": "mounted",
         "method": "through_hole",
-        "side": "bottom"
+        "side": "top"
       },
-      "product_url": "https://item.szlcsc.com/29721190.html",
-      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/459ae8ff1ec8327b929b62e0d4d9ab63.pdf?productCode=C27985232",
-      "part_identity": "9d5fdc17fee3e1dd",
-      "selection_reason": "Square-hole 7P accepts selected 0.64 mm square screen pins. Supplier drawing: 5 mm body, 3 mm cavity, 2.54 mm pitch, body18.18x2.4; shorten screen exposed pin tips to2.5 mm, trim solder tails0.6 mm. Through-hole insertion from production bottom; faces the display after the finished adapter is turned over for installation.",
-      "image_url": "https://assets.lcsc.com/images/lcsc/900x900/20240724_Hong-Cheng-HC-PM254-5-0H-1x7PZ_C27985232_front.jpg"
+      "selection_reason": "Supplier drawing p1: 6x6 body, 5 mm total height, 6.5x4.5 mm pin spacing; supplier footprint selected. Pins 1/2 common, pins 3/4 common; press joins the two groups.",
+      "cad_relevance": {
+        "notes": "Keep existing three cap axes, diameters and switch orientations. Redetermine button peg lengths from the new board plane and switch height."
+      },
+      "part_identity": "c0f0c6700ba0bcdf",
+      "image_url": "https://assets.lcsc.com/images/lcsc/900x900/20250911_Korean-Hroparts-Elec-K2-1102DP-C4SW-04_C110153_front.jpg"
     },
     {
-      "id": "screen_adapter_pcb",
+      "id": "screws",
+      "role": "fastener",
+      "name": "M2 x 6 mm countersunk cross-recess machine screw (ISO 7046), black",
+      "description": "closes the back half into printed standoffs; self-forms its thread in PETG",
+      "quantity": 4,
+      "part_number": "ISO 7046 M2x6",
+      "source": "generic",
+      "procurement_status": "generic_default",
+      "selection_reason": "Solved by the printed screw joint for a 2 mm back wall plus 4 mm engagement.",
+      "cad_relevance": {
+        "notes": "countersunk flush in the back face"
+      },
+      "part_identity": "6bb02f206f9a61c9"
+    },
+    {
+      "id": "hookup_wire",
+      "role": "cable",
+      "name": "30 AWG silicone wire for battery leads, ~20 cm",
+      "description": "Battery wiring only. The speaker includes its own terminated lead.",
+      "quantity": 1,
+      "part_number": "30AWG silicone wire",
+      "source": "generic",
+      "procurement_status": "generic_default",
+      "selection_reason": "Battery leads only. The speaker includes a preterminated twisted pair.",
+      "part_identity": "ed3fc91e62b772dd"
+    },
+    {
+      "id": "foam_tape",
+      "role": "consumable",
+      "name": "Double-sided foam tape, 1 mm thick",
+      "description": "1 mm foam for battery base and screen PCB support pads",
+      "quantity": 1,
+      "part_number": "1mm double-sided foam tape",
+      "source": "generic",
+      "procurement_status": "generic_default",
+      "selection_reason": "Support only the screen PCB or metal rim. Bond the battery base without upper compression.",
+      "part_identity": "ca3a41afcd1b7ddd"
+    },
+    {
+      "id": "shell_print",
+      "role": "printed_part",
+      "name": "Printed star shells, bezel, screen keeper, three coaxial keys, three retaining collars and two carrier clamps",
+      "description": "Translucent star enclosure with one 12 mm primary and two 8 mm auxiliary caps in its lower-left point. The cap stems directly press the PCB switches. Independent collars retain the caps.",
+      "quantity": 1,
+      "part_number": "pet-shell printed set",
+      "source": "printed",
+      "procurement_status": "printed",
+      "selection_reason": "Individually guided caps directly actuate the three switches at the marked star point.",
+      "part_identity": "9d1fcea5dcdaafb4"
+    },
+    {
+      "id": "pet_keys_pcb",
       "role": "custom_pcb",
-      "name": "Pet mixed-panel screen adapter piece,20x11mm,2-layer FR4 1.0mm 1oz",
-      "part_number": "pet-screen-adapter",
+      "name": "点子宠物机 XIAO 单载板",
       "quantity": 1,
       "source": "custom",
-      "selection_reason": "20x11x1.0mm adapter turned over as a whole for production: GH on manufacturing top, 5mm socket on manufacturing bottom. Flip about Y after depaneling to preserve the installed screen-facing socket, GH cable direction, original pin order and enclosure stack. One adapter per product and per mixed panel.",
-      "part_identity": "61dfba6f3c3eecbb"
+      "selection_reason": "The carrier extends into the lower-left point for the three direct-acting keys while retaining the XIAO, display and audio interfaces.",
+      "part_identity": "4235277d4853bb90",
+      "part_number": "pet-mainboard"
+    },
+    {
+      "id": "screen_socket",
+      "role": "display socket",
+      "name": "PM254-1-08-Z-8.5",
+      "mpn": "PM254-1-08-Z-8.5",
+      "part_number": "PM254-1-08-Z-8.5",
+      "manufacturer": "HCTL(华灿天禄)",
+      "quantity": 1,
+      "source": "lcsc",
+      "supplier": "LCSC",
+      "lcsc_code": "C2897371",
+      "jlc_smt_library": "extended",
+      "stock": 698,
+      "package": "Through Hole,P=2.54mm",
+      "product_url": "https://item.szlcsc.com/3142376.html",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/87e2b5b113f4df247d2b8d5758217346.pdf?productCode=C2897371",
+      "designators": [
+        "J_SCREEN"
+      ],
+      "selection_reason": "Direct top-entry 8P square socket for the larger TFT. Single-row, nominal 20.72 mm housing length and 8.50 mm installed height.",
+      "procurement_status": "selected",
+      "assembly": {
+        "side": "top",
+        "population": "mounted",
+        "method": "through_hole"
+      },
+      "part_identity": "5d46ad734e65e4e6",
+      "cad_relevance": {
+        "notes": "8 positions, 2.54 mm pitch, 8.50 ±0.15 mm body height, 3.2 mm solder tails. HCTL drawing page 1."
+      },
+      "source_url": "https://datasheet.lcsc.com/datasheet/pdf/87e2b5b113f4df247d2b8d5758217346.pdf?productCode=C2897371",
+      "footprint": "jlcpcb:C2897371",
+      "image_url": "https://assets.lcsc.com/images/lcsc/900x900/20230121_HCTL-PM254-1-08-Z-8-5_C2897371_front.jpg"
     },
     {
       "id": "carrier_screws",
@@ -356,37 +305,437 @@
       "part_identity": "75fd637e3ff936c0"
     },
     {
-      "id": "carrier_lcd_header",
-      "role": "connector",
-      "name": "BM07B-GHS-TBT(LF)(SN)(N)",
-      "part_number": "BM07B-GHS-TBT(LF)(SN)(N)",
-      "mpn": "BM07B-GHS-TBT(LF)(SN)(N)",
-      "manufacturer": "JST",
-      "lcsc_code": "C378970",
+      "id": "microphone",
+      "role": "PDM microphone",
+      "name": "LMD4737T261-OAC05",
+      "part_number": "LMD4737T261-OAC05",
+      "mpn": "LMD4737T261-OAC05",
+      "manufacturer": "LinkMems(聆麦声学)",
+      "lcsc_code": "C47148418",
       "quantity": 1,
       "designators": [
-        "J_LCD"
+        "MIC1"
       ],
       "source": "lcsc",
       "supplier": "LCSC",
       "jlc_smt_library": "extended",
       "procurement_status": "selected",
-      "package": "SMD,P=1.25mm",
-      "description": "Connector Header 7 position 1.25mm Pitch 1A Surface Mount,Vertical -25°C~+85°C",
-      "footprint": "jlcpcb:C378970",
-      "product_url": "https://item.szlcsc.com/351381.html",
-      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/80dc7ab1445718afe1c2981a4a6ba75c.pdf?productCode=C378970",
-      "image_url": "https://assets.lcsc.com/images/lcsc/900x900/20230108_JST-BM07B-GHS-TBT-LF-SN-N_C378970_front.jpg",
-      "stock": 4178,
+      "package": "SMD-6P,4.7x3.8mm",
+      "description": "集成专用前置放大ASIC的MEMS麦克风,支持表面贴装和高温回流组装,数据格式为单比特PDM",
+      "product_url": "https://item.szlcsc.com/49348305.html",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/5b15467728fa628c49d9103dafffc505.pdf?productCode=C47148418",
+      "stock": 12,
+      "selection_reason": "3.3V PDM, 4.72 x 3.76 x 1.2 mm; top port diameter 0.84 mm. L/R low. Drawing pp.6–8. Extended top-port device fits the three-pin audio interface.",
+      "footprint": "jlcpcb:C47148418",
+      "assembly": {
+        "population": "mounted",
+        "side": "top",
+        "method": "jlc_smt",
+        "jlc_smt_verified": false
+      },
+      "part_identity": "96a7d703f0426fb1"
+    },
+    {
+      "id": "audio_amp",
+      "role": "audio amplifier",
+      "name": "NS4150B",
+      "part_number": "NS4150B",
+      "mpn": "NS4150B",
+      "manufacturer": "Nsiway(纳芯威)",
+      "lcsc_code": "C189961",
+      "quantity": 1,
+      "designators": [
+        "U_AMP"
+      ],
+      "source": "lcsc",
+      "supplier": "LCSC",
+      "jlc_smt_library": "extended",
+      "procurement_status": "selected",
+      "package": "MSOP-8",
+      "description": "3.0W单声道D类音频功率放大器",
+      "product_url": "https://item.szlcsc.com/207582.html",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/75c9de26d1ce6a24e56ace3c6df586e7.pdf?productCode=C189961",
+      "stock": 27361,
+      "selection_reason": "MSOP-8 mono differential output. NS4150B datasheet pp.1–3,7. PWM reconstruction, 30k matched inputs, CTRL low in silence. No basic alternative verified for this circuit.",
+      "footprint": "jlcpcb:C189961",
+      "assembly": {
+        "population": "mounted",
+        "side": "top",
+        "method": "jlc_smt",
+        "jlc_smt_verified": false
+      },
+      "part_identity": "6c3d178a001ddb6c"
+    },
+    {
+      "id": "speaker",
+      "role": "speaker",
+      "name": "HDK-151108ZA-5C6",
+      "mpn": "HDK-151108ZA-5C6",
+      "part_number": "HDK-151108ZA-5C6",
+      "manufacturer": "Dragonstate(华龙)",
+      "lcsc_code": "C28642283",
+      "quantity": 1,
+      "source": "lcsc",
+      "supplier": "LCSC",
+      "jlc_smt_library": "unknown",
+      "procurement_status": "selected",
+      "product_url": "https://item.szlcsc.com/30380951.html",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/6c3bf4b98fc80d3bd378edeb939f4d42.pdf?productCode=C28642283",
+      "stock": 43,
+      "assembly": {
+        "population": "not_mounted"
+      },
+      "description": "15 × 11 × 3.3 mm wired 8 Ω, 0.5 W speaker with factory-terminated 250 ±5 mm twisted pair.",
+      "selection_reason": "Dragonstate drawing page 5 specifies red (+), black (−), 30 AWG and Molex 51021-0200 compatible plug; page 2 specifies load. Supplied lead remains intact. Route its slack flat inside the housing.",
+      "part_identity": "8101040b2a80f3cd"
+    },
+    {
+      "id": "speaker_header",
+      "role": "connector",
+      "name": "532610271",
+      "mpn": "532610271",
+      "part_number": "532610271",
+      "manufacturer": "MOLEX",
+      "lcsc_code": "C177225",
+      "quantity": 1,
+      "source": "lcsc",
+      "supplier": "LCSC",
+      "jlc_smt_library": "extended",
+      "procurement_status": "selected",
+      "product_url": "https://item.szlcsc.com/188617.html",
+      "datasheet_url": "https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/salesdrawingpdf/532/53261/532610271_sd.pdf?inline",
+      "stock": 2247,
+      "designators": [
+        "SPK1"
+      ],
+      "package": "SMD,P=1.25mm,Surface Mount,Right Angle",
+      "footprint": "jlcpcb:C177225",
       "assembly": {
         "population": "mounted",
         "method": "jlc_smt",
         "side": "top",
+        "jlc_smt_verified": true,
         "risk_class": "mechanical_smt",
-        "jlc_smt_verified": true
+        "jlc_smt_rotation": 90,
+        "verification_evidence": "Top, JLC-native C177225, 90° CCW, opening left. Four surface lands, no holes: two 0.8 × 1.6 mm on 1.25 pitch, tabs 2.1 × 3 mm on 6.35 pitch. Compiled footprint centered on the outer land extents at (−14.90, 7.35) in board design coordinates. Functional pads 1/2 at (−13.1,7.975/6.725), tabs at X−16, as on the checked board. No bottom mirror. Molex drawing 532610001-SD, Dragonstate p5 keyed 51021-0200, red pin 1 SPK_P, black pin 2 SPK_N. Exact on-sale/SMT supplier record https://easyeda.com/api/products/C177225/components?version=6.5.51"
       },
-      "selection_reason": "JST GH7P positive-lock top-entry at shell(17,-12.5); supplier solid body topZ8.795, conservative mated plug/wire exitZ12.235 leaves room below screen. Mates GHR-07V-S. Factory SMT on production top; exact JST GH locking variant retained for mating and enclosure fit (Extended library).",
-      "part_identity": "60c7d3562340b8f0"
+      "description": "Molex 53261-0271 PicoBlade 1.25 mm, 2-position horizontal SMT header.",
+      "selection_reason": "Factory-fitted mate for the supplied 51021-0200-compatible housing. Rated 1 A; shell height 3.4 mm. Polarized horizontal entry.",
+      "part_identity": "5e6734609c6dc94d"
+    },
+    {
+      "id": "audio_c100n",
+      "role": "capacitor",
+      "name": "CC0603KRX7R9BB104",
+      "part_number": "CC0603KRX7R9BB104",
+      "mpn": "CC0603KRX7R9BB104",
+      "manufacturer": "YAGEO(国巨)",
+      "lcsc_code": "C14663",
+      "quantity": 3,
+      "designators": [
+        "C_MIC",
+        "C_INP",
+        "C_INN"
+      ],
+      "source": "lcsc",
+      "supplier": "LCSC",
+      "jlc_smt_library": "basic",
+      "procurement_status": "selected",
+      "package": "0603",
+      "description": "100nF ±10% 50V Ceramic Capacitor X7R 0603",
+      "product_url": "https://item.szlcsc.com/15331.html",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/23ccee80ee542e7cf156a772bb589942.pdf?productCode=C14663",
+      "stock": 2511,
+      "selection_reason": "100 nF mic supply bypass and AC coupling on both amplifier inputs. VAUX bypass and local MCU supply bypass.",
+      "footprint": "jlcpcb:C14663",
+      "assembly": {
+        "population": "mounted",
+        "side": "top",
+        "method": "jlc_smt",
+        "jlc_smt_verified": false
+      },
+      "part_identity": "793924b009c093b0"
+    },
+    {
+      "id": "audio_c1u",
+      "role": "capacitor",
+      "name": "CL10A105KB8NNNC",
+      "part_number": "CL10A105KB8NNNC",
+      "mpn": "CL10A105KB8NNNC",
+      "manufacturer": "SAMSUNG(三星)",
+      "lcsc_code": "C15849",
+      "quantity": 3,
+      "designators": [
+        "C_VDD",
+        "C_BYP",
+        "C_EN"
+      ],
+      "source": "lcsc",
+      "supplier": "LCSC",
+      "jlc_smt_library": "basic",
+      "procurement_status": "selected",
+      "package": "0603",
+      "description": "1uF ±10% 50V Ceramic Capacitor X5R 0603",
+      "product_url": "https://item.szlcsc.com/16531.html",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C15849",
+      "stock": 53,
+      "selection_reason": "1 uF at amplifier VCC, BYPASS and averaged PWM enable. Charger input bypass and EN RC delay.",
+      "footprint": "jlcpcb:C15849",
+      "assembly": {
+        "population": "mounted",
+        "side": "top",
+        "method": "jlc_smt",
+        "jlc_smt_verified": false
+      },
+      "part_identity": "986355084616d04b"
+    },
+    {
+      "id": "audio_c10u",
+      "role": "capacitor",
+      "name": "CL21A106KAYNNNE",
+      "part_number": "CL21A106KAYNNNE",
+      "mpn": "CL21A106KAYNNNE",
+      "manufacturer": "SAMSUNG(三星)",
+      "lcsc_code": "C15850",
+      "quantity": 1,
+      "designators": [
+        "C_BULK"
+      ],
+      "source": "lcsc",
+      "supplier": "LCSC",
+      "jlc_smt_library": "basic",
+      "procurement_status": "selected",
+      "package": "0805",
+      "description": "10uF ±10% 25V Ceramic Capacitor X5R 0805",
+      "product_url": "https://item.szlcsc.com/16532.html",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C15850",
+      "stock": 99987,
+      "selection_reason": "10 uF local amplifier supply reservoir. Additional 10 μF 25 V 0805 parts populate regulator input, charger output, battery and MCU supply.",
+      "footprint": "jlcpcb:C15850",
+      "assembly": {
+        "population": "mounted",
+        "side": "top",
+        "method": "jlc_smt",
+        "jlc_smt_verified": false
+      },
+      "part_identity": "9c45cb58e1625d26"
+    },
+    {
+      "id": "audio_c1n",
+      "role": "capacitor",
+      "name": "CL10B102KB8NNNC",
+      "part_number": "CL10B102KB8NNNC",
+      "mpn": "CL10B102KB8NNNC",
+      "manufacturer": "SAMSUNG(三星)",
+      "lcsc_code": "C1588",
+      "quantity": 1,
+      "designators": [
+        "C_RF"
+      ],
+      "source": "lcsc",
+      "supplier": "LCSC",
+      "jlc_smt_library": "basic",
+      "procurement_status": "selected",
+      "package": "0603",
+      "description": "1nF ±10% 50V Ceramic Capacitor X7R 0603",
+      "product_url": "https://item.szlcsc.com/1940.html",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C1588",
+      "stock": 2979,
+      "selection_reason": "1 nF supply bypass per amplifier application.",
+      "footprint": "jlcpcb:C1588",
+      "assembly": {
+        "population": "mounted",
+        "side": "top",
+        "method": "jlc_smt",
+        "jlc_smt_verified": false
+      },
+      "part_identity": "0eb29e7777e3547f"
+    },
+    {
+      "id": "audio_c22n",
+      "role": "capacitor",
+      "name": "CL10B223KB8NNNC",
+      "part_number": "CL10B223KB8NNNC",
+      "mpn": "CL10B223KB8NNNC",
+      "manufacturer": "SAMSUNG(三星)",
+      "lcsc_code": "C21122",
+      "quantity": 2,
+      "designators": [
+        "C_F1",
+        "C_F2"
+      ],
+      "source": "lcsc",
+      "supplier": "LCSC",
+      "jlc_smt_library": "basic",
+      "procurement_status": "selected",
+      "package": "0603",
+      "description": "22nF ±10% 50V Ceramic Capacitor X7R 0603",
+      "product_url": "https://item.szlcsc.com/21834.html",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C21122",
+      "stock": 6696,
+      "selection_reason": "22 nF PWM reconstruction poles.",
+      "footprint": "jlcpcb:C21122",
+      "assembly": {
+        "population": "mounted",
+        "side": "top",
+        "method": "jlc_smt",
+        "jlc_smt_verified": false
+      },
+      "part_identity": "63219d46930ce07c"
+    },
+    {
+      "id": "audio_r1k",
+      "role": "resistor",
+      "name": "0603WAF1001T5E",
+      "part_number": "0603WAF1001T5E",
+      "mpn": "0603WAF1001T5E",
+      "manufacturer": "UNI-ROYAL(厚声)",
+      "lcsc_code": "C21190",
+      "quantity": 2,
+      "designators": [
+        "R_ATT",
+        "R_F2"
+      ],
+      "source": "lcsc",
+      "supplier": "LCSC",
+      "jlc_smt_library": "basic",
+      "procurement_status": "selected",
+      "package": "0603",
+      "description": "1kΩ ±1% 100mW 0603 Thick Film Resistor",
+      "product_url": "https://item.szlcsc.com/21904.html",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C21190",
+      "stock": 132771,
+      "selection_reason": "1k attenuator shunt and second filter pole.",
+      "footprint": "jlcpcb:C21190",
+      "assembly": {
+        "population": "mounted",
+        "side": "top",
+        "method": "jlc_smt",
+        "jlc_smt_verified": false
+      },
+      "part_identity": "d8afc9e16fd136af"
+    },
+    {
+      "id": "audio_r10k",
+      "role": "resistor",
+      "name": "0603WAF1002T5E",
+      "part_number": "0603WAF1002T5E",
+      "mpn": "0603WAF1002T5E",
+      "manufacturer": "UNI-ROYAL(厚声)",
+      "lcsc_code": "C25804",
+      "quantity": 3,
+      "designators": [
+        "R_F1",
+        "R_EN",
+        "R_OFF"
+      ],
+      "source": "lcsc",
+      "supplier": "LCSC",
+      "jlc_smt_library": "basic",
+      "procurement_status": "selected",
+      "package": "0603",
+      "description": "10kΩ ±1% 100mW 0603 Thick Film Resistor",
+      "product_url": "https://item.szlcsc.com/26547.html",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25804",
+      "stock": null,
+      "selection_reason": "10k PWM attenuator input, enable integrator and input pull-down. MCU reset/boot pull-ups and regulator enable pull-up.",
+      "footprint": "jlcpcb:C25804",
+      "assembly": {
+        "population": "mounted",
+        "side": "top",
+        "method": "jlc_smt",
+        "jlc_smt_verified": false
+      },
+      "part_identity": "521357339b7b313a"
+    },
+    {
+      "id": "audio_r30k",
+      "role": "resistor",
+      "name": "0603WAF3002T5E",
+      "part_number": "0603WAF3002T5E",
+      "mpn": "0603WAF3002T5E",
+      "manufacturer": "UNI-ROYAL(厚声)",
+      "lcsc_code": "C22984",
+      "quantity": 2,
+      "designators": [
+        "R_INP",
+        "R_INN"
+      ],
+      "source": "lcsc",
+      "supplier": "LCSC",
+      "jlc_smt_library": "basic",
+      "procurement_status": "selected",
+      "package": "0603",
+      "description": "30kΩ ±1% 100mW 0603 Thick Film Resistor",
+      "product_url": "https://item.szlcsc.com/23711.html",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C22984",
+      "stock": 5522,
+      "selection_reason": "30k matched amplifier input resistors, gain 8 per datasheet p.7.",
+      "footprint": "jlcpcb:C22984",
+      "assembly": {
+        "population": "mounted",
+        "side": "top",
+        "method": "jlc_smt",
+        "jlc_smt_verified": false
+      },
+      "part_identity": "06a4d89651d568d9"
+    },
+    {
+      "id": "mic_guide",
+      "role": "acoustic seal",
+      "name": "麦克风弯管导声件，TPU 95A",
+      "part_number": "pet-shell mic_guide",
+      "quantity": 1,
+      "source": "generic",
+      "procurement_status": "generic_default",
+      "selection_reason": "Printed flexible elbow connects the microphone lid port to the right side inlet. Mount with thin perimeter transfer adhesive clear of the bore.",
+      "part_identity": "04c824b0e42a18fe"
+    },
+    {
+      "id": "mic_adhesive",
+      "role": "consumable",
+      "name": "薄型双面转移胶膜，约 0.05 mm",
+      "part_number": "0.05 mm transfer adhesive film",
+      "quantity": 1,
+      "source": "generic",
+      "procurement_status": "generic_default",
+      "selection_reason": "Die-cut or trim a small perimeter seal around the inlet. Keep the central acoustic opening clear.",
+      "part_identity": "f8c62518a9703667"
+    },
+    {
+      "id": "top_keyring",
+      "role": "mechanical",
+      "name": "Metal Field Stainless Keyrings Round Circle Split Ring, 30 mm",
+      "manufacturer": "Metal Field",
+      "part_number": "30 mm OD / 26 mm ID stainless split ring",
+      "quantity": 1,
+      "source": "manufacturer_catalog",
+      "datasheet_url": "https://www.metal-field.com/products/stainless-keyrings-round-circle-split-ring-20mm",
+      "description": "30 mm outer diameter, 26 mm inner diameter, 2 mm radial width and 3 mm double-layer thickness. Winding and end position are approximate in CAD.",
+      "selection_reason": "Matches the visible ring-to-body ratio of the front photograph and threads into the top point.",
+      "part_identity": "a6938809fd372101"
+    },
+    {
+      "id": "face_lens",
+      "role": "mechanical",
+      "name": "Clear polycarbonate face lens, Ø51.0 × 0.5 mm",
+      "description": "Cut from optically clear smooth sheet. Light smoke is optional following a display brightness check.",
+      "quantity": 1,
+      "source": "generic",
+      "part_number": "51x0.5 mm optical PC disc",
+      "selection_reason": "A continuous circular face spans the dark bezel and square screen.",
+      "part_identity": "157acb55e2209459"
+    },
+    {
+      "id": "face_lens_tape",
+      "role": "consumable",
+      "name": "Clear acrylic transfer tape annulus, 0.10 mm thick",
+      "description": "OD 48.8 mm, ID 46.2 mm. Apply to the annular flat on the black bezel.",
+      "quantity": 1,
+      "source": "generic",
+      "part_number": "48.8x46.2x0.10 mm adhesive annulus",
+      "selection_reason": "Retains the lens on its perimeter and keeps adhesive clear of the screen.",
+      "part_identity": "84a248853ff5fb68"
     }
   ]
 }

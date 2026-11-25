@@ -8,9 +8,9 @@
     },
     {
       "ref": "display",
-      "name": "优信电子 1.3寸TFT彩屏模块(带铁框)_7P焊接",
+      "name": "优信电子 1.54寸TFT彩屏模块_8P",
       "quantity": 1,
-      "note": "Selected7P ST7789 display plugs into square socket J_SCREEN on pet-screen-adapter;150mm GH7P pin1-to-pin1 harness connects J_SCREEN_GH to carrier J_LCD."
+      "note": "Direct eight-pin TFT, GND at the right, scan rotated 180 degrees."
     },
     {
       "ref": "battery",
@@ -31,6 +31,21 @@
       "ref": "btn_right",
       "name": "6x6 mm tactile switch, 5 mm height, through-hole",
       "quantity": 1
+    },
+    {
+      "ref": "microphone",
+      "name": "LMD4737T261-OAC05",
+      "quantity": 1
+    },
+    {
+      "ref": "audio_amp",
+      "name": "NS4150B",
+      "quantity": 1
+    },
+    {
+      "ref": "speaker",
+      "name": "HDK-151108ZA-5C6",
+      "quantity": 1
     }
   ],
   "connections": [
@@ -45,7 +60,7 @@
       },
       "bus": "gpio",
       "via": "other",
-      "note": "Direct socket carrier; keys left/mid/right D7/D9/D3. USB end aligns pin1 of both XIAO sockets; no signal pigtails.",
+      "note": "Direct socket carrier; cluster upper/lower/inner keys D7/D9/D3. USB end aligns pin1 of both XIAO sockets; no signal pigtails.",
       "evidence": [
         "https://raw.githubusercontent.com/Seeed-Studio/wiki-documents/docusaurus-version/sites/en/docs/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO_ESP32S3_Getting_Started.md",
         "https://item.szlcsc.com/111374.html"
@@ -62,7 +77,7 @@
       },
       "bus": "gpio",
       "via": "other",
-      "note": "Direct socket carrier; keys left/mid/right D7/D9/D3. USB end aligns pin1 of both XIAO sockets; no signal pigtails.",
+      "note": "Direct socket carrier; cluster upper/lower/inner keys D7/D9/D3. USB end aligns pin1 of both XIAO sockets; no signal pigtails.",
       "evidence": [
         "https://raw.githubusercontent.com/Seeed-Studio/wiki-documents/docusaurus-version/sites/en/docs/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO_ESP32S3_Getting_Started.md",
         "https://item.szlcsc.com/111374.html"
@@ -79,7 +94,7 @@
       },
       "bus": "gpio",
       "via": "other",
-      "note": "Direct socket carrier; keys left/mid/right D7/D9/D3. USB end aligns pin1 of both XIAO sockets; no signal pigtails.",
+      "note": "Direct socket carrier; cluster upper/lower/inner keys D7/D9/D3. USB end aligns pin1 of both XIAO sockets; no signal pigtails.",
       "evidence": [
         "https://raw.githubusercontent.com/Seeed-Studio/wiki-documents/docusaurus-version/sites/en/docs/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO_ESP32S3_Getting_Started.md",
         "https://item.szlcsc.com/111374.html"
@@ -100,7 +115,7 @@
         "https://raw.githubusercontent.com/Seeed-Studio/wiki-documents/docusaurus-version/sites/en/docs/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO_ESP32S3_Getting_Started.md",
         "https://item.szlcsc.com/111374.html"
       ],
-      "note": "K2-1102DP-C4SW-04: pins1/2 are internally common GPIO, pins3/4 internally common GND. All four pads carry corresponding PCB nets; press joins groups. Keys left/mid/right D7/D9/D3."
+      "note": "K2-1102DP-C4SW-04: pins1/2 are internally common GPIO, pins3/4 internally common GND. All four pads carry corresponding PCB nets; press joins groups. Cluster upper/lower/inner keys D7/D9/D3."
     },
     {
       "from": {
@@ -117,7 +132,7 @@
         "https://raw.githubusercontent.com/Seeed-Studio/wiki-documents/docusaurus-version/sites/en/docs/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO_ESP32S3_Getting_Started.md",
         "https://item.szlcsc.com/111374.html"
       ],
-      "note": "K2-1102DP-C4SW-04: pins1/2 are internally common GPIO, pins3/4 internally common GND. All four pads carry corresponding PCB nets; press joins groups. Keys left/mid/right D7/D9/D3."
+      "note": "K2-1102DP-C4SW-04: pins1/2 are internally common GPIO, pins3/4 internally common GND. All four pads carry corresponding PCB nets; press joins groups. Cluster upper/lower/inner keys D7/D9/D3."
     },
     {
       "from": {
@@ -134,7 +149,7 @@
         "https://raw.githubusercontent.com/Seeed-Studio/wiki-documents/docusaurus-version/sites/en/docs/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO_ESP32S3_Getting_Started.md",
         "https://item.szlcsc.com/111374.html"
       ],
-      "note": "K2-1102DP-C4SW-04: pins1/2 are internally common GPIO, pins3/4 internally common GND. All four pads carry corresponding PCB nets; press joins groups. Keys left/mid/right D7/D9/D3."
+      "note": "K2-1102DP-C4SW-04: pins1/2 are internally common GPIO, pins3/4 internally common GND. All four pads carry corresponding PCB nets; press joins groups. Cluster upper/lower/inner keys D7/D9/D3."
     },
     {
       "from": {
@@ -178,10 +193,28 @@
       },
       "bus": "power",
       "via": "other",
-      "note": "Display/adapter/GH pin 1, square socket J_SCREEN -> J_SCREEN_GH ->150mm JST GH7P pin1-to-pin1 harness -> J_LCD; verify function labels before battery connection. SCL/SDA are SPI, no CS pin; dedicated SPI bus. BLK low=off, high-Z=on; GPIO controls, does not supply LED current.",
+      "note": "TFT plugs directly into J_SCREEN. SCL/SDA are SPI SCK/MOSI. The BLK control is low to turn off and high impedance to turn on.",
       "evidence": [
         "https://raw.githubusercontent.com/espressif/arduino-esp32/master/variants/XIAO_ESP32S3/pins_arduino.h",
-        "product/references/uploads/20261110T152829794Z-3-img-1023.jpg",
+        "product/references/uploads/20261124T090321777Z-1-cleanshot-2026-11-24-at-17-03-07-2x.png",
+        "product/references/uploads/20261110T152829794Z-5-img-1022.jpg"
+      ]
+    },
+    {
+      "from": {
+        "part": "display",
+        "pin": "CS"
+      },
+      "to": {
+        "part": "mcu",
+        "pin": "GND"
+      },
+      "bus": "power",
+      "via": "other",
+      "note": "Dedicated SPI device. Active-low chip select is tied to board ground at J_SCREEN pin 7.",
+      "evidence": [
+        "https://raw.githubusercontent.com/espressif/arduino-esp32/master/variants/XIAO_ESP32S3/pins_arduino.h",
+        "product/references/uploads/20261124T090321777Z-1-cleanshot-2026-11-24-at-17-03-07-2x.png",
         "product/references/uploads/20261110T152829794Z-5-img-1022.jpg"
       ]
     },
@@ -196,10 +229,10 @@
       },
       "bus": "power",
       "via": "other",
-      "note": "Display/adapter/GH pin 2, square socket J_SCREEN -> J_SCREEN_GH ->150mm JST GH7P pin1-to-pin1 harness -> J_LCD; verify function labels before battery connection. SCL/SDA are SPI, no CS pin; dedicated SPI bus. BLK low=off, high-Z=on; GPIO controls, does not supply LED current.",
+      "note": "TFT plugs directly into J_SCREEN. SCL/SDA are SPI SCK/MOSI. The BLK control is low to turn off and high impedance to turn on.",
       "evidence": [
         "https://raw.githubusercontent.com/espressif/arduino-esp32/master/variants/XIAO_ESP32S3/pins_arduino.h",
-        "product/references/uploads/20261110T152829794Z-3-img-1023.jpg",
+        "product/references/uploads/20261124T090321777Z-1-cleanshot-2026-11-24-at-17-03-07-2x.png",
         "product/references/uploads/20261110T152829794Z-5-img-1022.jpg"
       ]
     },
@@ -214,10 +247,10 @@
       },
       "bus": "spi",
       "via": "other",
-      "note": "Display/adapter/GH pin 3, square socket J_SCREEN -> J_SCREEN_GH ->150mm JST GH7P pin1-to-pin1 harness -> J_LCD; verify function labels before battery connection. SCL/SDA are SPI, no CS pin; dedicated SPI bus. BLK low=off, high-Z=on; GPIO controls, does not supply LED current.",
+      "note": "TFT plugs directly into J_SCREEN. SCL/SDA are SPI SCK/MOSI. The BLK control is low to turn off and high impedance to turn on.",
       "evidence": [
         "https://raw.githubusercontent.com/espressif/arduino-esp32/master/variants/XIAO_ESP32S3/pins_arduino.h",
-        "product/references/uploads/20261110T152829794Z-3-img-1023.jpg",
+        "product/references/uploads/20261124T090321777Z-1-cleanshot-2026-11-24-at-17-03-07-2x.png",
         "product/references/uploads/20261110T152829794Z-5-img-1022.jpg"
       ]
     },
@@ -232,10 +265,10 @@
       },
       "bus": "spi",
       "via": "other",
-      "note": "Display/adapter/GH pin 4, square socket J_SCREEN -> J_SCREEN_GH ->150mm JST GH7P pin1-to-pin1 harness -> J_LCD; verify function labels before battery connection. SCL/SDA are SPI, no CS pin; dedicated SPI bus. BLK low=off, high-Z=on; GPIO controls, does not supply LED current.",
+      "note": "TFT plugs directly into J_SCREEN. SCL/SDA are SPI SCK/MOSI. The BLK control is low to turn off and high impedance to turn on.",
       "evidence": [
         "https://raw.githubusercontent.com/espressif/arduino-esp32/master/variants/XIAO_ESP32S3/pins_arduino.h",
-        "product/references/uploads/20261110T152829794Z-3-img-1023.jpg",
+        "product/references/uploads/20261124T090321777Z-1-cleanshot-2026-11-24-at-17-03-07-2x.png",
         "product/references/uploads/20261110T152829794Z-5-img-1022.jpg"
       ]
     },
@@ -250,10 +283,10 @@
       },
       "bus": "gpio",
       "via": "other",
-      "note": "Display/adapter/GH pin 5, square socket J_SCREEN -> J_SCREEN_GH ->150mm JST GH7P pin1-to-pin1 harness -> J_LCD; verify function labels before battery connection. SCL/SDA are SPI, no CS pin; dedicated SPI bus. BLK low=off, high-Z=on; GPIO controls, does not supply LED current.",
+      "note": "TFT plugs directly into J_SCREEN. SCL/SDA are SPI SCK/MOSI. The BLK control is low to turn off and high impedance to turn on.",
       "evidence": [
         "https://raw.githubusercontent.com/espressif/arduino-esp32/master/variants/XIAO_ESP32S3/pins_arduino.h",
-        "product/references/uploads/20261110T152829794Z-3-img-1023.jpg",
+        "product/references/uploads/20261124T090321777Z-1-cleanshot-2026-11-24-at-17-03-07-2x.png",
         "product/references/uploads/20261110T152829794Z-5-img-1022.jpg"
       ]
     },
@@ -268,10 +301,10 @@
       },
       "bus": "gpio",
       "via": "other",
-      "note": "Display/adapter/GH pin 6, square socket J_SCREEN -> J_SCREEN_GH ->150mm JST GH7P pin1-to-pin1 harness -> J_LCD; verify function labels before battery connection. SCL/SDA are SPI, no CS pin; dedicated SPI bus. BLK low=off, high-Z=on; GPIO controls, does not supply LED current.",
+      "note": "TFT plugs directly into J_SCREEN. SCL/SDA are SPI SCK/MOSI. The BLK control is low to turn off and high impedance to turn on.",
       "evidence": [
         "https://raw.githubusercontent.com/espressif/arduino-esp32/master/variants/XIAO_ESP32S3/pins_arduino.h",
-        "product/references/uploads/20261110T152829794Z-3-img-1023.jpg",
+        "product/references/uploads/20261124T090321777Z-1-cleanshot-2026-11-24-at-17-03-07-2x.png",
         "product/references/uploads/20261110T152829794Z-5-img-1022.jpg"
       ]
     },
@@ -286,11 +319,198 @@
       },
       "bus": "gpio",
       "via": "other",
-      "note": "Display/adapter/GH pin 7, square socket J_SCREEN -> J_SCREEN_GH ->150mm JST GH7P pin1-to-pin1 harness -> J_LCD; verify function labels before battery connection. SCL/SDA are SPI, no CS pin; dedicated SPI bus. BLK low=off, high-Z=on; GPIO controls, does not supply LED current.",
+      "note": "TFT plugs directly into J_SCREEN. SCL/SDA are SPI SCK/MOSI. The BLK control is low to turn off and high impedance to turn on.",
       "evidence": [
         "https://raw.githubusercontent.com/espressif/arduino-esp32/master/variants/XIAO_ESP32S3/pins_arduino.h",
-        "product/references/uploads/20261110T152829794Z-3-img-1023.jpg",
+        "product/references/uploads/20261124T090321777Z-1-cleanshot-2026-11-24-at-17-03-07-2x.png",
         "product/references/uploads/20261110T152829794Z-5-img-1022.jpg"
+      ]
+    },
+    {
+      "from": {
+        "part": "mcu",
+        "pin": "D2"
+      },
+      "to": {
+        "part": "microphone",
+        "pin": "CLK"
+      },
+      "bus": "gpio",
+      "via": "other",
+      "note": "PDM clock",
+      "evidence": [
+        "https://raw.githubusercontent.com/espressif/arduino-esp32/master/variants/XIAO_ESP32S3/pins_arduino.h",
+        "https://datasheet.lcsc.com/datasheet/pdf/5b15467728fa628c49d9103dafffc505.pdf?productCode=C47148418"
+      ]
+    },
+    {
+      "from": {
+        "part": "mcu",
+        "pin": "D1"
+      },
+      "to": {
+        "part": "microphone",
+        "pin": "DATA"
+      },
+      "bus": "gpio",
+      "via": "other",
+      "note": "PDM data",
+      "evidence": [
+        "https://raw.githubusercontent.com/espressif/arduino-esp32/master/variants/XIAO_ESP32S3/pins_arduino.h",
+        "https://datasheet.lcsc.com/datasheet/pdf/5b15467728fa628c49d9103dafffc505.pdf?productCode=C47148418"
+      ]
+    },
+    {
+      "from": {
+        "part": "mcu",
+        "pin": "3V3"
+      },
+      "to": {
+        "part": "microphone",
+        "pin": "VDD"
+      },
+      "bus": "gpio",
+      "via": "other",
+      "note": "Local bypass",
+      "evidence": [
+        "https://raw.githubusercontent.com/espressif/arduino-esp32/master/variants/XIAO_ESP32S3/pins_arduino.h",
+        "https://datasheet.lcsc.com/datasheet/pdf/5b15467728fa628c49d9103dafffc505.pdf?productCode=C47148418"
+      ]
+    },
+    {
+      "from": {
+        "part": "mcu",
+        "pin": "GND"
+      },
+      "to": {
+        "part": "microphone",
+        "pin": "L/R"
+      },
+      "bus": "gpio",
+      "via": "other",
+      "note": "Left channel",
+      "evidence": [
+        "https://raw.githubusercontent.com/espressif/arduino-esp32/master/variants/XIAO_ESP32S3/pins_arduino.h",
+        "https://datasheet.lcsc.com/datasheet/pdf/5b15467728fa628c49d9103dafffc505.pdf?productCode=C47148418"
+      ]
+    },
+    {
+      "from": {
+        "part": "mcu",
+        "pin": "GND"
+      },
+      "to": {
+        "part": "microphone",
+        "pin": "GND"
+      },
+      "bus": "gpio",
+      "via": "other",
+      "note": "Both ground pads",
+      "evidence": [
+        "https://raw.githubusercontent.com/espressif/arduino-esp32/master/variants/XIAO_ESP32S3/pins_arduino.h",
+        "https://datasheet.lcsc.com/datasheet/pdf/5b15467728fa628c49d9103dafffc505.pdf?productCode=C47148418"
+      ]
+    },
+    {
+      "from": {
+        "part": "mcu",
+        "pin": "D0"
+      },
+      "to": {
+        "part": "audio_amp",
+        "pin": "INP"
+      },
+      "bus": "gpio",
+      "via": "other",
+      "note": "PWM through two-pole filter",
+      "evidence": [
+        "https://raw.githubusercontent.com/espressif/arduino-esp32/master/variants/XIAO_ESP32S3/pins_arduino.h",
+        "https://datasheet.lcsc.com/datasheet/pdf/75c9de26d1ce6a24e56ace3c6df586e7.pdf?productCode=C189961"
+      ]
+    },
+    {
+      "from": {
+        "part": "mcu",
+        "pin": "D0"
+      },
+      "to": {
+        "part": "audio_amp",
+        "pin": "CTRL"
+      },
+      "bus": "gpio",
+      "via": "other",
+      "note": "Enable from averaged PWM",
+      "evidence": [
+        "https://raw.githubusercontent.com/espressif/arduino-esp32/master/variants/XIAO_ESP32S3/pins_arduino.h",
+        "https://datasheet.lcsc.com/datasheet/pdf/75c9de26d1ce6a24e56ace3c6df586e7.pdf?productCode=C189961"
+      ]
+    },
+    {
+      "from": {
+        "part": "mcu",
+        "pin": "3V3"
+      },
+      "to": {
+        "part": "audio_amp",
+        "pin": "VCC"
+      },
+      "bus": "gpio",
+      "via": "other",
+      "note": "3.3 V supply",
+      "evidence": [
+        "https://raw.githubusercontent.com/espressif/arduino-esp32/master/variants/XIAO_ESP32S3/pins_arduino.h",
+        "https://datasheet.lcsc.com/datasheet/pdf/75c9de26d1ce6a24e56ace3c6df586e7.pdf?productCode=C189961"
+      ]
+    },
+    {
+      "from": {
+        "part": "mcu",
+        "pin": "GND"
+      },
+      "to": {
+        "part": "audio_amp",
+        "pin": "GND"
+      },
+      "bus": "gpio",
+      "via": "other",
+      "note": "Shared reference",
+      "evidence": [
+        "https://raw.githubusercontent.com/espressif/arduino-esp32/master/variants/XIAO_ESP32S3/pins_arduino.h",
+        "https://datasheet.lcsc.com/datasheet/pdf/75c9de26d1ce6a24e56ace3c6df586e7.pdf?productCode=C189961"
+      ]
+    },
+    {
+      "from": {
+        "part": "audio_amp",
+        "pin": "VOP"
+      },
+      "to": {
+        "part": "speaker",
+        "pin": "red (+)"
+      },
+      "bus": "other",
+      "via": "other",
+      "note": "Factory two-pin plug at SPK1. Both wires are bridge outputs.",
+      "evidence": [
+        "https://datasheet.lcsc.com/datasheet/pdf/6c3bf4b98fc80d3bd378edeb939f4d42.pdf?productCode=C28642283",
+        "https://datasheet.lcsc.com/datasheet/pdf/75c9de26d1ce6a24e56ace3c6df586e7.pdf?productCode=C189961"
+      ]
+    },
+    {
+      "from": {
+        "part": "audio_amp",
+        "pin": "VON"
+      },
+      "to": {
+        "part": "speaker",
+        "pin": "black (-)"
+      },
+      "bus": "other",
+      "via": "other",
+      "note": "Factory two-pin plug at SPK1. Both wires are bridge outputs.",
+      "evidence": [
+        "https://datasheet.lcsc.com/datasheet/pdf/6c3bf4b98fc80d3bd378edeb939f4d42.pdf?productCode=C28642283",
+        "https://datasheet.lcsc.com/datasheet/pdf/75c9de26d1ce6a24e56ace3c6df586e7.pdf?productCode=C189961"
       ]
     }
   ],
@@ -311,7 +531,9 @@
         "pin": "3V3"
       },
       "consumers": [
-        "display"
+        "display",
+        "microphone",
+        "audio_amp"
       ],
       "note": "Display fed from XIAO regulated 3.3V, shared with on-board ESP32-S3. Seller gives no measured module/backlight current; no 700mA external-load capability claimed."
     }
