@@ -10,3 +10,7 @@ This standard 6 mm switch model represents the selected C110153 supplier drawing
 Official Seeed XIAO ESP32-S3 STEP from https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/seeed-studio-xiao-esp32s3-3d_model.zip , entry XIAO-ESP32S3 v2.step, sha256 870ad45c7af5d92324cec4c6ae65fbf86e3b049d5a97ab9ffd9039ebd73455dd. Archive dated 2023-05-27; licence not stated in archive. Coordinate normal +Y becomes +Z by X=90 degrees; origin at pin-row centre (1.740658685586,-0.249999985099,-6.111399955413). Exact ESP32-S3, not other XIAO variants. Row pitch/spacing from official XIAO-ESP32-S3-DIP footprint archive, 2.54 / 15.24 mm; vendor DIP drill is not used for carrier holes.
 
 Round male header STEP URLs are resolved from the exact C509261 and C2844842 supplier footprints. Body-only parts sit 3 mm above carrier; they carry no duplicate copper. Female C2915256 uses supplier footprint/model. Datasheet drawings in supplier lookup records establish 3 mm body heights.
+
+## MIC1 microphone
+
+LMD4737T261-OAC05.step is the local dimensional model derived from the LinkMems package drawing on page 7 of the C47148418 datasheet. Its footprint origin is the centre of the six contacts at the seating plane. The 0.84 mm top port is offset 1.04 mm towards pins 1 and 6. The lid fillet and individual layer thicknesses are illustrative.

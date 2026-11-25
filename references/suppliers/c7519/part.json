@@ -1,0 +1,88 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-24T06:35:38.550Z",
+  "lcsc_code": "C7519",
+  "manufacturer": "ST(意法半导体)",
+  "manufacturer_part_number": "USBLC6-2SC6",
+  "description": "17VC Clamp 5A Ipp ESD DIODE SOT-23-6L",
+  "category": "静电和浪涌保护(TVS/ESD)",
+  "package": "SOT-23-6L",
+  "jlcpcb_part_class": "extended",
+  "parameters": {
+    "Clamping Voltage": "17V",
+    "Operating Temperature": "-40°C~+125°C",
+    "Peak Pulse Current (Ipp)": "5A",
+    "Number of Channels": "2",
+    "Voltage - Breakdown": "6V",
+    "type": "ESD",
+    "Reverse Leakage Current (Ir)": "150nA",
+    "Polarity": "Unidirectional",
+    "Reverse Stand-Off Voltage (Vrwm)": "5.25V"
+  },
+  "lcsc_stock": 6562,
+  "price_breaks": [
+    {
+      "quantity": 5,
+      "unitPrice": 0.9385,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 50,
+      "unitPrice": 0.713,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 150,
+      "unitPrice": 0.6029,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 0.5047,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 3000,
+      "unitPrice": 0.4777,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 6000,
+      "unitPrice": 0.4615,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 5,
+      "unitPrice": 0.1551,
+      "currency": "USD"
+    },
+    {
+      "quantity": 50,
+      "unitPrice": 0.1178,
+      "currency": "USD"
+    },
+    {
+      "quantity": 150,
+      "unitPrice": 0.0996,
+      "currency": "USD"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 0.0834,
+      "currency": "USD"
+    },
+    {
+      "quantity": 3000,
+      "unitPrice": 0.0789,
+      "currency": "USD"
+    },
+    {
+      "quantity": 6000,
+      "unitPrice": 0.0763,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/7996.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/0d3a2ab954b34651a0695e7ccf534db0.pdf?productCode=C7519",
+  "datasheet_file": "references/suppliers/c7519/c7519-datasheet.pdf"
+}

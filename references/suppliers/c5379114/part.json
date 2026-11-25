@@ -1,0 +1,86 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-24T05:06:59.776Z",
+  "lcsc_code": "C5379114",
+  "manufacturer": "HCTL(华灿天禄)",
+  "manufacturer_part_number": "HC-TYPE-C-24P-FLS-CH5.06-5A-23",
+  "description": "USB-C (USB TYPE-C) Receptacle Connector 24 Position Surface Mount, Right Angle",
+  "category": "USB连接器",
+  "package": "SMD",
+  "jlcpcb_part_class": "extended",
+  "parameters": {
+    "Number of Ports": "1",
+    "Number of Contacts": "24P",
+    "Connector Type": "Type-C",
+    "Operating Temperature": "-40°C~+85°C",
+    "Length": "14.3mm",
+    "Mounting Type": "Side View Mount",
+    "Gender": "Female"
+  },
+  "lcsc_stock": 2977,
+  "price_breaks": [
+    {
+      "quantity": 1,
+      "unitPrice": 10.54,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 10,
+      "unitPrice": 8.94,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 30,
+      "unitPrice": 7.94,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 100,
+      "unitPrice": 6.92,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 450,
+      "unitPrice": 6.46,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 900,
+      "unitPrice": 6.25,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1,
+      "unitPrice": 1.7433,
+      "currency": "USD"
+    },
+    {
+      "quantity": 10,
+      "unitPrice": 1.4786,
+      "currency": "USD"
+    },
+    {
+      "quantity": 30,
+      "unitPrice": 1.3133,
+      "currency": "USD"
+    },
+    {
+      "quantity": 100,
+      "unitPrice": 1.1446,
+      "currency": "USD"
+    },
+    {
+      "quantity": 450,
+      "unitPrice": 1.0685,
+      "currency": "USD"
+    },
+    {
+      "quantity": 900,
+      "unitPrice": 1.0337,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/6243390.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/f66d221ed08e56d765eb0f53c7184ba4.pdf?productCode=C5379114",
+  "datasheet_file": "references/suppliers/c5379114/c5379114-datasheet.pdf"
+}

@@ -1,0 +1,58 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-24T05:07:54.667Z",
+  "lcsc_code": "C7092162",
+  "manufacturer": "SAMTEC",
+  "manufacturer_part_number": "BSW-107-04-G-S",
+  "description": "BSW-107-04-G-S",
+  "category": "排母",
+  "package": "Through Hole",
+  "jlcpcb_part_class": "extended",
+  "parameters": {},
+  "lcsc_stock": null,
+  "price_breaks": [
+    {
+      "quantity": 1,
+      "unitPrice": 20.82,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 192,
+      "unitPrice": 8.31,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 496,
+      "unitPrice": 8.03,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 992,
+      "unitPrice": 7.9,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1,
+      "unitPrice": 3.2172,
+      "currency": "USD"
+    },
+    {
+      "quantity": 192,
+      "unitPrice": 1.2841,
+      "currency": "USD"
+    },
+    {
+      "quantity": 496,
+      "unitPrice": 1.2409,
+      "currency": "USD"
+    },
+    {
+      "quantity": 992,
+      "unitPrice": 1.2208,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/8058795.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/c303965f866b10fcec45a0dfface30ee.pdf?productCode=C7092162",
+  "datasheet_file": "references/suppliers/c7092162/c7092162-datasheet.pdf"
+}

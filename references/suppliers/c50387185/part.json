@@ -1,0 +1,86 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-23T21:09:31.754Z",
+  "lcsc_code": "C50387185",
+  "manufacturer": "XHXDZ(兴华鑫)",
+  "manufacturer_part_number": "1511-L60MM",
+  "description": "8Ω",
+  "category": "扬声器/喇叭",
+  "package": "-",
+  "jlcpcb_part_class": "unknown",
+  "parameters": {
+    "Frequency Range": "650Hz~20kHz",
+    "Total Harmonic Distortion(THD)": "10%",
+    "Impedance": "8Ω",
+    "Technology": "Electromagnetic",
+    "Resonant Frequency": "650Hz",
+    "Sound Pressure Level(SPL)": "82dB",
+    "Rated Power": "500mW"
+  },
+  "lcsc_stock": 128,
+  "price_breaks": [
+    {
+      "quantity": 1,
+      "unitPrice": 3.55,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 10,
+      "unitPrice": 2.86,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 30,
+      "unitPrice": 2.51,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 160,
+      "unitPrice": 2.17,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 480,
+      "unitPrice": 1.97,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 800,
+      "unitPrice": 1.86,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1,
+      "unitPrice": 0.5873,
+      "currency": "USD"
+    },
+    {
+      "quantity": 10,
+      "unitPrice": 0.4731,
+      "currency": "USD"
+    },
+    {
+      "quantity": 30,
+      "unitPrice": 0.4153,
+      "currency": "USD"
+    },
+    {
+      "quantity": 160,
+      "unitPrice": 0.359,
+      "currency": "USD"
+    },
+    {
+      "quantity": 480,
+      "unitPrice": 0.3259,
+      "currency": "USD"
+    },
+    {
+      "quantity": 800,
+      "unitPrice": 0.3077,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/53008568.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/dbb8db4e634aa97cdd1eb10448c36c3a.pdf?productCode=C50387185",
+  "datasheet_file": "references/suppliers/c50387185/c50387185-datasheet.pdf"
+}

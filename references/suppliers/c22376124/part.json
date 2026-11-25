@@ -1,0 +1,87 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-23T21:10:01.991Z",
+  "lcsc_code": "C22376124",
+  "manufacturer": "Dragonstate(华龙)",
+  "manufacturer_part_number": "HDK-151108ZA-5W10",
+  "description": "扬声器",
+  "category": "扬声器/喇叭",
+  "package": "-",
+  "jlcpcb_part_class": "unknown",
+  "parameters": {
+    "Frequency Range": "600Hz~20kHz",
+    "Diameter(φD)": "15mm",
+    "Total Harmonic Distortion(THD)": "10%",
+    "Impedance": "8Ω",
+    "Technology": "Electromagnetic",
+    "Resonant Frequency": "600Hz;900Hz",
+    "Sound Pressure Level(SPL)": "87dB",
+    "Rated Power": "800mW"
+  },
+  "lcsc_stock": 138,
+  "price_breaks": [
+    {
+      "quantity": 1,
+      "unitPrice": 5.16,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 10,
+      "unitPrice": 4.16,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 30,
+      "unitPrice": 3.65,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 100,
+      "unitPrice": 3.15,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 2.86,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1000,
+      "unitPrice": 2.7,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1,
+      "unitPrice": 0.8472,
+      "currency": "USD"
+    },
+    {
+      "quantity": 10,
+      "unitPrice": 0.683,
+      "currency": "USD"
+    },
+    {
+      "quantity": 30,
+      "unitPrice": 0.5993,
+      "currency": "USD"
+    },
+    {
+      "quantity": 100,
+      "unitPrice": 0.5172,
+      "currency": "USD"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 0.4696,
+      "currency": "USD"
+    },
+    {
+      "quantity": 1000,
+      "unitPrice": 0.4433,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/23892310.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/bfbb00b5ec77f2f62e0de8c0e9781208.pdf?productCode=C22376124",
+  "datasheet_file": "references/suppliers/c22376124/c22376124-datasheet.pdf"
+}

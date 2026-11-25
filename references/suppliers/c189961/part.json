@@ -1,0 +1,90 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-23T17:30:06.708Z",
+  "lcsc_code": "C189961",
+  "manufacturer": "Nsiway(纳芯威)",
+  "manufacturer_part_number": "NS4150B",
+  "description": "3.0W单声道D类音频功率放大器",
+  "category": "音频功率放大器",
+  "package": "MSOP-8",
+  "jlcpcb_part_class": "extended",
+  "parameters": {
+    "Quiescent Current": "4mA",
+    "Voltage - Supply": "3V~5.25V",
+    "Features": "Filterless architecture;Enable/shutdown function;ESD Protection;Automatic mute/no-noise switch",
+    "Total Harmonic Distortion + Noise (THD+N)": "0.1%",
+    "Operating Temperature": "-40°C~+85°C",
+    "Number of Inputs": "1 Pair Differential Inputs",
+    "Speaker Channels": "1-Channel",
+    "Efficiency": "88%;90%",
+    "Output Power": "3Wx1@4Ω",
+    "Class": "Class D",
+    "Power Supply Rejection Ratio (PSRR)": "-80dB"
+  },
+  "lcsc_stock": 27361,
+  "price_breaks": [
+    {
+      "quantity": 5,
+      "unitPrice": 0.9053,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 50,
+      "unitPrice": 0.7328,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 150,
+      "unitPrice": 0.6441,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 0.5711,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 3000,
+      "unitPrice": 0.422,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 6000,
+      "unitPrice": 0.4047,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 5,
+      "unitPrice": 0.1496,
+      "currency": "USD"
+    },
+    {
+      "quantity": 50,
+      "unitPrice": 0.1211,
+      "currency": "USD"
+    },
+    {
+      "quantity": 150,
+      "unitPrice": 0.1065,
+      "currency": "USD"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 0.0944,
+      "currency": "USD"
+    },
+    {
+      "quantity": 3000,
+      "unitPrice": 0.0698,
+      "currency": "USD"
+    },
+    {
+      "quantity": 6000,
+      "unitPrice": 0.0669,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/207582.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/75c9de26d1ce6a24e56ace3c6df586e7.pdf?productCode=C189961",
+  "datasheet_file": "references/suppliers/c189961/c189961-datasheet.pdf"
+}

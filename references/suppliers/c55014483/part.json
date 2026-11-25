@@ -1,0 +1,87 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-24T05:07:07.765Z",
+  "lcsc_code": "C55014483",
+  "manufacturer": "G-Switch(品赞)",
+  "manufacturer_part_number": "GT-USB-7001H01-01",
+  "description": "Type-C 母",
+  "category": "USB连接器",
+  "package": "SMD",
+  "jlcpcb_part_class": "unknown",
+  "parameters": {
+    "Protocol Standard": "USB 4.0",
+    "Connector Type": "Type-C",
+    "Center Height": "1.8mm",
+    "Voltage Rating": "20V",
+    "Detection color": "Black",
+    "Gender": "Female",
+    "Number of Ports": "1",
+    "Connect-Disconnect Life": "10,000 cycles"
+  },
+  "lcsc_stock": 3825,
+  "price_breaks": [
+    {
+      "quantity": 1,
+      "unitPrice": 4.78,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 10,
+      "unitPrice": 3.88,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 30,
+      "unitPrice": 3.42,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 100,
+      "unitPrice": 2.97,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 2.7,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 800,
+      "unitPrice": 2.57,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1,
+      "unitPrice": 0.786,
+      "currency": "USD"
+    },
+    {
+      "quantity": 10,
+      "unitPrice": 0.638,
+      "currency": "USD"
+    },
+    {
+      "quantity": 30,
+      "unitPrice": 0.5624,
+      "currency": "USD"
+    },
+    {
+      "quantity": 100,
+      "unitPrice": 0.4884,
+      "currency": "USD"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 0.444,
+      "currency": "USD"
+    },
+    {
+      "quantity": 800,
+      "unitPrice": 0.4226,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/58601484.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/a713eb07e143e1ca9e9fa75e78460411.pdf?productCode=C55014483",
+  "datasheet_file": "references/suppliers/c55014483/c55014483-datasheet.pdf"
+}

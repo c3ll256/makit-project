@@ -1,0 +1,88 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-24T05:07:02.749Z",
+  "lcsc_code": "C54863541",
+  "manufacturer": "G-Switch(品赞)",
+  "manufacturer_part_number": "GT-USB-9092A-01",
+  "description": "Type-C 母 卧贴",
+  "category": "USB连接器",
+  "package": "SMD",
+  "jlcpcb_part_class": "extended",
+  "parameters": {
+    "Protocol Standard": "USB 4.0",
+    "Mounting Type": "Surface Mount, Right Angle",
+    "Connector Type": "Type-C",
+    "Center Height": "5.06mm",
+    "Voltage Rating": "24V",
+    "Detection color": "Black",
+    "Gender": "Female",
+    "Number of Ports": "1",
+    "Connect-Disconnect Life": "10,000 cycles"
+  },
+  "lcsc_stock": 27,
+  "price_breaks": [
+    {
+      "quantity": 1,
+      "unitPrice": 5.69,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 10,
+      "unitPrice": 4.61,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 30,
+      "unitPrice": 4.07,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 100,
+      "unitPrice": 3.54,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 450,
+      "unitPrice": 3.22,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 900,
+      "unitPrice": 3.05,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1,
+      "unitPrice": 0.9217,
+      "currency": "USD"
+    },
+    {
+      "quantity": 10,
+      "unitPrice": 0.7467,
+      "currency": "USD"
+    },
+    {
+      "quantity": 30,
+      "unitPrice": 0.6593,
+      "currency": "USD"
+    },
+    {
+      "quantity": 100,
+      "unitPrice": 0.5734,
+      "currency": "USD"
+    },
+    {
+      "quantity": 450,
+      "unitPrice": 0.5216,
+      "currency": "USD"
+    },
+    {
+      "quantity": 900,
+      "unitPrice": 0.4941,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/58360104.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/74ea6501d08efb2c76a8918aec12c465.pdf?productCode=C54863541",
+  "datasheet_file": "references/suppliers/c54863541/c54863541-datasheet.pdf"
+}

@@ -1,0 +1,83 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-24T06:39:26.533Z",
+  "lcsc_code": "C258782",
+  "manufacturer": "muRata(村田)",
+  "manufacturer_part_number": "GRM21BC81C226ME44L",
+  "description": "22uF ±20% 16V Ceramic Capacitor X6S 0805",
+  "category": "贴片电容(MLCC)",
+  "package": "0805",
+  "jlcpcb_part_class": "extended",
+  "parameters": {
+    "Capacitance": "22uF",
+    "Temperature Coefficient": "X6S",
+    "Tolerance": "±20%",
+    "Voltage Rating": "16V"
+  },
+  "lcsc_stock": 8209,
+  "price_breaks": [
+    {
+      "quantity": 5,
+      "unitPrice": 1.4119,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 50,
+      "unitPrice": 1.1271,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 150,
+      "unitPrice": 0.988,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 0.864,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 3000,
+      "unitPrice": 0.647,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 6000,
+      "unitPrice": 0.6265,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 5,
+      "unitPrice": 0.2333,
+      "currency": "USD"
+    },
+    {
+      "quantity": 50,
+      "unitPrice": 0.1862,
+      "currency": "USD"
+    },
+    {
+      "quantity": 150,
+      "unitPrice": 0.1633,
+      "currency": "USD"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 0.1428,
+      "currency": "USD"
+    },
+    {
+      "quantity": 3000,
+      "unitPrice": 0.1069,
+      "currency": "USD"
+    },
+    {
+      "quantity": 6000,
+      "unitPrice": 0.1035,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/251469.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/c749556a8e00340c8dcf3639c1f2afb7.pdf?productCode=C258782",
+  "datasheet_file": "references/suppliers/c258782/c258782-datasheet.pdf"
+}

@@ -1,0 +1,76 @@
+{
+  "designId": "pet-microphone",
+  "revision": "ac55ef0eb124859f0d8a72935bca0c45b061ac0808f1dba5d8129a8a67aa4ab1",
+  "schemaVersion": 3,
+  "exportId": "export-d7c7d23f455f91494c82a81e3d46ddd0",
+  "generatedAt": "2026-11-23T20:48:33.708Z",
+  "designSha256": "b44c257e9c5f52d466d060d47b3ba953b674496fcb76760eb10a96af5f604daa",
+  "role": "microphone_package",
+  "stateHash": "132c75c0c126ff999b7247424474ba0365de80b01d6423a585c1beda09ffb11d",
+  "stateManifest": {
+    "schemaVersion": 5,
+    "designId": "pet-microphone",
+    "role": "microphone_package",
+    "design": {
+      "revision": "ac55ef0eb124859f0d8a72935bca0c45b061ac0808f1dba5d8129a8a67aa4ab1",
+      "designSha256": "2d12d1c57a27a29fe42fb8b709f0e65f8a68c84c4ba6c08c20e828aca675f33d",
+      "manifestSha256": "2116b687a325af7302eeea2084c98b7aa371675084b47015a415cc9784b0ca90",
+      "modelSha256": "60094c416cf6b3b5ad5b673894ae40cef279aa67ace3968116bf70193f79237c",
+      "pcbReleases": []
+    },
+    "brief": {
+      "path": "design/pet-microphone/README.md",
+      "sha256": "bab6fd5063b750f036319c167a7e0edbe98f44711ea218903d92c8c2350e74b1"
+    },
+    "requirement": {
+      "artifactContractPath": "product/contract.json",
+      "artifactContractSha256": "ed67abcb6331a3b6b3ac8f874a6745e30a55709983021eabf1b1be151664e8b0",
+      "designRequirementSha256": "cd2fa49bb8ab5fdaf47a455574760cb04fffd10ef24c0af0390e78060fb0ceb2",
+      "inputs": []
+    },
+    "delivery": {
+      "target": "fit_check"
+    },
+    "stateHash": "132c75c0c126ff999b7247424474ba0365de80b01d6423a585c1beda09ffb11d"
+  },
+  "buildArtifacts": {
+    "manifestSha256": "2116b687a325af7302eeea2084c98b7aa371675084b47015a415cc9784b0ca90",
+    "modelSha256": "60094c416cf6b3b5ad5b673894ae40cef279aa67ace3968116bf70193f79237c"
+  },
+  "exportAlgorithm": {
+    "version": 1,
+    "bootstrapSha256": "7ca82f948e8cf477eace93432176464ac58bb4aeadfa87849939fe78d669d78e"
+  },
+  "sourceHashes": {
+    "microphone/microphone": "62ceda7e736f7d3e00c2058bc6c37fdc7a7e43b1d1a9b27a277390ca0e0c86e6"
+  },
+  "assetHashes": {},
+  "shapeHashes": {
+    "mic1": "70fe39789f9392c2b9c28f75866185555f9f4b2717a676105e9a7b73078048bd"
+  },
+  "runtime": {
+    "manifestHash": "b7a11e73285f03b440b694eca4785e98681aff36ceef7f603f1a998e5dbdd67f",
+    "pythonVersion": "3.12.13",
+    "build123dVersion": "0.10.0",
+    "ocpVersion": "7.8.1.1.post1",
+    "cadpyHash": "95af0140f3e0e3336c776603aad7af30f4869eb5bb2cf3b5ce6b2e8007c3a806"
+  },
+  "artifacts": [
+    {
+      "path": "manufacturing/pet-microphone/releases/export-d7c7d23f455f91494c82a81e3d46ddd0/model.step",
+      "role": "model/step",
+      "sha256": "740bd1646a0daabbf6f4817013eec7d53be3db1b80004122ed4f6f79135c7b31",
+      "sizeBytes": 128721
+    }
+  ],
+  "authority": {
+    "version": 1,
+    "algorithm": "hmac-sha256",
+    "keyId": "f8032396c0de0155d5dda12f3821ce0f",
+    "projectId": "9e6ae992-7c45-409e-9357-f01657fcd9ca",
+    "receiptPath": "manufacturing/pet-microphone/releases/export-d7c7d23f455f91494c82a81e3d46ddd0/receipt.json",
+    "payloadSha256": "e569e8056592a83282e0d78151e77b992e0b52d069e63374e50d32af65e9d6e3",
+    "mac": "8cd6e34d5275e5f31838a1e0dc9301d0980879f035e22e5dd88f520e417ec043"
+  },
+  "status": "handoff"
+}

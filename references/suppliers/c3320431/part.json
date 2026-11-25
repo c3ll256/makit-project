@@ -1,0 +1,73 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-24T05:08:12.020Z",
+  "lcsc_code": "C3320431",
+  "manufacturer": "SAMTEC",
+  "manufacturer_part_number": "HLE-107-02-F-DV-P-TR",
+  "description": "Female Header 14 Position 2.54mm Pitch Dual Row Surface Mount -55°C~+125°C",
+  "category": "排母",
+  "package": "SMD,P=2.54mm",
+  "jlcpcb_part_class": "unknown",
+  "parameters": {
+    "Number of Pins": "14P",
+    "Current Rating": "4.1A",
+    "Voltage Rating": "400V",
+    "Mounting Type": "Surface Mount,Vertical",
+    "Operating Temperature": "-55°C~+125°C",
+    "Insulation Height": "3.66mm",
+    "Holes Structure": "2x7P",
+    "Holes Direction": "Top",
+    "Pitch": "2.54mm",
+    "Number of Rows": "2",
+    "Contact Plating": "Tin",
+    "Row Spacing": "2.54mm",
+    "Contact Material": "Beryllium copper",
+    "Circular Hole / Square Hole": "Square Hole"
+  },
+  "lcsc_stock": 10,
+  "price_breaks": [
+    {
+      "quantity": 1,
+      "unitPrice": 18.97,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 10,
+      "unitPrice": 18.55,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 30,
+      "unitPrice": 18.27,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 100,
+      "unitPrice": 17.99,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1,
+      "unitPrice": 3.1214,
+      "currency": "USD"
+    },
+    {
+      "quantity": 10,
+      "unitPrice": 3.0523,
+      "currency": "USD"
+    },
+    {
+      "quantity": 30,
+      "unitPrice": 3.0062,
+      "currency": "USD"
+    },
+    {
+      "quantity": 100,
+      "unitPrice": 2.9601,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/3885025.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/e39fea448be71397ca8a301afe17aa89.pdf?productCode=C3320431",
+  "datasheet_file": "references/suppliers/c3320431/c3320431-datasheet.pdf"
+}

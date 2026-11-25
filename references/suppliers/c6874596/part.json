@@ -1,0 +1,69 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-24T05:08:50.169Z",
+  "lcsc_code": "C6874596",
+  "manufacturer": "SAMTEC",
+  "manufacturer_part_number": "HLE-107-02-F-DV-PE",
+  "description": "Female Header 14 Position 2.54mm Pitch Dual Row Through Hole -55°C~+125°C",
+  "category": "排母",
+  "package": "Through Hole,P=2.54mm",
+  "jlcpcb_part_class": "unknown",
+  "parameters": {
+    "Voltage Rating": "400V",
+    "Operating Temperature": "-55°C~+125°C",
+    "Mounting Type": "Through Hole",
+    "Current Rating": "4.1A",
+    "Number of Pins": "14P",
+    "Insulation Height": "3.5mm",
+    "Pitch": "2.54mm",
+    "Number of Rows": "2",
+    "Contact Plating": "Tin",
+    "Row Spacing": "2.54mm"
+  },
+  "lcsc_stock": null,
+  "price_breaks": [
+    {
+      "quantity": 1,
+      "unitPrice": 31.83,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 192,
+      "unitPrice": 12.7,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 512,
+      "unitPrice": 12.28,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 992,
+      "unitPrice": 12.07,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1,
+      "unitPrice": 4.9125,
+      "currency": "USD"
+    },
+    {
+      "quantity": 192,
+      "unitPrice": 1.9601,
+      "currency": "USD"
+    },
+    {
+      "quantity": 512,
+      "unitPrice": 1.8953,
+      "currency": "USD"
+    },
+    {
+      "quantity": 992,
+      "unitPrice": 1.8629,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/7838482.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/e39fea448be71397ca8a301afe17aa89.pdf?productCode=C6874596",
+  "datasheet_file": "references/suppliers/c6874596/c6874596-datasheet.pdf"
+}

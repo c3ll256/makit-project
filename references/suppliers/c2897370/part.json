@@ -1,0 +1,91 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-24T07:35:54.938Z",
+  "lcsc_code": "C2897370",
+  "manufacturer": "HCTL(华灿天禄)",
+  "manufacturer_part_number": "PM254-1-07-Z-8.5",
+  "description": "Female Header 7 Position 2.54mm Pitch Single Row Through Hole -40°C~+105°C",
+  "category": "排母",
+  "package": "Through Hole,P=2.54mm",
+  "jlcpcb_part_class": "extended",
+  "parameters": {
+    "Number of Pins": "7P",
+    "Current Rating": "3A",
+    "PIN Length": "3.2mm",
+    "Operating Temperature": "-40°C~+105°C",
+    "Mounting Type": "Through Hole",
+    "Insulation Height": "8.5mm",
+    "Holes Structure": "1x7P",
+    "Pitch": "2.54mm",
+    "Holes Direction": "Top",
+    "Number of Rows": "1",
+    "Contact Material": "Copper Alloy",
+    "Circular Hole / Square Hole": "Square Hole"
+  },
+  "lcsc_stock": 1176,
+  "price_breaks": [
+    {
+      "quantity": 6,
+      "unitPrice": 0.877,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 60,
+      "unitPrice": 0.6903,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 336,
+      "unitPrice": 0.597,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 672,
+      "unitPrice": 0.527,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 3024,
+      "unitPrice": 0.4711,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 6048,
+      "unitPrice": 0.4431,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 6,
+      "unitPrice": 0.1449,
+      "currency": "USD"
+    },
+    {
+      "quantity": 60,
+      "unitPrice": 0.1141,
+      "currency": "USD"
+    },
+    {
+      "quantity": 336,
+      "unitPrice": 0.0987,
+      "currency": "USD"
+    },
+    {
+      "quantity": 672,
+      "unitPrice": 0.0871,
+      "currency": "USD"
+    },
+    {
+      "quantity": 3024,
+      "unitPrice": 0.0779,
+      "currency": "USD"
+    },
+    {
+      "quantity": 6048,
+      "unitPrice": 0.0732,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/3142375.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/87e2b5b113f4df247d2b8d5758217346.pdf?productCode=C2897370",
+  "datasheet_file": "references/suppliers/c2897370/c2897370-datasheet.pdf"
+}

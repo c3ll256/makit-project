@@ -1,0 +1,91 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-24T05:03:14.854Z",
+  "lcsc_code": "C15516",
+  "manufacturer": "TI(德州仪器)",
+  "manufacturer_part_number": "TPS63031DSKR",
+  "description": "升降压型 900mA 1.8V~5.5V",
+  "category": "DC-DC电源芯片",
+  "package": "SON-10-EP(2.5x2.5)",
+  "jlcpcb_part_class": "extended",
+  "parameters": {
+    "Operating Temperature": "-40°C~+125°C@(TJ)",
+    "Frequency - Switching": "2.4MHz",
+    "Function": "Buck-Boost",
+    "Number of Outputs": "1",
+    "Features": "Light load efficient mode;Frequency synchronization;Load disconnect;Overcurrent Protection",
+    "Output Type": "Fixed",
+    "Topology": "Buck-Boost",
+    "Operating Voltage": "1.8V~5.5V",
+    "Switch tube (built-in/external)": "Built-in",
+    "Output Voltage": "3.3V",
+    "Output Current": "900mA",
+    "Quiescent Current": "25uA"
+  },
+  "lcsc_stock": 10643,
+  "price_breaks": [
+    {
+      "quantity": 1,
+      "unitPrice": 6.08,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 10,
+      "unitPrice": 4.92,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 30,
+      "unitPrice": 4.33,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 100,
+      "unitPrice": 3.54,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 3.2,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1000,
+      "unitPrice": 3.02,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1,
+      "unitPrice": 1.0021,
+      "currency": "USD"
+    },
+    {
+      "quantity": 10,
+      "unitPrice": 0.8109,
+      "currency": "USD"
+    },
+    {
+      "quantity": 30,
+      "unitPrice": 0.7137,
+      "currency": "USD"
+    },
+    {
+      "quantity": 100,
+      "unitPrice": 0.5835,
+      "currency": "USD"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 0.5274,
+      "currency": "USD"
+    },
+    {
+      "quantity": 1000,
+      "unitPrice": 0.4978,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/16195.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/f83627a2e49847d3814a3dcb2499ac5f.pdf?productCode=C15516",
+  "datasheet_file": "references/suppliers/c15516/c15516-datasheet.pdf"
+}

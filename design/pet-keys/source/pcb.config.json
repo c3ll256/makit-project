@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "title": "宠物机 XIAO 直插承载板",
+  "title": "宠物机 XIAO 直插承载板 · 收音与播放",
   "manufacturing": {
     "name": "ordinary-2layer-fr4-1oz",
     "layers": 2,
@@ -67,7 +67,17 @@
   "nets": {
     "GND": {
       "class": "ground",
-      "rationale": "Active-low switch to ground; XIAO internal pullup, firmware debounce 20 ms."
+      "rationale": "Active-low switch to ground; XIAO internal pullup, firmware debounce 20 ms.",
+      "escape": {
+        "widthMm": 0.3,
+        "clearanceMm": 0.25,
+        "maxLengthMm": 4.1,
+        "componentRefs": [
+          "U_AMP",
+          "J_LCD"
+        ],
+        "rationale": "The 0.30 mm pad exits join filled GND at U_AMP and the LCD header; the latter also needs a 3.95 mm bottom-layer bridge out of the local ground island."
+      }
     },
     "KEY_LEFT": {
       "class": "cpu_io",
@@ -92,8 +102,17 @@
     "V3V3": {
       "class": "power",
       "nominalWidthMm": 0.5,
-      "minimumWidthMm": 0.5,
-      "rationale": "Pass-through XIAO regulated 3.3 V to display, no supply conversion. Reserve 0.5 mm trace; no increase to vendor current capability claimed."
+      "minimumWidthMm": 0.32,
+      "rationale": "XIAO regulator feeds the screen, microphone and low-level speaker amplifier. 0.5 mm nominal and 0.32 mm at the MSOP fanout.",
+      "escape": {
+        "widthMm": 0.32,
+        "clearanceMm": 0.2,
+        "maxLengthMm": 3.1,
+        "componentRefs": [
+          "U_AMP"
+        ],
+        "rationale": "MSOP pad is 0.365 mm wide. 0.32 mm external 1 oz trace supports the low-level mono speaker path."
+      }
     },
     "LCD_RES": {
       "class": "cpu_io",
@@ -106,6 +125,62 @@
     "LCD_BLK": {
       "class": "cpu_io",
       "rationale": "3.3V screen control from XIAO D6/GPIO43; BLK open-drain low-off/high-Z-on, never GPIO LED supply."
+    },
+    "AUDIO_PWM": {
+      "class": "cpu_io",
+      "rationale": "On-board single-channel audio path."
+    },
+    "MIC_DATA": {
+      "class": "cpu_io",
+      "rationale": "On-board single-channel audio path."
+    },
+    "MIC_CLK": {
+      "class": "cpu_io",
+      "rationale": "On-board single-channel audio path."
+    },
+    "AMP_EN": {
+      "class": "signal",
+      "rationale": "Low-pass average of playback PWM; idle state low."
+    },
+    "ATT": {
+      "class": "signal",
+      "rationale": "On-board single-channel audio path."
+    },
+    "LPF": {
+      "class": "signal",
+      "rationale": "On-board single-channel audio path."
+    },
+    "COUP_POS": {
+      "class": "signal",
+      "rationale": "On-board single-channel audio path."
+    },
+    "COUP_NEG": {
+      "class": "signal",
+      "rationale": "On-board single-channel audio path."
+    },
+    "AMP_P": {
+      "class": "signal",
+      "rationale": "On-board single-channel audio path."
+    },
+    "AMP_N": {
+      "class": "signal",
+      "rationale": "On-board single-channel audio path."
+    },
+    "BYPASS": {
+      "class": "signal",
+      "rationale": "On-board single-channel audio path."
+    },
+    "SPK_P": {
+      "class": "power",
+      "rationale": "Floating BTL speaker lead, red. 0.32 mm end-to-end on 1 oz copper for the attenuated voice-level load.",
+      "minimumWidthMm": 0.32,
+      "nominalWidthMm": 0.32
+    },
+    "SPK_N": {
+      "class": "power",
+      "rationale": "Floating BTL speaker lead, black. 0.32 mm end-to-end on 1 oz copper for the attenuated voice-level load.",
+      "minimumWidthMm": 0.32,
+      "nominalWidthMm": 0.32
     }
   },
   "footprintExceptions": [],
@@ -123,7 +198,118 @@
     "cutoutMarginMm": 0.5,
     "removeIslands": true
   },
-  "stitchingVias": [],
+  "stitchingVias": [
+    {
+      "name": "MIC_CLOCK_DROP",
+      "net": "MIC_CLK",
+      "xMm": 29.0,
+      "yMm": 8.45,
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "rationale": "Local microphone clock escape to the back layer beyond the pad array."
+    },
+    {
+      "name": "V3V3_HAND_VIA_1",
+      "net": "V3V3",
+      "xMm": 17.275,
+      "yMm": 24.9,
+      "rationale": "Layer change of a hand-laid V3V3 trace."
+    },
+    {
+      "name": "V3V3_HAND_VIA_2",
+      "net": "V3V3",
+      "xMm": 18.325,
+      "yMm": 15.5,
+      "rationale": "Layer change of a hand-laid V3V3 trace."
+    },
+    {
+      "name": "MIC_DATA_DROP",
+      "net": "MIC_DATA",
+      "xMm": 29.65,
+      "yMm": 10.2,
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "rationale": "Board-edge lane beside the clock preserves thermal relief around the adjacent XIAO ground hole."
+    },
+    {
+      "name": "SPK_NEG_ESCAPE",
+      "net": "SPK_N",
+      "xMm": 15.1322,
+      "yMm": 21.5162,
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "rationale": "Local differential output fanout from the existing MSOP routing channel to the reverse layer."
+    },
+    {
+      "name": "SPK_POS_ESCAPE",
+      "net": "SPK_P",
+      "xMm": 11.2,
+      "yMm": 26.65,
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "rationale": "Local differential output fanout from the existing MSOP routing channel to the reverse layer."
+    },
+    {
+      "name": "SPK_P_HAND_VIA_1",
+      "net": "SPK_P",
+      "xMm": 17.3,
+      "yMm": 36,
+      "rationale": "Layer change of a hand-laid SPK_P trace."
+    },
+    {
+      "name": "AUDIO_PWM_HAND_VIA_1",
+      "net": "AUDIO_PWM",
+      "xMm": 26.4966,
+      "yMm": 24.55,
+      "rationale": "Layer change of a hand-laid AUDIO_PWM trace."
+    },
+    {
+      "name": "AUDIO_PWM_HAND_VIA_2",
+      "net": "AUDIO_PWM",
+      "xMm": 26.4966,
+      "yMm": 20.2,
+      "rationale": "Layer change of a hand-laid AUDIO_PWM trace."
+    },
+    {
+      "name": "AMP_N_HAND_VIA_1",
+      "net": "AMP_N",
+      "xMm": 15.8751,
+      "yMm": 20.004,
+      "rationale": "Layer change of a hand-laid AMP_N trace."
+    },
+    {
+      "name": "AMP_N_HAND_VIA_2",
+      "net": "AMP_N",
+      "xMm": 15.8751,
+      "yMm": 26.954,
+      "rationale": "Layer change of a hand-laid AMP_N trace."
+    },
+    {
+      "name": "GND_NORTH_EAST",
+      "net": "GND",
+      "xMm": 29.55,
+      "yMm": 29.92,
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "rationale": "Join the ground copper just below the upper shell notch, leaving the full annulus outside its setback."
+    },
+    {
+      "name": "AMP_GND_RETURN",
+      "net": "GND",
+      "xMm": 13.755,
+      "yMm": 25.066,
+      "diameterMm": 0.6,
+      "drillMm": 0.3,
+      "rationale": "Join amplifier ground to back-layer copper below the narrow space next to its supply."
+    },
+    {
+      "name": "GND_HAND_VIA_1",
+      "net": "GND",
+      "xMm": 20.0499,
+      "yMm": 12.2,
+      "rationale": "Layer change of a hand-laid GND trace."
+    }
+  ],
   "copperAreas": [],
   "keepouts": [
     {
@@ -158,12 +344,12 @@
       "shape": "circle",
       "xMm": 27,
       "yMm": 34.5,
-      "radiusMm": 4.5,
+      "radiusMm": 4.7,
       "layers": [
         "top",
         "bottom"
       ],
-      "rationale": "3.5 mm radius shell-boss notch plus 1 mm copper-to-edge keepout; route D0 below header pads."
+      "rationale": "3.5 mm-radius shell notch plus copper setback and a 0.2 mm placement guard at the through-via annulus."
     }
   ],
   "allowedOverlaps": [
@@ -233,6 +419,13 @@
       "componentRef": "J_XIAO_B",
       "vertical": true,
       "rationale": "XIAO plugs from above using seven inner positions; outer eighth socket is unused."
+    },
+    {
+      "componentRef": "SPK1",
+      "nativeOpening": "down",
+      "targetOpening": "left",
+      "expectedLayer": "top",
+      "rationale": "Internal harness enters from the left, parallel to the carrier on the new tab beside the XIAO."
     }
   ],
   "bomBindings": [
@@ -282,6 +475,488 @@
         "J_XIAO_B"
       ],
       "populate": true
+    },
+    {
+      "bomItemId": "microphone",
+      "designators": [
+        "MIC1"
+      ],
+      "populate": true
+    },
+    {
+      "bomItemId": "audio_amp",
+      "designators": [
+        "U_AMP"
+      ],
+      "populate": true
+    },
+    {
+      "bomItemId": "speaker_header",
+      "designators": [
+        "SPK1"
+      ],
+      "populate": true
+    },
+    {
+      "bomItemId": "audio_c100n",
+      "designators": [
+        "C_MIC",
+        "C_INP",
+        "C_INN"
+      ],
+      "populate": true
+    },
+    {
+      "bomItemId": "audio_c1u",
+      "designators": [
+        "C_VDD",
+        "C_BYP",
+        "C_EN"
+      ],
+      "populate": true
+    },
+    {
+      "bomItemId": "audio_c10u",
+      "designators": [
+        "C_BULK"
+      ],
+      "populate": true
+    },
+    {
+      "bomItemId": "audio_c1n",
+      "designators": [
+        "C_RF"
+      ],
+      "populate": true
+    },
+    {
+      "bomItemId": "audio_c22n",
+      "designators": [
+        "C_F1",
+        "C_F2"
+      ],
+      "populate": true
+    },
+    {
+      "bomItemId": "audio_r1k",
+      "designators": [
+        "R_ATT",
+        "R_F2"
+      ],
+      "populate": true
+    },
+    {
+      "bomItemId": "audio_r10k",
+      "designators": [
+        "R_F1",
+        "R_EN",
+        "R_OFF"
+      ],
+      "populate": true
+    },
+    {
+      "bomItemId": "audio_r30k",
+      "designators": [
+        "R_INP",
+        "R_INN"
+      ],
+      "populate": true
+    }
+  ],
+  "traces": [
+    {
+      "name": "AMP_VCC_LOCAL",
+      "net": "V3V3",
+      "layer": "top",
+      "widthMm": 0.32,
+      "points": [
+        "U_AMP-6",
+        "C_VDD-1"
+      ],
+      "rationale": "Direct 2.95 mm MSOP supply connection to the matched local bypass."
+    },
+    {
+      "name": "MIC_CLOCK_TOP",
+      "net": "MIC_CLK",
+      "layer": "top",
+      "widthMm": 0.25,
+      "points": [
+        "MIC1-4",
+        [
+          28.55,
+          7.85
+        ],
+        "MIC_CLOCK_DROP"
+      ],
+      "rationale": "Short right-side escape from the top-port microphone."
+    },
+    {
+      "name": "MIC_CLOCK_BACK",
+      "net": "MIC_CLK",
+      "layer": "bottom",
+      "widthMm": 0.25,
+      "points": [
+        "J_XIAO_A-3",
+        [
+          22.755,
+          27.45
+        ],
+        [
+          24.255,
+          25.95
+        ],
+        [
+          27.9,
+          25.95
+        ],
+        [
+          29,
+          24.85
+        ],
+        "MIC_CLOCK_DROP"
+      ],
+      "rationale": "Clock follows the right side of the bottom layer, clear of the entire XIAO socket pin field."
+    },
+    {
+      "name": "V3V3_HAND_1",
+      "net": "V3V3",
+      "layer": "top",
+      "widthMm": 0.5,
+      "points": [
+        "C_VDD-1",
+        [
+          15.125,
+          25.3
+        ],
+        [
+          15.125,
+          25.25
+        ],
+        [
+          15.475,
+          24.9
+        ],
+        "V3V3_HAND_VIA_1"
+      ],
+      "rationale": "Joins C_VDD-1 to J_XIAO_B-3 by hand; the router left this connection open."
+    },
+    {
+      "name": "V3V3_HAND_2",
+      "net": "V3V3",
+      "layer": "bottom",
+      "widthMm": 0.5,
+      "points": [
+        "V3V3_HAND_VIA_1",
+        [
+          17.275,
+          19.45
+        ],
+        [
+          18.325,
+          18.4
+        ],
+        "V3V3_HAND_VIA_2"
+      ],
+      "rationale": "Joins C_VDD-1 to J_XIAO_B-3 by hand; the router left this connection open."
+    },
+    {
+      "name": "V3V3_HAND_3",
+      "net": "V3V3",
+      "layer": "top",
+      "widthMm": 0.5,
+      "points": [
+        "V3V3_HAND_VIA_2",
+        [
+          21.175,
+          15.5
+        ],
+        [
+          22.725,
+          13.95
+        ],
+        "J_XIAO_B-3"
+      ],
+      "rationale": "Joins C_VDD-1 to J_XIAO_B-3 by hand; the router left this connection open."
+    },
+    {
+      "name": "MIC_DATA_TOP",
+      "net": "MIC_DATA",
+      "layer": "top",
+      "widthMm": 0.25,
+      "points": [
+        "MIC1-5",
+        [
+          28.95,
+          9.5
+        ],
+        "MIC_DATA_DROP"
+      ],
+      "rationale": "Route the microphone data to the outer lane."
+    },
+    {
+      "name": "MIC_DATA_BACK",
+      "net": "MIC_DATA",
+      "layer": "bottom",
+      "widthMm": 0.25,
+      "points": [
+        "J_XIAO_A-2",
+        [
+          25.295,
+          27.7
+        ],
+        [
+          26.495,
+          26.5
+        ],
+        [
+          28.6,
+          26.5
+        ],
+        [
+          29.65,
+          25.45
+        ],
+        "MIC_DATA_DROP"
+      ],
+      "rationale": "Parallel to PDM clock, outside the socket. Clears both sides of the ground hole for solder thermal relief."
+    },
+    {
+      "name": "SPK_N_FANOUT",
+      "net": "SPK_N",
+      "layer": "top",
+      "widthMm": 0.32,
+      "points": [
+        "U_AMP-5",
+        [
+          15.1751,
+          21.5591
+        ],
+        "SPK_NEG_ESCAPE"
+      ],
+      "rationale": "Keep the existing amplifier escape geometry and take the speaker output to the connector tab."
+    },
+    {
+      "name": "SPK_P_FANOUT",
+      "net": "SPK_P",
+      "layer": "top",
+      "widthMm": 0.32,
+      "points": [
+        "U_AMP-8",
+        [
+          13.225,
+          24.625
+        ],
+        "SPK_POS_ESCAPE"
+      ],
+      "rationale": "Keep the existing amplifier escape geometry and take the speaker output to the connector tab."
+    },
+    {
+      "name": "SPK_P_HAND_1",
+      "net": "SPK_P",
+      "layer": "bottom",
+      "widthMm": 0.32,
+      "points": [
+        "SPK_POS_ESCAPE",
+        [
+          10.05,
+          27.8
+        ],
+        [
+          9.55,
+          27.8
+        ],
+        [
+          8.75,
+          28.6
+        ],
+        [
+          8.75,
+          29.65
+        ],
+        [
+          9.9,
+          30.8
+        ],
+        [
+          12.1,
+          30.8
+        ],
+        "SPK_P_HAND_VIA_1"
+      ],
+      "rationale": "Joins SPK_POS_ESCAPE to SPK1-1 by hand; the router left this connection open."
+    },
+    {
+      "name": "SPK_P_HAND_2",
+      "net": "SPK_P",
+      "layer": "top",
+      "widthMm": 0.32,
+      "points": [
+        "SPK_P_HAND_VIA_1",
+        [
+          18.1,
+          36
+        ],
+        [
+          18.35,
+          36.25
+        ],
+        "SPK1-1"
+      ],
+      "rationale": "Joins SPK_POS_ESCAPE to SPK1-1 by hand; the router left this connection open."
+    },
+    {
+      "name": "AUDIO_PWM_HAND_1",
+      "net": "AUDIO_PWM",
+      "layer": "top",
+      "widthMm": 0.25,
+      "points": [
+        "R_F1-1",
+        "AUDIO_PWM_HAND_VIA_1"
+      ],
+      "rationale": "Joins R_F1-1 to R_EN-1 by hand; the router left this connection open."
+    },
+    {
+      "name": "AUDIO_PWM_HAND_2",
+      "net": "AUDIO_PWM",
+      "layer": "bottom",
+      "widthMm": 0.25,
+      "points": [
+        "AUDIO_PWM_HAND_VIA_1",
+        "AUDIO_PWM_HAND_VIA_2"
+      ],
+      "rationale": "Joins R_F1-1 to R_EN-1 by hand; the router left this connection open."
+    },
+    {
+      "name": "AUDIO_PWM_HAND_3",
+      "net": "AUDIO_PWM",
+      "layer": "top",
+      "widthMm": 0.25,
+      "points": [
+        "AUDIO_PWM_HAND_VIA_2",
+        [
+          27.1466,
+          20.2
+        ],
+        "R_EN-1"
+      ],
+      "rationale": "Joins R_F1-1 to R_EN-1 by hand; the router left this connection open."
+    },
+    {
+      "name": "AMP_N_HAND_1",
+      "net": "AMP_N",
+      "layer": "top",
+      "widthMm": 0.3,
+      "points": [
+        "U_AMP-4",
+        [
+          15.1751,
+          19.304
+        ],
+        "AMP_N_HAND_VIA_1"
+      ],
+      "rationale": "Joins U_AMP-4 to R_INN-2 by hand; the router left this connection open."
+    },
+    {
+      "name": "AMP_N_HAND_2",
+      "net": "AMP_N",
+      "layer": "bottom",
+      "widthMm": 0.3,
+      "points": [
+        "AMP_N_HAND_VIA_1",
+        "AMP_N_HAND_VIA_2"
+      ],
+      "rationale": "Joins U_AMP-4 to R_INN-2 by hand; the router left this connection open."
+    },
+    {
+      "name": "AMP_N_HAND_3",
+      "net": "AMP_N",
+      "layer": "top",
+      "widthMm": 0.3,
+      "points": [
+        "AMP_N_HAND_VIA_2",
+        [
+          16.0251,
+          26.804
+        ],
+        [
+          16.4751,
+          26.804
+        ],
+        [
+          18.4751,
+          24.804
+        ],
+        [
+          18.4751,
+          24.054
+        ],
+        "R_INN-2"
+      ],
+      "rationale": "Joins U_AMP-4 to R_INN-2 by hand; the router left this connection open."
+    },
+    {
+      "name": "AMP_GND_ESCAPE",
+      "net": "GND",
+      "layer": "top",
+      "widthMm": 0.3,
+      "points": [
+        "U_AMP-7",
+        [
+          13.8751,
+          24.946
+        ],
+        [
+          13.8251,
+          24.996
+        ],
+        "AMP_GND_RETURN"
+      ],
+      "rationale": "Joins U_AMP-7 to (13.755, 25.066) by hand; the router left this connection open."
+    },
+    {
+      "name": "GND_HAND_1",
+      "net": "GND",
+      "layer": "top",
+      "widthMm": 0.3,
+      "points": [
+        "J_LCD-1",
+        [
+          20.7499,
+          11.5
+        ],
+        "GND_HAND_VIA_1"
+      ],
+      "rationale": "Joins J_LCD-1 to (22.87, 10.99) by hand; the router left this connection open."
+    },
+    {
+      "name": "LCD_GND_ESCAPE_BOTTOM",
+      "net": "GND",
+      "layer": "bottom",
+      "widthMm": 0.3,
+      "points": [
+        "GND_HAND_VIA_1",
+        [
+          20.0499,
+          12
+        ],
+        [
+          19.4999,
+          11.45
+        ],
+        [
+          19.4999,
+          9.35
+        ],
+        [
+          19.8999,
+          8.95
+        ],
+        [
+          20.1999,
+          8.95
+        ]
+      ],
+      "rationale": "The display-side via lands on a narrow bottom ground island. Bridge its neck to the main return plane below the connector."
     }
   ]
 }

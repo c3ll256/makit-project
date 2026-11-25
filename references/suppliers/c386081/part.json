@@ -1,0 +1,83 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-24T06:39:31.580Z",
+  "lcsc_code": "C386081",
+  "manufacturer": "TAIYO YUDEN(太诱)",
+  "manufacturer_part_number": "TMK107BBJ106MA-T",
+  "description": "10uF ±20% 25V Ceramic Capacitor X5R 0603",
+  "category": "贴片电容(MLCC)",
+  "package": "0603",
+  "jlcpcb_part_class": "extended",
+  "parameters": {
+    "Capacitance": "10uF",
+    "Temperature Coefficient": "X5R",
+    "Tolerance": "±20%",
+    "Voltage Rating": "25V"
+  },
+  "lcsc_stock": 10674,
+  "price_breaks": [
+    {
+      "quantity": 5,
+      "unitPrice": 0.4869,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 50,
+      "unitPrice": 0.3525,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 150,
+      "unitPrice": 0.2853,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 0.2349,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 2500,
+      "unitPrice": 0.1946,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 4000,
+      "unitPrice": 0.14,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 5,
+      "unitPrice": 0.0802,
+      "currency": "USD"
+    },
+    {
+      "quantity": 50,
+      "unitPrice": 0.0581,
+      "currency": "USD"
+    },
+    {
+      "quantity": 150,
+      "unitPrice": 0.047,
+      "currency": "USD"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 0.0387,
+      "currency": "USD"
+    },
+    {
+      "quantity": 2500,
+      "unitPrice": 0.0321,
+      "currency": "USD"
+    },
+    {
+      "quantity": 4000,
+      "unitPrice": 0.0231,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/360032.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/2e21b8b6ea6e42fdc2342df47b73fa9b.pdf?productCode=C386081",
+  "datasheet_file": "references/suppliers/c386081/c386081-datasheet.pdf"
+}

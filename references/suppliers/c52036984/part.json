@@ -1,0 +1,92 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-24T06:35:44.685Z",
+  "lcsc_code": "C52036984",
+  "manufacturer": "LCKELEC(联晟欣)",
+  "manufacturer_part_number": "LCK-TA036H065-2WL",
+  "description": "2*3*0.65薄膜U型贴片260g",
+  "category": "轻触开关",
+  "package": "SMD,3x2mm",
+  "jlcpcb_part_class": "extended",
+  "parameters": {
+    "Voltage Rating": "12V",
+    "Switching Life": "50,000 cycles",
+    "with Bracket": "Without Bracket",
+    "Width": "2mm",
+    "Termination Style": "SMD(SMT) Tab",
+    "Actuator Style": "Round Button",
+    "Mounting Type": "Surface Mount,Vertical",
+    "Circuit": "SPST - Normally Open",
+    "Actuator/Cap Color": "Black",
+    "Length": "3mm",
+    "Contact Current": "50mA",
+    "Operating Force": "2.5N",
+    "Height": "0.65mm"
+  },
+  "lcsc_stock": 2085,
+  "price_breaks": [
+    {
+      "quantity": 10,
+      "unitPrice": 0.2816,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 100,
+      "unitPrice": 0.224,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 300,
+      "unitPrice": 0.1952,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1000,
+      "unitPrice": 0.1736,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 5000,
+      "unitPrice": 0.1491,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 10000,
+      "unitPrice": 0.1405,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 10,
+      "unitPrice": 0.0466,
+      "currency": "USD"
+    },
+    {
+      "quantity": 100,
+      "unitPrice": 0.0371,
+      "currency": "USD"
+    },
+    {
+      "quantity": 300,
+      "unitPrice": 0.0323,
+      "currency": "USD"
+    },
+    {
+      "quantity": 1000,
+      "unitPrice": 0.0288,
+      "currency": "USD"
+    },
+    {
+      "quantity": 5000,
+      "unitPrice": 0.0247,
+      "currency": "USD"
+    },
+    {
+      "quantity": 10000,
+      "unitPrice": 0.0233,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/54793997.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/67b6511c03f2a36e8f56b54fbe95c695.pdf?productCode=C52036984",
+  "datasheet_file": "references/suppliers/c52036984/c52036984-datasheet.pdf"
+}

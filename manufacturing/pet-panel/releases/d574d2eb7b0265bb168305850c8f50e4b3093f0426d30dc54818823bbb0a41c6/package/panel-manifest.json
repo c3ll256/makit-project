@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "widthMm": 66,
+  "heightMm": 60,
+  "finishedThicknessMm": 1,
+  "slotWidthMm": 2,
+  "mouseBiteDiameterMm": 0.6,
+  "mouseBitePitchMm": 1,
+  "boards": [
+    {
+      "designId": "pet-keys",
+      "buildId": "c6ecf1fe1d3a7bd88dcd471881088ff8e6c6121ec59d19c3cf91d7b9946fffba",
+      "quantity": 1
+    },
+    {
+      "designId": "pet-screen-adapter",
+      "buildId": "c518232e1e2991873dd224f250ce62157bf4d8bd50968ad33a44ccccb8cb85b2",
+      "quantity": 1
+    }
+  ],
+  "instances": [
+    {
+      "name": "CARRIER",
+      "designId": "pet-keys",
+      "buildId": "c6ecf1fe1d3a7bd88dcd471881088ff8e6c6121ec59d19c3cf91d7b9946fffba",
+      "pcbBoardId": "CARRIER__pcb_board_0",
+      "xMm": -5,
+      "yMm": -13,
+      "rotationDeg": 0
+    },
+    {
+      "name": "SCREEN",
+      "designId": "pet-screen-adapter",
+      "buildId": "c518232e1e2991873dd224f250ce62157bf4d8bd50968ad33a44ccccb8cb85b2",
+      "pcbBoardId": "SCREEN__pcb_board_0",
+      "xMm": -13,
+      "yMm": 8,
+      "rotationDeg": 0
+    }
+  ]
+}

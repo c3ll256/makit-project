@@ -99,14 +99,14 @@
       {
         "name": "CARRIER",
         "designId": "pet-keys",
-        "buildId": "3e4db541d6d897af038dc8ed1f5014e4c65d19128766af396bde643843f7541a",
+        "buildId": "c6ecf1fe1d3a7bd88dcd471881088ff8e6c6121ec59d19c3cf91d7b9946fffba",
         "xMm": -5,
-        "yMm": -10,
+        "yMm": -13,
         "rotationDeg": 0,
         "tabs": [
           {
             "xMm": 15,
-            "yMm": 32
+            "yMm": 41
           },
           {
             "xMm": 31,

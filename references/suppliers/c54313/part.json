@@ -1,0 +1,89 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-24T05:03:08.404Z",
+  "lcsc_code": "C54313",
+  "manufacturer": "TI(德州仪器)",
+  "manufacturer_part_number": "BQ24074RGTR",
+  "description": "1.5A USB友好型锂离子电池充电器和电源路径管理IC",
+  "category": "电池管理",
+  "package": "QFN-16-EP(3x3)",
+  "jlcpcb_part_class": "extended",
+  "parameters": {
+    "Voltage - Supply": "4.35V~10.2V",
+    "Quiescent Current": "6.5uA",
+    "Battery Temperature Detection": "Support",
+    "0V Battery Charge": "Not supported",
+    "Operating Temperature": "-40°C~+125°C",
+    "Type of Battery": "Lithium Battery",
+    "The Chip Type": "Charging IC",
+    "Number of Cells": "1",
+    "Charge Current - Max": "1.5A",
+    "Charging Saturation Voltage": "4.2V"
+  },
+  "lcsc_stock": 2530,
+  "price_breaks": [
+    {
+      "quantity": 1,
+      "unitPrice": 13.23,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 10,
+      "unitPrice": 11.53,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 30,
+      "unitPrice": 10.46,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 100,
+      "unitPrice": 9.37,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 8.06,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1000,
+      "unitPrice": 7.85,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1,
+      "unitPrice": 2.1805,
+      "currency": "USD"
+    },
+    {
+      "quantity": 10,
+      "unitPrice": 1.9003,
+      "currency": "USD"
+    },
+    {
+      "quantity": 30,
+      "unitPrice": 1.724,
+      "currency": "USD"
+    },
+    {
+      "quantity": 100,
+      "unitPrice": 1.5443,
+      "currency": "USD"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 1.3284,
+      "currency": "USD"
+    },
+    {
+      "quantity": 1000,
+      "unitPrice": 1.2938,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/55331.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/e5a19d47a6734993951051890f7e65b7.pdf?productCode=C54313",
+  "datasheet_file": "references/suppliers/c54313/c54313-datasheet.pdf"
+}

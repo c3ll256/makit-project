@@ -1,0 +1,83 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-23T17:32:49.799Z",
+  "lcsc_code": "C21122",
+  "manufacturer": "SAMSUNG(三星)",
+  "manufacturer_part_number": "CL10B223KB8NNNC",
+  "description": "22nF ±10% 50V Ceramic Capacitor X7R 0603",
+  "category": "贴片电容(MLCC)",
+  "package": "0603",
+  "jlcpcb_part_class": "basic",
+  "parameters": {
+    "Capacitance": "22nF",
+    "Temperature Coefficient": "X7R",
+    "Tolerance": "±10%",
+    "Voltage Rating": "50V"
+  },
+  "lcsc_stock": 6696,
+  "price_breaks": [
+    {
+      "quantity": 50,
+      "unitPrice": 0.034,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 0.0259,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1500,
+      "unitPrice": 0.0223,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 4000,
+      "unitPrice": 0.0196,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 24000,
+      "unitPrice": 0.0185,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 48000,
+      "unitPrice": 0.0178,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 50,
+      "unitPrice": 0.0057,
+      "currency": "USD"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 0.0043,
+      "currency": "USD"
+    },
+    {
+      "quantity": 1500,
+      "unitPrice": 0.0037,
+      "currency": "USD"
+    },
+    {
+      "quantity": 4000,
+      "unitPrice": 0.0033,
+      "currency": "USD"
+    },
+    {
+      "quantity": 24000,
+      "unitPrice": 0.0031,
+      "currency": "USD"
+    },
+    {
+      "quantity": 48000,
+      "unitPrice": 0.003,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/21834.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/02336ea48ea44ca18c72517dd3cb7b47.pdf?productCode=C21122",
+  "datasheet_file": null
+}

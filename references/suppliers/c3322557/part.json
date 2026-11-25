@@ -1,0 +1,76 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-24T05:11:34.507Z",
+  "lcsc_code": "C3322557",
+  "manufacturer": "SAMTEC",
+  "manufacturer_part_number": "HLE-107-02-F-DV-BE-P-TR",
+  "description": "间距:2.54mm 立贴",
+  "category": "排母",
+  "package": "SMD,P=2.54mm",
+  "jlcpcb_part_class": "extended",
+  "parameters": {
+    "Voltage Rating": "400V",
+    "Mounting Type": "Surface Mount,Vertical",
+    "Operating Temperature": "-55°C~+125°C",
+    "Number of Pins": "14P",
+    "Current Rating": "4.1A",
+    "Insulation Height": "3.66mm",
+    "Pitch": "2.54mm",
+    "Number of Rows": "2",
+    "Contact Plating": "Tin",
+    "Row Spacing": "2.54mm",
+    "Contact Material": "Beryllium copper",
+    "Circular Hole / Square Hole": "Square Hole"
+  },
+  "lcsc_stock": 14,
+  "price_breaks": [
+    {
+      "quantity": 1,
+      "unitPrice": 31.37,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 10,
+      "unitPrice": 26.7,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 30,
+      "unitPrice": 23.93,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1,
+      "unitPrice": 5.1578,
+      "currency": "USD"
+    },
+    {
+      "quantity": 10,
+      "unitPrice": 4.39,
+      "currency": "USD"
+    },
+    {
+      "quantity": 30,
+      "unitPrice": 3.9346,
+      "currency": "USD"
+    },
+    {
+      "quantity": 100,
+      "unitPrice": 3.4742,
+      "currency": "USD"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 3.2621,
+      "currency": "USD"
+    },
+    {
+      "quantity": 800,
+      "unitPrice": 3.1651,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/3887151.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/e39fea448be71397ca8a301afe17aa89.pdf?productCode=C3322557",
+  "datasheet_file": "references/suppliers/c3322557/c3322557-datasheet.pdf"
+}

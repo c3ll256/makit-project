@@ -1,0 +1,91 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-24T06:36:26.942Z",
+  "lcsc_code": "C109322",
+  "manufacturer": "TI(德州仪器)",
+  "manufacturer_part_number": "TPS63070RNMR",
+  "description": "Buck-Boost Switching Regulator IC Adjustable 2.5V~9V 1 Output 2A VQFN-15-HR(2.5x3)",
+  "category": "DC-DC电源芯片",
+  "package": "VQFN-15-HR(2.5x3)",
+  "jlcpcb_part_class": "extended",
+  "parameters": {
+    "Operating Temperature": "-40°C~+125°C@(TJ)",
+    "Frequency - Switching": "2.4MHz",
+    "Function": "Buck-Boost",
+    "Number of Outputs": "1",
+    "Features": "Light load efficient mode;Frequency synchronization;Operating status indication;Load disconnect",
+    "Output Type": "Adjustable",
+    "Topology": "Buck-Boost",
+    "Operating Voltage": "2V~16V",
+    "Switch tube (built-in/external)": "Built-in",
+    "Output Voltage": "2.5V~9V",
+    "Output Current": "2A",
+    "Quiescent Current": "50uA"
+  },
+  "lcsc_stock": 26507,
+  "price_breaks": [
+    {
+      "quantity": 1,
+      "unitPrice": 7.17,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 10,
+      "unitPrice": 6.25,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 30,
+      "unitPrice": 5.37,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 100,
+      "unitPrice": 4.72,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 4.45,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1000,
+      "unitPrice": 4.32,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1,
+      "unitPrice": 1.1848,
+      "currency": "USD"
+    },
+    {
+      "quantity": 10,
+      "unitPrice": 1.0328,
+      "currency": "USD"
+    },
+    {
+      "quantity": 30,
+      "unitPrice": 0.8873,
+      "currency": "USD"
+    },
+    {
+      "quantity": 100,
+      "unitPrice": 0.7799,
+      "currency": "USD"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 0.7353,
+      "currency": "USD"
+    },
+    {
+      "quantity": 1000,
+      "unitPrice": 0.7139,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/110543.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/112777666f5e63019f626e149f96758e.pdf?productCode=C109322",
+  "datasheet_file": "references/suppliers/c109322/c109322-datasheet.pdf"
+}

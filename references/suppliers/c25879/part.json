@@ -1,0 +1,76 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-23T17:32:04.249Z",
+  "lcsc_code": "C25879",
+  "manufacturer": "UNI-ROYAL(厚声)",
+  "manufacturer_part_number": "0402WGF2201TCE",
+  "description": "2.2kΩ ±1% 62.5mW 0402 Thick Film Resistor",
+  "category": "贴片电阻",
+  "package": "0402",
+  "jlcpcb_part_class": "basic",
+  "parameters": {
+    "Power(Watts)": "62.5mW",
+    "Resistance": "2.2kΩ",
+    "Voltage Rating": "50V",
+    "Type": "Thick Film Resistor",
+    "Temperature Coefficient": "±100ppm/°C",
+    "Tolerance": "±1%",
+    "Operating Temperature": "-55°C~+155°C"
+  },
+  "lcsc_stock": 9039,
+  "price_breaks": [
+    {
+      "quantity": 100,
+      "unitPrice": 0.0067,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1000,
+      "unitPrice": 0.0051,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 3000,
+      "unitPrice": 0.0043,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 10000,
+      "unitPrice": 0.0039,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 50000,
+      "unitPrice": 0.0031,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 100,
+      "unitPrice": 0.0012,
+      "currency": "USD"
+    },
+    {
+      "quantity": 1000,
+      "unitPrice": 0.0009,
+      "currency": "USD"
+    },
+    {
+      "quantity": 3000,
+      "unitPrice": 0.0008,
+      "currency": "USD"
+    },
+    {
+      "quantity": 10000,
+      "unitPrice": 0.0007,
+      "currency": "USD"
+    },
+    {
+      "quantity": 50000,
+      "unitPrice": 0.0006,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/26622.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C25879",
+  "datasheet_file": null
+}

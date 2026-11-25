@@ -1,0 +1,87 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-24T05:08:14.005Z",
+  "lcsc_code": "C7527709",
+  "manufacturer": "LX(连欣科技)",
+  "manufacturer_part_number": "XUBF-0336-0371",
+  "description": "USB-C (USB TYPE-C) Receptacle Connector 24 Position Surface Mount, Right Angle",
+  "category": "USB连接器",
+  "package": "SMD",
+  "jlcpcb_part_class": "extended",
+  "parameters": {
+    "Protocol Standard": "USB 3.1",
+    "Number of Ports": "1",
+    "Number of Contacts": "24P",
+    "Connector Type": "Type-C",
+    "Operating Temperature": "-40°C~+85°C",
+    "Length": "9.6mm",
+    "Mounting Type": "Surface Mount, Right Angle",
+    "Gender": "Female"
+  },
+  "lcsc_stock": 193,
+  "price_breaks": [
+    {
+      "quantity": 1,
+      "unitPrice": 7.28,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 10,
+      "unitPrice": 6.05,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 30,
+      "unitPrice": 5.38,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 100,
+      "unitPrice": 4.62,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 600,
+      "unitPrice": 4.28,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1200,
+      "unitPrice": 4.13,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1,
+      "unitPrice": 1.1559,
+      "currency": "USD"
+    },
+    {
+      "quantity": 10,
+      "unitPrice": 0.9606,
+      "currency": "USD"
+    },
+    {
+      "quantity": 30,
+      "unitPrice": 0.8542,
+      "currency": "USD"
+    },
+    {
+      "quantity": 100,
+      "unitPrice": 0.7336,
+      "currency": "USD"
+    },
+    {
+      "quantity": 600,
+      "unitPrice": 0.6796,
+      "currency": "USD"
+    },
+    {
+      "quantity": 1200,
+      "unitPrice": 0.6558,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/8623430.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/ddacb09105bfc1de6872a71a1eebc860.pdf?productCode=C7527709",
+  "datasheet_file": "references/suppliers/c7527709/c7527709-datasheet.pdf"
+}

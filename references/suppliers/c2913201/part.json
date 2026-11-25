@@ -1,0 +1,90 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-24T05:03:12.406Z",
+  "lcsc_code": "C2913201",
+  "manufacturer": "ESPRESSIF(乐鑫)",
+  "manufacturer_part_number": "ESP32-S3-WROOM-1-N8R8",
+  "description": "不带固件 不带固件 2.4GHz Wi-Fi (802.11b/g/n) + 蓝牙 5 (LE) 模组",
+  "category": "WiFi模块",
+  "package": "SMD,25.5x18mm",
+  "jlcpcb_part_class": "extended",
+  "parameters": {
+    "Frequency Range": "2.4GHz",
+    "Voltage - Supply": "3V~3.6V",
+    "Utilized IC / Part": "ESP32-S3R8",
+    "Output Power": "20.5dBm",
+    "Antenna Type": "On-board PCB Antenna",
+    "Wireless Standard": "Bluetooth5.0",
+    "Sensitivity": "-104.5dBm",
+    "Receive Current": "97mA",
+    "Interface": "GPIO;SPI;UART;I2C;I2S;USB",
+    "Operating Temperature": "-40°C~+65°C",
+    "Current Of Transmitting": "330mA"
+  },
+  "lcsc_stock": 1364,
+  "price_breaks": [
+    {
+      "quantity": 1,
+      "unitPrice": 29.49,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 10,
+      "unitPrice": 25.66,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 30,
+      "unitPrice": 23.7,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 100,
+      "unitPrice": 21.08,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 650,
+      "unitPrice": 20.14,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1300,
+      "unitPrice": 19.74,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1,
+      "unitPrice": 4.8707,
+      "currency": "USD"
+    },
+    {
+      "quantity": 10,
+      "unitPrice": 4.2381,
+      "currency": "USD"
+    },
+    {
+      "quantity": 30,
+      "unitPrice": 3.9144,
+      "currency": "USD"
+    },
+    {
+      "quantity": 100,
+      "unitPrice": 3.4817,
+      "currency": "USD"
+    },
+    {
+      "quantity": 650,
+      "unitPrice": 3.3264,
+      "currency": "USD"
+    },
+    {
+      "quantity": 1300,
+      "unitPrice": 3.2604,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/3198299.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/24a44651a4767a6582addcdaa9cab2ca.pdf?productCode=C2913201",
+  "datasheet_file": "references/suppliers/c2913201/c2913201-datasheet.pdf"
+}

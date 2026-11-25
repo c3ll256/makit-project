@@ -1,0 +1,90 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-23T21:10:45.659Z",
+  "lcsc_code": "C293613",
+  "manufacturer": "MOLEX",
+  "manufacturer_part_number": "510210200",
+  "description": "Connector Housing 2 Position 1.25mm Pitch Single Row PicoBlade(MX 1.25) Series PBT -40°C~+105°C",
+  "category": "胶壳(线对板/线对线)",
+  "package": "P=1.25mm",
+  "jlcpcb_part_class": "extended",
+  "parameters": {
+    "Pitch": "1.25mm",
+    "Flame Retardant Rating": "UL94V-0",
+    "Number of Rows": "1",
+    "With Wings": "Without Fins",
+    "Operating Temperature": "-40°C~+105°C",
+    "Reference Series": "PicoBlade(MX 1.25)",
+    "Holes Structure": "1x2P",
+    "Color": "White",
+    "Plastic Material": "PBT",
+    "Number of PINs Per Row": "2",
+    "With Locker": "Non-Latching"
+  },
+  "lcsc_stock": 3966,
+  "price_breaks": [
+    {
+      "quantity": 50,
+      "unitPrice": 0.1025,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 0.0853,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 2000,
+      "unitPrice": 0.072,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 4000,
+      "unitPrice": 0.0662,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 24000,
+      "unitPrice": 0.0613,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 50000,
+      "unitPrice": 0.0586,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 50,
+      "unitPrice": 0.0167,
+      "currency": "USD"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 0.0139,
+      "currency": "USD"
+    },
+    {
+      "quantity": 2000,
+      "unitPrice": 0.0118,
+      "currency": "USD"
+    },
+    {
+      "quantity": 4000,
+      "unitPrice": 0.0108,
+      "currency": "USD"
+    },
+    {
+      "quantity": 24000,
+      "unitPrice": 0.01,
+      "currency": "USD"
+    },
+    {
+      "quantity": 50000,
+      "unitPrice": 0.0096,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/278529.html",
+  "datasheet_url": "https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/salesdrawingpdf/510/51021/510210200_sd.pdf?inline\\",
+  "datasheet_file": "references/suppliers/c293613/c293613-datasheet.pdf"
+}

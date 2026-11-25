@@ -1,0 +1,89 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-23T17:31:55.730Z",
+  "lcsc_code": "C105228",
+  "manufacturer": "MDD(辰达半导体)",
+  "manufacturer_part_number": "P6KE6.8CA",
+  "description": "10.5VC Clamp 57.1A@10/1000us Ipp TVS DIODE DO-15",
+  "category": "静电和浪涌保护(TVS/ESD)",
+  "package": "DO-15",
+  "jlcpcb_part_class": "extended",
+  "parameters": {
+    "Clamping Voltage": "10.5V",
+    "Operating Temperature": "-55°C~+175°C",
+    "Peak Pulse Current (Ipp)": "57.1A@10/1000us",
+    "Peak Pulse Power Dissipation (Ppp)": "600W@10/1000us",
+    "Number of Channels": "Single-channel",
+    "Voltage - Breakdown": "7.14V",
+    "type": "TVS",
+    "Polarity": "Bidirectional",
+    "Reverse Leakage Current (Ir)": "1mA",
+    "Reverse Stand-Off Voltage (Vrwm)": "5.8V"
+  },
+  "lcsc_stock": 1506,
+  "price_breaks": [
+    {
+      "quantity": 10,
+      "unitPrice": 0.5023,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 100,
+      "unitPrice": 0.4169,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 300,
+      "unitPrice": 0.3742,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 2500,
+      "unitPrice": 0.2504,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 5000,
+      "unitPrice": 0.2248,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 10000,
+      "unitPrice": 0.212,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 10,
+      "unitPrice": 0.0828,
+      "currency": "USD"
+    },
+    {
+      "quantity": 100,
+      "unitPrice": 0.0687,
+      "currency": "USD"
+    },
+    {
+      "quantity": 300,
+      "unitPrice": 0.0617,
+      "currency": "USD"
+    },
+    {
+      "quantity": 2500,
+      "unitPrice": 0.0413,
+      "currency": "USD"
+    },
+    {
+      "quantity": 5000,
+      "unitPrice": 0.0371,
+      "currency": "USD"
+    },
+    {
+      "quantity": 10000,
+      "unitPrice": 0.035,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/106443.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/770723ea29c079339f3e19fb12ab472f.pdf?productCode=C105228",
+  "datasheet_file": null
+}

@@ -1,8 +1,8 @@
 {
   "formatVersion": 4,
   "name": "电子宠物机",
-  "title": "TamaGPT",
-  "summary": "A palm-sized virtual pet with a translucent shell, a colour display, and three playful buttons, powered by the ESP32-S3.",
+  "title": "Star Pet 🌟",
+  "summary": "Build a star-shaped virtual pet with a translucent lavender shell, a pixel-art face, and three buttons tucked into its lower-left point.",
   "license": "MIT",
   "authors": [
     {

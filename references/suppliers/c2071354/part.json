@@ -1,0 +1,81 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-24T06:36:30.862Z",
+  "lcsc_code": "C2071354",
+  "manufacturer": "TI(德州仪器)",
+  "manufacturer_part_number": "TPS630702RNMR",
+  "description": "Buck-Boost Switching Regulator IC Adjustable 2.5V~9V 1 Output 2A VQFN-15(2.5x3)",
+  "category": "DC-DC电源芯片",
+  "package": "VQFN-15(2.5x3)",
+  "jlcpcb_part_class": "extended",
+  "parameters": {
+    "Operating Temperature": "-40°C~+125°C@(TJ)",
+    "Frequency - Switching": "2.4MHz",
+    "Function": "Buck-Boost",
+    "Number of Outputs": "1",
+    "Features": "Output discharge;Frequency synchronization;Light load efficient mode;Operating status indication;Overcurrent Protection",
+    "Output Type": "Adjustable",
+    "Topology": "Buck-Boost",
+    "Operating Voltage": "2V~16V",
+    "Switch tube (built-in/external)": "Built-in",
+    "Output Current": "2A",
+    "Output Voltage": "2.5V~9V",
+    "Quiescent Current": "50uA"
+  },
+  "lcsc_stock": 488,
+  "price_breaks": [
+    {
+      "quantity": 1,
+      "unitPrice": 21.2,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 10,
+      "unitPrice": 17.62,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 30,
+      "unitPrice": 15.38,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 100,
+      "unitPrice": 13.09,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1,
+      "unitPrice": 3.503,
+      "currency": "USD"
+    },
+    {
+      "quantity": 10,
+      "unitPrice": 2.9114,
+      "currency": "USD"
+    },
+    {
+      "quantity": 30,
+      "unitPrice": 2.5413,
+      "currency": "USD"
+    },
+    {
+      "quantity": 100,
+      "unitPrice": 2.1629,
+      "currency": "USD"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 1.9911,
+      "currency": "USD"
+    },
+    {
+      "quantity": 1000,
+      "unitPrice": 1.9184,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/2162937.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/112777666f5e63019f626e149f96758e.pdf?productCode=C2071354",
+  "datasheet_file": "references/suppliers/c2071354/c2071354-datasheet.pdf"
+}

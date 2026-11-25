@@ -1,0 +1,85 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-24T06:35:41.532Z",
+  "lcsc_code": "C6364806",
+  "manufacturer": "APV(爱普微)",
+  "manufacturer_part_number": "ANR4030T2R2M",
+  "description": "2.2uH ±20% 5.8A 4x4x3mm",
+  "category": "功率电感",
+  "package": "SMD,4x4mm",
+  "jlcpcb_part_class": "extended",
+  "parameters": {
+    "Current Rating": "3.2A",
+    "Inductance": "2.2uH",
+    "Tolerance": "±20%",
+    "Current - Saturation(Isat)": "5.8A",
+    "Type": "Magnetic Shielded Inductor",
+    "Application Grade": "Consumer grade"
+  },
+  "lcsc_stock": 1456,
+  "price_breaks": [
+    {
+      "quantity": 10,
+      "unitPrice": 0.2951,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 100,
+      "unitPrice": 0.2353,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 300,
+      "unitPrice": 0.2053,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 2000,
+      "unitPrice": 0.1829,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 4000,
+      "unitPrice": 0.1649,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 10000,
+      "unitPrice": 0.156,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 10,
+      "unitPrice": 0.0484,
+      "currency": "USD"
+    },
+    {
+      "quantity": 100,
+      "unitPrice": 0.0386,
+      "currency": "USD"
+    },
+    {
+      "quantity": 300,
+      "unitPrice": 0.0337,
+      "currency": "USD"
+    },
+    {
+      "quantity": 2000,
+      "unitPrice": 0.03,
+      "currency": "USD"
+    },
+    {
+      "quantity": 4000,
+      "unitPrice": 0.0271,
+      "currency": "USD"
+    },
+    {
+      "quantity": 10000,
+      "unitPrice": 0.0256,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/7314208.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/936d71bb3eb2dd93d16032c155ee131d.pdf?productCode=C6364806",
+  "datasheet_file": "references/suppliers/c6364806/c6364806-datasheet.pdf"
+}

@@ -1,0 +1,86 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-24T05:07:05.410Z",
+  "lcsc_code": "C55651384",
+  "manufacturer": "G-Switch(品赞)",
+  "manufacturer_part_number": "GT-USB-9092A-30",
+  "description": "Type-C 母 卧贴",
+  "category": "USB连接器",
+  "package": "SMD",
+  "jlcpcb_part_class": "unknown",
+  "parameters": {
+    "Protocol Standard": "USB 4.0",
+    "Mounting Type": "Surface Mount, Right Angle",
+    "Connector Type": "Type-C",
+    "Detection color": "Black",
+    "Gender": "Female",
+    "Number of Ports": "1",
+    "Connect-Disconnect Life": "10,000 cycles"
+  },
+  "lcsc_stock": 90,
+  "price_breaks": [
+    {
+      "quantity": 1,
+      "unitPrice": 7.49,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 10,
+      "unitPrice": 6.23,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 30,
+      "unitPrice": 5.54,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 100,
+      "unitPrice": 4.76,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 450,
+      "unitPrice": 4.41,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 900,
+      "unitPrice": 4.25,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1,
+      "unitPrice": 1.2275,
+      "currency": "USD"
+    },
+    {
+      "quantity": 10,
+      "unitPrice": 1.021,
+      "currency": "USD"
+    },
+    {
+      "quantity": 30,
+      "unitPrice": 0.9079,
+      "currency": "USD"
+    },
+    {
+      "quantity": 100,
+      "unitPrice": 0.7801,
+      "currency": "USD"
+    },
+    {
+      "quantity": 450,
+      "unitPrice": 0.7228,
+      "currency": "USD"
+    },
+    {
+      "quantity": 900,
+      "unitPrice": 0.6965,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/59771128.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/74ea6501d08efb2c76a8918aec12c465.pdf?productCode=C55651384",
+  "datasheet_file": "references/suppliers/c55651384/c55651384-datasheet.pdf"
+}

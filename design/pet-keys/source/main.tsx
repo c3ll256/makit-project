@@ -1,3 +1,4 @@
+import {Audio} from './audio';
 import {board, outline, keys, mountHoles, lcd, sockets, xiao} from './layout';
 import {boardPropsFromRules,groundPourPropsFromRules,netPropsFor,pcbRules,keepoutPropsFromRules} from './lib/makit-pcb';
 export default () => (
@@ -15,6 +16,7 @@ export default () => (
   <chip name="P_XIAO_B4" footprint={<footprint/>} manufacturerPartNumber="MH254V-11-04-1000" pcbX={24.0253588244} pcbY={13.88} pcbRotation={180} layer="top" schSectionName="Assembly bodies" cadModel={{stepUrl:"https://modules.easyeda.com/qAxj6KHrDKw4blvCG8QJPs7Y/342bb6b6334547d8b3fc71eb07c1abf9",modelOriginPosition:{x:0.0005381,y:-1.27e-05,z:0.499993},positionOffset:{x:0,y:0,z:3},rotationOffset:{x:0,y:0,z:0},modelUnitToMmScale:1,modelBoardNormalDirection:"z+"}}/>
   <chip name="P_XIAO_B3" footprint={<footprint/>} manufacturerPartNumber="MH254V-11-03-1000" pcbX={15.1353588244} pcbY={13.88} pcbRotation={180} layer="top" schSectionName="Assembly bodies" cadModel={{stepUrl:"https://modules.easyeda.com/qAxj6KHrDKw4blvCG8QJPs7Y/bc500d46b25542d58136a3d763742d6e",modelOriginPosition:{x:0.0001008,y:0,z:0.0749936},positionOffset:{x:0,y:0,z:2.7},rotationOffset:{x:0,y:0,z:0},modelUnitToMmScale:1,modelBoardNormalDirection:"z+"}}/>
   <chip name="U_XIAO" footprint={<footprint/>} manufacturerPartNumber="Seeed Studio XIAO ESP32-S3" pcbX={xiao.x} pcbY={xiao.y} layer="top" schSectionName="Assembly bodies" cadModel={{stepUrl:"./source/models/xiao-esp32s3.step",modelOriginPosition:{x:1.740658685586,y:-0.2499999850988,z:-6.111399955413},positionOffset:{x:0,y:0,z:xiao.stack},rotationOffset:{x:-90,y:0,z:0},modelUnitToMmScale:1,modelBoardNormalDirection:"z+"}}/>
+  <Audio/>
   {mountHoles.map((p,i)=><hole key={i} name={`MH${i+1}`} diameter={2.4} pcbX={p.x} pcbY={p.y}/>)}
  </board>
 );

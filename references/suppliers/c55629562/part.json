@@ -1,0 +1,84 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-24T05:08:17.593Z",
+  "lcsc_code": "C55629562",
+  "manufacturer": "CHUANGYUE(创粤)",
+  "manufacturer_part_number": "TYPE-C-16P-CH4.05L8-04010",
+  "description": "TYPE C 16PIN垫高2.5",
+  "category": "USB连接器",
+  "package": "SMD",
+  "jlcpcb_part_class": "unknown",
+  "parameters": {
+    "Mounting Type": "Surface Mount, Right Angle",
+    "Connector Type": "Type-C",
+    "Gender": "Female",
+    "Connect-Disconnect Life": "10,000 cycles",
+    "Number of Ports": "1"
+  },
+  "lcsc_stock": 588,
+  "price_breaks": [
+    {
+      "quantity": 1,
+      "unitPrice": 2.48,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 10,
+      "unitPrice": 1.96,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 30,
+      "unitPrice": 1.74,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 100,
+      "unitPrice": 1.47,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 600,
+      "unitPrice": 1.35,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1200,
+      "unitPrice": 1.27,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1,
+      "unitPrice": 0.4069,
+      "currency": "USD"
+    },
+    {
+      "quantity": 10,
+      "unitPrice": 0.3216,
+      "currency": "USD"
+    },
+    {
+      "quantity": 30,
+      "unitPrice": 0.2855,
+      "currency": "USD"
+    },
+    {
+      "quantity": 100,
+      "unitPrice": 0.2412,
+      "currency": "USD"
+    },
+    {
+      "quantity": 600,
+      "unitPrice": 0.2215,
+      "currency": "USD"
+    },
+    {
+      "quantity": 1200,
+      "unitPrice": 0.2084,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/59734803.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/ba7492a03bec5100546c867e43d6e981.pdf?productCode=C55629562",
+  "datasheet_file": "references/suppliers/c55629562/c55629562-datasheet.pdf"
+}

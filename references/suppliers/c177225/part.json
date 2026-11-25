@@ -1,0 +1,96 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-23T21:10:28.120Z",
+  "lcsc_code": "C177225",
+  "manufacturer": "MOLEX",
+  "manufacturer_part_number": "532610271",
+  "description": "Connector Header 2 position 1.25mm Pitch 1A Surface Mount, Right Angle -40°C~+105°C",
+  "category": "线对板针座",
+  "package": "SMD,P=1.25mm,Surface Mount,Right Angle",
+  "jlcpcb_part_class": "extended",
+  "parameters": {
+    "Connector Type": "Surface Mount, Right Angle",
+    "Reference Series": "PicoBlade(MX 1.25)",
+    "Voltage Rating (Max)": "125V",
+    "Contact Material": "Phosphor Bronze",
+    "Number of PINs Per Row": "2",
+    "Number of Rows": "1",
+    "Pitch": "1.25mm",
+    "Current Rating": "1A",
+    "Flame Retardant Rating": "UL94V-0",
+    "Supplementary Features": "Auxiliary Solder Pin",
+    "Contact Plating": "Tin",
+    "Operating Temperature": "-40°C~+105°C",
+    "Number of PINs": "2P",
+    "Plastic Material": "Glass fiber reinforced PA",
+    "Color": "White",
+    "X-Length of Bottom Edge on Board (Spacing Line)": "7.65mm",
+    "Pin Structure": "1x2P"
+  },
+  "lcsc_stock": 2247,
+  "price_breaks": [
+    {
+      "quantity": 5,
+      "unitPrice": 0.8955,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 50,
+      "unitPrice": 0.7454,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 150,
+      "unitPrice": 0.6703,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 0.614,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 3200,
+      "unitPrice": 0.569,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 4800,
+      "unitPrice": 0.5465,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 5,
+      "unitPrice": 0.1481,
+      "currency": "USD"
+    },
+    {
+      "quantity": 50,
+      "unitPrice": 0.1233,
+      "currency": "USD"
+    },
+    {
+      "quantity": 150,
+      "unitPrice": 0.1109,
+      "currency": "USD"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 0.1016,
+      "currency": "USD"
+    },
+    {
+      "quantity": 3200,
+      "unitPrice": 0.0941,
+      "currency": "USD"
+    },
+    {
+      "quantity": 4800,
+      "unitPrice": 0.0904,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/188617.html",
+  "datasheet_url": "https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/salesdrawingpdf/532/53261/532610271_sd.pdf?inline",
+  "datasheet_file": "references/suppliers/c177225/c177225-datasheet.pdf"
+}

@@ -1,0 +1,91 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-24T06:36:11.485Z",
+  "lcsc_code": "C2876326",
+  "manufacturer": "TI(德州仪器)",
+  "manufacturer_part_number": "TPS63061DSCR",
+  "description": "Buck-Boost Switching Regulator IC Fixed 5V 1 Output 1A WSON-10-EP(3x3)",
+  "category": "DC-DC电源芯片",
+  "package": "WSON-10-EP(3x3)",
+  "jlcpcb_part_class": "extended",
+  "parameters": {
+    "Operating Temperature": "-40°C~+125°C@(TJ)",
+    "Frequency - Switching": "2.4MHz",
+    "Function": "Buck-Boost",
+    "Number of Outputs": "1",
+    "Features": "Light load efficient mode;Frequency synchronization;Operating status indication;Load disconnect;Overcurrent Protection",
+    "Output Type": "Fixed",
+    "Topology": "Buck-Boost",
+    "Operating Voltage": "2.5V~12V",
+    "Switch tube (built-in/external)": "Built-in",
+    "Output Voltage": "5V",
+    "Output Current": "1A",
+    "Quiescent Current": "30uA"
+  },
+  "lcsc_stock": 4601,
+  "price_breaks": [
+    {
+      "quantity": 1,
+      "unitPrice": 14.52,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 10,
+      "unitPrice": 12.46,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 30,
+      "unitPrice": 11.18,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 100,
+      "unitPrice": 9.86,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 9.26,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1000,
+      "unitPrice": 9.01,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1,
+      "unitPrice": 2.3931,
+      "currency": "USD"
+    },
+    {
+      "quantity": 10,
+      "unitPrice": 2.0536,
+      "currency": "USD"
+    },
+    {
+      "quantity": 30,
+      "unitPrice": 1.8426,
+      "currency": "USD"
+    },
+    {
+      "quantity": 100,
+      "unitPrice": 1.6251,
+      "currency": "USD"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 1.5262,
+      "currency": "USD"
+    },
+    {
+      "quantity": 1000,
+      "unitPrice": 1.485,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/3084938.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/b3227eafe090c49b0ae2001cec991d29.pdf?productCode=C2876326",
+  "datasheet_file": "references/suppliers/c2876326/c2876326-datasheet.pdf"
+}

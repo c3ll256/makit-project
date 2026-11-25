@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "releaseId": "13a81c81ca1d32b811624beeba5dc57b88567356f2f0f250641d4cb838e5d86c",
+  "designId": "pet-keys",
+  "buildId": "c6ecf1fe1d3a7bd88dcd471881088ff8e6c6121ec59d19c3cf91d7b9946fffba",
+  "candidateId": "bf2509c8cc49cad3f0d7255aa0acd49f59e777abc2fb1476d4375462d8de396a",
+  "approvedAt": "2026-11-23T21:25:00.887Z",
+  "sections": [
+    {
+      "id": "fabrication",
+      "status": "ready",
+      "files": [
+        "drill/board-NPTH.drl",
+        "drill/board-PTH.drl",
+        "drill/pet-keys-drill-report.txt",
+        "gerbers/board-B_Cu.gbl",
+        "gerbers/board-B_Mask.gbs",
+        "gerbers/board-B_Paste.gbp",
+        "gerbers/board-B_Silkscreen.gbo",
+        "gerbers/board-Edge_Cuts.gm1",
+        "gerbers/board-F_Cu.gtl",
+        "gerbers/board-F_Mask.gts",
+        "gerbers/board-F_Paste.gtp",
+        "gerbers/board-F_Silkscreen.gto",
+        "gerbers/board-job.gbrjob"
+      ],
+      "blockingCodes": []
+    },
+    {
+      "id": "assembly",
+      "status": "ready",
+      "files": [
+        "jlc-smt-bom.csv",
+        "jlc-smt-placement.csv"
+      ],
+      "blockingCodes": []
+    },
+    {
+      "id": "mechanical",
+      "status": "ready",
+      "files": [
+        "3dmodels/pet-keys.3dshapes/LMD4737T261-OAC05.step",
+        "3dmodels/pet-keys.3dshapes/Molex_PicoBlade_53261-0271_1x02-1MP_P1.25mm_Horizontal.step",
+        "3dmodels/pet-keys.3dshapes/SW_PUSH_6mm_H5mm.step",
+        "3dmodels/pet-keys.3dshapes/xiao-esp32s3.step",
+        "assembly.glb",
+        "assembly.step"
+      ],
+      "blockingCodes": []
+    }
+  ],
+  "package": [
+    {
+      "path": "3dmodels/pet-keys.3dshapes/LMD4737T261-OAC05.step",
+      "sha256": "740bd1646a0daabbf6f4817013eec7d53be3db1b80004122ed4f6f79135c7b31",
+      "sizeBytes": 128721
+    },
+    {
+      "path": "3dmodels/pet-keys.3dshapes/Molex_PicoBlade_53261-0271_1x02-1MP_P1.25mm_Horizontal.step",
+      "sha256": "3bf7491460fcd4959169e79d19563cc42d42c4ca298b28f2914f1ae8c8cfda49",
+      "sizeBytes": 213788
+    },
+    {
+      "path": "3dmodels/pet-keys.3dshapes/SW_PUSH_6mm_H5mm.step",
+      "sha256": "4461bd8b9765c0569a962e3d7bf254d3f2785ff83e20b087ee0469fb2f89fe2c",
+      "sizeBytes": 179948
+    },
+    {
+      "path": "3dmodels/pet-keys.3dshapes/xiao-esp32s3.step",
+      "sha256": "870ad45c7af5d92324cec4c6ae65fbf86e3b049d5a97ab9ffd9039ebd73455dd",
+      "sizeBytes": 1335902
+    },
+    {
+      "path": "assembly.glb",
+      "sha256": "0211cf24372566a84665502277a5e3fff0d0085405efc870dede4c15d1b9e9d1",
+      "sizeBytes": 37747552
+    },
+    {
+      "path": "assembly.step",
+      "sha256": "2d88753bf851110d0432473cbe98632f78dac0f74fbe08045c92bc46686d0556",
+      "sizeBytes": 14732699
+    },
+    {
+      "path": "circuit.json",
+      "sha256": "e6f40a1ab6ccd891f7d3064b73de8b7f6804d22e60b88919822207e0e9ca909f",
+      "sizeBytes": 824643
+    },
+    {
+      "path": "drill/board-NPTH.drl",
+      "sha256": "8fe885f3d8239127986a64b2706bd357a5dc062d95272b18ae755a2993eb87c5",
+      "sizeBytes": 355
+    },
+    {
+      "path": "drill/board-PTH.drl",
+      "sha256": "bbfb80e857cc76bd511193ab57c4f00f4b3c67bf14a6f40055a3865ba5338f30",
+      "sizeBytes": 1345
+    },
+    {
+      "path": "drill/pet-keys-drill-report.txt",
+      "sha256": "c47e1a106a5335f81478f92d31f2242d2c9f40f521fe6f7cd877d44c855f78e4",
+      "sizeBytes": 717
+    },
+    {
+      "path": "gerbers/board-B_Cu.gbl",
+      "sha256": "90162c3e06ad4f598fca829aebb5698b62914a6df50fdfb784a678d8ba8ba728",
+      "sizeBytes": 68636
+    },
+    {
+      "path": "gerbers/board-B_Mask.gbs",
+      "sha256": "edbe6e1ec79ff704c65de88e9511ce972b5afeccea54e29fd0a1fe09c6fae321",
+      "sizeBytes": 1490
+    },
+    {
+      "path": "gerbers/board-B_Paste.gbp",
+      "sha256": "b8d1a06af520f462de07b9507feb7c6742e1c8506c9ca222b9715d31ca00368e",
+      "sizeBytes": 450
+    },
+    {
+      "path": "gerbers/board-B_Silkscreen.gbo",
+      "sha256": "2505d41bd151ddb6ae8e0f1a95f7c0f7cf75e606b74fb452b3a7ffe68e5e8ba6",
+      "sizeBytes": 451
+    },
+    {
+      "path": "gerbers/board-Edge_Cuts.gm1",
+      "sha256": "61e158e9d8d7140f8098c5d246496336793caa3e7b7ef696ac5f3671ee631627",
+      "sizeBytes": 3324
+    },
+    {
+      "path": "gerbers/board-F_Cu.gtl",
+      "sha256": "25621dcae741d1383119a20e85e226e1416f2111173ec3ed936dc03607f0a552",
+      "sizeBytes": 101803
+    },
+    {
+      "path": "gerbers/board-F_Mask.gts",
+      "sha256": "2dc778138c258a1ef45bb88c91746fba3ea5f34a91476d9f83d1d73bbc81e00b",
+      "sizeBytes": 4397
+    },
+    {
+      "path": "gerbers/board-F_Paste.gtp",
+      "sha256": "1aed83d856e11fa1aa3761050b5adf3012d2c1903bbd62041ecf7f80c0a1eb84",
+      "sizeBytes": 3347
+    },
+    {
+      "path": "gerbers/board-F_Silkscreen.gto",
+      "sha256": "7731b4fd2e0201ccbbd0c3b597026f8084a9944e71b4688a6634b30d29d98c9d",
+      "sizeBytes": 11084
+    },
+    {
+      "path": "gerbers/board-job.gbrjob",
+      "sha256": "95ee6379e1c6d344cc1d3fc3ec93dbf10fe0c0a875c2a1001ff3ba8dc1f65396",
+      "sizeBytes": 2657
+    },
+    {
+      "path": "jlc-smt-bom.csv",
+      "sha256": "235f4d10756e260d2180e3820925072c34cd01f12bb1d660b39349b68c2351b7",
+      "sizeBytes": 1364
+    },
+    {
+      "path": "jlc-smt-placement.csv",
+      "sha256": "0f67cd68d97ec22b15281d99f5d6de7acbfc24d630ef1349484d46bbfabbe7fd",
+      "sizeBytes": 1600
+    },
+    {
+      "path": "manifest.json",
+      "sha256": "d94d20b0cecaf1fef49303d675723dca9bd4a2af8b4bd255bd4ea20d4c4fc045",
+      "sizeBytes": 27060
+    },
+    {
+      "path": "previews/gerber-bottom.png",
+      "sha256": "e1929d1644cc1630ec49a95ca6f6d933af905af8cf03d957ce172d3daa968891",
+      "sizeBytes": 154837
+    },
+    {
+      "path": "previews/gerber-bottom.svg",
+      "sha256": "fbfc46399175f24b9d45d81503841d511c027ecc112152fb9db681651603800a",
+      "sizeBytes": 69133
+    },
+    {
+      "path": "previews/gerber-top.png",
+      "sha256": "509be240b45c7c91980cae804331f0a86eaebfb37fa22660594b74b55bb06196",
+      "sizeBytes": 194931
+    },
+    {
+      "path": "previews/gerber-top.svg",
+      "sha256": "614f1d6e5354a2bfe0e461c4aa2e018896eb8e6ea2d1e90504a61a320786ea01",
+      "sizeBytes": 116756
+    }
+  ]
+}

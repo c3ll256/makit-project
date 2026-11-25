@@ -1,0 +1,91 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-24T06:36:14.006Z",
+  "lcsc_code": "C2876599",
+  "manufacturer": "TI(德州仪器)",
+  "manufacturer_part_number": "TPS630701RNMR",
+  "description": "Buck-Boost Switching Regulator IC Fixed 5V 1 Output 2A VQFN-15-HR(2.5x3)",
+  "category": "DC-DC电源芯片",
+  "package": "VQFN-15-HR(2.5x3)",
+  "jlcpcb_part_class": "extended",
+  "parameters": {
+    "Operating Temperature": "-40°C~+125°C@(TJ)",
+    "Frequency - Switching": "2.4MHz",
+    "Function": "Buck-Boost",
+    "Number of Outputs": "1",
+    "Features": "Light load efficient mode;Frequency synchronization;Operating status indication;Overcurrent Protection",
+    "Output Type": "Fixed",
+    "Topology": "Buck-Boost",
+    "Operating Voltage": "2V~16V",
+    "Switch tube (built-in/external)": "Built-in",
+    "Output Voltage": "5V",
+    "Output Current": "2A",
+    "Quiescent Current": "50uA"
+  },
+  "lcsc_stock": 4049,
+  "price_breaks": [
+    {
+      "quantity": 1,
+      "unitPrice": 12.06,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 10,
+      "unitPrice": 10.34,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 30,
+      "unitPrice": 9.27,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 100,
+      "unitPrice": 8.16,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 7.25,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1000,
+      "unitPrice": 7.03,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 1,
+      "unitPrice": 1.9928,
+      "currency": "USD"
+    },
+    {
+      "quantity": 10,
+      "unitPrice": 1.7086,
+      "currency": "USD"
+    },
+    {
+      "quantity": 30,
+      "unitPrice": 1.5318,
+      "currency": "USD"
+    },
+    {
+      "quantity": 100,
+      "unitPrice": 1.3483,
+      "currency": "USD"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 1.198,
+      "currency": "USD"
+    },
+    {
+      "quantity": 1000,
+      "unitPrice": 1.1616,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/3085211.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/112777666f5e63019f626e149f96758e.pdf?productCode=C2876599",
+  "datasheet_file": "references/suppliers/c2876599/c2876599-datasheet.pdf"
+}

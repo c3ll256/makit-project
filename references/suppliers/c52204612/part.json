@@ -1,0 +1,87 @@
+{
+  "source": "LCSC",
+  "looked_up_at": "2026-11-24T06:35:32.133Z",
+  "lcsc_code": "C52204612",
+  "manufacturer": "R+O(宏嘉诚)",
+  "manufacturer_part_number": "HNTC-103F3435FA-100B",
+  "description": "温度测量NTC热敏电阻",
+  "category": "NTC热敏电阻",
+  "package": "-",
+  "jlcpcb_part_class": "unknown",
+  "parameters": {
+    "Height": "6mm",
+    "Resistance @ 25°C": "10kΩ",
+    "Operating Temperature": "-30°C~+125°C",
+    "Length": "1.8mm",
+    "Power(Watts)": "3.5mW",
+    "Thermal Time Constant": "10s",
+    "B Constant (25°C/85°C)": "3435K",
+    "B Constant Tolerance": "±1%"
+  },
+  "lcsc_stock": 568,
+  "price_breaks": [
+    {
+      "quantity": 5,
+      "unitPrice": 1.3679,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 50,
+      "unitPrice": 1.0806,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 150,
+      "unitPrice": 0.9575,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 0.8039,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 2500,
+      "unitPrice": 0.7355,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 5000,
+      "unitPrice": 0.6944,
+      "currency": "CNY"
+    },
+    {
+      "quantity": 5,
+      "unitPrice": 0.2247,
+      "currency": "USD"
+    },
+    {
+      "quantity": 50,
+      "unitPrice": 0.1775,
+      "currency": "USD"
+    },
+    {
+      "quantity": 150,
+      "unitPrice": 0.1573,
+      "currency": "USD"
+    },
+    {
+      "quantity": 500,
+      "unitPrice": 0.1321,
+      "currency": "USD"
+    },
+    {
+      "quantity": 2500,
+      "unitPrice": 0.1208,
+      "currency": "USD"
+    },
+    {
+      "quantity": 5000,
+      "unitPrice": 0.1141,
+      "currency": "USD"
+    }
+  ],
+  "product_url": "https://item.szlcsc.com/55044719.html",
+  "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/766cf0b8e72edb4844c4bbdc73cb154d.pdf?productCode=C52204612",
+  "datasheet_file": "references/suppliers/c52204612/c52204612-datasheet.pdf"
+}

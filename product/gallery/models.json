@@ -2,8 +2,9 @@
   "schemaVersion": 1,
   "models": [
     {
-      "file": "models/pet-shell.glb",
-      "design": "pet-shell"
+      "file": "models/assembly.glb",
+      "design": "assembly",
+      "title": "Assembly"
     }
   ]
 }
